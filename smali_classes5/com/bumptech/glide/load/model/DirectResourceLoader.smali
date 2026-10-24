@@ -1,0 +1,275 @@
+.class public final Lcom/bumptech/glide/load/model/DirectResourceLoader;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/bumptech/glide/load/model/ModelLoader;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bumptech/glide/load/model/DirectResourceLoader$c;,
+        Lcom/bumptech/glide/load/model/DirectResourceLoader$a;,
+        Lcom/bumptech/glide/load/model/DirectResourceLoader$b;,
+        Lcom/bumptech/glide/load/model/DirectResourceLoader$e;,
+        Lcom/bumptech/glide/load/model/DirectResourceLoader$d;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<DataT:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/bumptech/glide/load/model/ModelLoader<",
+        "Ljava/lang/Integer;",
+        "TDataT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Landroid/content/Context;
+
+.field private final b:Lcom/bumptech/glide/load/model/DirectResourceLoader$e;
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;Lcom/bumptech/glide/load/model/DirectResourceLoader$e;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/bumptech/glide/load/model/DirectResourceLoader;->a:Landroid/content/Context;
+
+    iput-object p2, p0, Lcom/bumptech/glide/load/model/DirectResourceLoader;->b:Lcom/bumptech/glide/load/model/DirectResourceLoader$e;
+
+    return-void
+.end method
+
+.method public static assetFileDescriptorFactory(Landroid/content/Context;)Lcom/bumptech/glide/load/model/ModelLoaderFactory;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")",
+            "Lcom/bumptech/glide/load/model/ModelLoaderFactory<",
+            "Ljava/lang/Integer;",
+            "Landroid/content/res/AssetFileDescriptor;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v1, 0x1
+
+    new-instance v0, Lcom/bumptech/glide/load/model/DirectResourceLoader$a;
+
+    const/4 v1, 0x3
+
+    invoke-direct {v0, p0}, Lcom/bumptech/glide/load/model/DirectResourceLoader$a;-><init>(Landroid/content/Context;)V
+
+    return-object v0
+.end method
+
+.method public static drawableFactory(Landroid/content/Context;)Lcom/bumptech/glide/load/model/ModelLoaderFactory;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")",
+            "Lcom/bumptech/glide/load/model/ModelLoaderFactory<",
+            "Ljava/lang/Integer;",
+            "Landroid/graphics/drawable/Drawable;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v1, 0x5
+
+    new-instance v0, Lcom/bumptech/glide/load/model/DirectResourceLoader$b;
+
+    const/4 v1, 0x6
+
+    invoke-direct {v0, p0}, Lcom/bumptech/glide/load/model/DirectResourceLoader$b;-><init>(Landroid/content/Context;)V
+
+    return-object v0
+.end method
+
+.method public static inputStreamFactory(Landroid/content/Context;)Lcom/bumptech/glide/load/model/ModelLoaderFactory;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")",
+            "Lcom/bumptech/glide/load/model/ModelLoaderFactory<",
+            "Ljava/lang/Integer;",
+            "Ljava/io/InputStream;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v1, 0x1
+
+    new-instance v0, Lcom/bumptech/glide/load/model/DirectResourceLoader$c;
+
+    invoke-direct {v0, p0}, Lcom/bumptech/glide/load/model/DirectResourceLoader$c;-><init>(Landroid/content/Context;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public buildLoadData(Ljava/lang/Integer;IILcom/bumptech/glide/load/Options;)Lcom/bumptech/glide/load/model/ModelLoader$LoadData;
+    .locals 4
+    .param p1    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Lcom/bumptech/glide/load/Options;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Integer;",
+            "II",
+            "Lcom/bumptech/glide/load/Options;",
+            ")",
+            "Lcom/bumptech/glide/load/model/ModelLoader$LoadData<",
+            "TDataT;>;"
+        }
+    .end annotation
+
+    const/4 v3, 0x5
+
+    sget-object p2, Lcom/bumptech/glide/load/resource/drawable/ResourceDrawableDecoder;->THEME:Lcom/bumptech/glide/load/Option;
+
+    invoke-virtual {p4, p2}, Lcom/bumptech/glide/load/Options;->get(Lcom/bumptech/glide/load/Option;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    const/4 v3, 0x2
+
+    check-cast p2, Landroid/content/res/Resources$Theme;
+
+    if-eqz p2, :cond_0
+
+    const/4 v3, 0x4
+
+    invoke-virtual {p2}, Landroid/content/res/Resources$Theme;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p3
+
+    const/4 v3, 0x2
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p3, p0, Lcom/bumptech/glide/load/model/DirectResourceLoader;->a:Landroid/content/Context;
+
+    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p3
+
+    :goto_0
+    const/4 v3, 0x5
+
+    new-instance p4, Lcom/bumptech/glide/load/model/ModelLoader$LoadData;
+
+    const/4 v3, 0x0
+
+    new-instance v0, Lcom/bumptech/glide/signature/ObjectKey;
+
+    const/4 v3, 0x5
+
+    invoke-direct {v0, p1}, Lcom/bumptech/glide/signature/ObjectKey;-><init>(Ljava/lang/Object;)V
+
+    const/4 v3, 0x4
+
+    new-instance v1, Lcom/bumptech/glide/load/model/DirectResourceLoader$d;
+
+    iget-object v2, p0, Lcom/bumptech/glide/load/model/DirectResourceLoader;->b:Lcom/bumptech/glide/load/model/DirectResourceLoader$e;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    const/4 v3, 0x5
+
+    invoke-direct {v1, p2, p3, v2, p1}, Lcom/bumptech/glide/load/model/DirectResourceLoader$d;-><init>(Landroid/content/res/Resources$Theme;Landroid/content/res/Resources;Lcom/bumptech/glide/load/model/DirectResourceLoader$e;I)V
+
+    const/4 v3, 0x6
+
+    invoke-direct {p4, v0, v1}, Lcom/bumptech/glide/load/model/ModelLoader$LoadData;-><init>(Lcom/bumptech/glide/load/Key;Lcom/bumptech/glide/load/data/DataFetcher;)V
+
+    const/4 v3, 0x7
+
+    return-object p4
+.end method
+
+.method public bridge synthetic buildLoadData(Ljava/lang/Object;IILcom/bumptech/glide/load/Options;)Lcom/bumptech/glide/load/model/ModelLoader$LoadData;
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Lcom/bumptech/glide/load/Options;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    check-cast p1, Ljava/lang/Integer;
+
+    const/4 v0, 0x5
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/model/DirectResourceLoader;->buildLoadData(Ljava/lang/Integer;IILcom/bumptech/glide/load/Options;)Lcom/bumptech/glide/load/model/ModelLoader$LoadData;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public handles(Ljava/lang/Integer;)Z
+    .locals 1
+    .param p1    # Ljava/lang/Integer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x3
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public bridge synthetic handles(Ljava/lang/Object;)Z
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x2
+
+    check-cast p1, Ljava/lang/Integer;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/model/DirectResourceLoader;->handles(Ljava/lang/Integer;)Z
+
+    move-result p1
+
+    const/4 v0, 0x4
+
+    return p1
+.end method

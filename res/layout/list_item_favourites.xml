@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_margin="@dimen/margin_tiny" app:cardBackgroundColor="@color/favourites_primary_dark" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip" app:strokeColor="@color/home_screen_tile_border" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/macroName" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_small" android:maxLines="2" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

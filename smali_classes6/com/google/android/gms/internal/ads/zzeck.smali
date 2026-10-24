@@ -1,0 +1,9 @@
+.class interface abstract Lcom/google/android/gms/internal/ads/zzeck;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract zza()Ljava/lang/Object;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end method

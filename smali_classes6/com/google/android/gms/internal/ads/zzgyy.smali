@@ -1,0 +1,30 @@
+.class final Lcom/google/android/gms/internal/ads/zzgyy;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static final zza:Lcom/google/android/gms/internal/ads/zzgyx;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget v0, Lcom/google/android/gms/internal/ads/zzgzm;->zza:I
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzgyx;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzgyx;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzgyy;->zza:Lcom/google/android/gms/internal/ads/zzgyx;
+
+    return-void
+.end method
+
+.method static zza()Lcom/google/android/gms/internal/ads/zzgyx;
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/internal/ads/zzgyy;->zza:Lcom/google/android/gms/internal/ads/zzgyx;
+
+    return-object v0
+.end method

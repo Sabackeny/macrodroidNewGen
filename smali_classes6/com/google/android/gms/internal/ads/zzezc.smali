@@ -1,0 +1,7 @@
+.class public interface abstract Lcom/google/android/gms/internal/ads/zzezc;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract zzl(Lcom/google/android/gms/internal/ads/zzezc;)V
+.end method

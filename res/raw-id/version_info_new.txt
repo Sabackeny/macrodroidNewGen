@@ -1,0 +1,70 @@
+Versi 5.54 (Juni 2025)
+=======================
+
+Menambahkan tindakan Kode Java.
+
+Tindakan JavaScript yang diperbarui untuk mendukung pengembalian ke semua jenis variabel - Gunakan mdOutput(value).
+
+Menambahkan opsi untuk mengeluarkan variabel array dan kamus dalam format JSON {vjson=}, {lvjson=} (untuk membuatnya lebih mudah digunakan dalam tindakan JavaScript).
+
+Pemicu Aktivitas Aplikasi yang Diluncurkan/Ditutup Menambahkan Aktivitas Aplikasi.
+
+Tindakan Konfigurasikan Petak Peta Cepat yang diperbarui untuk mendukung pengaturan petak peta ke status tidak aktif di mana petak peta tidak dapat berinteraksi dengannya.
+
+Tindakan Permintaan HTTP yang diperbarui untuk menambahkan dukungan untuk nama file dinamis/uri lokal di isi konten.
+
+Menambahkan opsi ke 'Terapkan Fokus Otomatis' untuk mengambil tindakan Gambar.
+
+Menambahkan teks ajaib 'Buat GUID' untuk membuat pengidentifikasi unik secara global.
+
+Menambahkan opsi 'Bergetar saat Menekan' ke pemicu Tombol Mengambang dan tindakan teks mengambang.
+
+Menambahkan kemampuan untuk menghapus log sistem untuk makro individual saat melihat Log Sistem untuk makro tersebut (melalui edit layar makro).
+
+Menambahkan teks ajaib khusus konteks untuk teks log saat menggunakan pemicu Entri Log Sistem.
+
+Menambahkan opsi untuk menggunakan nilai variabel untuk batas waktu dalam tindakan Tunggu Hingga Pemicu.
+
+Makro dan Kategori yang Diekspor sekarang akan berisi variabel global terkait sebagai bagian dari ekspor.
+
+Memperbaiki masalah di mana mengonfigurasi pemicu Perubahan Status Wifi tidak akan mengizinkan pemilihan SSID kecuali aplikasi pembantu diinstal.
+
+Memperbaiki masalah di mana penggeser adegan tidak memperbarui rentang dengan benar saat variabel yang direferensikan diperbarui.
+
+Menambahkan dukungan untuk bahasa Marathi untuk tindakan Speak Text.
+
+Memperbaiki masalah di mana Bagikan Lokasi ke variabel tidak mendukung penyimpanan ke dalam elemen kamus/array.
+
+Menambahkan pengaturan untuk menonaktifkan halaman web saat menggunakan pemicu Permintaan Server HTTP.
+
+Perbaikan kecil lainnya.
+
+-- Peningkatan Adegan --
+
+Menambahkan komponen Pembagi Horisontal.
+
+Menambahkan dukungan untuk mengklik nilai pada komponen Slider adegan dan memasukkan nomor melalui dialog.
+
+Menambahkan dukungan untuk entri kata sandi di komponen Entri Teks adegan.
+
+Menambahkan opsi perataan terpisah untuk komponen Switch scene dan Checkbox.
+
+Menambahkan opsi untuk mengatur sudut membulat pada Adegan saat menggunakan dialog atau opsi overlay.
+
+Scene Slider sekarang mendukung tampilan label nilai di awal dan akhir (atau tidak sama sekali).
+
+Scene Slider sekarang mendukung nilai langkah.
+
+Teks Adegan sekarang mendukung nilai teks ajaib untuk menentukan ukuran teks.
+
+Scene Text sekarang mendukung opsi pemformatan HTML.
+
+Teks Adegan sekarang mendukung jumlah baris maksimum dan opsi skala agar sesuai.
+
+Semua item adegan sekarang mendukung status visibilitas yang dapat terikat ke variabel boolean.
+
+Scene Switch sekarang mendukung warna teks terpisah, mematikan warna, dan mengaktifkan warna.
+
+Tombol Adegan sekarang mendukung pengalihan variabel boolean.
+
+Memperbaiki masalah di mana scene tidak akan memperbarui variabel secara koreksi saat dijalankan dari blok tindakan dan tidak menggunakan opsi blok tindakan berikutnya secara default.

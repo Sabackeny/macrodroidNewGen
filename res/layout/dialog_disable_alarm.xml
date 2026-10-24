@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout_password" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/dialog_dismiss_alarm_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/alarm_label" android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:id="@id/magic_text_button" android:layout_marginTop="4.0dip" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

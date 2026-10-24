@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <ViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+        <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" />
+        <WebView android:id="@id/remote_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewFlipper>
+    <View android:id="@id/adDivider" android:background="#ffdddddd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.google.android.gms.ads.AdView android:gravity="center_horizontal" android:id="@id/adView" android:background="@android:color/black" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" ads:adSize="SMART_BANNER" ads:adUnitId="@string/global_banner_id" />
+</LinearLayout>

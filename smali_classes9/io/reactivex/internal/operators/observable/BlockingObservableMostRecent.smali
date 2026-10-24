@@ -1,0 +1,80 @@
+.class public final Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/lang/Iterable<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final a:Lio/reactivex/ObservableSource;
+
+.field final b:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Lio/reactivex/ObservableSource;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/ObservableSource<",
+            "TT;>;TT;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->a:Lio/reactivex/ObservableSource;
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public iterator()Ljava/util/Iterator;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "TT;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$a;
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->b:Ljava/lang/Object;
+
+    invoke-direct {v0, v1}, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$a;-><init>(Ljava/lang/Object;)V
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->a:Lio/reactivex/ObservableSource;
+
+    invoke-interface {v1, v0}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
+
+    invoke-virtual {v0}, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$a;->b()Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$a$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method

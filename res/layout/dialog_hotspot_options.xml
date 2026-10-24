@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_small">
+        <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16.0sp" android:id="@id/enable_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_set_hotspot_enable" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/disable_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_set_hotspot_disable" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/toggle_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_set_hotspot_toggle" />
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/try_alternative_mechanism" android:layout_marginStart="@dimen/margin_tiny" android:layout_marginEnd="@dimen/margin_tiny" />
+        <CheckBox android:textSize="14.0sp" android:id="@id/force_legacy_setting" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/force_legacy_mechanism" />
+        <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

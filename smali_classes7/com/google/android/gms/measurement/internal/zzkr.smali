@@ -1,0 +1,30 @@
+.class final Lcom/google/android/gms/measurement/internal/zzkr;
+.super Lcom/google/android/gms/measurement/internal/zzbb;
+
+
+# instance fields
+.field private final synthetic e:Lcom/google/android/gms/measurement/internal/zzju;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/measurement/internal/zzju;Lcom/google/android/gms/measurement/internal/zzjh;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzkr;->e:Lcom/google/android/gms/measurement/internal/zzju;
+
+    invoke-direct {p0, p2}, Lcom/google/android/gms/measurement/internal/zzbb;-><init>(Lcom/google/android/gms/measurement/internal/zzjh;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzkr;->e:Lcom/google/android/gms/measurement/internal/zzju;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/measurement/internal/zzju;->zzau()V
+
+    return-void
+.end method

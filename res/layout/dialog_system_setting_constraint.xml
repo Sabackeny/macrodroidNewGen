@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <RadioButton android:id="@id/systemRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="System" />
+            <RadioButton android:id="@id/secureRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="Secure" />
+            <RadioButton android:id="@id/globalRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="Global" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/action_system_setting_key" android:singleLine="true" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/keyMagicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/constraint_compare_value_comparision_type" android:layout_marginStart="@dimen/margin_small" />
+        <Spinner android:layout_gravity="bottom" android:id="@id/typeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:maxWidth="160.0dip" />
+        <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18.0sp" android:id="@id/radioButtonEquals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="=" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/radioButtonNotEquals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="!=" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/radioButtonLessOrContains" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="&lt;" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/radioButtonGreaterOrExcludes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text=">" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/value" android:singleLine="true" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/valueMagicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/stringInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <TextView android:id="@id/notification_text_dialog_wildcards_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/wildcards_supported" android:layout_marginHorizontal="@dimen/margin_small" />
+            <CheckBox android:id="@id/regexCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/action_system_setting_known_keys_with_current_values" android:layout_marginStart="@dimen/margin_tiny" android:layout_marginEnd="@dimen/margin_tiny" />
+        <com.arlosoft.macrodroid.smartmaterialspinner.SmartMaterialSpinner android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="-4.0dip" app:smsp_arrowColor="@color/default_text_color" app:smsp_enableFloatingLabel="false" app:smsp_enableSearchHeader="false" app:smsp_isSearchable="true" app:smsp_itemColor="@color/default_text_color" app:smsp_itemListBackgroundColor="@color/default_background" app:smsp_itemListColor="@color/default_text_color" app:smsp_searchBackgroundColor="@color/default_background" app:smsp_searchFilterColor="?colorAccent" app:smsp_searchTextColor="@color/default_text_color" app:smsp_selectedItemListColor="@color/white_or_black" app:smsp_underlineColor="@color/transparent" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

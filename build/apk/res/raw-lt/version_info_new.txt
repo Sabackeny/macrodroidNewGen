@@ -1,0 +1,70 @@
+5.54 versija (2025 m. birželio mėn.)
+=======================
+
+Pridėtas "Java Code" veiksmas.
+
+Atnaujintas "JavaScript" veiksmas, kad būtų palaikomas grįžimas prie visų kintamųjų tipų – naudokite mdOutput(value).
+
+Pridėta parinktis išvesti masyvo ir žodyno kintamuosius JSON formatu {vjson=}, {lvjson=} (kad juos būtų lengviau naudoti "JavaScript" veiksme).
+
+Pridėtas programos veiklos paleidimo / uždarymo paleidiklis.
+
+Atnaujintas veiksmas Konfigūruoti sparčiąją plytelę, kad būtų palaikomas plytelės nustatymas į neaktyvią būseną, su kuria negalima sąveikauti.
+
+Atnaujintas HTTP užklausos veiksmas, skirtas turinio tekste pridėti dinaminių failų pavadinimų / vietinio uri palaikymą.
+
+Pridėta parinktis "Taikyti automatinį fokusavimą", kad būtų galima fotografuoti.
+
+Pridėtas magiškas tekstas "Sukurti GUID", kad būtų sukurtas visame pasaulyje unikalus identifikatorius.
+
+Pridėta parinktis "Vibruoti paspaudus" prie slankiojo mygtuko paleidiklio ir slankiojo teksto veiksmo.
+
+Pridėta galimybė išvalyti atskiros makrokomandos sistemos žurnalą peržiūrint tos makrokomandos sistemos žurnalą (per makrokomandos redagavimo ekraną).
+
+Pridėtas kontekstui būdingas magiškas žurnalo teksto tekstas, kai naudojamas sistemos žurnalo įrašo paleidiklis.
+
+Pridėta parinktis naudoti kintamąją skirtojo laiko reikšmę veiksme Palaukite, kol suaktyvinsite.
+
+Eksportuotose makrokomandose ir kategorijose dabar bus visi susiję visuotiniai kintamieji kaip eksportavimo dalis.
+
+Išspręsta problema, dėl kurios konfigūravus "Wi-Fi State Change" paleidiklį SSID nebuvo galima pasirinkti, nebent būtų įdiegta pagalbinė programa.
+
+Išspręsta problema, dėl kurios scenos slankiklis netinkamai atnaujindavo diapazoną, kai atnaujinami nurodyti kintamieji.
+
+Pridėtas maratų kalbos palaikymas, kad būtų galima kalbėti tekstu.
+
+Išspręsta problema, dėl kurios bendrinimo vieta su kintamuoju nepalaikė įrašymo į žodyno / masyvo elementą.
+
+Pridėtas tinklalapio išjungimo nustatymas, kai naudojamas HTTP serverio užklausos paleidiklis.
+
+Kiti nedideli pataisymai.
+
+-- Scenos patobulinimai --
+
+Pridėtas horizontalaus skirstytuvo komponentas.
+
+Pridėtas palaikymas spustelėjus reikšmę scenos slankiklio komponente ir įvedant numerį per dialogo langą.
+
+Pridėtas slaptažodžio įvedimo į sceną teksto įvedimo komponento palaikymas.
+
+Pridėta scenos jungiklio ir žymimojo langelio komponentų padalijimo lygiavimo parinktis.
+
+Pridėta parinktis nustatyti užapvalintus kampus scenose, kai naudojama dialogo arba perdangos parinktis.
+
+Scenos slankiklis dabar palaiko vertės etiketės rodymą pradžioje ir pabaigoje (arba jos nėra).
+
+Scenos slankiklis dabar palaiko žingsnių reikšmes.
+
+Scenos tekstas dabar palaiko magiškas teksto reikšmes, kad būtų galima nurodyti teksto dydį.
+
+Scenos tekstas dabar palaiko HTML formatavimo parinktį.
+
+Scenos tekstas dabar palaiko maksimalų eilučių skaičių ir mastelį, kad tilptų.
+
+Visi scenos elementai dabar palaiko matomumo būseną, kurią galima susieti su loginiu kintamuoju.
+
+Scenos jungiklis dabar palaiko atskirą teksto spalvą, spalvų išjungimą ir spalvų įjungimą.
+
+Scenos mygtukas dabar palaiko loginio kintamojo perjungimą.
+
+Išspręsta problema, dėl kurios scena neatnaujindavo kintamųjų teisingai, kai būdavo paleidžiama iš veiksmų bloko ir pagal numatytuosius nustatymus nenaudojami kiti blokavimo veiksmai.

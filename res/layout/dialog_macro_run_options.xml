@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="16.0sp" android:id="@id/ignoreConstraintsCheckBox" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_force_macro_run_ignore_constraints" />
+    <CheckBox android:textSize="16.0sp" android:id="@id/alwaysRunCheckBox" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_force_macro_run_ignore_off_status" />
+    <CheckBox android:textSize="16.0sp" android:id="@id/waitToCompleteCheckBox" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/block_actions_until_complete" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

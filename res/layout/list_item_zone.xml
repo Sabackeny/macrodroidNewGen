@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:layout_marginHorizontal="@dimen/margin_small" android:layout_marginVertical="@dimen/margin_tiny" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground">
+        <ImageView android:id="@id/zone_image" android:layout_width="fill_parent" android:layout_height="@dimen/zone_list_map_height" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/top_bar" android:background="#de00695c" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="12.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/zone_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/helvetica_standard" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/lat_long" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:fontFamily="@font/helvetica_standard" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/radius_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/helvetica_standard" />
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

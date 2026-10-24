@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/default_text_color" android:id="@id/helpText" android:padding="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/array_manipulation_expression_help_info" android:textIsSelectable="true" />
+    </ScrollView>
+    <Button android:layout_gravity="end" android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

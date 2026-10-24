@@ -1,0 +1,35 @@
+.class public final synthetic Ldev/skomlach/biometric/compat/utils/activityView/m;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
+
+
+# instance fields
+.field public final synthetic a:Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ldev/skomlach/biometric/compat/utils/activityView/m;->a:Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onPreDraw()Z
+    .locals 1
+
+    iget-object v0, p0, Ldev/skomlach/biometric/compat/utils/activityView/m;->a:Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;
+
+    invoke-static {v0}, Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;->d(Ldev/skomlach/biometric/compat/utils/activityView/WindowForegroundBlurring;)Z
+
+    move-result v0
+
+    return v0
+.end method

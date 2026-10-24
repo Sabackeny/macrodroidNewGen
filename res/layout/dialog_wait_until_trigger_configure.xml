@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_triggers_layout" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:text="@string/timeout" android:layout_marginHorizontal="@dimen/margin_small" />
+        <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <RadioButton android:id="@id/radio_no_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_wait_until_trigger_no_timeout" />
+            <RadioButton android:id="@id/radio_cancel_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/action_wait_until_trigger_cancel_after_timeout" />
+            <RadioButton android:id="@id/radio_continue_timeout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/action_wait_until_trigger_continue_after_timeout" />
+        </RadioGroup>
+        <TextView android:textSize="14.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small" android:text="@string/select_value_or_variable" android:layout_marginHorizontal="@dimen/margin_small" />
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/timeout_value_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" />
+        <LinearLayout android:orientation="vertical" android:id="@id/variable_timeout_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/time_unit" android:layout_marginStart="@dimen/margin_small" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/timeoutUnitRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_small">
+                <RadioButton android:id="@id/secondsRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seconds" />
+                <RadioButton android:id="@id/minutesRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes" android:layout_marginStart="@dimen/margin_medium" />
+            </RadioGroup>
+        </LinearLayout>
+        <TableLayout android:id="@id/timepicker_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/hours_capital" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="8.0dip" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+                <com.arlosoft.macrodroid.common.NumberPicker android:id="@id/hour_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="26.0dip" android:layout_marginTop="3.0dip" android:text="@string/minutes_capital" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="8.0dip" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+                <com.arlosoft.macrodroid.common.NumberPicker android:id="@id/minute_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/seconds_capital" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="8.0dip" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+                <com.arlosoft.macrodroid.common.NumberPicker android:id="@id/second_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+        <CheckBox android:id="@id/force_alarm_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/use_alarm" android:layout_marginHorizontal="@dimen/margin_small" />
+        <TextView android:id="@id/force_alarm_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:text="@string/use_alarm_description_wait_before_next" android:layout_marginHorizontal="@dimen/margin_small" />
+        <LinearLayout android:orientation="vertical" android:id="@id/boolean_variable_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <TextView android:textSize="14.0sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:text="@string/save_timeout_state_to_boolean_variable" android:layout_marginHorizontal="@dimen/margin_small" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+                <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/booleanVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:textColor="@color/default_text_color_inverse" android:id="@id/addVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" app:backgroundTint="@color/actions_accent" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

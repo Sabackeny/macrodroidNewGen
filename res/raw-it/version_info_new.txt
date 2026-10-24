@@ -1,0 +1,70 @@
+Versione 5.54 (giugno 2025)
+=======================
+
+Aggiunta l'azione Codice Java.
+
+Aggiornamento dell'azione JavaScript per supportare il ritorno a tutti i tipi di variabili - Utilizzare mdOutput(value).
+
+Aggiunta l'opzione per l'output di variabili di array e dizionario in formato JSON {vjson=}, {lvjson=} (per renderle più facili da usare nell'azione JavaScript).
+
+Aggiunto il trigger Attività app avviata/chiusa.
+
+È stata aggiornata l'azione Configura riquadro rapido per supportare l'impostazione di un riquadro in uno stato inattivo in cui non è possibile interagire.
+
+Aggiornamento dell'azione di richiesta HTTP per aggiungere il supporto per nomi di file dinamici/uri locali nel corpo del contenuto.
+
+Aggiunta l'opzione "Applica messa a fuoco automatica" per scattare foto.
+
+Aggiunta del testo magico "Crea GUID" per creare un identificatore univoco globale.
+
+Aggiunta l'opzione "Vibra alla pressione" al trigger del pulsante mobile e all'azione di testo mobile.
+
+Aggiunta la possibilità di cancellare il registro di sistema per una singola macro durante la visualizzazione del registro di sistema per quella macro (tramite la schermata di modifica macro).
+
+Aggiunto un testo magico specifico per il testo del registro quando si utilizza il trigger Voce di registro di sistema.
+
+Aggiunta l'opzione per utilizzare il valore della variabile per il timeout nell'azione di attivazione Attendi fino a quando non si attiva.
+
+Le macro e le categorie esportate conterranno ora tutte le variabili globali associate come parte dell'esportazione.
+
+Risolto il problema per cui la configurazione del trigger di modifica dello stato Wi-Fi non consentiva la selezione SSID a meno che non fosse installata l'app helper.
+
+Risolto il problema per cui il dispositivo di scorrimento della scena non aggiornava correttamente l'intervallo quando venivano aggiornate le variabili di riferimento.
+
+Aggiunto il supporto per l'azione Pronuncia testo in lingua marathi.
+
+È stato risolto il problema per cui la condivisione della posizione nella variabile non supportava il salvataggio nell'elemento dizionario/array.
+
+Aggiunta l'impostazione per disabilitare la pagina Web quando si utilizza il trigger di richiesta del server HTTP.
+
+Altre correzioni minori.
+
+-- Miglioramenti alla scena --
+
+Aggiunto il componente Divisore orizzontale.
+
+È stato aggiunto il supporto per fare clic sul valore sul componente Slider della scena e per l'immissione del numero tramite la finestra di dialogo.
+
+È stato aggiunto il supporto per l'immissione della password nel componente di immissione del testo della scena.
+
+Aggiunta l'opzione di allineamento diviso per i componenti Interruttore scena e Casella di controllo.
+
+Aggiunta l'opzione per impostare gli angoli arrotondati sulle scene quando si utilizza l'opzione di dialogo o di sovrapposizione.
+
+Il dispositivo di scorrimento della scena ora supporta la visualizzazione dell'etichetta del valore all'inizio e alla fine (o nessuna).
+
+Scene Slider ora supporta i valori dei passaggi.
+
+Il testo della scena ora supporta i valori di testo magici per specificare la dimensione del testo.
+
+Il testo della scena ora supporta l'opzione di formattazione HTML.
+
+Il testo della scena ora supporta un numero massimo di righe e l'opzione di adattamento alla scala.
+
+Tutti gli elementi della scena ora supportano lo stato di visibilità, che può essere associato a una variabile booleana.
+
+Scene Switch ora supporta il colore del testo separato, disattiva il colore e attiva il colore.
+
+Il pulsante Scena ora supporta l'attivazione di una variabile booleana.
+
+È stato risolto il problema per cui la scena non aggiornava correttamente le variabili quando veniva eseguita da un blocco di azioni e non utilizzava l'opzione Blocca azioni successive per impostazione predefinita.

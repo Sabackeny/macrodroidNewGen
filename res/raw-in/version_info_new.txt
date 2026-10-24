@@ -1,0 +1,34 @@
+Versi 5.50 (Januari 2025)
+============================
+
+Menambahkan tindakan Pemindaian SSID Wifi.
+
+Menambahkan batasan Koneksi Perangkat USB.
+
+Menambahkan tindakan Makro Ringkas/Blok Tindakan.
+
+Menambahkan tindakan Grup Tindakan untuk memungkinkan pengelompokan, pemindahan, penyalinan, dan pengaktifan/penonaktifan tindakan terkait yang lebih mudah.
+
+Menambahkan dukungan untuk fungsionalitas urungkan saat mengurutkan ulang item di layar Edit Makro dan Edit Blok Tindakan.
+
+Menambahkan dukungan untuk berbagi file cadangan dari cadangan cloud sehingga setiap file cadangan dapat dengan mudah diakses tanpa memulihkannya.
+
+Dropdown pemilihan blok makro/tindakan yang ditingkatkan sehingga dapat dicari dalam kasus di mana sejumlah besar opsi tersedia.
+
+Tindakan Teks Mengambang yang diperbarui untuk mendukung bayangan opsional (untuk membuat teks lebih menonjol saat menggunakan latar belakang transparan)
+
+Memperbarui pemicu SMS Terkirim untuk menambahkan opsi untuk menentukan nomor secara langsung.
+
+Tindakan Overlay Animasi yang diperbarui untuk mendukung penggunaan variabel untuk menentukan nilai x, y, lebar, dan tinggi animasi.
+
+Memperbarui tindakan Pemberitahuan Tampilan untuk mendukung entri teks ajaib untuk bidang id.
+
+Menambahkan pengaturan MacroDroid yang hilang ke dalam file cadangan untuk pemulihan yang lebih mudah.
+
+Menambahkan tombol salin saat mengedit entri variabel array/kamus untuk mendapatkan teks ajaib untuk jalur array/kamus penuh.
+
+Memperbaiki masalah langka di mana Tombol Mengambang bisa macet dalam beberapa kasus.
+
+Memperbaiki masalah di mana teks mengambang dapat berkedip saat memperbarui teks mengambang yang ada secara teratur.
+
+Perbaikan kecil lainnya.

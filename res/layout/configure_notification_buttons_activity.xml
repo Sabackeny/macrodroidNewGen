@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_container" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <TextView android:textSize="12.0sp" android:id="@id/android12Warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:text="@string/troubleshoot_button_bar_style_description" android:layout_marginHorizontal="@dimen/margin_small" />
+        <androidx.appcompat.widget.SwitchCompat android:textSize="16.0sp" android:id="@id/configure_notification_Switch" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/show_button_bar" />
+        <FrameLayout android:id="@id/configure_notification_button_controls" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.3">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="8.0dip" android:paddingVertical="4.0dip">
+                <androidx.appcompat.widget.SwitchCompat android:textSize="16.0sp" android:id="@id/configure_black_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/black_backgroud" />
+                <FrameLayout android:id="@id/configure_notification_button_bar" android:background="#ff888888" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <include android:layout_width="fill_parent" android:layout_height="64.0dip" layout="@layout/include_button_bar" />
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/icon_tint" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/icon_tint_button" android:background="@drawable/icon_tint_border" android:padding="4.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_tint_indicator" android:layout_marginStart="@dimen/margin_medium" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_the_plus_button" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/press_existing_button_to_delete" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/use_notificaiton_button_trigger" />
+                <CheckBox android:id="@id/configure_notification_show_macrodroid_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/show_macrodroid_icon" android:layout_marginStart="-6.0dip" />
+                <CheckBox android:id="@id/configure_notification_show_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/show_current_macrodroid_mode" android:layout_marginStart="-6.0dip" />
+            </LinearLayout>
+            <View android:id="@id/view_blocker" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

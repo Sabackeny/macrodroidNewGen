@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="vertical" android:id="@id/radioGroupFileMode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <RadioButton android:id="@id/radioButtonStaticFile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_from_file_static_filename" style="@style/HttpRadioButtonStyle" />
+        <RadioButton android:id="@id/radioButtonDynamicFile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_from_file_dynamic_filename" style="@style/HttpRadioButtonStyle" />
+        <RadioButton android:id="@id/radioButtonLocalUri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_open_file_option_uri" style="@style/HttpRadioButtonStyle" />
+    </RadioGroup>
+    <ViewFlipper android:id="@id/fileViewFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/staticFileLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/bodyStaticFilePath" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/action_write_to_file_select_folder" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/selectStaticFileButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="@dimen/special_text_button_width" android:src="@drawable/ic_mode_edit_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/dynamicFileLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/folder_name" android:layout_marginStart="2.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="2.0dip">
+                <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/folderPathText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/action_write_to_file_select_folder" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/selectFolderButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_mode_edit_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_medium">
+                    <EditText android:id="@id/dynamicFileNameText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/filename" android:singleLine="true" android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/filenameMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/localUriLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/localFileUriText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/action_open_file_option_uri" android:layout_marginEnd="@dimen/margin_medium" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/localFileUriMagicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

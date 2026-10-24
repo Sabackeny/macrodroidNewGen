@@ -1,0 +1,70 @@
+Sürüm 5.54 (Haziran 2025)
+=======================
+
+Java Kodu eylemi eklendi.
+
+JavaScript eylemi tüm değişken türlerine dönmeyi destekleyecek şekilde güncelleştirildi - mdOutput(value) kullanın.
+
+Dizi ve sözlük değişkenlerini JSON biçiminde {vjson=}, {lvjson=} çıktı alma seçeneği eklendi (JavaScript eyleminde kullanımlarını kolaylaştırmak için).
+
+Uygulama etkinliği başlatıldı/kapatıldı tetikleyicisi eklendi.
+
+Hızlı Kutucuğu Yapılandır eylemi, bir kutucuğu etkileşimde bulunulamayacak etkin olmayan bir duruma ayarlamayı destekleyecek şekilde güncelleştirildi.
+
+İçerik gövdesinde dinamik dosya adları/yerel uri desteği eklemek için HTTP İsteği eylemi güncelleştirildi.
+
+Fotoğraf Çekme eylemi için 'Otomatik Odaklama Uygula' seçeneği eklendi.
+
+Genel olarak benzersiz bir tanımlayıcı oluşturmak için 'GUID Oluştur' sihirli metni eklendi.
+
+Kayan Düğme tetikleyicisine ve Kayan metin eylemine 'Basıldığında Titreşim' seçeneği eklendi.
+
+Tek bir makro için Sistem Günlüğü'nü görüntülerken o makro için sistem günlüğünü temizleme özelliği eklendi (makro düzenleme ekranı aracılığıyla).
+
+Sistem Günlük Girişi tetikleyicisi kullanılırken günlük metni için bağlama özel sihirli metin eklendi.
+
+Tetikleyiciye Kadar Bekle eyleminde zaman aşımı için değişken değeri kullanma seçeneği eklendi.
+
+Dışa Aktarılan Makrolar ve Kategoriler artık dışa aktarmanın bir parçası olarak ilişkili tüm global değişkenleri içerecektir.
+
+Wifi Durum Değişikliği tetikleyicisini yapılandırmanın, yardımcı uygulama yüklenmedikçe SSID seçimine izin vermemesi sorunu düzeltildi.
+
+Başvurulan değişkenler güncellendiğinde sahne kaydırıcısının aralığı doğru şekilde güncellememesi sorunu düzeltildi.
+
+Marathi dilinden Metni Seslendirme eylemine destek eklendi.
+
+Değişkenle Paylaşma Konumunun sözlük/dizi öğesine kaydetmeyi desteklememesi sorunu düzeltildi.
+
+HTTP Sunucusu İsteği tetikleyicisini kullanırken web sayfasını devre dışı bırakmak için ayar eklendi.
+
+Diğer küçük düzeltmeler.
+
+-- Sahne İyileştirmeleri --
+
+Yatay Bölücü bileşeni eklendi.
+
+Sahne Kaydırıcısı bileşeninde değere tıklama ve iletişim kutusu aracılığıyla sayı girme desteği eklendi.
+
+Sahne Metin Girişi bileşenine parola girişi için destek eklendi.
+
+Sahne Anahtarı ve Onay Kutusu bileşenleri için bölünmüş hizalama seçeneği eklendi.
+
+Diyalog veya kaplama seçeneğini kullanırken Sahnelerde yuvarlatılmış köşeler ayarlama seçeneği eklendi.
+
+Sahne Kaydırıcısı artık başlangıçta ve sonda değer etiketinin görüntülenmesini (veya hiçbirini) destekliyor.
+
+Sahne Kaydırıcısı artık adım değerlerini destekliyor.
+
+Sahne Metni artık metin boyutunu belirtmek için sihirli metin değerlerini destekliyor.
+
+Sahne Metni artık HTML biçimlendirme seçeneğini destekliyor.
+
+Sahne Metni artık maksimum satır sayısını ve sığdırmak için ölçekleme seçeneğini destekliyor.
+
+Tüm sahne öğeleri artık bir boole değişkenine bağlanabilen görünürlük durumunu destekliyor.
+
+Sahne Değiştirme artık ayrı metin rengini, rengi kapatmayı ve rengi açmayı destekliyor.
+
+Sahne Düğmesi artık bir boole değişkeni arasında geçiş yapmayı destekliyor.
+
+Bir eylem bloğundan çalıştırıldığında ve varsayılan olarak sonraki eylemleri engelle seçeneğini kullanmadığında, sahnenin değişkenleri doğru şekilde güncellememesi sorunu düzeltildi.

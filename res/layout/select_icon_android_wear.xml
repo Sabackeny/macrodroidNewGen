@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+        <View android:id="@id/colorSelector" android:background="@color/default_wear_os_icon_bg_color" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="4.0dip" android:foreground="?selectableItemBackground" />
+    </FrameLayout>
+    <ListView android:id="@id/select_icon_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="4.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

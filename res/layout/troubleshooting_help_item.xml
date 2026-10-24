@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/dontKeepAcitvitesWarning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/primary" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/helpHeader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/helpTitle" android:padding="@dimen/margin_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/chevron" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/material_ic_chevron_right_24px_svg" />
+        </LinearLayout>
+        <com.arlosoft.macrodroid.uicomponent.ExpandableLayout android:id="@id/expandableLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="false" app:el_parallax="0.5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/remediesHeader">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/white_slight_transparent" android:textColorLink="@color/md_yellow_200" android:autoLink="web" android:linksClickable="true" android:id="@id/helpDescription" android:paddingLeft="@dimen/margin_small" android:paddingRight="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_small" />
+                <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/actionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+                <TextView android:textColor="@color/white_slight_transparent" android:id="@id/optionalLinksDescription" android:padding="@dimen/margin_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/troubleshoot_links_below_take_to_config_screen" />
+                <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/optionalButton1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+                <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/optionalButton2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+                <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/optionalButton3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+            </LinearLayout>
+        </com.arlosoft.macrodroid.uicomponent.ExpandableLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

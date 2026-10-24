@@ -1,0 +1,163 @@
+.class public final Lcom/bumptech/glide/request/target/PreloadTarget;
+.super Lcom/bumptech/glide/request/target/CustomTarget;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Z:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/bumptech/glide/request/target/CustomTarget<",
+        "TZ;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final e:Landroid/os/Handler;
+
+
+# instance fields
+.field private final d:Lcom/bumptech/glide/RequestManager;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/bumptech/glide/request/target/PreloadTarget$a;
+
+    invoke-direct {v2}, Lcom/bumptech/glide/request/target/PreloadTarget$a;-><init>()V
+
+    invoke-direct {v0, v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+
+    sput-object v0, Lcom/bumptech/glide/request/target/PreloadTarget;->e:Landroid/os/Handler;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/bumptech/glide/RequestManager;II)V
+    .locals 0
+
+    invoke-direct {p0, p2, p3}, Lcom/bumptech/glide/request/target/CustomTarget;-><init>(II)V
+
+    iput-object p1, p0, Lcom/bumptech/glide/request/target/PreloadTarget;->d:Lcom/bumptech/glide/RequestManager;
+
+    return-void
+.end method
+
+.method public static obtain(Lcom/bumptech/glide/RequestManager;II)Lcom/bumptech/glide/request/target/PreloadTarget;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Z:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/bumptech/glide/RequestManager;",
+            "II)",
+            "Lcom/bumptech/glide/request/target/PreloadTarget<",
+            "TZ;>;"
+        }
+    .end annotation
+
+    const/4 v1, 0x1
+
+    new-instance v0, Lcom/bumptech/glide/request/target/PreloadTarget;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/bumptech/glide/request/target/PreloadTarget;-><init>(Lcom/bumptech/glide/RequestManager;II)V
+
+    const/4 v1, 0x2
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method a()V
+    .locals 2
+
+    const/4 v1, 0x0
+
+    iget-object v0, p0, Lcom/bumptech/glide/request/target/PreloadTarget;->d:Lcom/bumptech/glide/RequestManager;
+
+    invoke-virtual {v0, p0}, Lcom/bumptech/glide/RequestManager;->clear(Lcom/bumptech/glide/request/target/Target;)V
+
+    const/4 v1, 0x5
+
+    return-void
+.end method
+
+.method public onLoadCleared(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+    .param p1    # Landroid/graphics/drawable/Drawable;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    return-void
+.end method
+
+.method public onResourceReady(Ljava/lang/Object;Lcom/bumptech/glide/request/transition/Transition;)V
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/bumptech/glide/request/transition/Transition;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TZ;",
+            "Lcom/bumptech/glide/request/transition/Transition<",
+            "-TZ;>;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0}, Lcom/bumptech/glide/request/target/CustomTarget;->getRequest()Lcom/bumptech/glide/request/Request;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, Lcom/bumptech/glide/request/Request;->isComplete()Z
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x6
+
+    sget-object p1, Lcom/bumptech/glide/request/target/PreloadTarget;->e:Landroid/os/Handler;
+
+    const/4 p2, 0x1
+
+    const/4 v0, 0x2
+
+    invoke-virtual {p1, p2, p0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
+
+    :cond_0
+    const/4 v0, 0x3
+
+    return-void
+.end method

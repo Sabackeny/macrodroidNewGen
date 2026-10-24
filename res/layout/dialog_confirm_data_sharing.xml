@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@drawable/accent_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color_full" android:id="@id/permissions_text" android:paddingLeft="@dimen/margin_small" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_small" android:paddingBottom="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" android:paddingHorizontal="@dimen/margin_small" android:paddingVertical="@dimen/margin_medium" />
+                </LinearLayout>
+                <TextView android:textColor="@color/accent" android:background="?android:colorBackground" android:paddingLeft="@dimen/margin_tiny" android:paddingRight="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/permissions_required" android:layout_marginHorizontal="@dimen/margin_medium" android:paddingHorizontal="@dimen/margin_tiny" />
+            </FrameLayout>
+            <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small" android:text="@string/confirm_data_sharing_and_enable_permissions" android:layout_marginHorizontal="@dimen/margin_small" />
+            <TextView android:textColor="@color/default_text_color" android:id="@id/what_data_is_shared" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small" android:text="@string/what_data_will_be_shared" android:layout_marginHorizontal="@dimen/margin_small" />
+            <CheckBox android:id="@id/confirm_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/share_data_confirm_prompt" android:paddingStart="@dimen/margin_tiny" />
+            <include layout="@layout/include_ok_cancel_buttons" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

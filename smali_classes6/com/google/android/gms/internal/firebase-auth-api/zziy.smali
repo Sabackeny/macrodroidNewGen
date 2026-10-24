@@ -1,0 +1,12 @@
+.class public abstract Lcom/google/android/gms/internal/firebase-auth-api/zziy;
+.super Lcom/google/android/gms/internal/firebase-auth-api/zzbo;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/firebase-auth-api/zzbo;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_small">
+        <TextView android:textSize="14.0sp" android:textColor="@color/actions_accent" android:id="@id/variableName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/variableValue" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@id/variableMagicTextButton" android:layout_marginEnd="@dimen/margin_medium" style="@style/MagicTextButton" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="12.0dip">
+        <RadioButton android:textSize="18.0sp" android:id="@id/useClipboardRadioButton" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clipboard_text" />
+        <RadioButton android:textSize="18.0sp" android:id="@id/enterTextRadioButton" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/custom_text" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:id="@id/enterTextLayout" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/textToMatch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_text" android:maxLines="1" android:layout_weight="1.0" android:inputType="text">
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <CheckBox android:id="@id/clearExistingCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/paste_action_clear_existing_content" android:layout_marginStart="8.0dip" />
+    <include android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

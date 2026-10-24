@@ -1,0 +1,2 @@
+.class public final Lcom/google/android/gms/internal/mlkit_vision_text_common/zzpv;
+.super Ljava/lang/Object;

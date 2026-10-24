@@ -1,0 +1,1146 @@
+.class public Lorg/jcodings/ascii/AsciiTables;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final AsciiCtypeTable:[S
+
+.field public static final LowerMap:[[I
+
+.field public static final ToLowerCaseTable:[B
+
+.field public static final ToUpperCaseTable:[B
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 16
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0x100
+
+    new-array v2, v1, [S
+
+    fill-array-data v2, :array_0
+
+    sput-object v2, Lorg/jcodings/ascii/AsciiTables;->AsciiCtypeTable:[S
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x3
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x5
+
+    const/4 v7, 0x6
+
+    const/4 v8, 0x7
+
+    const/16 v9, 0x8
+
+    const/16 v10, 0x9
+
+    const/16 v11, 0xa
+
+    const/16 v12, 0xb
+
+    const/16 v13, 0xc
+
+    new-array v14, v1, [B
+
+    fill-array-data v14, :array_1
+
+    sput-object v14, Lorg/jcodings/ascii/AsciiTables;->ToLowerCaseTable:[B
+
+    new-array v1, v1, [B
+
+    fill-array-data v1, :array_2
+
+    sput-object v1, Lorg/jcodings/ascii/AsciiTables;->ToUpperCaseTable:[B
+
+    const/16 v1, 0x1a
+
+    new-array v1, v1, [[I
+
+    const/16 v14, 0x41
+
+    const/16 v15, 0x61
+
+    filled-new-array {v14, v15}, [I
+
+    move-result-object v14
+
+    aput-object v14, v1, v0
+
+    const/16 v0, 0x42
+
+    const/16 v14, 0x62
+
+    filled-new-array {v0, v14}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x43
+
+    const/16 v2, 0x63
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v3
+
+    const/16 v0, 0x44
+
+    const/16 v2, 0x64
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v4
+
+    const/16 v0, 0x45
+
+    const/16 v2, 0x65
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v5
+
+    const/16 v0, 0x46
+
+    const/16 v2, 0x66
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v6
+
+    const/16 v0, 0x47
+
+    const/16 v2, 0x67
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v7
+
+    const/16 v0, 0x48
+
+    const/16 v2, 0x68
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v8
+
+    const/16 v0, 0x49
+
+    const/16 v2, 0x69
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v9
+
+    const/16 v0, 0x4a
+
+    const/16 v2, 0x6a
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v10
+
+    const/16 v0, 0x4b
+
+    const/16 v2, 0x6b
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v11
+
+    const/16 v0, 0x4c
+
+    const/16 v2, 0x6c
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v12
+
+    const/16 v0, 0x4d
+
+    const/16 v2, 0x6d
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    aput-object v0, v1, v13
+
+    const/16 v0, 0x4e
+
+    const/16 v2, 0x6e
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0xd
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x4f
+
+    const/16 v2, 0x6f
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0xe
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x50
+
+    const/16 v2, 0x70
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0xf
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x51
+
+    const/16 v2, 0x71
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x10
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x52
+
+    const/16 v2, 0x72
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x11
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x53
+
+    const/16 v2, 0x73
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x12
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x54
+
+    const/16 v2, 0x74
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x13
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x55
+
+    const/16 v2, 0x75
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x14
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x56
+
+    const/16 v2, 0x76
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x15
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x57
+
+    const/16 v2, 0x77
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x16
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x58
+
+    const/16 v2, 0x78
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x17
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x59
+
+    const/16 v2, 0x79
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x18
+
+    aput-object v0, v1, v2
+
+    const/16 v0, 0x5a
+
+    const/16 v2, 0x7a
+
+    filled-new-array {v0, v2}, [I
+
+    move-result-object v0
+
+    const/16 v2, 0x19
+
+    aput-object v0, v1, v2
+
+    sput-object v1, Lorg/jcodings/ascii/AsciiTables;->LowerMap:[[I
+
+    return-void
+
+    :array_0
+    .array-data 2
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x420cs
+        0x4209s
+        0x4208s
+        0x4208s
+        0x4208s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4008s
+        0x4284s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x78b0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x7ca2s
+        0x7ca2s
+        0x7ca2s
+        0x7ca2s
+        0x7ca2s
+        0x7ca2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x74a2s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x51a0s
+        0x41a0s
+        0x78e2s
+        0x78e2s
+        0x78e2s
+        0x78e2s
+        0x78e2s
+        0x78e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x70e2s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x41a0s
+        0x4008s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+        0x0s
+    .end array-data
+
+    :array_1
+    .array-data 1
+        0x0t
+        0x1t
+        0x2t
+        0x3t
+        0x4t
+        0x5t
+        0x6t
+        0x7t
+        0x8t
+        0x9t
+        0xat
+        0xbt
+        0xct
+        0xdt
+        0xet
+        0xft
+        0x10t
+        0x11t
+        0x12t
+        0x13t
+        0x14t
+        0x15t
+        0x16t
+        0x17t
+        0x18t
+        0x19t
+        0x1at
+        0x1bt
+        0x1ct
+        0x1dt
+        0x1et
+        0x1ft
+        0x20t
+        0x21t
+        0x22t
+        0x23t
+        0x24t
+        0x25t
+        0x26t
+        0x27t
+        0x28t
+        0x29t
+        0x2at
+        0x2bt
+        0x2ct
+        0x2dt
+        0x2et
+        0x2ft
+        0x30t
+        0x31t
+        0x32t
+        0x33t
+        0x34t
+        0x35t
+        0x36t
+        0x37t
+        0x38t
+        0x39t
+        0x3at
+        0x3bt
+        0x3ct
+        0x3dt
+        0x3et
+        0x3ft
+        0x40t
+        0x61t
+        0x62t
+        0x63t
+        0x64t
+        0x65t
+        0x66t
+        0x67t
+        0x68t
+        0x69t
+        0x6at
+        0x6bt
+        0x6ct
+        0x6dt
+        0x6et
+        0x6ft
+        0x70t
+        0x71t
+        0x72t
+        0x73t
+        0x74t
+        0x75t
+        0x76t
+        0x77t
+        0x78t
+        0x79t
+        0x7at
+        0x5bt
+        0x5ct
+        0x5dt
+        0x5et
+        0x5ft
+        0x60t
+        0x61t
+        0x62t
+        0x63t
+        0x64t
+        0x65t
+        0x66t
+        0x67t
+        0x68t
+        0x69t
+        0x6at
+        0x6bt
+        0x6ct
+        0x6dt
+        0x6et
+        0x6ft
+        0x70t
+        0x71t
+        0x72t
+        0x73t
+        0x74t
+        0x75t
+        0x76t
+        0x77t
+        0x78t
+        0x79t
+        0x7at
+        0x7bt
+        0x7ct
+        0x7dt
+        0x7et
+        0x7ft
+        -0x80t
+        -0x7ft
+        -0x7et
+        -0x7dt
+        -0x7ct
+        -0x7bt
+        -0x7at
+        -0x79t
+        -0x78t
+        -0x77t
+        -0x76t
+        -0x75t
+        -0x74t
+        -0x73t
+        -0x72t
+        -0x71t
+        -0x70t
+        -0x6ft
+        -0x6et
+        -0x6dt
+        -0x6ct
+        -0x6bt
+        -0x6at
+        -0x69t
+        -0x68t
+        -0x67t
+        -0x66t
+        -0x65t
+        -0x64t
+        -0x63t
+        -0x62t
+        -0x61t
+        -0x60t
+        -0x5ft
+        -0x5et
+        -0x5dt
+        -0x5ct
+        -0x5bt
+        -0x5at
+        -0x59t
+        -0x58t
+        -0x57t
+        -0x56t
+        -0x55t
+        -0x54t
+        -0x53t
+        -0x52t
+        -0x51t
+        -0x50t
+        -0x4ft
+        -0x4et
+        -0x4dt
+        -0x4ct
+        -0x4bt
+        -0x4at
+        -0x49t
+        -0x48t
+        -0x47t
+        -0x46t
+        -0x45t
+        -0x44t
+        -0x43t
+        -0x42t
+        -0x41t
+        -0x40t
+        -0x3ft
+        -0x3et
+        -0x3dt
+        -0x3ct
+        -0x3bt
+        -0x3at
+        -0x39t
+        -0x38t
+        -0x37t
+        -0x36t
+        -0x35t
+        -0x34t
+        -0x33t
+        -0x32t
+        -0x31t
+        -0x30t
+        -0x2ft
+        -0x2et
+        -0x2dt
+        -0x2ct
+        -0x2bt
+        -0x2at
+        -0x29t
+        -0x28t
+        -0x27t
+        -0x26t
+        -0x25t
+        -0x24t
+        -0x23t
+        -0x22t
+        -0x21t
+        -0x20t
+        -0x1ft
+        -0x1et
+        -0x1dt
+        -0x1ct
+        -0x1bt
+        -0x1at
+        -0x19t
+        -0x18t
+        -0x17t
+        -0x16t
+        -0x15t
+        -0x14t
+        -0x13t
+        -0x12t
+        -0x11t
+        -0x10t
+        -0xft
+        -0xet
+        -0xdt
+        -0xct
+        -0xbt
+        -0xat
+        -0x9t
+        -0x8t
+        -0x7t
+        -0x6t
+        -0x5t
+        -0x4t
+        -0x3t
+        -0x2t
+        -0x1t
+    .end array-data
+
+    :array_2
+    .array-data 1
+        0x0t
+        0x1t
+        0x2t
+        0x3t
+        0x4t
+        0x5t
+        0x6t
+        0x7t
+        0x8t
+        0x9t
+        0xat
+        0xbt
+        0xct
+        0xdt
+        0xet
+        0xft
+        0x10t
+        0x11t
+        0x12t
+        0x13t
+        0x14t
+        0x15t
+        0x16t
+        0x17t
+        0x18t
+        0x19t
+        0x1at
+        0x1bt
+        0x1ct
+        0x1dt
+        0x1et
+        0x1ft
+        0x20t
+        0x21t
+        0x22t
+        0x23t
+        0x24t
+        0x25t
+        0x26t
+        0x27t
+        0x28t
+        0x29t
+        0x2at
+        0x2bt
+        0x2ct
+        0x2dt
+        0x2et
+        0x2ft
+        0x30t
+        0x31t
+        0x32t
+        0x33t
+        0x34t
+        0x35t
+        0x36t
+        0x37t
+        0x38t
+        0x39t
+        0x3at
+        0x3bt
+        0x3ct
+        0x3dt
+        0x3et
+        0x3ft
+        0x40t
+        0x41t
+        0x42t
+        0x43t
+        0x44t
+        0x45t
+        0x46t
+        0x47t
+        0x48t
+        0x49t
+        0x4at
+        0x4bt
+        0x4ct
+        0x4dt
+        0x4et
+        0x4ft
+        0x50t
+        0x51t
+        0x52t
+        0x53t
+        0x54t
+        0x55t
+        0x56t
+        0x57t
+        0x58t
+        0x59t
+        0x5at
+        0x5bt
+        0x5ct
+        0x5dt
+        0x5et
+        0x5ft
+        0x60t
+        0x41t
+        0x42t
+        0x43t
+        0x44t
+        0x45t
+        0x46t
+        0x47t
+        0x48t
+        0x49t
+        0x4at
+        0x4bt
+        0x4ct
+        0x4dt
+        0x4et
+        0x4ft
+        0x50t
+        0x51t
+        0x52t
+        0x53t
+        0x54t
+        0x55t
+        0x56t
+        0x57t
+        0x58t
+        0x59t
+        0x5at
+        0x7bt
+        0x7ct
+        0x7dt
+        0x7et
+        0x7ft
+        -0x80t
+        -0x7ft
+        -0x7et
+        -0x7dt
+        -0x7ct
+        -0x7bt
+        -0x7at
+        -0x79t
+        -0x78t
+        -0x77t
+        -0x76t
+        -0x75t
+        -0x74t
+        -0x73t
+        -0x72t
+        -0x71t
+        -0x70t
+        -0x6ft
+        -0x6et
+        -0x6dt
+        -0x6ct
+        -0x6bt
+        -0x6at
+        -0x69t
+        -0x68t
+        -0x67t
+        -0x66t
+        -0x65t
+        -0x64t
+        -0x63t
+        -0x62t
+        -0x61t
+        -0x60t
+        -0x5ft
+        -0x5et
+        -0x5dt
+        -0x5ct
+        -0x5bt
+        -0x5at
+        -0x59t
+        -0x58t
+        -0x57t
+        -0x56t
+        -0x55t
+        -0x54t
+        -0x53t
+        -0x52t
+        -0x51t
+        -0x50t
+        -0x4ft
+        -0x4et
+        -0x4dt
+        -0x4ct
+        -0x4bt
+        -0x4at
+        -0x49t
+        -0x48t
+        -0x47t
+        -0x46t
+        -0x45t
+        -0x44t
+        -0x43t
+        -0x42t
+        -0x41t
+        -0x40t
+        -0x3ft
+        -0x3et
+        -0x3dt
+        -0x3ct
+        -0x3bt
+        -0x3at
+        -0x39t
+        -0x38t
+        -0x37t
+        -0x36t
+        -0x35t
+        -0x34t
+        -0x33t
+        -0x32t
+        -0x31t
+        -0x30t
+        -0x2ft
+        -0x2et
+        -0x2dt
+        -0x2ct
+        -0x2bt
+        -0x2at
+        -0x29t
+        -0x28t
+        -0x27t
+        -0x26t
+        -0x25t
+        -0x24t
+        -0x23t
+        -0x22t
+        -0x21t
+        -0x20t
+        -0x1ft
+        -0x1et
+        -0x1dt
+        -0x1ct
+        -0x1bt
+        -0x1at
+        -0x19t
+        -0x18t
+        -0x17t
+        -0x16t
+        -0x15t
+        -0x14t
+        -0x13t
+        -0x12t
+        -0x11t
+        -0x10t
+        -0xft
+        -0xet
+        -0xdt
+        -0xct
+        -0xbt
+        -0xat
+        -0x9t
+        -0x8t
+        -0x7t
+        -0x6t
+        -0x5t
+        -0x4t
+        -0x3t
+        -0x2t
+        -0x1t
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

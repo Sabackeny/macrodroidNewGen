@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/default_background" android:paddingTop="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EditMacroCategoryTitleCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:elevation="4.0dip" app:cardBackgroundColor="@color/trigger_primary_slight_darker" style="@style/EditMacroCategoryTitleCard">
+        <LinearLayout android:id="@id/triggerLinearLayout" android:background="@color/trigger_primary_slight_darker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false" android:paddingStart="4.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/triggers" android:layout_weight="1.0" android:fontFamily="@font/helvetica" android:paddingStart="4.0dip" android:paddingEnd="8.0dip" android:accessibilityHeading="true" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/pasteTriggerButton" android:background="?selectableItemBackgroundBorderless" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_content_paste_white_24dp" android:contentDescription="@string/item_pasted" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/reorderTriggersButton" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_swap_vertical_white_24dp" android:contentDescription="@string/reorder" />
+            <ImageButton android:id="@id/edit_macro_addTriggerButton" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_plus_white_24dp" android:contentDescription="@string/add_trigger" />
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_selectable_item_header_bottom_divider" />
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

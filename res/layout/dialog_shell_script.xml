@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+            <RadioButton android:id="@id/root_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rooted" />
+            <RadioButton android:id="@id/non_rooted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/non_rooted" android:layout_marginStart="@dimen/margin_small" />
+            <RadioButton android:id="@id/shizuku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shizuku" android:layout_marginStart="@dimen/margin_small" />
+        </RadioGroup>
+        <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/shell_root_info" android:layout_marginHorizontal="12.0dip" />
+        <CheckBox android:id="@id/helperFileCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/use_helper_file" android:layout_marginStart="@dimen/margin_small" />
+        <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/use_helper_file_shell_script_info" android:layout_marginHorizontal="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="14.0sp" android:id="@id/dialog_shell_script_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_script" android:layout_weight="1.0">
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@id/dialog_shell_script_magic_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="10.0dip" />
+        <Spinner android:id="@id/timeoutSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" />
+        <TextView android:textColor="@color/actions_accent" android:id="@id/dialog_shell_script_save_output" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_shell_script_save_output" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/dialog_shell_script_variable_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/addStringVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:id="@id/dialog_shell_script_variable_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/shell_script_variable_info" android:layout_marginStart="@dimen/margin_medium" />
+        <CheckBox android:id="@id/blockActionsCheckbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/block_actions_until_complete" android:layout_marginStart="@dimen/margin_small" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,665 @@
+5.53 versija (2025 m. balandžio mėn.)
+============================
+
+Pridėtas pasirinktinės scenos veiksmas, leidžiantis kurti paprastas tinkinamas vartotojo sąsajas.
+
+Pridėtas veiksmas Slėpti pasirinktinę sceną.
+
+Redaguoti makrokomandų / veiksmų blokų ekranus dabar palaiko meniu parinktį, kad pridėtumėte skyriklius.
+
+Automatinio atsarginio kopijavimo funkcija dabar leidžia pakeisti vietinę atsarginės kopijos saugojimo vietą.
+
+Atnaujintas failo veikimo veiksmas, kurį reikia įtraukti, aplankų šablonų nurodymo parinktis (kopijuojant / perkeliant / naikinant aplankus)
+
+Atnaujinta Palyginti reikšmes apribojimas, kad būtų galima įtraukti masyvų ir žodynų palyginimo parinktį, ir pridėta tikrinimų, jei juose yra raktas / reikšmė.
+
+Atnaujintas makrokomandų vykdymo apribojimas, kad būtų palaikomas makrokomandos pavadinimo įvedimas kaip teksto (įskaitant magiškojo teksto palaikymą).
+
+Atnaujintas veiksmas Įjungti / išjungti kategorijas, kad būtų palaikoma nauja parinktis įgalinti visas makrokomandas kategorijoje (kai įgalinama kategorija).
+
+Atnaujintas tekstas, bendrinamas į MacroDroid, kad būtų pridėtas naujas kontekstui būdingas magiškas tekstas laukui "Tema", kuris nustatomas bendrinant tekstą.
+
+Atnaujintas animacijos perdangos veiksmas, skirtas pridėti parinktį priverstinai atnaujinti vaizdą (nepaisyti talpyklos).
+
+Minimali palaikoma "Android" versija dabar yra "Android 6" ("Marshmallow").
+
+Išspręsta problema, dėl kurios gali nepavykti vienu metu atlikti kelis "JavaScript" veiksmus naudojant "Jetpack" variklį.
+
+Išspręsta problema, dėl kurios perbraukus MacroDroid per programų perjungiklį buvo galima nužudyti makrokomandas, laukiančias veiksme Palaukti, kol bus suaktyvintas.
+
+Išspręsta problema, dėl kurios veiksmas Apibendrinti makrokomandas nepridėdavo vietinių kintamųjų, kai būdavo pasirenkama parinktis Visas kintamasis.
+
+Pridėta saulėlydžio / saulėtekio paleidiklio parinktis, kad būtų galima naudoti (arba nenaudoti) žadintuvą, kad būtų užtikrintas tikslus paleidimo laikas.
+
+Pridėta parinktis išjungti MacroDroid veiksmą, kad jis visada išjungtų MacroDroid (nepriklausomai nuo slaptažodžio apsaugos nustatymų).
+
+5.52 versija (2025 m. kovo mėn.)
+============================
+
+Pridėtas NFC įgalintas būsenos paleidiklis.
+
+Pakeistas "HotSpot On/Off" veiksmas, todėl jam nebereikia pagalbinio failo "Android 14+".
+
+Pridėta meniu parinktis, skirta įjungti / išjungti kiekvieno atskiro paleidiklio, veiksmo ir apribojimo registravimą.
+
+"Geofence" konfigūracijos ekranas grįžta į "Open Street Maps" įrenginiuose, kuriuose nėra "Google" paslaugų.
+
+Pakeistas pranešimų sąveikos veiksmas, kad jis vėl galėtų veikti "Android 14+" įrenginiuose.
+
+Atnaujintas makrokomandų įgalintas / išjungtas apribojimas, siekiant įtraukti makrokomandos pavadinimo nurodymo tekste palaikymą (įskaitant magiškojo teksto palaikymą).
+
+Atnaujintas veiksmas Gauti tekstą iš rodinio ID, kad pridėtumėte parinktį įrašyti ekrano būseną į bulio logikos kintamąjį.
+
+Pridėtas pasirinktinių valdiklių piktogramų tonavimo palaikymas.
+
+Pašalinta plytelė Makrokomandų vedlio įtraukimas.
+
+Pridėta paskutinio atidaryto veiksmų bloko plytelė.
+
+Pridėta galimybė apibendrinti makrokomandų veiksmą, kad būtų galima pridėti visus makrokomandos naudojamus kintamuosius (vietinius + visuotinius).
+
+Pridėta parinktis nustatyti maksimalų kintamojo eilučių skaičių MacroDroid stalčiuje.
+
+Pridėtos įklijavimo meniu parinktys redaguojant sąlygų sąrašą IF sąlygos veiksme.
+
+Pridėta parinktis priverstinai atnaujinti ekraną, kad būtų galima skaityti ekrano turinį, gauti tekstą pagal peržiūros ID ir patikrinti teksto ekrane veiksmus.
+
+Išspręsta problema, dėl kurios {cell_connection_type} magiškas tekstas neatspindėdavo naujausio mobiliojo ryšio tipo, kai jis pasikeisdavo.
+
+Išspręsta problema, dėl kurios parinktis Nustatyti kintamųjų kopijų masyvą / žodyną nepateikdavo visų antrinių masyvų / žodynų.
+
+Išspręsta problema, dėl kurios MacroDroid piktograma Ilgo paspaudimo paleidiklis tinkamai neveikdavo su Trigger Fired apribojimu.
+
+Patobulinta vartotojo sąsajos sąveikos pritaikymo neįgaliesiems paslauga, skirta išspręsti problemas, kai senas ekrano turinys gali būti grąžintas atnaujinus ekraną.
+
+Pakoreguotas ekrano įjungimo / išjungimo apribojimas, kad pabandytumėte ištaisyti atvejus, kai pranešama apie ekrano įjungimą, kai jis išjungtas (pvz., kai prijungtas prie "Android Auto").
+
+5.50 versija (2025 m. sausio mėn.)
+============================
+
+Pridėtas "Wifi SSID Scan" veiksmas.
+
+Pridėtas USB įrenginio ryšio apribojimas.
+
+Pridėtas veiksmas Apibendrinti makrokomandas / veiksmų blokus.
+
+Pridėtas veiksmų grupės veiksmas, kad būtų lengviau grupuoti, perkelti, kopijuoti ir įgalinti / išjungti susijusius veiksmus.
+
+Pridėtas anuliavimo funkcijos palaikymas perrikiuojant elementus ekranuose Redaguoti makrokomandą ir Redaguoti veiksmų bloką.
+
+Pridėtas atsarginių failų bendrinimo iš debesies atsarginės kopijos palaikymas, kad kiekvieną atsarginės kopijos failą būtų galima lengvai pasiekti neatkuriant iš jo.
+
+Patobulinti makrokomandų / veiksmų blokų pasirinkimo išskleidžiamieji meniu, kad jų būtų galima ieškoti tais atvejais, kai yra daug parinkčių.
+
+Atnaujintas slankiojo teksto veiksmas, palaikantis pasirinktinį šešėlį (kad tekstas būtų ryškesnis naudojant skaidrų foną)
+
+Atnaujinta SMS išsiųsta paleidiklis, skirtas pridėti parinktį tiesiogiai nurodyti numerį.
+
+Atnaujintas veiksmas Animacijos perdanga, kad būtų palaikomas kintamųjų naudojimas animacijos x, y, pločio ir aukščio reikšmėms apibrėžti.
+
+Atnaujintas ekrano pranešimo veiksmas, skirtas palaikyti magišką teksto įvedimą id lauke.
+
+Į atsarginės kopijos failą įtraukė trūkstamus MacroDroid nustatymus, kad būtų lengviau atkurti.
+
+Pridėtas kopijavimo mygtukas redaguojant masyvo / žodyno kintamojo įrašą, kad gautumėte stebuklingą tekstą visam masyvui / žodyno keliui.
+
+Išspręsta reta problema, dėl kurios slankieji mygtukai kai kai kuriais atvejais gali įstrigti.
+
+Išspręsta problema, dėl kurios slankusis tekstas gali mirksėti reguliariai atnaujinant esamą slankųjį tekstą.
+
+Kiti nedideli pataisymai.
+
+5.49 versija (2024 m. gruodžio mėn.)
+============================
+
+Pridėtas "Wear OS" komplikacijų veiksmas.
+
+Pridėta "Wear OS" komplikacija Spustelėkite paleidiklį.
+
+Pridėtas medijos takelis Pakeistas paleidiklis.
+
+Atnaujintas animacijos perdangos veiksmas, kad būtų palaikomi vietiniai GIF failai.
+
+Atnaujintas veiksmas Eksportuoti makrokomandas, kad būtų palaikomas išvestis į eilutės kintamąjį.
+
+Pridėta parinktis nustatymuose, kad išjungtumėte strigčių registravimą ir analizės duomenis.
+
+Pridėta Pasirinkite telefono numerio parinktį, kad išvalytumėte skambučių žurnalo veiksmą (palaiko magišką tekstą ir regex).
+
+Ilgai paspaudus MacroDroid įjungimo / išjungimo greitąją plytelę, dabar bus paleistas MacroDroid.
+
+Pridėta parinktis Palaukti, kol paleidiklis grąžins bulio loginį kintamąjį, nurodantį, ar baigėsi skirtasis laikas, ar ne.
+
+Atliktas makrokomandų saugojimo viduje būdo įgyvendinimo pakeitimas, siekiant pagerinti našumą naudojant daug makrokomandų.
+
+Patobulintas veiksmas Gauti kontaktus, kad jis teisingai užpildytų kelis pasirinktinius telefono įrašus teisingais pasirinktiniais pavadinimais.
+
+Pridėta parinktis "Tikrinimo veiksmai" ir "Testuoti makrokomandą" prie makrokomandų iškvietimo metodo apribojimo.
+
+Pridėta galimybė rodyti antrinio žodyno įrašus žodyno kintamajame rodinyje ilgai paspaudus reikšmės lauką.
+
+Pridėtas palaikymas, kad žodyno įrašo turinys būtų rodomas kintamame ekrane (ilgai paspauskite reikšmę, kad įjungtumėte / išjungtumėte).
+
+Modifikuotas {cell_connection_type} magiško teksto gavimo būdas, siekiant pagerinti tinklo tipo identifikavimo tikslumą.
+
+Atnaujintas veiksmas Siųsti tikslą, kad į veiksmo, paketo ir klasės laukus būtų įtrauktas magiškojo teksto palaikymas.
+
+Išspręsta problema, dėl kurios veiksmas Atšaukti makrokomandos veiksmus nesuaktyvindavo makrokomandos baigto paleidiklio.
+
+Išspręsta problema, dėl kurios mažų slankiųjų mygtukų paminkštinimas būdavo neteisingas.
+
+Išspręsta problema, kai veiksmas Atidaryti skambučių žurnalą neveikė kai kuriuose įrenginiuose.
+
+Išspręsta problema, dėl kurios reikšmių palyginimo apribojimo nepavykdavo tinkamai palyginti bulio logikos kai kuriomis kalbomis.
+
+Išspręsta problema, dėl kurios veiksmas Nustatyti mygtukų juostos vaizdą neatnaujindavo mygtuko numerio nuorodos, kai mygtukas mygtukų juostoje būdavo perkeliamas į kairę arba į dešinę.
+
+Ištaisyta krašto atvejo problema, kai keli paleidikliai veiksme "Palaukite, kol paleidiklis" suveikia maždaug tuo pačiu metu ir sukėlė neteisingą makrokomandos vykdymą.
+
+Išspręsta problema, dėl kurios veiksmas Rašyti į failą galėjo sumaišyti tvarką rašant į tą patį failą greitai iš eilės.
+
+5.48 versija (2024 m. spalio mėn.)
+============================
+
+Pridėtas Shizuku valstijos apribojimas.
+
+Pridėtos slankiojo teksto veiksmo parinktys, kad būtų galima judėti tik ilgai paspaudus ir neleisti perkelti teksto bei galimybė priverstinai per visą ekraną.
+
+Pridėta parinktis Blokuoti prisilietimus, kad būtų rodoma užblokuota ekrano sritis (su pasirinktine spalva).
+
+Makrokomandų sąrašo ekrane dabar rodomas animuotas indikatorius, kai šiuo metu vykdoma makrokomanda.
+
+Pridėta slaptažodžio apsaugos parinktis, leidžianti paraginti atidarant programą ir (arba) įjungiant / išjungiant MacroDroid.
+
+Pridėta parinktis Pridėti kalendoriaus įvykio veiksmą, kad iš anksto praneštumėte apie pridėtą įvykį.
+
+Pridėta parinktis prie veiksmo Registruoti įvykį, kad pridėtumėte makrokomandos saitą su išvestimi.
+
+"Geofence" konfigūracijos ekrane dabar rodomos lat / lon reikšmės ir dabartinės vietos taškas (jei yra vieta).
+
+Veiksmas Eksportuoti žurnalą dabar visais atvejais išveda milisekundžių laiko žymas.
+
+Pridėtas vartotojo piktogramų palaikymas su sparčiojo nustatymo plytelėmis.
+
+Pridėta papildoma filtro parinktis "Nepanaudoti kintamieji" ekrane Kintamieji.
+
+Pridėta meniu parinktis "Ištrinti visus nenaudotus" prie veiksmų blokų sąrašo ekrano.
+
+Pridėta maža reklamjuostė pagrindiniame ekrane, kad būtų aiškiai parodyta, kada MacroDroid yra išjungtas.
+
+Pridėta parinktis prie HTTP serverio nustatymų, leidžiančių / uždrausti prieigą prie sistemos / vartotojo žurnalo per HTTP serverį.
+
+Pridėta parinktis prie MacroDroid nustatymo veiksmo, kad pakeistumėte drebėjimo trigerio jautrumą.
+
+Pakoreguotas makrokomandos redagavimo ekranas, kad paieškos reklamjuostė neslinktų.
+
+
+
+5.47 versija (2024 m. rugpjūčio mėn.)
+============================
+
+Pašalinta "FingerPrint" ir garsumo mygtuko pritaikymo neįgaliesiems paslauga ir funkcijos perkeltos į pagrindinę "MacroDroid" pritaikymo neįgaliesiems paslaugą.
+
+Pridėtas iššokantis pranešimas paleidiklis.
+
+Pridėtas pritaikymo neįgaliesiems paslaugos būsenos paleidiklis.
+
+Pridėtas pritaikymo neįgaliesiems paslaugos būsenos apribojimas.
+
+Pridėtos parinktys "Pridėti apribojimą aukščiau" ir "Įklijuoti apribojimą aukščiau" ekranuose Redaguoti makrokomandą ir Redaguoti "ActionBlock".
+
+Pridėtas antraštės parametrų palaikymas prie HTTP serverio užklausos paleidimo atsakymo ir HTTP serverio atsako veiksmo.
+
+Pridėtas paketo pavadinimo naudojimo programos įjungimo / išjungimo veiksme palaikymas.
+
+Atnaujintas slankiojo teksto veiksmas, skirtas įtraukti procentų reikšmių bakstelėjimo palaikymą, kad būtų galima nustatyti tikslesnius procentus.
+
+Atnaujintas veiksmas Paleisti programų veiklą, kad būtų įtrauktas prisijungimas iš programų, kurios nepažymėtos kaip paleidžiamos.
+
+Visiškas magiško teksto tvarkymo perrašymas, siekiant išspręsti našumo problemas apdorojant didelius teksto blokus.
+
+Patobulintas pritemdyto ekrano veiksmas, kad būtų išvengta mirgėjimo, kai keičiamas pritemdytas lygis, kai pritemdymas jau taikomas.
+
+Išspręsta problema, dėl kurios pranešimų apribojimas netinkamai tvarkydavo parinktį Išskirti programas.
+
+"HotSpot" veiksmui dabar reikalinga "MacroDroid Helper" programa (V1.16) "Android 14+" dėl priverstinių "Google" pakeitimų, kad atnaujintų "Android SDK".
+
+Kiti nedideli pataisymai ir optimizavimai.
+
+5.46 versija (2024 m. liepos mėn.)
+============================
+
+Pridėta MacroDroid piktograma Ilgai paspauskite sparčiųjų klavišų paleidiklį.
+
+Pridėjo Shizuku palaikymą prie "Shell Script" veiksmo ir pridėjo "Shizuku" palaikymą prie esamų tik root funkcijų.
+
+Vienu metu prie garsumo mygtuko paleidiklio pridėtos parinktys "Garsumo mažinimas + garsumo didinimas" (tik pritaikymo neįgaliesiems paslaugai).
+
+Pridėtas dinaminio failo ir vietinio failo URI palaikymas prie veiksmo Nustatyti ekrano foną.
+
+Atnaujintas animacijos perdangos veiksmas, siekiant pridėti animuoto gif palaikymą su "Giphy" paieškos varikliu.
+
+Pasirinkimo dialogo veiksmo konfigūracija dabar palaiko įrašų tvarkos keitimą ir neleidžia atsitiktiniams atgaliniams paspaudimams prarasti visų pakeitimų.
+
+Pridėtas magiškas tekstas, kad būtų rodomas kintamasis tipas.
+
+Pridėtas magiškas zonos pavadinimo, lat/long ir vietos nuorodos tekstas, kai naudojamas "Geofence" arba "Location" paleidiklis.
+
+Patobulintas kontekstui jautraus magiško teksto palaikymas paleidikliams, naudojamiems veiksme "Wait Until Trigger".
+
+Atidaryti MacroDroid žurnalo veiksmą dabar palaiko konkretaus kanalo vartotojo žurnalo atidarymą.
+
+Pridėta paieškos funkcija prie ekrano Konfigūruoti parankinius.
+
+Prie kalendoriaus apribojimo pridėta parinktis "Registruotis iš anksto".
+
+Pridėta trečiųjų šalių turinio iš "Steve Wright" skiltyje "MacroDroid Videos".
+
+Išspręsta problema, dėl kurios "Macro Enabled" paleidiklis įsijungdavo, kai "MacroDroid" būdavo perbraukiamas nuo naujausių programų.
+
+Išspręsta problema, dėl kurios pakeitus filtro lygį sistemos žurnale galėjo atsirasti klaidingų / pasikartojančių įrašų.
+
+Išspręsta problema, dėl kurios nebūdavo sukuriami pasirinktiniai pranešimų kanalai importuojant atsarginę kopiją su pasirinktiniais kanalais.
+
+5.45 versija (2024 m. birželio mėn.)
+============================
+
+Pridėta nuotrauka Padaryta paleidiklis ("Android 7+").
+
+Pridėtas veiksmas Gauti įdiegtas programas.
+
+Pridėtas veiksmas Gauti kontaktus.
+
+Pridėtas "Edge Notification Light" veiksmas.
+
+Pridėtas veiksmas Paleisti programos veiklą.
+
+Pridėtas mėgstamų paleidiklių, veiksmų ir apribojimų palaikymas. Ilgai paspauskite mygtuką + makrokomandos redagavimo ekrane, kad būtų rodomos sparčiosios mėgstamų elementų plytelės.
+
+Atnaujintas animacijos perdangos veiksmas, skirtas pridėti makrokomandų / veiksmų bloko vykdymo palaikymą spustelėjus animaciją.
+
+Atnaujintas HTTP užklausos veiksmas, palaikantis grąžintų antraštės parametrų fiksavimą į žodyno kintamąjį.
+
+Atnaujintas veiksmas Force Location Update, kad jis galėtų blokuoti kitą veiksmą ir išsaugoti vietos duomenis žodyno kintamajame.
+
+Atnaujintas veiksmas Rodyti pranešimą, kad būtų palaikomi ID, todėl naujas pranešimas perrašys esamą su tuo pačiu ID.
+
+Atnaujintas veiksmas Atidaryti failą, kad būtų palaikomas įkėlimas iš vietinio failo uri (galima gauti naudojant parinktį Sąrašo failai veiksme Failų operacija).
+
+Pridėtas kintamųjų žymėjimo kaip saugių palaikymas, todėl kintamųjų turinys nebus eksportuojamas bendrinant / įkeliant šabloną.
+
+Pridėtas pasirinktinių vaizdų palaikymas ekrano pranešimo veiksme ir MacroDroid nuolatiniame pranešime.
+
+Pridėta nauja parinktis Blokuoti ekrano prisilietimus veiksmas, skirtas blokuoti būsenos juostą (reikia, kad būtų įjungta pritaikymo neįgaliesiems paslauga).
+
+Pridėta magiško teksto parinktis, kad būtų rodomi chronometrai su sekundžių reikšme (hh:mm).
+
+Pridėta magiško teksto parinktis, kad būtų rodomas paleidiklis, kuris buvo paleistas.
+
+Pertvarkytas veiksmų bloko redagavimo ekranas, kad būtų daug greitesnis labai dideliems veiksmų blokams, ir pridėtas lipnios veiksmų antraštės palaikymas.
+
+"Tweaks to App Launched Trigger", kad išspręstų kai kurias problemas, susijusias su "MacroDroid" paleidimų / uždarymų ir "Google" programų paleidimo / uždarymo aptikimu.
+
+Tweaked Set Variable veiksmas, kad būtų galima įvesti kelių eilučių eilutes eilutės kintamiesiems.
+
+Pridėtas pranešimų kanalo magiškas tekstas naudojant pranešimo paleidiklį ("Android 8+").
+
+Išspręsta problema, dėl kurios slankiojo teksto veiksmas kartais nebūdavo rodomas pirmą kartą vykdant veiksmą (paprastai lėtesniuose / senesniuose įrenginiuose).
+
+Išspręsta problema, dėl kurios slankiojo teksto veiksmas neeksportuodavo jokio susijusio veiksmo bloko bendrinant arba įkeliant į šablonų saugyklą.
+
+Išspręsta problema, dėl kurios atmetus pranešimą apie burbulą MacroDroid galėjo būti paleistas pirmame plane.
+
+Išspręsta problema, dėl kurios vartotojo autentifikavimo veiksmas nepatikimai veiksdavo kai kuriuose "Android 14" įrenginiuose.
+
+Išspręsta problema, dėl kurios slankusis mygtukas neprisimindavo, kur jis anksčiau buvo perkeltas, kai būdavo iš naujo įjungtas.
+
+5.44 versija (2024 m. gegužės mėn.)
+============================
+
+Pridėtas HTTP serverio paleidiklis ir HTTP serverio atsako veiksmas.
+
+Pridėtas kalbėjimo teksto apribojimas.
+
+Pridėtas tekstas, bendrinamas prie MacroDroid paleidiklio.
+
+Atnaujintas slankiojo teksto veiksmas, kad būtų palaikomas paspaudimų tvarkymas, ir pridėta parinktis paslėpti spustelėjus.
+
+Atnaujintas vartotojo žurnalas, kad būtų palaikomi pasirinktiniai registravimo kanalai, registravimo lygiai ir ieškos funkcijos.
+
+Pridėta sąrašo failų parinktis prie failo operacijos veiksmo.
+
+Pridėta blokavimo veiksmų, kol bus baigta parinktis Failo operacijos veiksmas.
+
+"Bluetooth" veiksmo įjungimas / išjungimas dabar veikia įsišaknijusiuose įrenginiuose be pagalbinio failo.
+
+Pridėta parinktis pasirinkti iš žinomų klavišų sistemos nustatymų paleidiklyje (su paieška).
+
+Patobulintas sistemos nustatymo veiksmas, kad galėtumėte ieškoti rakto visose sistemos nustatymų kategorijose.
+
+Naujinti el. pašto siuntimo veiksmą, kad būtų palaikomas kelių žurnalų pridėjimas ir žurnalų HTML formatas.
+
+Patobulintas sistemos žurnalo veiksmų blokų tvarkymas, įtraukiant saitus į veiksmų bloką ir makrokomandą.
+
+Pridėta ieškos funkcija prie veiksmo Makrokomandų vykdymas, Nustatyti veiksmą Kintamasis, Kintamojo paleidiklis ir Kintamasis apribojimas (kai yra 10+ elementų).
+
+Išspręsta problema, dėl kurios nustatytas kintamasis su vartotojo raginimu netinkamai rašydavo į masyvo kintamojo įrašą.
+
+Ištaisyta nedidelė sistemos parametrų keitimo paleidiklio klaida, dėl kurios makrokomanda gali būti suaktyvinta du kartus, kad būtų galima atnaujinti vieną parametrą.
+
+Kiti nedideli pataisymai ir patobulinimai.
+
+5.43 versija (2024 m. balandžio mėn.)
+============================
+
+Pridėtas veiksmas Gauti tekstą iš peržiūros ID ("Android 11+").
+
+Pasirinkimo dialogo langas dabar palaiko tinkinamą pasirenkamų elementų mygtuko stilių.
+
+Pridėta perdangos būsenos juostos parinktis prie veiksmo Pritemdyti ekraną "Android 6+" (reikia įjungti pritaikymo neįgaliesiems paslaugą).
+
+Tweaked Edit Macro ekranas, kad pridėtumėte lipnias antraštes dideliems paleidiklio, veiksmo ir apribojimų blokams.
+
+Patobulintas pranešimų juostos mygtuko paleidiklio tvarkymas makrokomandos redagavimo ekrane, kad būtų lengviau nustatyti nustatytą mygtuką.
+
+Makrokomandos redagavimo ekrane dabar rodomas pasirinktas slankiojo mygtuko paleidiklio vaizdas ir kiti elementai, kuriuose naudojami vaizdai.
+
+Optimizuotas ekrano turinio paleidiklis, todėl kiekvienas ekrano nuskaitymas užima šiek tiek mažiau laiko / apdorojimo.
+
+Pridėtas įrašų išjungimo IF sąlygos veiksme palaikymas.
+
+Pridėta meniu parinktis "Tikrinti apribojimą", kad patikrintumėte dabartinę apribojimo būseną (teisinga arba klaidinga) makrokomandos redagavimo ekrane.
+
+Pridėta meniu parinktis "Bandymo sąlyga", kad patikrintumėte dabartinę IF sakinio būseną makrokomandos redagavimo ekrane.
+
+Pridėta parinktis rodyti / slėpti dabartinį MacroDroid režimą standartiniame MacroDroid pranešime (pagal numatytuosius nustatymus išjungta tik naujiems diegimams).
+
+Veiksmas Įjungti / išjungti kategoriją dabar palaiko kelias kategorijas.
+
+Veiksmą Skaityti ekrano nuotraukos turinį perkelta į MacroDroid vartotojo sąsajos pritaikymo neįgaliesiems paslaugą.
+
+Išspręsta problema, dėl kurios dialogo lange Nustatyti kintamojo veiksmo konfigūraciją pagal numatytuosius nustatymus būdavo kopijuojamas žodynas, kai pasirenkamas raktas apibrėžti rankiniu būdu.
+
+Išspręsta problema, dėl kurios pakeitus veiksmo bloko pavadinimą tam tikromis aplinkybėmis nebuvo atnaujinta nuoroda makrokomandos redagavimo ekrane.
+
+Kiti nedideli pataisymai.
+
+5.42 versija (2024 m. kovo mėn.)
+============================
+
+Pridėtas animacijos perdangos veiksmas.
+
+Pridėtas masyvo manipuliavimo veiksmas.
+
+Pridėta dalis "Check Pixel Colour action" ("Android 11+").
+
+Pridėtas skaitymo ekrano kopijos veiksmas ("Android 11+").
+
+Pridėtas tikrinimo tekstas ekrano kopijoje ("Android 11+").
+
+Pridėtas ekrano tankio veiksmas (reikalingas ADB įsilaužimas arba šaknis).
+
+Atnaujinta "Take ScreenShot" veiksmas, kad pridėtumėte parinktį užfiksuoti ekrano kopiją be jokios vartotojo sąsajos ("Android 11+").
+
+Atnaujintas "JavaScript" veiksmas, įtraukiant "Rhino" variklio palaikymą.
+
+Slankiojo mygtuko paleidiklis dabar palaiko teksto, o ne vaizdo nustatymą.
+
+Šrifto skalės veiksmas dabar palaiko ne daugiau kaip 250 % (nuo 150 %).
+
+Pridėta begalinės kilpos parinktis (iki pertraukos) prie veiksmo Kartoti veiksmus.
+
+Pridėtas "Regex" palaikymas prie skambučiais pagrįstų paleidiklių.
+
+Pridėtas "Block Touches" veiksmo palaikymas, kad būtų užblokuota tik dalis ekrano.
+
+Pridėtas šalies kodo magiškas tekstas.
+
+Išspręsta problema, dėl kurios perjungus paleidiklį tarp įjungtų / išjungtų, galėdavo sugesti.
+
+Išspręsta problema, dėl kurios sukūrus "Mucis" grojimo paleidiklio nebuvo galima redaguoti.
+
+Išspręsta problema, dėl kurios veiksmas Autentifikuoti vartotoją nerodydavo raginimo kai kuriuose "Android 14" įrenginiuose.
+
+5.41 versija (2024 m. vasario mėn.)
+============================
+
+Pridėtas veiksmas Rodyti garsumo iššokantįjį langą.
+
+Pridėtas veiksmas Naikinti kintamąjį.
+
+Pasirinkimo dialogo veiksmas dabar palaiko galimybę rodyti žodyno klavišus kaip pasirenkamus elementus ir nustatyti numatytąjį pasirinkimą su skirtuoju laiku.
+
+Sistemos nustatymo veiksmas ir apribojimas dabar leidžia ieškoti esamų raktų (ir pridėtas paieškos palaikymas magiško teksto dialogo lange).
+
+Ilgai paspaudus paleidiklį, veiksmą ar apribojimą redagavimo makrokomandos ekrane, dabar bus tiesiai į konfigūracijos dialogo langą (galima išjungti nustatymuose).
+
+Pridėtas magiškas tekstas Sim ID ir Sim vardas, skirtas gaunamoms / išeinančioms SMS paleidikliams.
+
+Pridėtas skambučių grupės (-ių) magiškas tekstas, skirtas skambučių aktyvikliams.
+
+HTTP užklausos veiksmas dabar palaiko pagrindinį importavimą iš cURL užklausų ir eksportavimą į jas.
+
+Slankiojo mygtuko paleidiklis ir veiksmas dabar palaiko X,Y vietos nustatymą kintamomis reikšmėmis.
+
+Slankiojo teksto veiksmas dabar palaiko X,Y vietos nustatymą kintamomis reikšmėmis.
+
+Veiksmas Išvalyti pranešimą ir Sąveika su pranešimu dabar palaikomas naudojant pranešimo paleidiklį pranešimui identifikuoti.
+
+Pridėtas vietinių kintamųjų konvertavimo į visuotinius kintamuosius palaikymas (ilgai paspauskite vietinį kintamąjį, kad paragintumėte).
+
+Išspręsta problema, dėl kurios konfigūracijos dialogo lange Jei sąlyga ir Kartoti atliekant kopijavimas neveiksdavo ne anglų kalbomis.
+
+Išspręsta problema, dėl kurios HTTP užklausa netinkamai tvarkydavo gzipuotus atsakymus ir grąžindavo iškraipytus duomenis.
+
+Fiksuoto krašto atvejo problema, kai slankusis mygtukas gali iškviesti netinkamą makrokomandą, kai paspaudžiama.
+
+"Geofence" minimalus spindulys sumažintas iki 20 metrų.
+
+Kiti nedideli klaidų pataisymai ir patobulinimai.
+
+
+5.40 versija (2024 m. sausio mėn.)
+============================
+
+Pridėtas veiksmas Įjungti / išjungti trigerį.
+
+Pridėtas dialogo veiksmas Išvalyti makrodroidą.
+
+Pridėta paieškos funkcija prie "Action Block" redagavimo ekrano.
+
+Pridėtas rūšiavimo ir kopijavimo / įklijavimo palaikymas į dialogo langą Jei sąlyga ir Kartoti konfigūravimo metu.
+
+Kalendoriaus paleidiklis dabar palaiko 1 minutės atnaujinimo dažnį (naudokite atsargiai, nes išsikrauna akumuliatorius).
+
+Pridėtas palaikymas rankiniu būdu apibrėžiant žodyno / masyvo pavadinimą veiksme Kartoti masyvą / žodyną.
+
+Pridėtas paspaudimas atgal pasirinkimo dialogo lange, kad būtų tęsiama makrokomanda.
+
+Pridėtas sparčiosios išklotinės būsenos apribojimas.
+
+Pridėtas subtitrų palaikymas sparčiojo nustatymo plytelėse (tik "Android 10").
+
+Optimizuotas įdiegtų programų užklausų teikimas - dabar jis veikia daug greičiau įrenginiuose, kuriuose įdiegta daug programų.
+
+Pakoreguota magiškojo teksto paieška, kad įvedant paieškos terminą būtų įtraukti kintamieji aukščiausiu lygiu.
+
+Išspręsta problema, dėl kurios, prieš atliekant kartotinį masyvo / žodyno veiksmą, iteratorius gali nepasileisti pačioje pradžioje.
+
+Išspręsta problema, dėl kurios panaikinus masyvo / žodyno elementą iteruojant galėjo nutrūkti iteracija.
+
+Išspręsta problema, dėl kurios pakeitus kalbą buvo galima atkurti anksčiau ištrintas kategorijas.
+
+Išspręsta problema, dėl kurios reguliaraus intervalo paleidiklis būdavo nepatikimas, jei būdavo nustatomas > 24 valandų.
+
+
+5.39 versija (2023 m. gruodžio mėn.)
+===========================
+
+Pridėtas veiksmas Bendrinti tekstą.
+
+Pridėta vartotojo sąsaja Paspaudimo paleidiklis.
+
+Pridėtas ekrano burbulo pranešimo veiksmas ("Android 10+").
+
+Pridėtas slankiojo mygtuko (rodomas / nerodomas) apribojimas.
+
+Pridėtas veiksmas "Get Light Level".
+
+Pridėtas aplinkos rodymo būsenos apribojimas.
+
+"WebHook Trigger" dabar palaiko pagrindinio teksto analizę.
+
+Pridėtas "Media Button" paleidiklių parinkčių "Fast Forward" ir "Rewind" palaikymas.
+
+Pasirinkimo dialogo veiksmas dabar palaiko pasirinkto rakto grąžinimą, kai naudojami žodynai.
+
+Išspręsta problema, dėl kurios vietiniai kintamieji įdėtajame rodinyje galėjo būti rodomi neteisingai.
+
+Išspręsta problema, dėl kurios vis tiek galėdavote pertvarkyti elementus makrokomandos redagavimo ekrane, išjungę pertvarkymą.
+
+Pridėtas kalendoriaus paleidiklio nustatymas, skirtas kalendoriaus atnaujinimo dažniui atnaujinti.
+
+Pridėtas magiškas tekstas "Kalbos kodas", kad gautumėte dabartinę sistemos kalbą kaip 2 simbolių kalbos kodą (ISO 639).
+
+5.38 versija (2023 m. lapkričio mėn.)
+============================
+
+Redaguoti makrokomandos ekraną dabar palaiko paieškos funkcijas.
+
+Pridėtas "JavaScript" veiksmas (beta versija).
+
+Pridėtas sulenkimo būsenos paleidiklis.
+
+Pridėtas "Fold State" apribojimas.
+
+Palyginti reikšmes Apribojimas dabar palaiko sveikojo skaičiaus ir dešimtainių reikšmių išraiškas.
+
+Pakoreguotas programos paleidimo / uždarymo paleidiklis ir priekinio plano programos pavadinimas, kad veiktų patikimiau.
+
+Pridėtas vartotojo piktogramų įtraukimo palaikymas bendrinant makrokomandas / kategorijas, kurios jas nurodo. (Šiuo metu šablonuose nepalaikoma)
+
+Pranešti apie klaidą funkcija dabar turi pagrindinę makrokomandų pavadinimų paiešką ir palaiko veiksmų blokų pasirinkimą.
+
+Išspręsta problema, dėl kurios makrokomandų vykdymo apribojimas neveikė tinkamai, kai buvo nurodoma "Ši makrokomanda".
+
+Išspręsta problema, dėl kurios kai kuriose situacijose neveiksdavo makrokomandų / veiksmų blokų bendrinimas su netoliese esančiais įrenginiais.
+
+Pridėtas piktogramų atspalvių palaikymas makrokomandų sparčiuosiuose klavišuose.
+
+Tweaked Magic Text įvedimas, kad būtų galima atskirti visuotinį / vietinį kintamųjų pasirinkimą (kad vartotojams, turintiems daug kintamųjų, būtų lengviau).
+
+Veiksmas Skaityti ekrano turinį turi naują parinktį įtraukti peržiūros ID be tekstinio turinio.
+
+Kiti nedideli pakeitimai ir pataisymai.
+
+
+
+5.37 versija (2023 m. spalio mėn.)
+============================
+
+Optimizuotas makrokomandų redagavimo ekranas, kad jis būtų daug greitesnis dirbant su labai didelėmis makrokomandomis.
+
+Pridėtas makrokomandos veikimo / nevykdymo apribojimas.
+
+Pridėtas makrokomandos baigtas trigeris.
+
+Pridėtas maitinimo mygtuko ilgo paspaudimo paleidiklis (tik 13 ir naujesnėse versijose „Android“) – reikia, kad „MacroDroid“ būtų nustatytas kaip numatytasis asistentas.
+
+Pridėtas laikas, skirtas palaukti, kol suaktyvinamas veiksmas.
+
+Pridėtas ekrano perdangų palaikymas, skirtas ekrano konteksto aktyvikliui, veiksmui skaityti ekrano turinį ir veiksmui Tikrinti tekstą ekrane.
+
+Pridėtas ekrano perdangų palaikymas prie UI sąveikos veiksmo spustelėjus teksto / peržiūros ID.
+
+Pridėtas stebuklingo teksto palaikymas Webhook aktyviklio identifikatoriuose.
+
+Pridėtas magiškas programos paketo tekstas, skirtas programai paleisti / uždarytas paleidiklis.
+
+Pridėtas piešimo palaikymas būsenos juostos srityje atliekant slankiojo teksto veiksmą.
+
+Naudotojo sąsajos sąveikos veiksme pridėta parinktis „Paspauskite Enter“ (tik „Android 11“ ir naujesnėse versijose).
+
+Atnaujinti Patvirtinti kitą ir Jei patvirtinta Tada veiksmai, skirti palaikyti skirtąjį laiką iki 20 minučių.
+
+Išspręsta problema, kai paleidus / uždarius „MacroDroid“ nepavyks suaktyvinti programos paleistos paleidimo su parinktimi „visos programos“.
+
+Ištaisyta problema, kai kai kuriais atvejais naudojant identifikavimo programoje parinktį UI sąveika spustelėjo netinkamai.
+
+Ištaisyta problema, kai vartotojo sąsajos sąveikos įklijavimas visada buvo įklijuojamas teksto lauko pabaigoje, nepaisant žymeklio padėties.
+
+Pridėtas com.wireguard.android.permission.CONTROL_TUNNELS leidimas prie manifesto.
+
+5.36 versija (2023 m. rugsėjo mėn.)
+=========================
+
+Pridėtas vertimo teksto veiksmas.
+
+Prie teksto manipuliavimo veiksmo pridėta parinktis Pašalinti tekstą.
+
+Pridėtas HTML formatavimo slankiojo teksto veiksme palaikymas.
+
+„Webhook“ aktyviklis dabar palaiko IP adresų įtraukimą į baltąjį sąrašą.
+
+Pridėtas kontekstui būdingas magiškas skambintojo IP adreso tekstas, kai naudojamas Webhook aktyviklis.
+
+Pridėtas bendrinimo SMTP el. paštu palaikymas, kad būtų galima atlikti ekrano kopijos veiksmą.
+
+Nustatymuose pridėta parinktis, skirta konfigūruoti pagrindinio ekrano plytelių skaičių eilutėje.
+
+Pridėtas skaitymo ekrano turinio aktyviklio nustatymas, kad jis negalėtų skaityti ekrano, kai priekiniame plane yra MacroDroid.
+
+Pridėtas konfigūruojamas maksimalus teksto įrašų eilučių skaičius MacroDroid Drawer.
+
+Pridėta vartotojo autentifikavimo veiksmo parinktis, leidžianti arba neleisti PIN / braukimo šablono.
+
+Ištaisyta problema, kai JSON analizės veiksmas tinkamai neveiks, kai eilutė gaunama iš žodyno / masyvo su rankiniu būdu apibrėžtu raktu / indeksu.
+
+Dėl privalomų „Android“ tikslinio SDK pakeitimų, norint atlikti „Bluetooth“ funkciją, dabar reikia naujos „MacroDroid“ pagalbinės programos (v1.9), kad veiktų 13 ir naujesnėse versijose „Android“.
+
+Kiti smulkūs pataisymai ir patobulinimai.
+
+5.35 versija (2023 m. liepos mėn.)
+=========================
+
+Pridėtas naudotojo autentifikavimo veiksmas.
+
+Pridėtas atsakymo į pranešimą veiksmas (leidžia automatizuoti atsakymus naudojant „WhatsApp“ / „Telegram“), skirtas „Android 7“ ir naujesnėms versijoms.
+
+Eksporto makrokomandos ir automatinio atsarginio kopijavimo funkcijos dabar palaiko šifravimą.
+
+Ekrano turinio aktyviklis dabar palaiko parinktį suderinti rodinio ID.
+
+Patvirtinti kitą veiksmą ir jei patvirtinta veiksmai dabar palaiko automatinio atšaukimo skirtąjį laiką.
+
+Pridėtas palaikymas dar 8 greitoms plytelėms (dabar yra 16).
+
+Pridėtas magiškas tekstas „Akumuliatoriaus srovė dabar“.
+
+Pridėta anuliavimo funkcija, kai ištrinami elementai redagavimo makrokomandos / veiksmų bloko ekrane.
+
+Redaguoti makrokomandos ekraną dabar palaiko parinktį perkelti aukštyn / žemyn, kai elemente galimi keli antriniai apribojimai.
+
+Pridėtas stebuklingas SIM2 operatoriaus pavadinimo tekstas (jei taikoma).
+
+Magiškojo teksto įvedimo dialogo langas dabar palaiko paiešką.
+
+Pridėta uždaryti stalčių konfigūravimo parinktis Macro elementams MacroDroid stalčiuje.
+
+Ištaisyta problema, kai paskutiniame leidime slankiojo mygtuko pikselių vietos buvo šiek tiek pažeistos.
+
+Kiti smulkūs pataisymai.
+
+
+5.34 versija (2023 m. gegužės mėn.)
+=========================
+
+Pridėtas veiksmas Tikrinti tekstą ekrane.
+
+Rodyti pranešimus ir nustatyti MacroDroid piktogramos veiksmus dabar palaikomas tekstas kaip piktogramos.
+
+Veiksmas Siųsti el. laišką dabar palaiko loginės reikšmės grąžinimą, nurodantį, ar el. laiškas buvo išsiųstas sėkmingai.
+
+„Torch action“ dabar palaiko ryškumo lygį („Android 13+“).
+
+Slankiojo mygtuko paleidiklis (ir slankiojo mygtuko konfigūravimo veiksmas) dabar palaiko procentą

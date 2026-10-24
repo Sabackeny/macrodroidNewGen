@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/custom_widget_selection_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-64.0dip">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/animation_view" android:layout_width="160.0dip" android:layout_height="160.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/sad_face_animation" />
+                <TextView android:textSize="18.0sp" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="@string/no_custom_widget_button_triggers" />
+            </LinearLayout>
+        </FrameLayout>
+    </ViewFlipper>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/quick_settings_config_primary" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/quick_settings_config_primary_dark" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_small" android:paddingEnd="@dimen/margin_small">
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/button_label" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" app:autoSizeMaxTextSize="16.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/enabled_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.SwitchCompat android:layout_gravity="end" android:id="@id/tile_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <FrameLayout android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="@dimen/margin_small">
+                <ImageView android:id="@id/image" android:background="?android:selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_settings_applications_white_24dp" android:scaleType="fitCenter" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/editImage" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/material_ic_edit_24px_svg" android:scaleType="fitCenter" android:layout_marginEnd="2.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium">
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tile_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title" android:maxLines="1" android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/white_transparent" android:id="@id/tile_subtitle_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tile_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle" android:maxLines="1" android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small">
+            <RadioButton android:textColor="@color/white" android:id="@id/toggle_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_settings_button_toggle_option" app:buttonTint="@color/white" />
+            <RadioButton android:textColor="@color/white" android:id="@id/button_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button" android:layout_marginStart="@dimen/margin_small" app:buttonTint="@color/white" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+            <CheckBox android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/collapse_on_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collapse_on_press" app:buttonTint="@color/white" />
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/add_button" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_add_circle_white_48dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

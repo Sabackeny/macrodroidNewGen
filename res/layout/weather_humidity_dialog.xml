@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/weather_dialog_radio_group" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/weather_dialog_below_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/trigger_weather_below" android:layout_marginEnd="20.0dip" />
+        <RadioButton android:id="@id/weather_dialog_above_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_weather_above" />
+    </RadioGroup>
+    <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <SeekBar android:id="@id/weather_dialog_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="numberSigned" android:layout_marginEnd="20.0dip" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/weather_dialog_percentage_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_weather_m_s" />
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

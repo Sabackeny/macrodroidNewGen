@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/notification_id_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/notification_id_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/notification_id_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bubble_notification_id_title" android:ems="10" android:singleLine="true" android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:layout_gravity="bottom" android:id="@id/idMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:id="@id/notification_id_info_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:text="@string/notification_id_info" android:layout_marginHorizontal="@dimen/margin_tiny" />
+            <CheckBox android:id="@id/auto_expand_bubble_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/auto_expand_bubble_option" />
+            <LinearLayout android:orientation="vertical" android:id="@id/icon_config_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <TextView android:textColor="@color/actions_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/icon" android:layout_marginStart="@dimen/margin_tiny" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/icon_type_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/radio_button_use_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image" />
+                    <RadioButton android:id="@id/radio_button_use_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text" android:layout_marginStart="@dimen/margin_medium" />
+                </RadioGroup>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/configure_notification_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip">
+                    <ImageView android:id="@id/configure_notification_preview_image" android:background="@drawable/icon_background" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/not_icon_setup" android:layout_centerVertical="true" />
+                    <Button android:id="@id/configure_notification_icon_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_background" android:layout_toStartOf="@id/configure_notification_change_icon_button" android:layout_toEndOf="@id/configure_notification_preview_image" style="?android:borderlessButtonStyle" />
+                    <Button android:id="@id/configure_notification_change_icon_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/notification_icon_text_layout" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/iconBackgroundColorContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingEnd="10.0dip">
+                        <com.google.android.material.card.MaterialCardView android:id="@id/iconBackgroundColorCircle" android:layout_width="40.0dip" android:layout_height="40.0dip" app:cardCornerRadius="24.0dip" app:strokeColor="@color/default_text_color" app:strokeWidth="2.0dip" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@id/iconBackgroundColorButton" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/background_color" android:layout_marginStart="@dimen/margin_medium" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:id="@id/notification_icon_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0">
+                            <androidx.appcompat.widget.AppCompatEditText android:id="@id/notification_icon_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/icon_text" android:ems="10" android:singleLine="true" android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <Button android:layout_gravity="bottom" android:id="@id/notification_icon_text_magic_text_button" android:layout_marginBottom="@dimen/margin_tiny" style="@style/MagicTextButton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/notification_subject_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_notification_subject_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:layout_gravity="bottom" android:id="@id/configure_notification_magic_subject_button" android:layout_marginBottom="@dimen/margin_tiny" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/notification_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_notification_notification_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:layout_gravity="bottom" android:id="@id/configure_notification_magic_text_button" android:layout_marginBottom="@dimen/margin_tiny" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <CheckBox android:id="@id/html_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/floating_text_html_formatting_option" />
+            <LinearLayout android:orientation="vertical" android:id="@id/maintain_spaces_container" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/maintain_spaces_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_action_option_maintain_spaces" />
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_action_option_maintain_spaces_description" android:layout_marginStart="4.0dip" android:layout_marginEnd="14.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/backgroundColorContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:paddingEnd="10.0dip">
+                <com.google.android.material.card.MaterialCardView android:id="@id/backgroundColorCircle" android:layout_width="40.0dip" android:layout_height="40.0dip" app:cardCornerRadius="24.0dip" app:strokeColor="@color/default_text_color" app:strokeWidth="2.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@id/background_color_button" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/background_color" android:layout_marginStart="@dimen/margin_medium" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/textColorContainer" android:paddingTop="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:paddingEnd="10.0dip">
+                <com.google.android.material.card.MaterialCardView android:id="@id/textColorCircle" android:layout_width="40.0dip" android:layout_height="40.0dip" app:cardCornerRadius="24.0dip" app:strokeColor="@color/default_text_color" app:strokeWidth="2.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@id/text_color_button" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_color" android:layout_marginStart="@dimen/margin_medium" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/position_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?colorAccent" android:id="@id/text_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/action_floating_text_position" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/material_ic_keyboard_arrow_up_24px_svg" app:tint="?colorAccent" />
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/vertical_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <SeekBar android:id="@id/vertical_position_seek_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_arrow_down" app:tint="?colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+            <CheckBox android:id="@id/dim_background_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/dim_background_option" />
+            <CheckBox android:id="@id/show_in_status_bar_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/floating_text_toggle_option_show_in_status_bar" />
+            <CheckBox android:id="@id/prevent_removal_by_bin_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/trigger_floating_button_prevent_removal_by_bin" />
+            <LinearLayout android:orientation="vertical" android:id="@id/overlay_options_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                <TextView android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/option_show_as_overlay" android:layout_marginStart="@dimen/margin_small" />
+                <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/display_overlay_options_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/notification_channel_container" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/actions_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/notification_channel" android:layout_marginStart="@dimen/margin_tiny" />
+                <Spinner android:entries="@array/notification_channels" android:id="@id/notification_channels_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/edit_notification_channels" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/edit_notification_channels" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sound_options_container" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/notification_sound" android:layout_marginStart="@dimen/margin_tiny" />
+                <Spinner android:id="@id/configure_notification_notification_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/notification_container" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/notification_priority" android:layout_marginStart="@dimen/margin_tiny" />
+                <Spinner android:entries="@array/notification_priority_names" android:id="@id/configure_notification_priority_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entryValues="@array/notification_priority_values" />
+            </LinearLayout>
+            <CheckBox android:id="@id/configure_notification_invoke_macro_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/invoke_macro_when_pressed" />
+            <com.arlosoft.macrodroid.smartmaterialspinner.SmartMaterialSpinner android:id="@id/configure_notification_invoke_macro_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_small" android:minWidth="200.0dip" app:smsp_arrowColor="@color/default_text_color" app:smsp_enableFloatingLabel="false" app:smsp_enableSearchHeader="false" app:smsp_isSearchable="false" app:smsp_itemColor="@color/default_text_color" app:smsp_itemListBackgroundColor="@color/default_background" app:smsp_itemListColor="@color/default_text_color" app:smsp_searchBackgroundColor="@color/default_background" app:smsp_searchFilterColor="?colorAccent" app:smsp_searchTextColor="@color/default_text_color" app:smsp_selectedItemListColor="@color/white_or_black" app:smsp_underlineColor="@color/transparent" app:smsp_underlineSize="0.0dip" />
+            <Button android:id="@id/configInputOutputParams" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_block_configure_input_output_params" android:textAllCaps="false" style="@style/ColoredButton" />
+            <CheckBox android:id="@id/configure_notification_overwrite_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="4.0dip" android:text="@string/clear_existing_notifications" />
+            <CheckBox android:id="@id/prevent_back_button_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="4.0dip" android:text="@string/prevent_back_button_closing_dialog_option" />
+            <CheckBox android:id="@id/configure_notification_block_next_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="4.0dip" android:text="@string/block_actions_until_complete" />
+            <LinearLayout android:orientation="vertical" android:id="@id/actionButtonsContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:id="@id/actionActionButtonButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_notificaiton_add_action_button" style="@style/ColoredButton" />
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

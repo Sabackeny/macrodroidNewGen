@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/default_text_color" android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/global_variable" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+            <ImageView android:id="@id/descriptionButton" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_description_outline" android:contentDescription="@string/delete_variable" />
+        </LinearLayout>
+        <com.arlosoft.macrodroid.uicomponent.ExpandableLayout android:id="@id/descriptionExpandable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:maxHeight="200.0dip" app:el_duration="200" app:el_expanded="false" app:layout_scrollFlags="scroll">
+            <androidx.appcompat.widget.AppCompatEditText android:theme="@style/Theme.App.Toolbar" android:textSize="14.0sp" android:textColor="@color/nearly_white" android:textColorHint="#88ffffff" android:id="@id/varDescription" android:background="@android:color/transparent" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_description_title" android:maxLength="256" android:inputType="textCapSentences|textMultiLine" android:alpha="1.0" android:textCursorDrawable="@null" android:textDirection="locale" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+        </com.arlosoft.macrodroid.uicomponent.ExpandableLayout>
+        <com.google.android.material.textfield.TextInputLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <EditText android:id="@id/enter_variable_dialog_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/enter_value" android:maxLength="9999999" android:inputType="textMultiLine" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                <requestFocus />
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox android:textColor="@color/default_text_color" android:id="@id/secureCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small_medium" android:text="@string/make_variable_secure" android:layout_marginHorizontal="@dimen/margin_small_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/default_text_color_secondary" android:id="@id/secureVariableExplanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/secure_variable_explanation" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

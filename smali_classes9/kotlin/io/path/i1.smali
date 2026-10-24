@@ -1,0 +1,12 @@
+.class public abstract synthetic Lkotlin/io/path/i1;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static bridge synthetic a()Ljava/nio/file/FileVisitResult;
+    .locals 1
+
+    sget-object v0, Ljava/nio/file/FileVisitResult;->TERMINATE:Ljava/nio/file/FileVisitResult;
+
+    return-object v0
+.end method

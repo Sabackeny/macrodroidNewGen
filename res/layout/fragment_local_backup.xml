@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.core.widget.NestedScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+                    <include android:id="@id/infoCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" layout="@layout/info_card" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingTop="@dimen/margin_small" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    <FrameLayout android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/animationView" android:layout_width="70.0dip" android:layout_height="70.0dip" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/default_text_color" app:lottie_loop="true" app:lottie_rawRes="@raw/face_animation" />
+                            <TextView android:textSize="18.0sp" android:textStyle="italic" android:textColor="@color/default_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/no_backup_files_found" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout android:orientation="horizontal" android:background="@color/auto_backup_primary" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/auto_backup_location_title" android:layout_marginHorizontal="@dimen/margin_medium" />
+                    <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/backup_location_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_medium" android:text="@string/auto_backup_location_default_private_storage" android:maxLines="2" android:layout_marginHorizontal="@dimen/margin_medium" app:autoSizeMaxTextSize="16.0sp" app:autoSizeMinTextSize="10.0sp" app:autoSizeTextType="uniform" />
+                </LinearLayout>
+                <Button android:textColor="@color/auto_backup_primary" android:layout_gravity="center_vertical" android:id="@id/change_location_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginEnd="@dimen/margin_small" android:backgroundTint="@color/white" style="@style/MagicTextButtonNoTint" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/loadingView" android:background="@color/loading_view_dimmer_darker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="240.0dip" android:layout_height="240.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

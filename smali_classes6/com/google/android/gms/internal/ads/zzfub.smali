@@ -1,0 +1,2 @@
+.class Lcom/google/android/gms/internal/ads/zzfub;
+.super Ljava/lang/Object;

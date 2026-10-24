@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="@dimen/margin_tiny" app:cardBackgroundColor="@color/primary_dark" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false" app:strokeColor="#88eeeeee" app:strokeWidth="1.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_plus_white_24dp" />
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/toolbar_elevation">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:elevation="0.0dip" app:titleTextAppearance="@style/TitleToolbarText" style="@style/Toolbar" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/paramsRecyclerView" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingVertical="@dimen/margin_small" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/http_request_no_parameters_configured" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/addParamButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_action_new_white" android:scaleType="centerInside" android:tint="@color/actions_primary" android:layout_alignParentBottom="true" android:contentDescription="@string/http_request_add_parameter" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" android:backgroundTint="@color/white" />
+</FrameLayout>

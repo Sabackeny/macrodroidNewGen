@@ -1,0 +1,70 @@
+Versión 5.54 (junio de 2025)
+=======================
+
+Se ha añadido la acción Código Java.
+
+Se actualizó la acción de JavaScript para admitir el retorno a todos los tipos de variables: use mdOutput(value).
+
+Se agregó una opción para generar variables de matriz y diccionario en formato JSON {vjson=}, {lvjson=} (para que sean más fáciles de usar en la acción de JavaScript).
+
+Se agregó el disparador de actividad de aplicación iniciada/cerrada.
+
+Se actualizó la acción Configurar mosaico rápido para admitir la configuración de un mosaico en un estado inactivo en el que no se pueda interactuar con él.
+
+Se actualizó la acción de solicitud HTTP para agregar compatibilidad con nombres de archivo dinámicos/URI local en el cuerpo del contenido.
+
+Se agregó la opción 'Aplicar enfoque automático' para tomar una foto.
+
+Se ha agregado texto mágico "Crear GUID" para crear un identificador único global.
+
+Se agregó la opción 'Vibrar al presionar' al disparador del botón flotante y a la acción de texto flotante.
+
+Se ha añadido la posibilidad de borrar el registro del sistema de una macro individual al ver el registro del sistema de esa macro (a través de la pantalla de edición de macros).
+
+Se agregó texto mágico específico del contexto para el texto de registro cuando se usa el desencadenador de entrada de registro del sistema.
+
+Se agregó la opción de usar el valor de la variable para el tiempo de espera en la acción Esperar hasta el desencadenador.
+
+Las macros y categorías exportadas ahora contendrán las variables globales asociadas como parte de la exportación.
+
+Se solucionó el problema por el cual la configuración del activador de cambio de estado de Wifi no permitía la selección de SSID a menos que se instalara la aplicación auxiliar.
+
+Se ha solucionado un problema por el que el control deslizante de escena no actualizaba correctamente el rango cuando se actualizaban las variables a las que se hacía referencia.
+
+Se ha añadido compatibilidad con la acción Leer texto del idioma marathi.
+
+Se ha corregido un problema por el que Compartir ubicación en variable no admitía el almacenamiento en un elemento de diccionario/matriz.
+
+Se ha agregado una configuración para deshabilitar la página web cuando se usa el desencadenador de solicitud de servidor HTTP.
+
+Otras correcciones menores.
+
+-- Mejoras en la escena --
+
+Se ha añadido el componente Divisor horizontal.
+
+Se agregó soporte para hacer clic en el valor en el componente Slider de escena e ingresar el número a través del cuadro de diálogo.
+
+Se ha añadido compatibilidad con la introducción de contraseñas en el componente de entrada de texto de la escena.
+
+Se ha añadido la opción de alineación dividida para los componentes Switch y Checkbox de la escena.
+
+Se ha añadido la opción de establecer esquinas redondeadas en las escenas cuando se utiliza el cuadro de diálogo o la opción de superposición.
+
+El control deslizante de escena ahora admite la visualización de etiquetas de valor al principio y al final (o ninguna).
+
+El control deslizante de escena ahora admite valores de paso.
+
+El texto de la escena ahora admite valores de texto mágico para especificar el tamaño del texto.
+
+El texto de la escena ahora es compatible con la opción de formato HTML.
+
+El texto de la escena ahora admite un número máximo de líneas y la opción de escala para ajustar.
+
+Todos los elementos de la escena ahora admiten el estado de visibilidad que se puede vincular a una variable booleana.
+
+Scene Switch ahora admite un color de texto separado, apague el color y active el color.
+
+El botón de escena ahora admite la alternancia de una variable booleana.
+
+Se ha solucionado un problema por el que la escena no actualizaba las variables correctamente cuando se ejecutaba desde un bloque de acción y no se utilizaba la opción de bloquear las siguientes acciones de forma predeterminada.

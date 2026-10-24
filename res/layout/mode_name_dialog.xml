@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatEditText android:id="@id/mode_name_dialog_mode_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:maxLines="1" android:inputType="textNoSuggestions" android:layout_marginHorizontal="@dimen/margin_medium" android:layout_marginVertical="@dimen/margin_small">
+        <requestFocus />
+    </androidx.appcompat.widget.AppCompatEditText>
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

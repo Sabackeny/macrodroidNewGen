@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/trigger_ui_warning" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin_tiny">
+                <EditText android:id="@id/applicationsText" android:background="@color/transparent" android:paddingTop="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:text="@string/all_applications" android:hint="@string/applications" android:maxLines="1" android:singleLine="true" android:editable="false" android:layout_weight="1.0" android:inputType="none">
+                    <requestFocus />
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton android:id="@id/selectAppsButton" android:layout_height="48.0dip" android:src="@drawable/ic_apps_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+            <RadioButton android:id="@id/radio_button_click" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ui_interaction_click" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/radio_button_long_click" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ui_interaction_long_click" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/textToMatchLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_tiny">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/textToMatch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/text_to_match" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:contentDescription="___">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/star_wildcards_supported" android:layout_marginStart="16.0dip" />
+        <CheckBox android:id="@id/enableRegexCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching" android:layout_marginStart="12.0dip" />
+        <CheckBox android:id="@id/ignoreCaseCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/text_compare_ignore_case" android:layout_marginStart="12.0dip" />
+        <CheckBox android:id="@id/useContentDescriptionCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/trigger_ui_click_use_content_description_text" android:layout_marginStart="12.0dip" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+.class public final synthetic Ln3/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;
+
+.field public final synthetic b:Lio/github/rosemoe/sora/widget/CodeEditor;
+
+.field public final synthetic c:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;Lio/github/rosemoe/sora/widget/CodeEditor;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ln3/c;->a:Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;
+
+    iput-object p2, p0, Ln3/c;->b:Lio/github/rosemoe/sora/widget/CodeEditor;
+
+    iput p3, p0, Ln3/c;->c:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    iget-object v0, p0, Ln3/c;->a:Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;
+
+    iget-object v1, p0, Ln3/c;->b:Lio/github/rosemoe/sora/widget/CodeEditor;
+
+    iget v2, p0, Ln3/c;->c:I
+
+    invoke-static {v0, v1, v2}, Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;->d(Lio/github/rosemoe/sora/widget/layout/LineBreakLayout;Lio/github/rosemoe/sora/widget/CodeEditor;I)V
+
+    return-void
+.end method

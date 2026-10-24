@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/full_screen_container" android:background="@color/black_fairly_transparent" android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:padding="@dimen/margin_medium" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" />
+                <TextView android:textSize="14.0sp" android:id="@id/messageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Message text" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:ellipsize="end" android:gravity="start|center" android:id="@id/button1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" style="?android:buttonBarButtonStyle" />
+            <Button android:ellipsize="end" android:gravity="start|center" android:id="@id/button2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" style="?android:buttonBarButtonStyle" />
+            <Button android:ellipsize="end" android:gravity="start|center" android:id="@id/button3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:maxLines="2" android:layout_weight="1.0" android:textAllCaps="false" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:orientation="vertical" android:id="@id/floating_button_delete" android:background="@drawable/floating_button_delete_background" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_delete_white_24dp" android:scaleType="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

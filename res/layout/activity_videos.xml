@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@color/videos_primary" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@id/toolbar" android:background="@color/videos_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleTextAppearance="@style/TitleToolbarText" />
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/videos_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/white" app:tabMode="fixed" app:tabTextAppearance="@style/TabStyle" app:tabTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

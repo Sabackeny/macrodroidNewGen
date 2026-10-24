@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="896.0dip" android:width="414.0dip" android:viewportWidth="414.0" android:viewportHeight="896.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$gradient_bg_aurora__0" android:pathData="M0,0H414V896.448H0z" android:fillType="evenOdd" />
+</vector>

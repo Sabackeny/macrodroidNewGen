@@ -1,0 +1,1398 @@
+5.53-as verzió (2025. április)
+============================
+
+Hozzáadta az Egyéni jelenet műveletet, amely lehetővé teszi az egyszerű, testreszabható felhasználói felületek létrehozását.
+
+Hozzáadta az Egyéni jelenet elrejtése műveletet.
+
+A makró/műveletblokk szerkesztése képernyők mostantól támogatják az elválasztók hozzáadásának menüopcióját.
+
+Az automatikus biztonsági mentés funkció mostantól lehetővé teszi a helyi biztonsági mentési tárhely helyének módosítását.
+
+Frissített Fájlművelet művelet a mappaminták megadásának lehetőségéhez (mappák másolásakor/áthelyezésekor/törlésekor)
+
+Frissítettük az Értékek összehasonlítása korlátozást a tömbök és szótárak összehasonlításának lehetőségéhez, valamint annak ellenőrzéséhez, hogy tartalmaz-e kulcsot/értéket.
+
+Frissítettük a Makrófuttatás korlátozást, hogy támogassa a makrónév szövegként történő megadását (beleértve a varázsszöveg támogatását is).
+
+Frissítettük a Kategóriák engedélyezése/letiltása műveletet, hogy támogassa a kategórián belüli összes makró engedélyezésének új beállítását (a kategória engedélyezésekor).
+
+Frissítettük a MacroDroidhoz megosztott szöveget, hogy új kontextusspecifikus varázsszöveget adjunk hozzá a szöveg megosztásakor beállított "Tárgy" mezőhöz.
+
+Frissítettük az Animációs átfedés műveletet a képfrissítés kényszerítéséhez (a gyorsítótár figyelmen kívül hagyásához).
+
+A minimálisan támogatott Android-verzió mostantól Android 6 (Marshmallow).
+
+Kijavítottuk azt a hibát, amely miatt több egyidejű JavaScript-művelet futtatása a Jetpack motorral meghiúsulhatott.
+
+Kijavítottuk azt a hibát, amely miatt a MacroDroid elhúzása az alkalmazásváltón keresztül megölhette a Wait Until Trigger műveletben várakozó makrókat.
+
+Kijavítottuk azt a hibát, amely miatt a Makrók összegzése művelet nem adott hozzá helyi változókat az összes változó beállítás kiválasztásakor.
+
+Hozzáadta a napnyugta/napkelte triggerhez a riasztás használatát (vagy nem használatát) a pontos kioldási idő biztosítása érdekében.
+
+Hozzáadott lehetőség a MacroDroid letiltása művelethez, hogy mindig letiltsa a MacroDroid funkciót (a jelszóvédelmi beállításoktól függetlenül).
+
+5.52-es verzió (2025. március)
+============================
+
+NFC-kompatibilis állapotindító hozzáadva.
+
+Módosította a HotSpot be- és kikapcsolási műveletét, így már nincs szüksége a segítő fájlra Android 14+ rendszeren.
+
+Hozzáadott menüopció az egyes triggerek, műveletek és korlátozások naplózásának engedélyezéséhez/letiltásához.
+
+A geokerítés konfigurációs képernyője visszaesik az Open Street Maps alkalmazásra azokon az eszközökön, amelyek nem rendelkeznek Google-szolgáltatásokkal.
+
+Módosítottuk az értesítési interakció műveletet, hogy az Android 14+ rendszerű eszközökön is működjön.
+
+Frissítettük a Makró engedélyezve/letiltva korlátozást, amely támogatja a makró nevének megadását a szövegben (beleértve a mágikus szöveg támogatását is).
+
+Frissítettük a Szöveg lekérése a nézetazonosítóból műveletet, amely lehetőséget ad a képernyő állapotának egy logikai változóhoz való mentéséhez.
+
+Hozzáadott támogatás az egyéni widget ikonok színezéséhez.
+
+Eltávolítottuk a Makró hozzáadása varázsló csempét.
+
+Hozzáadta az Utoljára megnyitott műveletblokk csempét.
+
+Hozzáadott lehetőség a makrók összegzésére művelet a makró által használt összes változó hozzáadásához (helyi + globális).
+
+Hozzáadott lehetőség a változó sorainak maximális számának beállítására a MacroDroid fiókban.
+
+Beillesztés menüopciók hozzáadva az IF záradékművelet feltételeinek listájának szerkesztéséhez.
+
+Hozzáadott lehetőség a képernyőfrissítés kényszerítésére a képernyő tartalmának olvasására, a szöveg lekérésére nézetazonosítóval és a szöveg ellenőrzésére a képernyőn műveletekkel.
+
+Kijavítottuk azt a hibát, amely miatt a {cell_connection_type} varázsszöveg nem tükrözi a legújabb cellakapcsolattípust, amikor megváltozik.
+
+Kijavítottuk azt a hibát, amely miatt a Set Variable copy tömb/szótár nem jeleníti meg az összes altömböt/szótárat.
+
+Kijavítottuk azt a hibát, amely miatt a MacroDroid ikon hosszan megnyomva nem működött megfelelően a Trigger Fired korlátozással.
+
+Módosítottuk a felhasználói felület interakciós kisegítő szolgáltatását, hogy kijavítsuk azokat a problémákat, amelyek miatt a képernyő frissítése után a régi képernyőtartalom visszaküldhető.
+
+Módosítottuk a képernyő be- és kikapcsolási korlátozását, hogy megpróbálja kijavítani azokat az eseteket, amikor a képernyő bekapcsolt állapotban jelenik meg (például amikor az Android Auto-hoz csatlakozik).
+
+5.50-es verzió (2025. január)
+============================
+
+Wifi SSID Scan művelet hozzáadva.
+
+USB-eszköz csatlakoztatására vonatkozó korlátozás hozzáadva.
+
+Hozzáadtuk az Összegző makrók/műveletblokkok műveletet.
+
+Műveletcsoport művelet hozzáadva a kapcsolódó műveletek egyszerűbb csoportosításához, áthelyezéséhez, másolásához és engedélyezéséhez/letiltásához.
+
+Támogatottá vált a visszavonási funkció az elemek átrendezésekor a Makró szerkesztése és a Műveletblokk szerkesztése képernyőn.
+
+Támogatottá vált a biztonsági mentési fájlok megosztása a felhőalapú biztonsági mentésből, így minden biztonsági mentési fájl könnyen elérhető anélkül, hogy visszaállítanák belőle.
+
+Továbbfejlesztett makró-/műveletblokk-kiválasztási legördülő menük, amelyek kereshetők azokban az esetekben, amikor sok lehetőség áll rendelkezésre.
+
+Frissült a Lebegő szöveg művelet az opcionális árnyék támogatásához (hogy a szöveg szembetűnőbb legyen átlátszó háttér használata esetén)
+
+Frissített SMS küldött trigger a szám közvetlen megadásához szükséges opció hozzáadásához.
+
+Frissült az Animációátfedés művelet, amely támogatja a változók használatát az animáció x, y, szélesség és magasság értékeinek meghatározásához.
+
+Frissítettük az Értesítés megjelenítése műveletet, hogy támogassa az azonosító mező mágikus szövegbevitelét.
+
+Hozzáadta a hiányzó MacroDroid beállításokat a biztonsági mentési fájlhoz a könnyebb visszaállítás érdekében.
+
+Hozzáadott másolás gomb tömb/szótár változó bejegyzés szerkesztésekor, hogy megkapja a teljes tömb/szótár elérési útjának varázsszövegét.
+
+Kijavítottuk azt a ritka hibát, amely miatt a lebegő gombok bizonyos esetekben elakadhattak.
+
+Kijavítottuk azt a hibát, amely miatt lebegő szöveg villoghatott a meglévő lebegő szöveg rendszeres frissítésekor.
+
+Egyéb kisebb javítások.
+
+5.49-es verzió (2024. december)
+============================
+
+Hozzáadtuk a Wear OS komplikációs műveletet.
+
+Hozzáadtuk a Wear OS Komplikáció kattintási eseményindítót.
+
+Hozzáadott médiasáv megváltozott trigger.
+
+Frissített animációátfedési művelet a helyi Gif-fájlok támogatásához.
+
+Frissítettük a Makrók exportálása műveletet, hogy támogassa a karakterlánc-változóba történő kimenetet.
+
+Hozzáadott lehetőség a beállításokban az összeomlási naplózás és az elemzési adatok letiltásához.
+
+Hozzáadta a Telefonszám kiválasztása opciót a Hívásnapló művelet törléséhez (támogatja a varázsszöveget és a regexet).
+
+A MacroDroid be- és kikapcsolási gyorscsempe hosszú megnyomásával elindul a MacroDroid.
+
+Hozzáadásra került a Várakozás, amíg az eseményindító egy logikai változót ad vissza, amely jelzi, hogy történt-e időtúllépés vagy sem.
+
+Implementációs változtatásokat hajtottunk végre a makrók belső tárolásának módjában, hogy javítsuk a teljesítményt nagyszámú makró esetén.
+
+Továbbfejlesztett Névjegylekérés művelet, így helyesen tölt fel több egyéni telefonbejegyzést a megfelelő egyéni nevekkel.
+
+Hozzáadtuk a "Tesztműveletek" és a "Makró tesztelése" opciót a Makrómeghívási módszer korlátozáshoz.
+
+Hozzáadásra került az alszótári bejegyzések megjelenítése szótárváltozó nézetben az értékmező hosszú megnyomásával.
+
+Hozzáadott támogatás a szótárbejegyzések tartalmának változó képernyőn történő megjelenítéséhez (hosszan nyomja meg az értéket a be- és kikapcsoláshoz).
+
+Módosítottuk a {cell_connection_type} varázsszöveg beolvasásának módját, hogy megpróbálja javítani a hálózattípus azonosításának pontosságát.
+
+Frissítettük a Szándék küldése műveletet, amely varázsszöveg-támogatást adott hozzá a Művelet, a Csomag és az Osztály mezőkhöz.
+
+Kijavítottuk azt a hibát, amely miatt a Makróműveletek megszakítása művelet nem aktiválta a Makró kész eseményindítót.
+
+Kijavítottuk azt a hibát, amely miatt a kis lebegő gombok kitöltése helytelen volt.
+
+Kijavítottuk azt a hibát, amely miatt a Hívásnapló megnyitása művelet nem működött egyes eszközökön.
+
+Kijavítottuk azt a hibát, amely miatt az Értékek összehasonlítása korlátozás nem tudta megfelelően összehasonlítani a logikai értékeket bizonyos nyelveken.
+
+Kijavítottuk azt a hibát, amely miatt a Gombsáv képének beállítása művelet nem frissítette a gombszámhivatkozást, amikor egy gombot balra vagy jobbra mozgattak a gombsávon.
+
+Kijavítottuk azt a peremhálózati esethibát, amely miatt a Várakozás, amíg az aktiválás műveletben több eseményindító is körülbelül ugyanabban az időben aktiválódik, és helytelen makróvégrehajtást okozott.
+
+Kijavítottuk azt a hibát, amely miatt az Írás fájlba művelet összekeverhette a sorrendet, amikor gyors egymásutánban írt ugyanabba a fájlba.
+
+5.48-as verzió (2024. október)
+============================
+
+Shizuku State korlátozás hozzáadva.
+
+Opciók hozzáadva a Lebegő szöveg művelethez, hogy csak hosszú lenyomáskor engedélyezze a mozgást, és megakadályozza a szöveg mozgatását, valamint a teljes képernyő kényszerítésének lehetőségét.
+
+Hozzáadott lehetőség az Érintések blokkolása művelethez a blokkolt képernyőterület megjelenítéséhez (egyéni színnel).
+
+A makrólista képernyőn mostantól animált jelző jelenik meg, ha egy makró éppen fut.
+
+Hozzáadott opció a jelszavas védelemhez, amely lehetővé teszi a rákérdezést az alkalmazás megnyitásakor és / vagy a MacroDroid engedélyezésekor / letiltásakor.
+
+Hozzáadtuk a Naptáresemény hozzáadása művelet lehetőséget, amely előre értesíti a hozzáadott eseményt.
+
+Hozzáadásra került az Esemény naplózása művelet opció, amellyel makróhivatkozást adhat hozzá a kimenethez.
+
+A geokerítés konfigurációs képernyője mostantól megjeleníti a szélességi / lon értékeket és az aktuális helypontot (ha rendelkezésre áll).
+
+A Napló exportálása művelet mostantól minden esetben ezredmásodperces időbélyegeket ad vissza.
+
+Támogatottá váltak a felhasználói ikonok a Gyorsbeállítás csempékkel.
+
+Hozzáadott extra szűrési lehetőség a "Nem használt változókhoz" a Változók képernyőn.
+
+Hozzáadta az "Összes nem használt törlése" menüpontot a Műveleti blokklista képernyőhöz.
+
+Kis szalaghirdetés hozzáadva a kezdőképernyőhöz, hogy egyértelműen megmutassa, ha a MacroDroid le van tiltva.
+
+Hozzáadott beállítás a HTTP-kiszolgáló beállításaihoz, amely engedélyezi/megtagadja a hozzáférést a rendszer-/felhasználói naplóhoz HTTP-kiszolgálón keresztül.
+
+Hozzáadott opció a MacroDroid beállítási művelethez a Shake Trigger érzékenységének megváltoztatásához.
+
+Módosított Makró szerkesztése képernyő, hogy megakadályozza a keresési szalagcím elgördülését.
+
+
+
+5.47-es verzió (2024. augusztus)
+============================
+
+Eltávolítottuk az ujjlenyomat és a hangerőgomb kisegítő szolgáltatását, és áthelyeztük a funkciókat a fő MacroDroid kisegítő szolgáltatásba.
+
+Felugró üzenet eseményindító hozzáadva.
+
+Kisegítő szolgáltatások állapota eseményindító hozzáadva.
+
+Kisegítő szolgáltatások állapotkorlátozása hozzáadva.
+
+Opciók hozzáadva a "Korlátozás hozzáadása fent" és a "Korlátozás beillesztése fent" opciókhoz a Makró szerkesztése és az ActionBlock szerkesztése képernyőkön.
+
+A fejlécparaméterek támogatása hozzáadva a HTTP-kiszolgáló kérési eseményindító-válaszához és a HTTP-kiszolgáló válasza művelethez.
+
+Támogatás hozzáadva a csomagnév használatához az Alkalmazás engedélyezése/letiltása műveletben.
+
+Frissítettük a Lebegő szöveg műveletet, amely támogatja a százalékértékekre koppintást a pontosabb százalékok beállításához.
+
+Frissítettük az Alkalmazástevékenység indítása műveletet, hogy tartalmazza a nem elindíthatóként megjelölt alkalmazások tevékenységeit is.
+
+A mágikus szövegkezelés teljes újraírása a nagy szövegblokkok feldolgozásakor fellépő teljesítményproblémák megoldása érdekében.
+
+A Tweaked Dim Screen művelet megakadályozza a villódzást a halványítási szint módosításakor, amikor a halványítás már alkalmazva van.
+
+Kijavítottuk azt a hibát, amely miatt az értesítési korlátozás nem kezelte megfelelően az alkalmazások kizárása lehetőséget.
+
+A HotSpot művelethez mostantól MacroDroid Helper alkalmazásra (V1.16) van szükség Android 14+ rendszeren, mivel a Google kényszerítette az Android SDK frissítését.
+
+Egyéb kisebb javítások és optimalizálások.
+
+5.46-os verzió (2024. július)
+============================
+
+Hozzáadott MacroDroid ikon hosszan nyomja meg a parancsikon triggert.
+
+Shizuku-támogatás hozzáadva a Shell Script művelethez, és Shizuku-támogatás hozzáadva a meglévő csak gyökérfunkciókhoz.
+
+Egyidejű "Hangerő csökkentése + hangerő növelése" opciók hozzáadva a hangerőgomb-triggerhez (csak kisegítő lehetőségek esetén).
+
+Dinamikus fájl és helyi fájl URI-támogatása hozzáadva a Háttérkép beállítása művelethez.
+
+Frissített Animation Overlay művelet animált Gif támogatás hozzáadásához a Giphy keresőmotorral.
+
+A Kiválasztási párbeszédpanel művelet konfigurációja mostantól támogatja a bejegyzések átrendezését, és megakadályozza, hogy a véletlen visszanyomás elveszítse az összes módosítást.
+
+Varázsszöveg hozzáadva a változó típusának megjelenítéséhez.
+
+Varázsszöveg hozzáadva a zóna nevéhez, szélesség/hosszúságához és helyhivatkozásához a Geokerítés vagy a Hely eseményindító használatakor.
+
+Továbbfejlesztett környezetfüggő magic szövegtámogatás a Várj, amíg az Eseményindító műveletben használt eseményindítókhoz.
+
+A MacroDroid Log megnyitása művelet mostantól támogatja egy adott csatorna felhasználói naplójának megnyitását.
+
+Keresési funkció hozzáadva a Kedvencek konfigurálása képernyőhöz.
+
+Hozzáadtuk az "Előzetes ellenőrzés" opciót a Naptár korlátozáshoz.
+
+Harmadik féltől származó tartalom hozzáadva "Steve Wright" -tól a MacroDroid videók részben.
+
+Kijavítottuk azt a hibát, amely miatt a Makró engedélyezve trigger aktiválódott, amikor a MacroDroidot elhúzták a legutóbbi alkalmazásoktól.
+
+Kijavítottuk azt a hibát, amely miatt a szűrőszint módosítása a rendszernaplóban hibás/ismétlődő bejegyzések megjelenését okozhatta.
+
+Kijavítottuk azt a hibát, amely miatt a rendszer nem hozott létre egyéni értesítési csatornákat biztonsági mentés egyéni csatornákkal történő importálásakor.
+
+5.45-ös verzió (2024. június)
+============================
+
+Hozzáadott fotó trigger (Android 7+).
+
+Hozzáadott Telepített alkalmazások lekérése művelet.
+
+Hozzáadott Névjegyek lekérése művelet.
+
+Hozzáadtuk az Edge értesítési fény műveletet.
+
+Alkalmazástevékenység indítása művelet hozzáadva.
+
+Hozzáadtuk a kedvenc eseményindítók, műveletek és megkötések támogatását. Nyomja meg hosszan a + gombot a szerkesztési makró képernyőn a kedvenc elemek gyors csempéinek megjelenítéséhez.
+
+Frissítettük az Animációátfedés műveletet, hogy támogassa a makrók/műveletblokkok futtatását az animációra kattintáskor.
+
+Frissült a HTTP-kérés művelet, amely támogatja a visszaadott fejlécparaméterek szótárváltozóba való rögzítését.
+
+Frissítettük a Hely frissítésének kényszerítése műveletet, amely lehetővé teszi a következő művelet blokkolását és a helyadatok szótárváltozóba mentését.
+
+Frissítettük az Értesítés megjelenítése műveletet az azonosítók támogatásához, így az új értesítés felülírja az azonos azonosítóval rendelkező meglévőt.
+
+Frissült a Fájl megnyitása művelet a helyi fájl URI-ból való betöltés támogatásához (a Fájlművelet művelet Fájlok listázása beállításával érhető el).
+
+Támogatottá vált a változók biztonságosként való megjelölése, így a változók tartalma nem lesz exportálva sablon megosztásakor/feltöltésekor.
+
+Az egyéni képek támogatása hozzáadva az Értesítés megjelenítése műveletben és a MacroDroid állandó értesítésben.
+
+Új lehetőség hozzáadva a Képernyőérintések blokkolása művelethez az állapotsor blokkolásához (a kisegítő szolgáltatás engedélyezése szükséges).
+
+Hozzáadott varázsszöveg opció a stopperórák másodpercértékkel (óó:pp) történő megjelenítéséhez.
+
+Hozzáadott varázsszöveg opció a kilőtt ravasz megjelenítéséhez.
+
+Átdolgozta a műveletblokk szerkesztőképernyőjét, hogy sokkal gyorsabb legyen a nagyon nagy műveletblokkokhoz, és hozzáadta a ragadós műveletek fejlécének támogatását.
+
+Az App Launched Trigger csípése a MacroDroid indításának / bezárásának és a Google alkalmazás indításának / bezárásának észlelésével kapcsolatos problémák megoldásához.
+
+Módosította a Változó beállítása műveletet, így lehetővé teszi a többsoros bevitelt a karakterlánc-változókhoz.
+
+Hozzáadtuk az értesítési csatorna varázsszövegét az értesítési trigger használatakor (Android 8+).
+
+Kijavítottuk azt a hibát, amely miatt a Lebegő szöveg művelet néha nem jelent meg a művelet első futtatásakor (általában lassabb/régebbi eszközökön).
+
+Kijavítottuk azt a hibát, amely miatt a Lebegő szöveg művelet nem exportált semmilyen társított műveletblokkot a sablontárba való megosztáskor vagy feltöltéskor.
+
+Kijavítottuk azt a hibát, amely miatt a buborékértesítés bezárása miatt előfordulhatott, hogy a MacroDroid az előtérben indult el.
+
+Kijavítottuk azt a hibát, amely miatt a Felhasználó hitelesítése művelet megbízhatatlanul működött egyes Android 14-eszközökön.
+
+Kijavítottuk azt a hibát, amely miatt a lebegő gomb nem emlékezett arra, hogy hová helyezték át korábban, amikor újra engedélyezték.
+
+5.44-es verzió (2024. május)
+============================
+
+HTTP-kiszolgáló eseményindító és HTTP-kiszolgáló válasza művelet hozzáadva.
+
+Beszélő szöveg korlátozás hozzáadva.
+
+Hozzáadott szöveg megosztva a MacroDroid triggerrel.
+
+Frissítettük a Lebegő szöveg műveletet, hogy támogassa a kattintáskezelést, és hozzáadtuk a kattintáskor történő elrejtés lehetőségét.
+
+Frissült a felhasználói napló az egyéni naplózási csatornák, naplózási szintek és keresési funkciók támogatásához.
+
+Fájlok listázása beállítás hozzáadva a Fájlművelet művelethez.
+
+Blokkműveletek hozzáadva a befejezésig beállításhoz a Fájlműveleti művelethez.
+
+A Bluetooth művelet engedélyezése / letiltása mostantól rootolt eszközökön működik segítő fájl nélkül.
+
+Hozzáadott lehetőség az ismert kulcsok közül való választáshoz a Rendszerbeállítás eseményindítóban (kereséssel).
+
+Módosítottuk a Rendszerbeállítás műveletet, így minden rendszerbeállítási kategóriában kereshet egy kulcsot.
+
+Frissítse az e-mail küldése műveletet, hogy támogassa több napló csatolását és támogassa a naplók HTML formátumát.
+
+Továbbfejlesztett rendszernapló-kezelés a műveletblokkokhoz, beleértve a műveletblokkra és makróra mutató hivatkozásokat.
+
+Keresési funkció hozzáadva a Makrófuttatás művelethez, a Változó beállítása művelethez, a Változó eseményindítóhoz és a Változó megszorításához (ahol 10+ elem érhető el).
+
+Kijavítottuk azt a hibát, amely miatt a set változó felhasználói kéréssel nem tudott megfelelően írni egy tömbváltozó-bejegyzésbe.
+
+Kijavítottunk egy kis hibát a Rendszerbeállítás megváltozott eseményindítóban, amely azt eredményezheti, hogy egy makró kétszer aktiválódik egyetlen beállításfrissítésnél.
+
+Egyéb kisebb javítások és fejlesztések.
+
+5.43-as verzió (2024. április)
+============================
+
+Szöveg beolvasása nézetazonosítóból művelet hozzáadva (Android 11+).
+
+A Kiválasztási párbeszédpanel mostantól támogatja a testreszabható gombstílust a kiválasztható elemekhez.
+
+Hozzáadtuk az Átfedés állapotsor opciót a Képernyő elsötétítése művelethez Android 6+ rendszeren (a kisegítő lehetőségek használata engedélyezve van).
+
+Módosított Makrószerkesztés képernyő ragadós fejlécek hozzáadásához a nagy trigger-, művelet- és kényszerblokkokhoz.
+
+Továbbfejlesztett értesítési sáv Gombok ravaszkezelése a Makró szerkesztése képernyőn, így könnyebben azonosítható a beállított gomb.
+
+A Makró szerkesztése képernyőn mostantól megjelenik a kiválasztott kép a Lebegő gomb triggerhez és más elemekhez, ahol képeket használnak.
+
+Az optimalizált képernyőtartalom aktiválódik, így minden egyes képernyő olvasása egy kicsit kevesebb időt / feldolgozást igényel.
+
+Támogatottá vált a bejegyzések letiltása az IF feltétel műveletben.
+
+Hozzáadtuk a "Teszt korlát" menüpontot, hogy ellenőrizze a korlátozás aktuális állapotát (igaz vagy hamis) a makró szerkesztése képernyőn.
+
+Hozzáadtuk a "Tesztfeltétel" menüpontot az IF utasítás aktuális állapotának ellenőrzéséhez a makró szerkesztése képernyőn.
+
+Hozzáadott lehetőség az aktuális MacroDroid mód megjelenítésére/elrejtésére a szabványos MacroDroid értesítésben (alapértelmezés szerint csak új telepítések esetén).
+
+A Kategória engedélyezése/letiltása művelet mostantól több kategóriát is támogat.
+
+A ScreenShot tartalmának olvasása művelet átkerült a MacroDroid felhasználói felület kisegítő lehetőségei szolgáltatásba.
+
+Kijavítottuk azt a hibát, amely miatt a Változó beállítása művelet konfigurációs párbeszédpanelje alapértelmezés szerint a szótár másolására került, ha a kulcs manuális meghatározása volt kiválasztva.
+
+Kijavítottuk azt a hibát, amely miatt a műveletblokk nevének módosítása bizonyos körülmények között nem frissítette a hivatkozást a makró szerkesztése képernyőn.
+
+Egyéb kisebb javítások.
+
+5.42-es verzió (2024. március)
+============================
+
+Animációs átfedés művelet hozzáadva.
+
+Tömbkezelési művelet hozzáadva.
+
+Hozzáadott Pixelszín ellenőrzése művelet (Android 11+).
+
+Képernyőkép olvasása művelet hozzáadva (Android 11+).
+
+Hozzáadott Szöveg ellenőrzése a képernyőkép műveletben (Android 11+).
+
+Hozzáadott megjelenítési sűrűség művelet (ADB Hack vagy root szükséges).
+
+Frissített Take ScreenShot művelet a képernyőkép felhasználói felület nélküli rögzítésének lehetőségéhez (Android 11+).
+
+Frissült a JavaScript-művelet, amely tartalmazza a Rhino motor támogatását.
+
+A lebegő gomb eseményindító mostantól támogatja a szöveg beállítását kép helyett.
+
+A Betűméret művelet mostantól legfeljebb 250%-ot támogat (150%-ról).
+
+Végtelen hurok beállítás hozzáadva (szünetig) a Műveletek ismétlése művelethez.
+
+Regex-támogatás hozzáadva a hívásalapú eseményindítókhoz.
+
+Támogatottá vált az Érintések blokkolása művelet, amely csak a képernyő egy részét blokkolja.
+
+Országkód mágikus szöveg hozzáadva.
+
+Kijavítottuk azt a hibát, amely miatt az eseményindító engedélyezése és letiltása törött állapotba kerülhetett.
+
+Kijavítottuk azt a hibát, amely miatt a Mucis lejátszási eseményindítót nem lehetett szerkeszteni a létrehozás után.
+
+Kijavítottuk azt a hibát, amely miatt a Felhasználó hitelesítése művelet nem jelenített meg figyelmeztetést egyes Android 14 eszközökön.
+
+5.41-es verzió (2024. február)
+============================
+
+Hozzáadott Hangerő megjelenítése előugró művelet.
+
+Változó törlése művelet hozzáadva.
+
+A Kijelölési párbeszédpanel művelet mostantól támogatja a szótárkulcsok kijelölhető elemként való megjelenítését, valamint az alapértelmezett kijelölés időtúllépéssel történő beállítását.
+
+A Rendszerbeállítás művelet és megszorítás mostantól lehetővé teszi a meglévő kulcsok keresését (és hozzáadott keresési támogatást a varázsszöveg párbeszédablakban).
+
+A makró szerkesztése képernyőn egy trigger, művelet vagy kényszer hosszú megnyomásával mostantól egyenesen a konfigurációs párbeszédablakba kerül (a beállításokban letiltható).
+
+Mágikus szöveg hozzáadva a Sim-azonosítóhoz és a Sim-név a bejövő/kimenő SMS-triggerekhez.
+
+Varázsszöveg hozzáadva a híváscsoport(ok)hoz a hívásalapú eseményindítókhoz.
+
+A HTTP-kérés művelet mostantól támogatja a cURL-kérelmekből való alapszintű importálást és exportálást.
+
+A lebegő gomb eseményindítója és művelete mostantól támogatja az X,Y hely változó értékekkel történő beállítását.
+
+A Lebegő szöveg művelet mostantól támogatja az X,Y hely változó értékekkel történő beállítását.
+
+Az Értesítési művelet törlése és az Értesítési interakciós művelet mostantól támogatja az értesítési eseményindító használatát az értesítés azonosításához.
+
+Támogatás hozzáadva a helyi változók globális változókká konvertálásához (hosszan nyomja meg a helyi változót a kérdéshez).
+
+Kijavítottuk azt a hibát, amely miatt a másolás nem működött nem angol nyelveken az If Condition és Repeat While configuration párbeszédablakban.
+
+Kijavítottuk azt a hibát, amely miatt a HTTP-kérés nem kezelte megfelelően a tömörített válaszokat, és hibás adatokat adott vissza.
+
+Kijavítottuk az él kis- és nagybetűs hibáit, amelyek miatt a lebegő gomb rossz makrót hívhatott meg megnyomáskor.
+
+A geokerítés minimális sugara 20 méterre csökkent.
+
+Egyéb kisebb hibajavítások és fejlesztések.
+
+
+5.40-es verzió (2024. január)
+============================
+
+Eseményindító engedélyezése/letiltása művelet hozzáadva.
+
+Hozzáadta a MacroDroid párbeszédpanel törlése műveletet.
+
+Keresési funkció hozzáadva a műveletblokk szerkesztési képernyőjéhez.
+
+Hozzáadásra került a rendezés és a másolás/beillesztés támogatása az If Condition és az Repeat While configuration párbeszédablakba.
+
+A Naptár triggere mostantól támogatja az 1 perces frissítési gyakoriságot (az akkumulátor lemerülése miatt óvatosan használja).
+
+Támogatás hozzáadva a szótár/tömb nevének manuális meghatározásához az Iterate Array/Dictionary műveletben.
+
+Támogatottá vált a visszanyomás a Kijelölés párbeszédpanelen a makró folytatásához.
+
+Gyors csempeállapot kényszer hozzáadva.
+
+Hozzáadtuk a feliratok támogatását a Gyorsbeállítás csempéken (csak Android 10 esetén).
+
+Optimalizált lekérdezés a telepített alkalmazásokhoz – mostantól sokkal gyorsabban működik azokon az eszközökön, amelyeken sok alkalmazás van telepítve.
+
+Módosítottuk a Magic Text keresést, hogy a keresési kifejezés beírásakor a változókat a legfelső szinten tartalmazza.
+
+Kijavítottuk azt a hibát, amely miatt az iterációs tömb/szótárművelet előtti hurok miatt előfordulhatott, hogy az iterátor nem indult el az elején.
+
+Kijavítottuk azt a hibát, amely miatt egy tömb/szótárelem iterálás közbeni törlése megszakíthatta az iterációt.
+
+Kijavítottuk azt a hibát, amely miatt a nyelv módosítása visszaállíthatta a korábban törölt kategóriákat.
+
+Kijavítottuk azt a hibát, amely miatt a rendszeres időköz aktiválása megbízhatatlan volt, ha > 24 órára volt állítva.
+
+
+5.39-es verzió (2023. december)
+===========================
+
+Hozzáadott Szöveg megosztása művelet.
+
+Felhasználói felület kattintási eseményindítójának hozzáadva.
+
+Hozzáadott Buborék értesítési művelet (Android 10+).
+
+Lebegő gomb (megjelenítés/nem megjelenítés) korlátozás hozzáadva.
+
+Hozzáadott Get Light Level művelet.
+
+Környezeti megjelenítési állapot korlátozás hozzáadva.
+
+A WebHook Trigger mostantól támogatja a törzsszöveg elemzését.
+
+Támogatottá váltak a Gyors előre- és visszatekerés opciók a Médiagombok ravaszain.
+
+A Kijelölési párbeszédpanel művelet mostantól támogatja a kijelölt billentyű visszaadását szótárak használatakor.
+
+Kijavítottuk azt a hibát, amely miatt a beágyazott nézetben a helyi változók helytelenül jelenhettek meg.
+
+Kijavítottuk azt a hibát, amely miatt az átrendezés letiltása után továbbra is át lehetett rendezni az elemeket a Makró szerkesztése képernyőn.
+
+Beállítás hozzáadva a Naptár eseményindítóhoz a naptárfrissítési gyakoriság frissítéséhez.
+
+Hozzáadtuk a "Nyelvi kód" varázsszöveget, hogy az aktuális rendszernyelvet 2 karakteres nyelvi kódként kapjuk meg (ISO 639).
+
+5.38-as verzió (2023. november)
+============================
+
+A Makró szerkesztése képernyő mostantól támogatja a keresési funkciót.
+
+JavaScript-művelet hozzáadva (béta).
+
+Hozzáadtuk a Fold State triggert.
+
+Hajtási állapot kényszer hozzáadva.
+
+Értékek összehasonlítása A kényszer mostantól támogatja az egész és decimális értékek kifejezéseit.
+
+Módosított alkalmazás elindított/bezárt eseményindító és előtérbeli alkalmazásnév a megbízhatóbb működés érdekében.
+
+Támogatottá vált a felhasználói ikonok szerepeltetése a rájuk hivatkozó makrók/kategóriák megosztásakor. (A sablonok jelenleg nem támogatottak)
+
+A Hibajelentés funkció mostantól alapvető makrónév-kereséssel rendelkezik, és támogatja a műveletblokkok kiválasztását.
+
+Kijavítottuk azt a hibát, amely miatt a makrófuttatási korlátozás nem működött megfelelően az "Ez a makró" hivatkozáskor.
+
+Kijavítottuk azt a hibát, amely miatt a makrók/műveletblokkok közeli eszközökkel való megosztása bizonyos helyzetekben nem működött.
+
+Támogatottá vált az ikonok színezése a makró parancsikonjain.
+
+Módosított Magic Text bejegyzés a globális/helyi változók kiválasztásának elkülönítéséhez (hogy megkönnyítse a nagyszámú változóval rendelkező felhasználók számára).
+
+A Képernyő tartalmának olvasása műveletnek új lehetősége van a szöveges tartalom nélküli nézetazonosítók belefoglalására.
+
+Egyéb apró csípések és javítások.
+
+
+
+5.37-es verzió (2023. október)
+===========================
+
+Optimalizáltuk a makró szerkesztése képernyőt, hogy sokkal gyorsabb legyen, ha nagyon nagy makrókkal dolgozik.
+
+Makró fut/nem fut korlátozás hozzáadva.
+
+Makró kész eseményindító hozzáadva.
+
+Hozzáadott bekapcsológomb hosszan Nyomja meg a ravaszt (csak Android 13+ esetén) - A MacroDroid alapértelmezett asszitánsra van állítva.
+
+Időtúllépések támogatása hozzáadva az Eseményindító műveletre várjon.
+
+A képernyőátfedések támogatása hozzáadva a Képernyőkörnyezet eseményindítóhoz, a Képernyő tartalmának olvasása művelethez és a Szöveg ellenőrzése a képernyőn művelethez.
+
+Támogatottá váltak a képernyőátfedések a felhasználói felület interakciós műveletében, amikor szöveges/nézetazonosítókra kattintanak.
+
+A varázsszöveg támogatása hozzáadva a webhook-eseményindító-azonosítókhoz.
+
+Alkalmazáscsomag varázsszövege hozzáadva az alkalmazás elindított/bezárt eseményindítójához.
+
+Támogatottá vált a rajzolás az állapotsor területén a Lebegő szöveg műveletben.
+
+Hozzáadta az "Enter billentyűt" lehetőség a felhasználói felület interakciós műveletében (csak Android 11+ esetén).
+
+Frissítve a Következő megerősítése és az IF Confirmed Then műveletek frissítése a legfeljebb 20 perces időtúllépések támogatásához.
+
+Kijavítottuk azt a hibát, amely miatt az alkalmazás elindította az indítót az "összes alkalmazás" opcióval, amely nem aktiválódott a MacroDroid indításakor / bezárásakor.
+
+Kijavítottuk azt a hibát, amely miatt a felhasználói felület interakciója bizonyos esetekben nem kattintott megfelelően az azonosítás az alkalmazásban lehetőség használatakor.
+
+Kijavítottuk azt a hibát, amely miatt a felhasználói felület interakciós beillesztése mindig a szövegmező végére illesztette be a szöveget, függetlenül a kurzor pozíciójától.
+
+Hozzáadott com.wireguard.android.permission.CONTROL_TUNNELS engedélyt a jegyzékfájlhoz.
+
+5.36-os verzió (2023. szeptember)
+========================
+
+Szöveg fordítása művelet hozzáadva.
+
+Szöveg eltávolítása lehetőség hozzáadva a Szövegkezelés művelethez.
+
+Támogatottá vált a HTML-formázás lebegő szövegben művelet.
+
+A webhook-eseményindító mostantól támogatja az IP-címek engedélyezési listáját.
+
+Környezetspecifikus varázsszöveg hozzáadva a hívó IP-címéhez webhook-eseményindító használatakor.
+
+Támogatottá vált az SMTP e-mailen keresztüli megosztás a Képernyőkép készítése művelethez.
+
+Hozzáadott lehetőség a beállításokban a kezdőképernyő csempéinek soronkénti számának konfigurálásához.
+
+Hozzáadott beállítás a Képernyőtartalom olvasása eseményindítóhoz, amely megakadályozza, hogy felolvassa a képernyőt, amikor a MacroDroid az előtérben van.
+
+Konfigurálható maximális sorszám hozzáadva a szövegbejegyzésekhez a MacroDroid fiókban.
+
+Hozzáadott lehetőség a felhasználói hitelesítési művelethez a PIN-kód/pöccintési minta engedélyezéséhez vagy letiltásához.
+
+Kijavítottuk azt a hibát, amely miatt a JSON-elemzési művelet nem működött megfelelően, ha a sztring manuálisan definiált kulccsal/indexszel rendelkező szótárból/tömbből származik.
+
+Az Android cél SDK kötelező módosításai miatt a Bluetooth-művelethez mostantól új MacroDroid segítő alkalmazásra (v1.9) van szükség az Android 13+ rendszeren való működéshez.
+
+Egyéb kisebb javítások és fejlesztések.
+
+5.35-ös verzió (2023. július)
+========================
+
+Felhasználó hitelesítése művelet hozzáadva.
+
+Értesítési válasz művelet hozzáadva (lehetővé teszi az automatikus válaszokat a WhatsApp/Telegramban) Android 7+ rendszerhez.
+
+Az Export Macro és az AutoBackup mostantól támogatja a fájltitkosítást.
+
+A Képernyőtartalom eseményindító mostantól támogatja a nézetazonosító egyeztetésének lehetőségét.
+
+A Következő művelet megerősítése és a Ha megerősített művelet mostantól támogatja az automatikus megszakítási időtúllépést.
+
+További 8 gyorscsempe támogatása hozzáadva (16 már elérhető).
+
+Hozzáadta az "Akkumulátor árama most" varázsszöveget.
+
+Visszavonási funkció hozzáadva elemek törlésekor a makró/műveletblokk szerkesztése képernyőn.
+
+A makró szerkesztése képernyő mostantól támogatja a felfelé/mozgatás lefelé opciót, ahol egy elemhez több gyermekkorlátozás is elérhető.
+
+Varázsszöveg hozzáadva a SIM2-operátor nevéhez (ahol alkalmazható).
+
+A Magic szövegbeviteli párbeszédpanel mostantól támogatja a keresést.
+
+Hozzáadásra került a fiók bezárása beállítás a MacroDroid fiókban lévő makróelemekhez.
+
+Kijavítottuk azt a hibát, amely miatt a lebegő gombképpontok helye kissé megszakadt a legutóbbi kiadásban.
+
+Egyéb kisebb javítások.
+
+
+5.34-es verzió (2023. május)
+========================
+
+Hozzáadott Szöveg ellenőrzése a képernyőn művelet.
+
+Az Értesítés megjelenítése és a MacroDroid ikon beállítása műveletek mostantól támogatják a szöveget ikonként.
+
+Az E-mail küldése művelet mostantól támogatja a logikai érték visszaadását, amely jelzi, hogy az e-mail sikeresen el lett-e küldve.
+
+A zseblámpa művelet mostantól támogatja a fényerőt (Android 13+).
+
+A Lebegő gomb eseményindító (és a Lebegő gomb konfigurálása művelet) mostantól támogatja az X,Y hely százalékos értékeit.
+
+A MacroDroid parancsikon widget mostantól műveleti blokkokat és makrókat is futtathat.
+
+Kijavítottuk azt a hibát, amely miatt a naptármágia szövegmezői nem működtek a naptárindítóval.
+
+Kijavítottuk azt a hibát, amely miatt a Spotify művelet nem működött egyes Spotify prémium felhasználók számára.
+
+Kijavítottuk azt a hibát, amely miatt az összehasonlítási érték nem tette lehetővé az iterátorból származó érték kiválasztását.
+
+Kijavítottuk azt a hibát, amely miatt a kényszerített helyfrissítési művelet bizonyos esetekben nem frissítette a helyet.
+
+5.33-as verzió (2023. május)
+===========================
+
+Hozzáadta a Kijelölési párbeszédpanel műveletet.
+
+Érintések blokkolása művelet hozzáadva.
+
+Titkosított kimenet támogatásának hozzáadása makrókészlet exportálásakor.
+
+Az alkalmazás futási korlátozása mostantól támogatja a csomagnév megadását (változóval adható meg).
+
+A felhasználói felület interakciója Kattintson opció most megvárhatja a befejezést, és visszaadhatja a kattintás eredményét.
+
+Az IF feltétel műveletnek mostantól lehetősége van a naplózás megakadályozására, ha a feltétel-ellenőrzés hamis.
+
+A rendszernaplóban új lehetőség van az ezredmásodpercek megjelenítésére/elrejtésére.
+
+Rendszeridő (ms) érték hozzáadva a varázsszöveghez.
+
+Bahasa indonéz fordítás hozzáadva.
+
+5.32-es verzió (2023. április)
+=========================
+
+Spotify művelet hozzáadva (béta).
+
+Hozzáadott Spotify trigger.
+
+Hozzáadott Rendszerbeállítás-módosítás eseményindító.
+
+Hozzáadott MacroDrod fiókállapot-megszorítás.
+
+Az SMS Trigger mostantól támogatja az előfizetési azonosító kiválasztását a két SIM-kártyás eszközökön.
+
+A Fájl megnyitása művelet mostantól támogatja a dinamikus fájlneveket.
+
+Hozzáadásra került a százalékos értékek támogatása a felhasználói felület interakciós kézmozdulat-műveleteiben.
+
+Mágikus szöveg hozzáadva a műveletblokk nevéhez.
+
+Frissített kategóriák a műveletek hozzáadása képernyőn.
+
+Kijavítottuk azt a hibát, amely miatt az Android Wear trigger csatlakozási/leválasztási lehetősége már nem működött.
+
+Kijavítottuk azt a hibát, amely miatt egy kategória importálása műveletblokkok törlését eredményezhette.
+
+Kijavítottuk azt a hibát, amely miatt a közeli megosztás nem működött Android 13-as eszközökön.
+
+Egyéb kisebb hibajavítások és fejlesztések.
+
+5.31-es verzió (2023. február)
+=============================
+
+Hozzáadott támogatás a hosszú megnyomáshoz a Gyorsbeállítások csempe triggerben.
+
+Frissített Képernyőtartalom eseményindító, amely támogatja a képernyő képernyőről való eltávolításakor aktiválódó lehetőséget.
+
+Frissített mechanizmus, amely egy másik nyelvet kényszerít az alkalmazásban, hogy remélhetőleg javítsa a megbízhatóságot.
+
+Kijavítottuk azt a hibát, amely miatt a varázsszövegben kettőnél több változóra mutató hivatkozásokat a rendszer nem cserélte le megfelelően.
+
+Kijavítottuk azt a hibát, amely miatt lehetetlen volt szótárkulcselemet kiválasztani egy gyermekszótárban (a Változó beállítása műveletben).
+
+Kijavítottuk azt a hibát, amely miatt a Változó beállítása művelet a felhasználói parancssorral nem engedélyezte az OK gombot, amikor értéket állított be egy szótárelemen belül.
+
+Kijavítottuk azt a hibát, amely miatt a sablonokból megtekintett műveletblokkok nem törlődtek megfelelően.
+
+Kijavítottuk azt a hibát, amely miatt előfordulhatott, hogy a Makró futtatása művelet nem a megfelelő makrót nyitotta meg, amikor a csatolt makróra kattintott.
+
+Mágikus szöveg hozzáadva a makróazonosítóhoz.
+
+Egyéb kisebb javítások.
+
+5.30-as verzió (2023. január)
+============================
+
+Rendszernapló-eseményindító hozzáadva.
+
+Hozzáadott alkalmazás telepített korlát.
+
+Lebegő szöveg megszorítás hozzáadva.
+
+Hozzáadta a Rendszernapló hossza beállítást a MacroDroid beállítások képernyőhöz.
+
+Keresési funkció hozzáadva a plugin képernyőhöz.
+
+Automatikus elrejtés késleltetés után opció hozzáadva a Lebegő szöveg művelethez.
+
+A százalékos értékek támogatása hozzáadva a felhasználói felület interakciós kattintási konfigurációjában.
+
+Mostantól támogatottak a helyettesítő karakterek a kattintási azonosítóhoz a felhasználói felület interakciós műveletében.
+
+Mostantól támogatott a jelzők beállítása a Szándék küldése műveletben.
+
+Mostantól támogatott a szótár-/tömbbejegyzésekben való keresés, ha sok kulcs van jelen.
+
+Explicit "Ez a makró" opció hozzáadva az Engedélyezve/Letiltva makróművelethez.
+
+Frissített Android parancsikon művelet az "Összes alkalmazás megjelenítése" és a "Kisegítő lehetőségek váltása" opciók hozzáadásához az Android 11+ rendszerhez.
+
+Kijavítottuk azt a hibát, amely miatt az ikonokat nem lehetett frissíteni a fiókelemeken, és a varázsszövegcímkék nem jelentek meg az alkalmazások és parancsikonok esetében.
+
+A módosított naptár aktiválódik, így a naptár nevével egyezik, ha a mögöttes naptárazonosító bármilyen okból megváltozik.
+
+Frissített JSON-elemzési művelet, így a logikai változók helyesen lesznek mentve logikai változótípusként (nem karakterláncokként).
+
+5.29-es verzió (2022. november/december)
+=====================================
+
+Hozzáadásra került a sablontároló-előfizetések támogatása a makrókon/felhasználókon, hogy értesítést kapjanak a frissítésekről (csak profi felhasználók számára).
+
+JSON-kimeneti művelet hozzáadva.
+
+Hozzáadva a Digitális asszisztens beállítása művelethez.
+
+A repülőgép üzemmód akció mostantól működhet az ADB hackeléssel (nincs szükség arra, hogy a MacroDroid legyen az alapértelmezett digitális asszisztens).
+
+A tevékenységfelismerési eseményindító mostantól kevesebb, mint összehasonlítást támogat a tevékenység befejezésének észleléséhez.
+
+A Képernyőtartalom eseményindító mostantól állítható frissítési gyakorisággal rendelkezik.
+
+Támogatás hozzáadva egy webhook-eseményindító eszközazonosítójának új eszközre való portolásához.
+
+A lebegő szöveg művelet mostantól támogatja a bal, középső és jobb oldali igazítást.
+
+Kijavítottuk azt a hibát, amely miatt a naptárban szereplő egész napos események helytelenül aktiválódhattak a nyári időszámítás miatt.
+
+Kijavítottuk azt a hibát, amely miatt az eseményindító adott értékei (pl. bejövő hívás száma) nem működtek a következő eseményindító művelet előtti várakozás után.
+
+Kijavítottuk azt a hibát, amely miatt a párbeszédablakokban lévő decimális számok helytelenül jelenhettek meg hivatkozásként.
+
+Kijavítottuk azt a hibát, amely miatt a műveletblokk nem futott bizonyos helyzetekben, amikor a kategorizálatlan kategória le volt tiltva.
+
+5.28-as verzió (2022. október)
+=============================
+
+Lebegő szöveg művelet hozzáadva.
+
+"Működő változók" hozzáadva a műveletblokkokhoz.
+
+A Műveletblokk művelet mostantól támogatja a következő műveletek blokkolásának lehetőségét a befejezésig (alapértelmezés szerint engedélyezve).
+
+Hozzáadott Szótár/tömb bejegyzés törlése művelet, amely lehetővé teszi az egyes bejegyzések törlését vagy törlését.
+
+További támogatás az automatizált fordításokhoz valós időben a Template Store-ban.
+
+További támogatás a műholdas nézethez a Geofence konfigurációs képernyőjén.
+
+Mágikus szöveg hozzáadva a Cell Tower jelerősségéhez.
+
+Továbbfejlesztett keresés a műveletben blokklista képernyő, hogy a blokkokon belüli műveleteket is megkeresse.
+
+Kijavítottuk azt a hibát, amely miatt a szövegmanipuláció tömbre osztása nem működött több karakterhatárolójellel.
+
+Új beállítás hozzáadva a trigger opciókhoz, hogy beállítsa a bekapcsológomb váltó ravaszának a befejezési idejét.
+
+Egyéb kisebb javítások és fejlesztések.
+
+Verzió 5.27.8 (2022. szeptember)
+===============================
+
+Kis hibajavítási kiadás, számos kisebb probléma megoldásához.
+
+5.27-es verzió (2022. szeptember)
+=============================
+
+Hozzáadott Kisegítő szolgáltatás művelet (ADB Hack szükséges).
+
+Hozzáadott funkciók, amelyek lehetővé teszik, hogy a kisegítő szolgáltatások lehetővé tegyék az olyan problémák megoldását, ahol egyes eszközök letilthatják őket (ADB Hack szükséges).
+
+Hozzáadott rendszerbeállítási korlát.
+
+Hozzáadta az összes és rendelkezésre álló RAM-értéket a mágikus szöveges beállításokhoz.
+
+Numerikus mutatók hozzáadva a hangmagasság és a sebesség értékeihez a szövegről a beszédre műveletben.
+
+Hozzáadott megoldás a Samsung indítóproblémájához, hogy megakadályozza, hogy a parancsikonok elveszítsék ikonjukat / címkéjüket, amikor a sötét módot be- és kikapcsolják.
+
+Mágikus szöveg hozzáadva a SIM/carrier hálózat nevéhez.
+
+Mágikus szöveg hozzáadva a cellakapcsolati típushoz (pl. 3G/4G/5G).
+
+Hozzáadott mágikus szöveg a MacroDroidhoz profi (igaz vagy hamis értéket ad vissza)
+
+Hozzáadta az "Ez a makró" opció támogatását a Makró engedélyezve/Letiltva korlátozáshoz.
+
+Hozzáadva a szóközök karbantartása opció az előugró üzenetművelethez.
+
+Hozzáadott támogatás a stopperórák átnevezéséhez.
+
+Hozzáadott lehetőség az utolsó szerkesztési idő megjelenítésére a makrólista képernyőn (Kezdetben minden érték ismeretlen lesz, amíg nem szerkesztik ezzel a legújabb verzióval).
+
+A Változó beállítása művelet (az Új változó beállítással) mostantól futásidőben hozza létre a változót, és támogatja a változó nevének mágikus szövegét.
+
+A Wear OS társalkalmazás mostantól lehetővé teszi a lista görgetését forgóvezérléssel.
+
+Továbbfejlesztések és javítások a szótár/tömbkezelés körül a Változó eseményindítóban és megszorításban.
+
+Kijavítottuk a hibát, amely miatt a változóbeállítási művelet bizonyos helyzetekben tömb helyett szótárat hozhatott létre.
+
+Kijavítottuk a hibát, amely miatt a helyi tömb/szótár változót nem lehetett átnevezni.
+
+Kijavítottuk a hibát, amely miatt a műveletblokkokat tartalmazó sablonok megtekintése nem kívánt globális változókat adhat hozzá.
+
+Kijavítottuk a hibát, amely miatt egy bejegyzés törlése egy műveletblokk-szótárból/tömbből törölte a szótárt/tömböt.
+
+5.26-os verzió (Július 2022)
+========================
+
+A Makró futtatása, a Makró megszakítása és a Makró letiltása műveletek mostantól támogatják a makró név szerinti beírását (támogatja a varázsszöveget, hogy engedélyezze a makrónevekre való hivatkozást egy változóból).
+
+A további beállítások, például a napnyugta/napkelte helye és az időjárás helye mostantól mentésre kerülnek exportáláskor és automatikus biztonsági mentéssel.
+
+A MacroDroid Variable megszorítás mostantól támogatja a kulcsok manuális definiálása beállítást a szótár/tömb változókhoz.
+
+Az Option Dialog mostantól támogatja az alapvető HTML-formázást a fő üzenet szövegében.
+
+Kijavítottuk azt a hibát, amely miatt a kategóriákat nem lehetett hozzáadni vagy eltávolítani a kategórialista-képernyőről.
+
+Kijavítottuk a bejövő SMS-/hívási eseményindítók hibáját, amely miatt a szám-összehasonlítás nem mindig működött megfelelően, ha mágikus szöveget használt.
+
+Kijavítottuk a hibát, amely miatt a MacroDroid parancsikon elindítása minimálisra csökkentette a MacroDroidot, ha az előtérben van.
+
+Kijavítottuk a hibát, amely miatt a műveletblokk ismétlődhetett, amikor olyan makrót importált, amely már ugyanarra a műveletblokkra hivatkozik.
+
+Kijavítottuk a hibát, amely miatt a műveletblokkok törölve lehettek bizonyos műveletek tesztelésekor.
+
+Kijavítottuk a hibát, amely miatt a hurok megszakítása nem mindig működött megfelelően a szótár/tömb iterációs művelettel.
+
+Kijavítottuk a hibát, amely miatt az ikonkeresés nem működött megfelelően az ikoncsomagok esetében.
+
+Kijavítottuk a hibát, amely miatt a lebegő gomb konfigurálása nem tette lehetővé az eseményindítók kiválasztását a Várakozás az eseményindítóig műveleten belül.
+
+Egyéb kisebb javítások.
+
+Verzió 5.25.6 (Július 2022)
+===============================
+
+Kis hibajavítási frissítés az előző 5.25-ös verzióhoz. Kijavítja az előző kiadásban talált számos kisebb problémát.
+
+5.25-ös verzió (2022. június)
+========================
+
+Makró engedélyezve eseményindító hozzáadva.
+
+Hozzáadott opció a lebegő gomb triggerhez, hogy letiltsa az eseményindítót (nem a teljes makrót), ha a kuka ikonnal távolítja el.
+
+A lebegő gomb konfigurációs művelete hozzáadva.
+
+Frissített mágikus szöveg, hogy támogassa a göndör zárójeleket, hogy csökkentse a szótár/tömb szintaxisával való összetévesztést. (A szögletes zárójelek továbbra is támogatottak, a {system_time} és a [system_time] mind a munka, mind az alapértelmezett módosítható a MacroDroid beállításokban)
+
+Jobb tömb-/szótártámogatást adott az olyan műveletekhez, mint a HTTP-kérés és a Fájlolvasás, hogy lehetővé tegye a közvetlen írást az egyéni kulcsokra.
+
+Hozzáadta a "Felosztás tömbre" opciót a Szövegkezelés művelethez.
+
+A módosított naptár eseményindítója jobban működik az egész napos eseményekkel a különböző időzónákban.
+
+Sablonmakró megtekintésekor egy új menüpont áll rendelkezésre a "Letiltva hozzáadás" menüponthoz.
+
+A hangbevitel mostantól támogatja a közvetlenül az új szótárbillentyűkbe/tömbindexekbe való beállítást varázsszöveggel.
+
+Az előugró üzenetek művelete mostantól támogatja az alapvető html-t, például <b>a FÉLKÖVÉR</b> és <i>a DŐLT BETŰS</i>
+
+Hozzáadott Engedélyezés /Letiltás (beleértve a gyermekeket is) a makró képernyő szerkesztéséhez, megkönnyítve a nagy feltételek és hurkok engedélyezését.
+
+Hozzáadott lehetőség a vízszintes csúsztatások engedélyezésére / letiltására a MacroDroid Fiók megnyitásához.
+
+Az "Felülírás" opció hozzáadva az Írás fájlba művelethez.
+
+Lehetőség hozzáadva a WhatsApp Küldési művelethez, hogy támogassa mind a normál, mind az üzleti alkalmazást.
+
+Mágikus szöveg hozzáadva a szótár/tömbmérethez.
+
+Kijavítottuk a hibát, amely miatt a cut használata IF/Loop blokkon nem működött megfelelően.
+
+Kijavítottuk a hibát, amely miatt az opció párbeszédpanel folytatása opció nem működött megfelelően.
+
+Kijavítottuk a hibát, amely miatt a rögzítési mikrofon művelet nem írt megfelelő fájlkiterjesztést.
+
+Kijavítottuk a hibát, amely miatt a változó értéke nem frissült, ha a MacroDroid fiók nyitva volt.
+
+Kijavítottuk a hibát, amely miatt a letiltott makrók szerkesztése újra engedélyezheti azt.
+
+Kijavítottuk a hibát, amely miatt a megjelenítési értesítés nem ment át megfelelően a változókon a Futtatás megnyomáskor beállításban.
+
+Hozzáadott lehetőség a beállításhoz, hogy visszaállítsa az összes olyan súgóinformációs kártyát, amelyet korábban kihagytak.
+
+5.24.3-as verzió (2022. június)
+==========================
+
+Erre a frissítésre a Google-nak szüksége volt egy Recognizer szolgáltatás hozzáadásához, ha a MacroDroidot használta alapértelmezett asszisztensként.
+
+5.24-es verzió (2022. május)
+==========================
+
+Hozzáadott Képernyőtartalom olvasása művelet.
+
+Hozzáadott képernyőtartalom eseményindító.
+
+Hozzáadva: Olvasás a fájlból művelet.
+
+Hozzáadott kategória engedélyezve /letiltva korlát.
+
+Hozzáadott Napló exportálása művelet.
+
+Hozzáadott lehetőség a nézetazonosító manuális megadására a felhasználói felület interakciós kattintásaiban.
+
+Hozzáadva a festő opciót a Hangerő beállítása művelethez olyan eszközökhöz, amelyek nem teszik lehetővé a hangerő beállítását a MacroDroiddal a háttérben.
+
+Hozzáadásra került a Felugró üzenet művelethez az előző előugró ablak törléséhez (hasznos például a második visszaszámláláshoz)
+
+Lehetőség hozzáadva az Üzenet párbeszédpanelhez és az Opció párbeszédpanel műveletekhez, hogy megakadályozzák a vissza gomb bezárását párbeszédpanel.
+
+Hozzáadott támogatás a WebHook eseményindítóban a szótár/tömbváltozók bejegyzéseinek beállításához.
+
+A hibabejelentési funkció mostantól magában foglalja a képernyőképek hozzáadásának lehetőségét is.
+
+Támogatottá vált a parancsikonok átnevezése a MacroDroid fiókban.
+
+A MacroDroid Fiók mostantól támogatja a felfelé csúsztatással és /vagy lefelé csúsztatással történő megnyitás lehetőségeit.
+
+Egyéb kisebb javítások és finomítások.
+
+5.23-as verzió (2022. április)
+==========================
+
+Hozzáadott Szótár és tömb változótípusok (csak Pro felhasználók esetén).
+
+Hozzáadott Iterációs szótár/tömb művelet, amellyel a szótáron/tömbön belüli összes elemen áthurkolhatók.
+
+Hozzáadott JSON-elemzési művelet.
+
+Módosította a Gyorsbeállítás beállítása csempeállapot beállítása műveletet a Gyorscsempe-művelet konfigurálása művelethez, hogy lehetővé tegye az ikon és a címke további beállítását.
+
+Gesztussorozat-beállítással bővült a felhasználói felület interakciós művelete, amely lehetővé teszi az összetett kézmozdulatokat, például az ujjaláírás zárolási mintáit.
+
+Lehetőség hozzáadva a felhasználói felület interakciós konfigurációs képernyőjéhez az érintési hely átfedésének átkapcsolásához.
+
+Lehetőség nyílt az egyes pufferek engedélyezésére/letiltására a Logcat eseményindítóhoz.
+
+Ip-címkorlátozás hozzáadva.
+
+Hozzáadott Magic Text a WebHook alap URL-hez.
+
+Hozzáadta a keresési funkciót a Műveletblokkok listája képernyőhöz.
+
+Hozzáadott lehetőség a rendszernapló HTML-ben történő exportálására, hogy ugyanazt a színkódolást tudja kiadni, mint az alkalmazásban.
+
+Kivágási opció hozzáadva a Makró- és műveletblokkoló képernyők szerkesztése funkcióhoz, hogy lehetővé tegye a teljes kivágási, másolási és beillesztési funkciókat.
+
+A "Tesztműveletek" műveletblokk mostantól megjeleníti a kimeneti változók összegzését futtatáskor.
+
+Kijavítottuk azt a hibát, amely miatt a makróhívási módszer nem minden esetben működött megfelelően.
+
+Kijavítottuk azt a hibát, amely miatt a "nincs esemény" állapot nem működött megfelelően a Naptár megszorításában.
+
+Kijavítottuk a hibát, amely miatt a HTTP-kérelem műveletben a fájlnév nem dolgozta fel megfelelően a mágikus szöveges értékeket.
+
+Kijavítottuk azt a hibát, amely miatt a műveletblokkon belüli műveletek nem szakadtak meg a szülőmakrók törlésekor.
+
+Kijavítottuk a hibát, amely miatt egyes eszközökön helytelenül lehetett elforgatni a háttérképet.
+
+Egyéb kisebb javítások és csípések.
+
+Verzió 5.22.6 (Február 2022)
+============================
+
+Kijavítottuk a hibát, amely miatt a MacroDroid videók nem működtek.
+
+5.22-es verzió (2022. február)
+============================
+
+Http-kérési művelet hozzáadva.
+
+Az Invocation Method korlátozás hozzáadva, amely lehetővé teszi az észlelést, ha egy makrót nem szabványos makróaktiválókból hívnak meg.
+
+Alapvető (csak angol nyelvű) keresési funkció hozzáadva az ikonválasztóhoz.
+
+Műveletblokk-támogatás hozzáadva a MacroDroid Drawerhez.
+
+A biometrikus adatok támogatása és a jelszókérés késleltetése a jelszavas védelmi beállításokban.
+
+Hozzáadott mágikus szöveg a MacroDroid verziószámához.
+
+Hozzáadta az eset figyelmen kívül hagyása beállítást a Változó eseményindítóhoz és korlátozáshoz.
+
+Hozzáadott támogatás a logikai változóértékek műveleti blokk bemeneti paraméterekbe való továbbításához.
+
+Hozzáadásra került a Mellőzés (Makró törlése) opció az opció párbeszédpanelhez, hogy megakadályozza a további műveletek futtatását, ha úgy van kiválasztva.
+
+Lehetőség nyílt a változók típus szerinti szűrésére a globális változók képernyőjén.
+
+Hozzáadásra került a kizárási lehetőség a hívás/sms alapú eseményindítókhoz, és keresett kapcsolattartási neveket adott hozzá a kiválasztási párbeszédpanelhez.
+
+Kijavítottuk a hibát, amely miatt a tasker tömbértékek egyetlen karakterláncba való összeállítása néha rosszul hozta az elemek sorrendjét.
+
+Kijavítottuk a hibát, amely miatt a közeli eszközzel való megosztás nem mindig működött Android 12-es eszközökön.
+
+Kijavítottuk a hibát, amely miatt a Hangkimenet művelet globális változójának kiválasztása rossz változót állíthat be.
+
+Kijavítottuk a hibát, amely miatt a Bluetooth jeladó aktiválása végül többször is aktiválódhatott egyetlen eseménynél.
+
+Kijavítottuk azt a hibát, amely miatt a Geofence nem a megfelelő területre összpontosított kereséskor vagy nagyításkor/kicsinyítéskor.
+
+Kijavítottuk a hibát, amely miatt a Wifi SSID-lista ismétlődő bejegyzéseket tartalmazhatott.
+
+Kijavítottuk a hibát, amely miatt egy helyi változóban lévő nagyon hosszú karakterlánc megakadályozhatta az OK gomb elérését.
+
+Kijavítottuk a hibát, amely miatt a MacroDroid beállítása ikon bizonyos esetekben nem tudta frissíteni az ikont.
+
+Kijavítottuk a hibát, amely miatt a naptármegszorításban az egész napos események nem működtek megfelelően a különböző időzónákban.
+
+Sok más kisebb javítás és csípés.
+
+5.21-es verzió
+============
+
+Kis hibajavító kiadás.
+
+A módosított művelet blokkolja a bemeneti paraméterek kezelését, így üres értéket adhat át, és mindig az alapértelmezett bemeneti parm értéket használhatja.
+
+A "Megosztás képként" opció hozzáadva az Action Block szerkesztési képernyőhöz.
+
+Kijavítottunk néhány apró problémát a műveletblokkok szerkesztésével kapcsolatban.
+
+Kijavítottuk azt a hibát, amely miatt a szabad felhasználók elveszíthették a makrókat, ha az 5 makróra vonatkozó korláton vannak, és elvetik a makró- vagy műveletblokk szerkesztését.
+
+Kijavítottuk azt a hibát, amely miatt a kezdőképernyőn az "Utolsó megnyitás" csempe bizonyos helyzetekben nem működött.
+
+Kijavítottuk azt a hibát, amely miatt a "Hangbevitel" művelet nem váltotta ki a változó eseményindítót egy változóba való íráskor.
+
+Kijavítottuk a hibát, amely miatt a műveletblokkban lévő elemek beillesztése nem mindig konfigurálta megfelelően a műveleteket.
+
+5.20-as verzió
+============
+
+Műveletblokkok hozzáadásával lehetővé teszi a makrókból vagy más műveletblokkokból meghívható, gyakran használt műveletek csoportosítását.
+
+Hozzáadott támogatás a közeli eszközökre való megosztáshoz a makrószerkesztés és a műveletblokk szerkesztési képernyőjéről.
+
+Hozzáadta a "Gombsáv képének beállítása" műveletet, amely lehetővé teszi a gombok frissítését a MacroDroid értesítési gombsávjával.
+
+Hangbeviteli művelet hozzáadva, amely a kimondott szöveget kéri, majd egy karakterláncváltozóba menti.
+
+WhatsApp-művelet (bétaverzió) hozzáadva, amely lehetővé teszi az alapvető üzenetek küldését csak az egyes partnereknek.
+
+Lehetőség nyílt arra, hogy a makrókat kedvencként jelöljük meg, és egyszerűen szűrjünk a kedvenc/összes makró között.
+
+Hozzáadott kezdőképernyő-csempe, amely gyors parancsikont biztosít a kedvenc makrókhoz.
+
+Hozzáadott kezdőképernyő csempe a MacroDroid videókhoz, amely linkeket tartalmaz az új hivatalos MacroDroid YouTube-videókhoz.
+
+A Fordítások képernyő mostantól megmutatja, hogy az egyes nyelvek fordítása mennyire teljes.
+
+Különböző kisebb hibajavítások és apró fejlesztések.
+
+Verzió: 5.19.11
+===============
+
+Kijavítottuk a hibát, amely miatt a jelszókérés bizonyos esetekben nem jelent meg, amikor jelszavas védelmet használt az alkalmazásba való belépéshez.
+
+Kijavítottuk a hibát, amely miatt az utolsó fénykép megosztása nem minden esetben működött.
+
+Kijavítottuk a hibát, amely miatt az alvó állapotra vonatkozó eseményindító nem ellenőrizte a korlátozásokat.
+
+Egyéb kisebb hibajavítások.
+
+Verzió 5.19.9
+==============
+
+Felhívjuk figyelmét, hogy ez a kiadás úgy frissült, hogy az Android 11 SDK-t célozza meg, amely a korábbi verzióknál szigorúbb korlátozásokat kényszerít ki a fájlhozzáférésre vonatkozóan. Előfordulhat, hogy néhány makrót frissíteni kell, hogy továbbra is írhasson a fájlokba.
+
+** Kérjük, jelentse a kiadással kapcsolatos hibákat vagy problémákat a hibaelhárítási részben található "Hibabejelentés" segítségével **
+
+Hozzáadott alvó üzemmódradó (Android 10+).
+
+Hozzáadott Változók törlése művelet.
+
+Hozzáadott logcat opció a vágólap trigger támogatásához az Android 10+ (Root / ADB hack) felhasználói számára.
+
+Hozzáadott vágólapfrissítési művelet, amellyel a vágólap tartalmát a MacroDroidba szeretné bejuttatni az Android 10+ felhasználók számára.
+
+Legfeljebb három műveletgomb támogatása az Értesítés megjelenítése művelethez, amely más makrókat is futtathat, ha megnyomja.
+
+Kijavítottuk a hibát, amely miatt a fiók nem jelent meg megfelelően a jobbról balra elrendezésű eszközön.
+
+Jobb teljesítmény több lebegő gomb hozzáadásakor/eltávolításával.
+
+Az UDP küldése művelet mostantól támogatja a mágikus szöveget a cél- és portmezőkhöz.
+
+Hozzáadva kilépés a visszanyomáson opció az If Then Confirm művelethez.
+
+A HTTP-gethez "Bármely tanúsítvány engedélyezése" opció hozzáadva.
+
+További támogatás az SMTP-n keresztüli e-mailek SMTP-n keresztüli küldéséhez a Hely megosztása művelethez.
+
+A rendszerhéj-parancsfájlok parancsainak segítőfájlon keresztüli futtatásának támogatása hozzáadva (1.7-es segítőfájlt igényel)
+
+Korlátozott támogatást kapott a tasker tömbértékek (Tasker plugin/action) eléréséhez azáltal, hogy az összes értéket vesszőbe vagy új sorral elválasztott karakterláncba mentette.
+
+Javítás az előző frissítéshez: Nagyon köszönöm a lamvankhoat1-nek az alapos vietnami fordítást.
+
+5.18-as verzió
+============
+
+Kisebb hibajavító kiadás
+
+Kapcsoló hozzáadva a HTML küldési mód engedélyezéséhez/letiltásához az E-mail küldése (SMTP-n keresztül) oldalon.
+
+Kijavítottuk a hibát, amely miatt az ikon nem volt kiválasztva az Értesítési műveletnél.
+
+Kijavítottuk a hibát, amely miatt a Take ScreenShot művelet helytelen képet küldött egyes eszközökön.
+
+Kijavítottuk azt a hibát, amely miatt az If Confirmed (Ha megerősítve) művelet nem működött megfelelően, ha akkor hívták meg őket, amikor a képernyő ki volt kapcsolva.
+
+Kijavítottuk a hibát, amely miatt egyes felhasználói felületi interakciós kézmozdulat-értékek nem a megfelelő értéket értéken értékölték el.
+
+Kijavítottuk a hibát, amely miatt a konfigurálás után nem lehetett szerkeszteni az ADATOKAT az SMS Küldés műveletben.
+
+Egyéb apró javítások. W
+
+5.17-es verzió
+============
+
+Hozzáadott sötét témaváltás eseményindító (Android 10+)
+
+Módosította a makróleíró szöveget a makró szerkesztési képernyőjén, hogy az görgetni tudjon a makrótartalommal, és kibővítse a megengedett karakterek számát.
+
+Hozzáadott támogatás a változókhoz a felhasználói felület interakciós gesztusműveletében.
+
+Hozzáadott támogatás a jelszóbevitelhez a Változó beállítása műveletben - felhasználói kérés.
+
+Kijavítottuk a hibát, amely miatt a felhasználói felület interakciójának azonosítása az alkalmazásban beállítás egyes eszközökön nem működött.
+
+Hozzáadott vietnami nyelv (nagyon köszönöm a lamvankhoat1-nek, hogy ezt befejezte)
+
+Lehetőség nyílt az alkalmazás parancsikonjainak szövegének megváltoztatására a MacroDroid Fiókban.
+
+Sok más apró javítás és csípés.
+
+Verzió 5.16.2
+==============
+
+Kijavítottuk a hibát, amely miatt az alkalmazás elindította az eseményindítót, és észlelte az előtérben lévő alkalmazást, egyes eszközökön nem működött.
+
+Egyéb apró javítások.
+
+5.16-os verzió
+============
+
+Kijavítottuk a hibát, amely miatt egyes makrók hiányozhattak a sablonlistából.
+
+Sok kisebb hibajavítás.
+
+5.15-ös verzió
+============
+
+Visszaállítva a rendszernaplóba visszaállított sorrendű beállítást.
+
+Hozzáadott lehetőség a Logcat üzenetek rögzítésére (és egy bejegyzés kiválasztására) a Logcat eseményindítóhoz.
+
+Hozzáadott link a wikihez az oldalsó menüben (a Wiki csak angol).
+
+Az értesítési eseményindító alszövegének (és a hozzá tartozó varázsszövegnek) támogatása hozzáadva.
+
+Kijavítottuk azt a hibát, amely miatt a lebegő gombok nem tartották meg korábbi helyzetüket.
+
+Kijavítottuk a hibát, amely miatt a megnyitott rendszernapló nem működött megfelelően.
+
+Kijavítottuk a hibát, amely miatt a rendszernapló csatolása az e-mail művelet küldéséhez nem működött megfelelően.
+
+Sok más apró javítás és csípés.
+
+5.14-es verzió
+============
+
+Hozzáadásra került a Rejtett értesítések visszaállítása művelet (Android 11+), amely lehetővé teszi a korábban az Értesítések törlése művelettel elrejtett állandó értesítések visszaállítását.
+
+Kijavítottuk a hibát, amely miatt a rendszernapló nem mutatta a makrókra mutató hivatkozásokat.
+
+Egyéb apró javítások és fejlesztések.
+
+5.13-as verzió
+============
+
+Új rendszernapló keresési és szűrési funkciókkal.
+
+Mostantól támogatott, hogy egyetlen makró naplóját csak a makrólistáról és a makrók szerkesztéséről tekintse meg.
+
+Visszaállított SMS küldött eseményindító. (A MacroDroid mostantól használhatja a szükséges engedélyeket)
+
+Visszaállította a "monitor beérkezett üzenetek" beállítását az SMS fogadott eseményindítón. (A MacroDroid mostantól használhatja a szükséges engedélyeket)
+
+A Hang lejátszása művelet mostantól támogatja az audiocsatorna beállítását az egyéni műveletekhez.
+
+Kijavítottuk a hibát, amely miatt a Várakozási eseményindító művelet helytelenül hívhatott meg más blokkokat, amelyeknek nem kellene.
+
+Varázslatos szövegtámogatás hozzáadva a Rendszerbeállítás művelethez.
+
+A gyors futtatású makróadatok mostantól a makrók exportálásakor/importálásakor is szerepelnek.
+
+A Hívás elmulasztva és a Hívás aktív eseményindítók mostantól támogatják a közvetlen számbevitelt és a csoportválasztást.
+
+A makrólistában szereplő kategóriák és makrók mostantól támogatják az egyéni színeket, hogy bármilyen szín beállítható legyen.
+
+Kijavítottuk a hibát, amely miatt a sablontároló egyes makrói nem importálhatók.
+
+Verzió 5.12
+============
+
+Geokerítés (hely) korlát hozzáadva.
+
+Hozzáadta a Google Segéd eseményindítót, így könnyen megállapíthatja, hogy az asszisztens meghívta-e a makrót (és nem más eseményindítót).
+
+A gyermekműveletekkel végzett hurkok és feltételműveletek mostantól összecsukhatók/kibonthatók a nagy makrók szerkesztésének megkönnyítése érdekében.
+
+5.11-es verzió
+============
+
+Mostantól támogatja a makrók futtatását a Google asszisztensen keresztül (jelenleg csak angolul). Kérjük, győződjön meg arról, hogy az eszköz nyelve és a Google asszisztens nyelve is angolra van konfigurálva a funkció használatához.
+
+Hívjon létre makrókat azzal, hogy "Ok Google futtassa a ' macroname ' -t a MacroDroidban". A Google jelenleg csak az amerikai angol nyelvhez támogatja ezt a funkciót. Más területi beállításokat és nyelveket is támogatok, ha a Google engedélyezi.
+
+Egyéni értesítési csatornák hozzáadása a megjelenítési értesítési művelethez.
+
+Hozzáadott Break from Loop művelet hozzáadva.
+
+Hozzáadva a Hurok folytatása művelet.
+
+További hibajavítások és apró fejlesztések.
+
+5.10-es verzió
+============
+
+Hibajavítási kiadás. Kijavít számos apró problémát és ritka összeomlást.
+
+Továbbfejlesztett kezelés néhány hiányzó engedély körül.
+
+5.9-es verzió
+===========
+
+Felhőmentési funkció hozzáadva az automatikus biztonsági mentési képernyőn (csak Pro felhasználók).
+
+A MacroDroid fórum a Tapatalkról egy tisztább, saját üzemeltetésű fórumra költözött.
+
+Számos kisebb hibajavítás.
+
+5.8-as verzió
+===========
+
+A Wifi-művelet beállításához mostantól szükség van egy segítő fájlra Android 10+ rendszeren (a Google korlátozása az alkalmazásokra kényszerítve).
+
+Hozzáadásra váró eseményindító művelet, amely lehetővé teszi, hogy egy futó makró szüneteljen, amíg egy adott eseményindító el nem aktiválódik.
+
+Hozzáadott lehetőség a kategóriák jelszóval /PIN-kóddal történő zárolására.
+
+MacroDroid makrók hozzáadásának lehetősége a bekapcsológomb menüjében (csak Android 11 esetén)
+
+Szövegszín opció hozzáadva az előugró üzenet műveletéhez.
+
+Hozzáadva várjon, amíg befejeződik a "Makrófuttatás" opció.
+
+Szövegszín-beállítás és ikonszín hozzáadva a Felugró üzenet művelethez.
+
+A Szöveg felolvasása művelet mostantól lehetővé teszi a nyelv beállítását minden egyes műveletpéldányon.
+
+A Naptárbejegyzés hozzáadása művelet mostantól támogatja a bejegyzés időpontjának beállítását a változó értékéhez viszonyítva.
+
+Kijavítottuk azt a hibát, amely miatt logcat_line varázsszöveg nem működött.
+
+Kijavítottuk a hibát, amely miatt a makróműveletek megszakítása nem szakította meg a Várakozás az eseményindítóig műveletet.
+
+Kijavítottunk néhány logikai hibát, amelyek miatt a beágyazott IF/ELSE parancsok bizonyos peremhálózati esetekben nem a várt módon viselkedtek.
+
+5.7-es verzió
+===========
+
+Hozzáadott bővítmények listája a MacroDroiddal kompatibilis harmadik féltől származó alkalmazások felfedezéséhez / megosztásához (kezdőképernyő csempe).
+
+Hozzáadott kezdőképernyő csempe az utoljára szerkesztett makró gyors eléréséhez.
+
+Hozzáadott kezdőképernyő-csempe a gyorsan futó makrókhoz.
+
+Hozzáadta a Kamera engedélyezése/letiltása műveletet, amely lehetővé teszi a kamera letiltását az eszköz összes alkalmazásában.
+
+Módosított Control Media Action, hogy a Hang szimulálása gomb opció jobban működjön az utoljára használt médiaalkalmazás vezérléséhez.
+
+A Day/Time eseményindító mostantól lehetővé teszi egy adott másodperc érték beállítását.
+
+Adjon hozzá Keresési funkciót a változók listájának képernyőjéhez.
+
+5.6-os verzió
+===========
+
+A repülőgépes módú művelet mostantól nem rootolt eszközön is elvégezhető Android 7+ rendszeren (a MacroDroid alapértelmezett segédalkalmazássá tételével).
+
+Az Alkalmazás indítása művelet mostantól támogatja a csomagnév opciót (beleértve a változókat támogató mágikus szöveget stb.).
+
+A MacroDroid változóértékek mostantól átadhatók a Tasker beépülő moduloknak a Tasker formázási stílus (%varname) használatával.
+
+Az értesítési gomb háttere/árnyalata és az SMTP-beállítások mostantól mentésre kerülnek a makrók exportálásakor.
+
+Hozzáadott szélirány-érték az időjárás-kiváltóhoz (és az időjárás-specifikus varázsszöveghez).
+
+Frissített egész változók, így most már hosszú típussal vannak alátámasztva, így 2 147 483 647 > értékeket is tartalmazhatnak.
+
+Egyéb kisebb javítások és fejlesztések.
+
+5.5-ös verzió
+===========
+
+Gyors csempekapcsoló hozzáadva a MacroDroid be- és kikapcsolásához (Android 7+).
+
+Hozzáadott lehetőség a makróadatok elrejtésére makrólista nézetben.
+
+Kijavítottuk a hibát, amely miatt a VPN-eseményindító nem aktiválódott.
+
+Kijavítottuk a hibát, amely miatt az értesítési sáv gombjának konfigurálása nem mutatta az ikonokat.
+
+Egyes fordítások jelentős frissítései.
+
+Egyéb kisebb javítások és felhasználói felületi módosítások.

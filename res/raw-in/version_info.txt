@@ -1,0 +1,509 @@
+Versi 5.49 (Desember 2024)
+============================
+
+Menambahkan tindakan Komplikasi Wear OS.
+
+Menambahkan pemicu Klik Komplikasi Wear OS.
+
+Menambahkan pemicu Jalur Media Berubah.
+
+Tindakan Overlay Animasi yang diperbarui untuk mendukung file Gif lokal.
+
+Tindakan Ekspor Makro yang diperbarui untuk mendukung output ke variabel String.
+
+Menambahkan opsi dalam pengaturan untuk menonaktifkan pencatatan crash dan data analitik.
+
+Menambahkan opsi Pilih Nomor Telepon ke tindakan Hapus Log Panggilan (mendukung teks ajaib dan ekspresi reguler).
+
+Menekan lama pada ubin cepat On/off MacroDroid sekarang akan meluncurkan MacroDroid.
+
+Menambahkan opsi ke Wait Until Trigger untuk mengembalikan variabel boolean yang menunjukkan apakah batas waktu terjadi atau tidak.
+
+Membuat perubahan implementasi pada cara makro disimpan secara internal untuk meningkatkan performa dengan sejumlah besar makro.
+
+Tindakan Dapatkan Kontak yang ditingkatkan sehingga akan mengisi beberapa entri telepon kustom dengan benar dengan nama kustom yang benar.
+
+Menambahkan opsi "Tindakan pengujian" dan "Uji makro" ke batasan Metode Pemanggilan Makro.
+
+Menambahkan kemampuan untuk menampilkan entri sub-kamus dalam tampilan variabel kamus dengan menekan lama pada bidang nilai.
+
+Menambahkan dukungan untuk menampilkan konten entri kamus di layar variabel (tekan lama pada nilai untuk mengaktifkan/menonaktifkan).
+
+Memodifikasi cara {cell_connection_type} teks ajaib diperoleh untuk mencoba dan meningkatkan akurasi identifikasi tipe jaringan.
+
+Memperbarui tindakan Send Intent untuk menambahkan dukungan teks ajaib ke kolom Action, Package, dan Class.
+
+Memperbaiki masalah saat tindakan Batalkan Tindakan Makro tidak akan menyebabkan Pemicu Selesai Makro diaktifkan.
+
+Memperbaiki masalah di mana padding pada tombol mengambang kecil akan salah.
+
+Memperbaiki masalah dengan tindakan Buka Log Panggilan yang tidak berfungsi di beberapa perangkat.
+
+Memperbaiki masalah di mana batasan Bandingkan Nilai gagal membandingkan boolean dengan benar dalam beberapa bahasa.
+
+Memperbaiki masalah di mana tindakan Atur Gambar Bilah Tombol tidak akan memperbarui referensi nomor tombol saat tombol dipindahkan ke kiri atau kanan di bilah tombol.
+
+Memperbaiki masalah kasus tepi di mana beberapa pemicu dalam tindakan Tunggu Hingga Pemicu diaktifkan sekitar waktu yang sama dan menyebabkan eksekusi Makro yang salah.
+
+Memperbaiki masalah di mana tindakan Tulis ke File dapat mencampuradukkan urutan saat menulis ke file yang sama secara berurutan.
+
+Versi 5.48 (Oktober 2024)
+============================
+
+Menambahkan batasan Negara Bagian Shizuku.
+
+Menambahkan opsi ke tindakan Teks Mengambang untuk mengizinkan gerakan hanya dengan menekan lama dan mencegah teks dapat dipindahkan dan opsi untuk memaksa layar penuh.
+
+Menambahkan opsi ke tindakan Blokir Sentuhan untuk menampilkan area layar yang diblokir (dengan warna khusus).
+
+Layar daftar makro sekarang menampilkan indikator animasi saat makro sedang berjalan.
+
+Menambahkan opsi ke perlindungan kata sandi untuk memungkinkan perintah saat membuka aplikasi dan/atau saat mengaktifkan/menonaktifkan MacroDroid.
+
+Menambahkan opsi Tambahkan tindakan Acara Kalender untuk memberi tahu sebelumnya tentang acara yang ditambahkan.
+
+Menambahkan opsi ke tindakan Log Event untuk menambahkan tautan makro dengan output.
+
+Layar konfigurasi geofence sekarang menunjukkan nilai lintang/lon dan titik lokasi saat ini (jika lokasi tersedia).
+
+Tindakan Ekspor Log sekarang menghasilkan stempel waktu milidetik dalam semua kasus.
+
+Menambahkan dukungan untuk ikon pengguna dengan ubin Pengaturan Cepat.
+
+Menambahkan opsi filter tambahan untuk "Variabel yang Tidak Digunakan" di layar Variabel.
+
+Menambahkan opsi menu "Hapus semua yang tidak digunakan" ke layar Daftar Blokir Tindakan.
+
+Menambahkan spanduk kecil di layar beranda untuk menunjukkan dengan jelas saat MacroDroid dinonaktifkan.
+
+Menambahkan opsi ke pengaturan Server HTTP untuk mengizinkan/menolak akses ke log sistem/pengguna melalui server HTTP.
+
+Menambahkan opsi ke tindakan Pengaturan MacroDroid untuk mengubah sensitivitas Pemicu Goyang.
+
+Mengubah layar Edit Makro untuk mencegah spanduk pencarian bergulir.
+
+
+
+Versi 5.47 (Agustus 2024)
+============================
+
+Menghapus layanan Aksesibilitas FingerPrint dan Volume Button dan memindahkan fungsionalitas ke layanan aksesibilitas MacroDroid utama.
+
+Menambahkan pemicu Pesan Popup.
+
+Menambahkan pemicu Status Layanan Aksesibilitas.
+
+Menambahkan batasan Status Layanan Aksesibilitas.
+
+Menambahkan opsi ke 'Tambahkan batasan di atas' dan 'Tempel batasan di atas' di layar Edit Makro dan Edit ActionBlock.
+
+Menambahkan dukungan untuk parameter Header ke respons pemicu Permintaan Server HTTP dan tindakan Respons Server HTTP.
+
+Menambahkan dukungan untuk menggunakan nama paket dalam tindakan Aktifkan/Nonaktifkan Aplikasi.
+
+Tindakan Teks Mengambang yang diperbarui untuk menambahkan dukungan untuk mengetuk nilai persen untuk mengatur persentase yang lebih akurat.
+
+Tindakan Luncurkan Aktivitas Aplikasi yang diperbarui untuk menyertakan aktivitas dari aplikasi yang tidak ditandai sebagai dapat diluncurkan.
+
+Penulisan ulang lengkap penanganan teks ajaib untuk mengatasi masalah performa saat memproses blok teks yang besar.
+
+Tindakan Layar Redup yang Diubah untuk mencegah kedipan saat mengubah tingkat redup saat redup sudah diterapkan.
+
+Memperbaiki masalah saat Batasan Pemberitahuan tidak menangani opsi kecualikan aplikasi dengan benar.
+
+Tindakan HotSpot sekarang membutuhkan aplikasi MacroDroid Helper (V1.16) di Android 14+ karena perubahan paksa oleh Google untuk memperbarui Android SDK.
+
+Perbaikan dan pengoptimalan kecil lainnya.
+
+Versi 5.46 (Juli 2024)
+============================
+
+Menambahkan Ikon MacroDroid Tekan lama Pemicu pintasan.
+
+Menambahkan dukungan Shizuku ke tindakan Shell Script dan menambahkan dukungan Shizuku ke fitur root saja yang ada.
+
+Menambahkan opsi "Volume Turun + Volume Naik" secara bersamaan ke Pemicu Tombol Volume (hanya layanan Aksesibilitas).
+
+Menambahkan dukungan URI file dinamis dan file lokal ke tindakan Set Wallpaper.
+
+Tindakan Overlay Animasi yang diperbarui untuk menambahkan dukungan Gif Animasi dengan mesin pencari Giphy.
+
+Konfigurasi Tindakan Dialog Pilihan sekarang mendukung penyusunan ulang entri dan mencegah penekanan kembali yang tidak disengaja kehilangan semua perubahan.
+
+Menambahkan teks ajaib untuk menampilkan Jenis Variabel.
+
+Menambahkan teks ajaib untuk nama zona, lat/long dan tautan lokasi saat menggunakan pemicu Geofence atau Lokasi.
+
+Peningkatan dukungan teks ajaib sensitif konteks untuk pemicu yang digunakan dalam tindakan Tunggu Hingga Pemicu.
+
+Buka tindakan Log MacroDroid sekarang mendukung pembukaan log pengguna untuk saluran tertentu.
+
+Menambahkan fitur pencarian ke layar Konfigurasi Favorit.
+
+Menambahkan opsi 'Periksa terlebih dahulu' ke batasan Kalender.
+
+Menambahkan konten pihak ketiga dari 'Steve Wright' di bagian Video MacroDroid.
+
+Memperbaiki masalah di mana pemicu Macro Enabled akan diaktifkan saat MacroDroid digesek dari aplikasi terbaru.
+
+Memperbaiki masalah saat mengubah level filter di log sistem dapat menyebabkan entri yang salah/duplikat muncul.
+
+Memperbaiki masalah saluran notifikasi kustom yang tidak akan dibuat saat mengimpor cadangan dengan saluran kustom.
+
+Versi 5.45 (Juni 2024)
+============================
+
+Menambahkan pemicu Foto yang Diambil (Android 7+).
+
+Menambahkan tindakan Dapatkan Aplikasi Terinstal.
+
+Menambahkan tindakan Dapatkan Kontak.
+
+Menambahkan tindakan Edge Notification Light.
+
+Menambahkan tindakan Luncurkan Aktivitas Aplikasi.
+
+Menambahkan dukungan untuk pemicu, tindakan, dan batasan favorit. Tekan lama tombol + pada layar edit makro untuk menampilkan ubin cepat untuk item favorit Anda.
+
+Tindakan Overlay Animasi yang diperbarui untuk menambahkan dukungan untuk menjalankan makro / blok tindakan saat mengklik animasi.
+
+Tindakan Permintaan HTTP yang diperbarui untuk mendukung pengambilan parameter header yang dikembalikan ke dalam variabel kamus.
+
+Tindakan Pembaruan Lokasi Paksa yang diperbarui untuk memungkinkannya memblokir tindakan berikutnya dan menyimpan data lokasi ke dalam variabel kamus.
+
+Tindakan Pemberitahuan Tampilan yang diperbarui untuk mendukung id, sehingga pemberitahuan baru akan menimpa pemberitahuan yang sudah ada dengan id yang sama.
+
+Tindakan Buka File yang diperbarui untuk mendukung pemuatan dari uri file lokal (Dapat diperoleh melalui opsi File Daftar dalam tindakan Operasi File).
+
+Menambahkan dukungan untuk menandai variabel sebagai aman, sehingga konten variabel tidak akan diekspor saat berbagi/mengunggah template.
+
+Menambahkan dukungan untuk gambar kustom dalam tindakan Pemberitahuan Tampilan dan pemberitahuan persisten MacroDroid.
+
+Menambahkan opsi baru ke tindakan Blokir Sentuhan Layar untuk memblokir bilah status (memerlukan layanan aksesibilitas untuk diaktifkan).
+
+Menambahkan opsi teks ajaib untuk menampilkan stopwatch dengan nilai detik (jj: mm).
+
+Menambahkan opsi teks ajaib untuk menampilkan pemicu yang ditembakkan.
+
+Layar edit blok tindakan yang dikerjakan ulang menjadi jauh lebih cepat untuk blok tindakan yang sangat besar dan menambahkan dukungan untuk header Tindakan lengket.
+
+Tweak ke App Launched Trigger untuk memperbaiki beberapa masalah seputar mendeteksi peluncuran/penutupan MacroDroid dan peluncuran/penutupan aplikasi Google.
+
+Tweak mengatur tindakan variabel sehingga memungkinkan entri multiline untuk variabel String.
+
+Menambahkan teks ajaib Saluran Pemberitahuan saat menggunakan pemicu Pemberitahuan (Android 8+).
+
+Memperbaiki masalah saat tindakan Teks Mengambang terkadang tidak ditampilkan saat pertama kali tindakan dijalankan (biasanya pada perangkat yang lebih lambat/lama).
+
+Memperbaiki masalah saat tindakan Teks Mengambang tidak akan mengekspor blok tindakan terkait saat membagikan atau mengunggah ke penyimpanan template.
+
+Memperbaiki masalah saat menutup Pemberitahuan Gelembung dapat menyebabkan MacroDroid diluncurkan di latar depan.
+
+Memperbaiki masalah saat tindakan Autentikasi Pengguna tidak akan berfungsi dengan andal di beberapa perangkat Android 14.
+
+Memperbaiki masalah di mana tombol mengambang tidak akan mengingat ke mana tombol tersebut dipindahkan saat diaktifkan kembali.
+
+Versi: 5.44 (Mei 2024)
+============================
+
+Menambahkan pemicu Server HTTP dan tindakan Respons Server HTTP.
+
+Menambahkan batasan Teks Berbicara.
+
+Menambahkan Teks yang Dibagikan ke pemicu MacroDroid.
+
+Memperbarui tindakan Teks Mengambang untuk mendukung penanganan klik dan menambahkan opsi untuk menyembunyikan saat diklik.
+
+Log Pengguna yang diperbarui untuk mendukung saluran pengelogan kustom, tingkat pengelogan, dan fungsionalitas pencarian.
+
+Menambahkan opsi File Daftar ke tindakan Operasi File.
+
+Menambahkan tindakan blok hingga opsi lengkap ke Tindakan Operasi File.
+
+Tindakan Bluetooth mengaktifkan / menonaktifkan sekarang bekerja pada perangkat berakar tanpa file pembantu.
+
+Menambahkan opsi untuk memilih dari kunci yang dikenal dalam pemicu Pengaturan Sistem (dengan pencarian).
+
+Tindakan Tweak System Setting sehingga Anda dapat mencari kunci dalam semua kategori pengaturan sistem.
+
+Perbarui tindakan kirim email untuk mendukung melampirkan beberapa log dan mendukung format HTML untuk log.
+
+Peningkatan penanganan Log Sistem blok tindakan untuk menyertakan tautan ke blok tindakan dan makro.
+
+Menambahkan fungsionalitas pencarian ke tindakan Jalankan Makro, Atur tindakan Variabel, pemicu Variabel, dan batasan Variabel (di mana 10+ item tersedia).
+
+Memperbaiki masalah di mana variabel yang ditetapkan dengan prompt pengguna tidak akan menulis ke entri variabel array dengan benar.
+
+Memperbaiki bug kecil di pemicu System Setting Changed yang dapat mengakibatkan makro diaktifkan dua kali untuk satu pembaruan pengaturan.
+
+Perbaikan dan peningkatan kecil lainnya.
+
+Versi 5.43 (April 2024)
+============================
+
+Menambahkan tindakan Dapatkan Teks Dari View Id (Android 11+).
+
+Dialog Pilihan sekarang mendukung gaya tombol yang dapat disesuaikan untuk elemen yang dapat dipilih.
+
+Menambahkan opsi bilah status Overlay ke tindakan Dim Screen di Android 6+ (Memerlukan layanan aksesibilitas diaktifkan).
+
+Tweak Edit layar Makro untuk menambahkan header lengket untuk blok pemicu, tindakan, dan batasan besar.
+
+Peningkatan penanganan pemicu Tombol Bilah Pemberitahuan di layar Edit Makro sehingga lebih mudah untuk mengidentifikasi tombol yang diatur.
+
+Layar edit makro sekarang menampilkan gambar yang dipilih untuk pemicu Tombol Mengambang dan item lain di mana gambar digunakan.
+
+Konten Layar yang dioptimalkan memicu sehingga setiap pembacaan layar membutuhkan sedikit waktu/pemrosesan.
+
+Menambahkan dukungan untuk menonaktifkan entri dalam tindakan Kondisi IF.
+
+Menambahkan opsi menu 'Uji kendala' untuk memeriksa status batasan saat ini (benar atau salah) pada layar edit makro.
+
+Menambahkan opsi menu 'Kondisi pengujian' untuk memeriksa status pernyataan IF saat ini di layar edit makro.
+
+Menambahkan opsi untuk menampilkan / menyembunyikan mode MacroDroid saat ini dalam pemberitahuan MacroDroid standar (nonaktif secara default hanya untuk instalasi baru).
+
+Tindakan Aktifkan/Nonaktifkan Kategori sekarang mendukung beberapa kategori.
+
+Memindahkan tindakan Baca Konten Cuplikan Layar ke layanan Aksesibilitas UI MacroDroid.
+
+Memperbaiki masalah di mana dialog konfigurasi tindakan Atur Variabel akan default untuk menyalin kamus saat menentukan kunci secara manual dipilih.
+
+Memperbaiki masalah saat mengubah nama blok tindakan tidak akan memperbarui referensi di layar edit makro dalam beberapa keadaan.
+
+Perbaikan kecil lainnya.
+
+Versi 5.42 (Maret 2024)
+============================
+
+Menambahkan tindakan Overlay Animasi.
+
+Menambahkan tindakan Manipulasi Array.
+
+Menambahkan tindakan Periksa Warna Piksel (Android 11+).
+
+Menambahkan tindakan Baca Screenshot (Android 11+).
+
+Menambahkan Teks Centang dalam tindakan Screenshot (Android 11+).
+
+Menambahkan tindakan Display Density (ADB Hack atau root diperlukan).
+
+Memperbarui tindakan Ambil Tangkapan Layar untuk menambahkan opsi untuk menangkap tangkapan layar tanpa UI apa pun (Android 11+).
+
+Tindakan JavaScript yang diperbarui untuk menyertakan dukungan untuk mesin Rhino.
+
+Pemicu Tombol Mengambang sekarang mendukung pengaturan teks, bukan gambar.
+
+Tindakan Skala Font sekarang mendukung maksimum 250% (naik dari 150%).
+
+Menambahkan opsi loop tanpa akhir (hingga istirahat) ke tindakan Ulangi Tindakan.
+
+Menambahkan dukungan Regex ke pemicu berbasis Panggilan.
+
+Menambahkan dukungan untuk tindakan Block Touches untuk memblokir hanya sebagian layar.
+
+Menambahkan teks ajaib kode negara.
+
+Memperbaiki masalah saat mengalihkan pemicu antara diaktifkan/dinonaktifkan dapat masuk ke status rusak.
+
+Memperbaiki masalah di mana pemicu bermain Mucis tidak dapat diedit setelah dibuat.
+
+Memperbaiki masalah tindakan Autentikasi Pengguna yang tidak menampilkan perintah di beberapa perangkat Android 14.
+
+Versi 5.41 (Februari 2024)
+============================
+
+Menambahkan tindakan Tampilkan Volume Popup.
+
+Menambahkan tindakan Hapus Variabel.
+
+Tindakan Dialog Pilihan sekarang mendukung kemampuan untuk menampilkan kunci kamus sebagai item yang dapat dipilih dan mengatur pilihan default dengan batas waktu.
+
+System Setting Action and Constraint sekarang memungkinkan pencarian kunci yang ada (dan menambahkan dukungan pencarian dalam dialog teks ajaib).
+
+Menekan lama pada pemicu, tindakan atau kendala pada layar makro edit sekarang akan langsung ke dialog konfigurasi (dapat dinonaktifkan dalam pengaturan).
+
+Menambahkan teks ajaib untuk id Sim dan nama Sim untuk pemicu SMS Masuk / Keluar.
+
+Menambahkan teks ajaib untuk grup panggilan untuk pemicu berbasis panggilan.
+
+Tindakan Permintaan HTTP sekarang mendukung impor dasar dari dan ekspor ke permintaan cURL.
+
+Pemicu dan tindakan Tombol Mengambang sekarang mendukung pengaturan lokasi X, Y dengan nilai variabel.
+
+Tindakan Teks Mengambang sekarang mendukung pengaturan lokasi X, Y dengan nilai variabel.
+
+Tindakan Hapus Pemberitahuan dan tindakan Interaksi Pemberitahuan sekarang mendukung penggunaan Pemicu Pemberitahuan untuk mengidentifikasi pemberitahuan.
+
+Menambahkan dukungan untuk mengonversi variabel lokal ke variabel global (Tekan lama pada variabel lokal untuk meminta).
+
+Memperbaiki masalah penyalinan yang tidak berfungsi pada bahasa selain bahasa Inggris dalam dialog konfigurasi Jika Kondisi dan Ulangi Sementara.
+
+Memperbaiki masalah saat Permintaan HTTP tidak menangani respons yang di-gzip dengan benar dan mengembalikan data yang kacau.
+
+Memperbaiki masalah kasus tepi di mana Tombol Mengambang dapat memanggil makro yang salah saat ditekan.
+
+Radius minimum geofence dikurangi menjadi 20 meter.
+
+Perbaikan bug kecil lainnya dan peningkatan.
+
+
+Versi: 5.40 (Januari 2024)
+============================
+
+Menambahkan tindakan Aktifkan/Nonaktifkan Pemicu.
+
+Menambahkan tindakan Clear MacroDroid Dialog.
+
+Menambahkan fungsi pencarian ke layar edit Kotak Perintah.
+
+Menambahkan dukungan untuk menyortir dan menyalin/menempel ke dialog konfigurasi If Condition dan Repeat While .
+
+Pemicu kalender sekarang mendukung tingkat pembaruan 1 menit (gunakan dengan hati-hati karena baterai terkuras).
+
+Menambahkan dukungan untuk menentukan nama kamus/array secara manual dalam tindakan Iterate Array/Dictionary.
+
+Menambahkan dukungan untuk menekan kembali dalam Dialog Pilihan untuk melanjutkan makro.
+
+Menambahkan batasan Status Ubin Cepat.
+
+Menambahkan dukungan untuk subtitle pada tile Setelan Cepat (khusus Android 10).
+
+Kueri yang dioptimalkan untuk aplikasi yang diinstal - sekarang berfungsi lebih cepat pada perangkat dengan banyak aplikasi yang diinstal.
+
+Tweak pencarian Magic Text untuk memasukkan variabel di tingkat atas saat memasukkan istilah pencarian.
+
+Memperbaiki masalah saat memiliki loop sebelum tindakan array/kamus iterasi dapat menyebabkan iterator tidak dimulai dari awal.
+
+Memperbaiki masalah saat menghapus elemen array/kamus saat iterasi dapat merusak iterasi.
+
+Memperbaiki masalah perubahan bahasa yang dapat memulihkan kategori yang sebelumnya dihapus.
+
+Memperbaiki masalah di mana pemicu interval reguler tidak dapat diandalkan jika diatur ke > 24 jam.
+
+
+Versi 5.39 (Desember 2023)
+===========================
+
+Menambahkan tindakan Bagikan Teks.
+
+Menambahkan pemicu Klik UI.
+
+Menambahkan tindakan Display Bubble Notification (Android 10+).
+
+Menambahkan batasan Tombol Mengambang (Menampilkan/Tidak Menampilkan).
+
+Menambahkan tindakan Dapatkan Tingkat Cahaya.
+
+Menambahkan batasan Status Tampilan Sekitar.
+
+WebHook Trigger sekarang mendukung penguraian teks isi.
+
+Menambahkan dukungan untuk opsi Fast Forward dan Rewind pada pemicu Tombol Media.
+
+Tindakan Dialog Pilihan sekarang mendukung pengembalian kunci yang dipilih saat menggunakan kamus.
+
+Memperbaiki masalah variabel lokal dalam tampilan sebaris yang salah ditampilkan.
+
+Memperbaiki masalah di mana Anda masih bisa menyusun ulang item di layar Edit Makro setelah menonaktifkan pemesanan ulang.
+
+Menambahkan pengaturan untuk pemicu Kalender untuk memperbarui tingkat pembaruan kalender.
+
+Menambahkan teks ajaib 'Kode bahasa' untuk mendapatkan bahasa sistem saat ini sebagai kode bahasa 2 karakter (ISO 639).
+
+Versi 5.38 (November 2023)
+============================
+
+Layar Edit Makro sekarang mendukung fungsi pencarian.
+
+Menambahkan tindakan JavaScript (Beta).
+
+Menambahkan pemicu Fold State.
+
+Menambahkan batasan Fold State.
+
+Bandingkan Batasan Nilai sekarang mendukung ekspresi untuk nilai bilangan bulat dan desimal.
+
+Tweak App Launched / Closed trigger dan Foreground App name untuk bekerja lebih andal.
+
+Menambahkan dukungan untuk menyertakan ikon pengguna saat berbagi makro/kategori yang mereferensikannya. (Tidak didukung dalam template saat ini)
+
+Fitur Laporkan Bug sekarang memiliki pencarian nama makro dasar dan mendukung pemilihan blok tindakan.
+
+Memperbaiki masalah saat batasan Makro Berjalan tidak berfungsi dengan benar saat mereferensikan "Makro Ini".
+
+Memperbaiki masalah saat berbagi makro/kotak tindakan ke perangkat di sekitar tidak akan berfungsi dalam beberapa situasi.
+
+Menambahkan dukungan untuk mewarnai ikon pada pintasan makro.
+
+Tweak entri Magic Text untuk memisahkan pemilihan variabel global / lokal (untuk memudahkan pengguna dengan sejumlah besar variabel).
+
+Tindakan Baca Konten Layar memiliki opsi baru untuk menyertakan id tampilan tanpa konten tekstual.
+
+Tweak dan perbaikan kecil lainnya.
+
+
+
+Versi 5.37 (Oktober 2023)
+===========================
+
+Mengoptimalkan layar edit makro untuk membuatnya lebih cepat saat bekerja dengan makro yang sangat besar.
+
+Menambahkan batasan Makro Berjalan/Tidak Berjalan.
+
+Menambahkan pemicu Makro Selesai.
+
+Menambahkan pemicu Tekan Lama Tombol Daya (khusus Android 13+) - Memerlukan MacroDroid diatur ke asisten default.
+
+Menambahkan dukungan untuk waktu tunggu untuk tindakan Tunggu Hingga Pemicu.
+
+Menambahkan dukungan untuk overlay layar ke pemicu Konteks Layar, tindakan Baca Konten Layar, dan tindakan Periksa Teks di Layar.
+
+Menambahkan dukungan untuk overlay layar ke tindakan Interaksi UI saat mengklik id teks/tampilan.
+
+Menambahkan dukungan untuk teks ajaib di pengidentifikasi pemicu Webhook.
+
+Menambahkan teks ajaib paket aplikasi untuk pemicu Aplikasi yang diluncurkan/ditutup.
+
+Menambahkan dukungan untuk menggambar di area bilah status dalam tindakan Teks Mengambang.
+
+Menambahkan opsi "Tekan Enter" dalam tindakan Interaksi UI (khusus Android 11+).
+
+Diperbarui Konfirmasi Berikutnya dan JIKA Dikonfirmasi Kemudian tindakan untuk mendukung batas waktu hingga 20 menit.
+
+Memperbaiki masalah di mana Aplikasi diluncurkan memicu dengan opsi 'semua aplikasi' tidak akan memicu saat MacroDroid diluncurkan / ditutup.
+
+Memperbaiki masalah saat Interaksi UI tidak diklik dengan benar dalam beberapa kasus saat menggunakan opsi identifikasi di aplikasi.
+
+Memperbaiki masalah penempelan Interaksi UI yang akan selalu ditempel di akhir kolom teks terlepas dari posisi kursor.
+
+Menambahkan izin com.wireguard.android.permission.CONTROL_TUNNELS ke Manifes.
+
+Versi 5.36 (September 2023)
+========================
+
+Menambahkan tindakan Terjemahkan teks.
+
+Menambahkan opsi Hapus teks ke tindakan Manipulasi Teks.
+
+Menambahkan dukungan untuk tindakan Pemformatan HTML dalam Teks Mengambang.
+
+Pemicu Webhook sekarang mendukung daftar putih Alamat IP.
+
+Menambahkan teks ajaib khusus konteks untuk alamat ip pemanggil saat menggunakan pemicu Webhook.
+
+Menambahkan dukungan untuk berbagi melalui email SMTP ke tindakan Ambil Tangkapan Layar.
+
+Menambahkan opsi dalam pengaturan untuk mengonfigurasi jumlah ubin layar beranda per baris.
+
+Menambahkan pengaturan untuk pemicu Read Screen Content untuk mencegahnya membaca layar saat MacroDroid berada di latar depan.
+
+Menambahkan jumlah baris maksimum yang dapat dikonfigurasi untuk entri teks dalam Laci MacroDroid.
+
+Menambahkan opsi ke tindakan autentikasi pengguna untuk mengizinkan atau mencegah pola PIN/Gesek.
+
+Memperbaiki masalah saat tindakan penguraian JSON tidak berfungsi dengan benar saat string berasal dari dictionar/array dengan key/index yang ditentukan secara manual.
+
+Karena perubahan SDK target Android wajib, tindakan Bluetooth kini memerlukan aplikasi pembantu MacroDroid baru (v1.9) agar berfungsi di Android 13+.
+
+Perbaikan dan peningkatan kecil lainnya.

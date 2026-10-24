@@ -1,0 +1,134 @@
+.class public final Lcom/google/firebase/firestore/proto/MutationQueue$Builder;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+# interfaces
+.implements Lcom/google/firebase/firestore/proto/MutationQueueOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/firestore/proto/MutationQueue;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/google/firebase/firestore/proto/MutationQueue;",
+        "Lcom/google/firebase/firestore/proto/MutationQueue$Builder;",
+        ">;",
+        "Lcom/google/firebase/firestore/proto/MutationQueueOrBuilder;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-static {}, Lcom/google/firebase/firestore/proto/MutationQueue;->f0()Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/google/firebase/firestore/proto/MutationQueue$1;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/firebase/firestore/proto/MutationQueue$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearLastAcknowledgedBatchId()Lcom/google/firebase/firestore/proto/MutationQueue$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-static {v0}, Lcom/google/firebase/firestore/proto/MutationQueue;->h0(Lcom/google/firebase/firestore/proto/MutationQueue;)V
+
+    return-object p0
+.end method
+
+.method public clearLastStreamToken()Lcom/google/firebase/firestore/proto/MutationQueue$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-static {v0}, Lcom/google/firebase/firestore/proto/MutationQueue;->j0(Lcom/google/firebase/firestore/proto/MutationQueue;)V
+
+    return-object p0
+.end method
+
+.method public getLastAcknowledgedBatchId()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-virtual {v0}, Lcom/google/firebase/firestore/proto/MutationQueue;->getLastAcknowledgedBatchId()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getLastStreamToken()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-virtual {v0}, Lcom/google/firebase/firestore/proto/MutationQueue;->getLastStreamToken()Lcom/google/protobuf/ByteString;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public setLastAcknowledgedBatchId(I)Lcom/google/firebase/firestore/proto/MutationQueue$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-static {v0, p1}, Lcom/google/firebase/firestore/proto/MutationQueue;->g0(Lcom/google/firebase/firestore/proto/MutationQueue;I)V
+
+    return-object p0
+.end method
+
+.method public setLastStreamToken(Lcom/google/protobuf/ByteString;)Lcom/google/firebase/firestore/proto/MutationQueue$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firebase/firestore/proto/MutationQueue;
+
+    invoke-static {v0, p1}, Lcom/google/firebase/firestore/proto/MutationQueue;->i0(Lcom/google/firebase/firestore/proto/MutationQueue;Lcom/google/protobuf/ByteString;)V
+
+    return-object p0
+.end method

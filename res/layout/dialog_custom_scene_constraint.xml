@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_small" android:paddingRight="@dimen/margin_medium" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_medium" android:paddingVertical="@dimen/margin_small">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/identifier" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/web_url_identifier" android:maxLines="1" android:layout_weight="1.0" android:inputType="text">
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <RadioButton android:id="@id/showingRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_floating_text_is_showing" />
+        <RadioButton android:id="@id/notShowingRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_floating_text_not_showing" />
+    </RadioGroup>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

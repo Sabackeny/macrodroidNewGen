@@ -1,0 +1,70 @@
+Versão 5.54 (junho de 2025)
+=======================
+
+Adicionada ação Java Code.
+
+Ação JavaScript atualizada para dar suporte ao retorno a todos os tipos de variáveis - Use mdOutput(value).
+
+Adicionada opção para gerar variáveis de array e dicionário no formato JSON {vjson=}, {lvjson=} (para torná-las mais fáceis de usar na ação JavaScript).
+
+Adicionado gatilho de atividade do aplicativo iniciado/fechado.
+
+Ação Configurar Bloco Rápido atualizada para dar suporte à configuração de um bloco em um estado inativo em que não pode ser interagido.
+
+Ação de solicitação HTTP atualizada para adicionar suporte para nomes de arquivo dinâmicos/uri local no corpo do conteúdo.
+
+Adicionada opção para 'Aplicar foco automático' para tirar foto.
+
+Adicionado texto mágico 'Criar GUID' para criar um identificador globalmente exclusivo.
+
+Adicionada a opção "Vibrar ao pressionar" ao gatilho do botão flutuante e à ação de texto flutuante.
+
+Adicionada a capacidade de limpar o log do sistema para uma macro individual ao visualizar o log do sistema para essa macro (por meio da tela de edição de macro).
+
+Adicionado texto mágico específico do contexto para o texto de log ao usar o gatilho de entrada de log do sistema.
+
+Adicionada opção para usar o valor da variável para o tempo limite na ação Aguardar até o gatilho.
+
+As macros e categorias exportadas agora conterão todas as variáveis globais associadas como parte da exportação.
+
+Corrigido o problema em que a configuração do gatilho de alteração de estado do Wifi não permitia a seleção de SSID, a menos que o aplicativo auxiliar estivesse instalado.
+
+Corrigido o problema em que o controle deslizante de cena não atualizava corretamente o intervalo quando as variáveis referenciadas eram atualizadas.
+
+Adicionado suporte para o idioma Marathi para a ação Falar Texto.
+
+Corrigido o problema em que a variável Share Location to não suportava salvar no elemento de dicionário/matriz.
+
+Adicionada configuração para desabilitar a página da Web ao usar o gatilho de solicitação do servidor HTTP.
+
+Outras pequenas correções.
+
+-- Melhorias de cena --
+
+Adicionado componente Divisor Horizontal.
+
+Adicionado suporte para clicar no valor no componente Slider da cena e inserir o número por meio da caixa de diálogo.
+
+Adicionado suporte para entrada de senha no componente de entrada de texto da cena.
+
+Adicionada opção de alinhamento dividido para os componentes de alternância e caixa de seleção da cena.
+
+Adicionada opção para definir cantos arredondados em cenas ao usar a opção de diálogo ou sobreposição.
+
+O controle deslizante de cena agora suporta a exibição do rótulo de valor no início e no final (ou nenhum).
+
+O controle deslizante de cena agora suporta valores de etapa.
+
+O Texto da cena agora suporta valores de texto mágicos para especificar o tamanho do texto.
+
+O texto da cena agora suporta a opção de formatação HTML.
+
+O texto da cena agora suporta um número máximo de linhas e a opção de escala para caber.
+
+Todos os itens de cena agora suportam o estado de visibilidade que pode ser associado a uma variável booleana.
+
+O Scene Switch agora suporta cores de texto separadas, desliga a cor e liga a cor.
+
+O Botão de Cena agora suporta a alternância de uma variável booleana.
+
+Corrigido o problema em que a cena não atualizava as variáveis corretamente quando executada a partir de um bloco de ação e não usava a opção bloquear as próximas ações por padrão.

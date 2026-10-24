@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Spinner android:id="@id/channelSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:minWidth="180.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <CheckBox android:id="@id/use_html_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/floating_text_html_formatting_option" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <TextView android:ellipsize="start" android:id="@id/export_dialog_export_path" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0">
+            <requestFocus />
+        </TextView>
+        <Button android:id="@id/export_dialog_folder_chooser" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="..." style="@style/MagicTextButton" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout_password" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/exportdialog_filename" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/filename" android:ems="10" android:singleLine="true" android:inputType="textNoSuggestions">
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/default_text_color" android:layout_gravity="bottom" android:id="@id/fileExtension" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_tiny" android:text=".mdr" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/export_dialog_filename_magic_text_chooser" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <CheckBox android:id="@id/encrypt_output_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/export_macro_encrypt_file" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/password_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/encrypt_remember_password_warning" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_medium">
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/passwordEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_password" android:maxLines="1" android:password="true" android:inputType="textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

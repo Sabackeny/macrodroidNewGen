@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/loadingView" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="240.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/updatesList" android:paddingBottom="@dimen/margin_small" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/emptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" android:layout_marginBottom="48.0dip" android:layout_marginHorizontal="48.0dip">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:padding="32.0dip" android:layout_width="240.0dip" android:layout_height="240.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/ghost_animation" app:lottie_speed="1.0" />
+        <TextView android:textSize="18.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/emptyMessageText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-40.0dip" android:text="@string/template_store_subscrption_updates_empty_state" />
+    </LinearLayout>
+</FrameLayout>

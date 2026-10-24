@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top_level_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@color/primary" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@id/toolbar" android:background="@color/settings_primary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginStart="-16.0dip" android:layout_marginEnd="-16.0dip" android:elevation="@dimen/toolbar_elevation" app:titleTextAppearance="@style/HelveticaToolbarText.Main">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/backButton" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/material_ic_arrow_back_24px_svg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/white" />
+                    <TextView android:theme="@style/ToolbarText.Main" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/add_days" android:layout_weight="1.0" app:titleTextAppearance="@style/HelveticaToolbarText.Main" />
+                    <View android:layout_width="48.0dip" android:layout_height="48.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/default_text_color_full" android:id="@id/free_usage_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_free_days_usage" />
+            <com.google.android.material.card.MaterialCardView android:id="@id/reward_adverts_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" app:cardBackgroundColor="@color/deep_orange_a700" app:cardCornerRadius="16.0dip" app:cardElevation="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reward_advert" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/ic_advert" />
+                    <TextView android:textColor="@color/white" android:id="@id/reward_advert_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/reward_advert_description" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@id/watch_advert_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/watch_advert_button" android:textAllCaps="false" android:backgroundTint="@color/white" />
+                        <ProgressBar android:layout_gravity="end|center" android:id="@id/load_advert_spinner" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:indeterminate="true" android:layout_marginEnd="12.0dip" android:elevation="22.0dip" android:indeterminateTint="@color/deep_orange_a700" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/surveys_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" app:cardBackgroundColor="@color/teal_800" app:cardCornerRadius="16.0dip" app:cardElevation="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/surveys" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/head_question" />
+                    <TextView android:textColor="@color/white" android:id="@id/surveys_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/surveys_description" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@id/take_survey_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/take_survey" android:textAllCaps="false" android:backgroundTint="@color/white" />
+                        <ProgressBar android:layout_gravity="end|center" android:id="@id/take_survey_spinner" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:indeterminate="true" android:layout_marginEnd="12.0dip" android:elevation="22.0dip" android:indeterminateTint="@color/teal_800" android:indeterminateTintMode="src_in" />
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/data_sharing_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" app:cardBackgroundColor="@color/light_blue_900" app:cardCornerRadius="16.0dip" app:cardElevation="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/data_sharing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_anonymous_app_data" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/database" />
+                    <TextView android:textColor="@color/white" android:id="@id/data_sharing_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/share_anonymous_app_data_description" />
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/what_data_is_shared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/what_data_will_be_shared" />
+                    <Button android:textColor="@color/black" android:id="@id/share_data_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/share_anonymous_app_data" android:textAllCaps="false" android:backgroundTint="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/anonymous_data_enabled_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" app:cardBackgroundColor="@color/light_blue_900" app:cardCornerRadius="16.0dip" app:cardElevation="4.0dip" app:strokeColor="@color/default_text_color_full" app:strokeWidth="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharing_anonymous_app_data" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/database" />
+                    <TextView android:textColor="@color/nearly_white" android:id="@id/currently_sharing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/currently_sharing_anonymous_data_with_data_ai" />
+                    <Button android:textColor="@color/black" android:id="@id/disable_data_sharing_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/disable_anonymous_data_sharing" android:textAllCaps="false" android:backgroundTint="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/upgrade_to_pro_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" app:cardBackgroundColor="@color/green_700" app:cardCornerRadius="16.0dip" app:cardElevation="4.0dip">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_to_pro" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/ic_arrow_up_bold_circle_white_24dp" />
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/pro_upgrade_info" />
+                    <Button android:textColor="@color/black" android:id="@id/upgrade_to_pro_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/upgrade_to_pro" android:textAllCaps="false" android:backgroundTint="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

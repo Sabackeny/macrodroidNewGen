@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <RadioButton android:textSize="16.0sp" android:id="@id/photoTakenRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_ocr_text_from_photo_taken_trigger" android:layout_weight="1.0" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/photoRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/action_ocr_text_from_image_option_photo" android:layout_weight="1.0" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/fileRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/action_ocr_text_from_image_option_use_file" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/photoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <Spinner android:entries="@array/camera_flash_options" android:id="@id/flashOptionsSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fileLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <TextView android:textSize="18.0sp" android:ellipsize="start" android:layout_gravity="center_vertical" android:id="@id/directory_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_medium" />
+                <ImageButton android:id="@id/pick_dir_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_mode_edit_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_medium">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/filename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/filename" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip">
+                    <Button android:id="@id/special_text_button_filename" style="@style/MagicTextButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/action_check_text_char_set" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <com.arlosoft.macrodroid.widget.NDSpinner android:entries="@array/mlkit_charset_names" android:id="@id/characterSetSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/save_to_array_variable" android:layout_marginStart="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/variableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/addVariableButton" android:text="+" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

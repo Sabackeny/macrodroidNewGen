@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/stopwatch1" layout="@layout/include_stopwatch_tile_entry" />
+    <include android:id="@id/stopwatch2" layout="@layout/include_stopwatch_tile_entry" />
+    <include android:id="@id/stopwatch3" layout="@layout/include_stopwatch_tile_entry" />
+    <include android:id="@id/stopwatch4" layout="@layout/include_stopwatch_tile_entry" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+Versió 5.54 (juny de 2025)
+=======================
+
+S'ha afegit l'acció de codi Java.
+
+S'ha actualitzat l'acció JavaScript per donar suport a tots els tipus de variables: utilitzeu mdOutput(value).
+
+S'ha afegit l'opció de mostrar variables de matriu i diccionari en format JSON {vjson=}, {lvjson=} (per fer-les més fàcils d'utilitzar en l'acció JavaScript).
+
+S'ha afegit l'activador d'activitat de l'aplicació llançada/tancada.
+
+S'ha actualitzat l'acció Configura la peça ràpida per admetre la configuració d'una peça en un estat inactiu on no es pot interactuar amb ella.
+
+S'ha actualitzat l'acció de sol·licitud HTTP per afegir suport per a noms de fitxer dinàmics/URI local al cos del contingut.
+
+S'ha afegit l'opció "Aplica l'enfocament automàtic" per fer una foto.
+
+S'ha afegit el text màgic "Crea GUID" per crear un identificador únic global.
+
+S'ha afegit l'opció "Vibra en premer" a l'activador del botó flotant i a l'acció de text flotant.
+
+S'ha afegit la possibilitat d'esborrar el registre del sistema per a una macro individual quan es visualitza el registre del sistema per a aquesta macro (mitjançant la pantalla d'edició de la macro).
+
+S'ha afegit text màgic específic de context per al text de registre quan s'utilitza el trigger d'entrada de registre del sistema.
+
+S'ha afegit l'opció d'utilitzar el valor de la variable per al temps d'espera a l'acció Espera fins que s'activi.
+
+Les macros i categories exportades ara contindran les variables globals associades com a part de l'exportació.
+
+S'ha solucionat el problema en què la configuració de l'activador de canvi d'estat Wifi no permetia la selecció d'SSID tret que s'instal·lés l'aplicació auxiliar.
+
+S'ha solucionat el problema en què el control lliscant de l'escena no actualitzava correctament l'interval quan s'actualitzaven les variables de referència.
+
+S'ha afegit suport per a l'idioma marathi a l'acció Parlar text.
+
+S'ha solucionat el problema en què Comparteix la ubicació a la variable no admetia el desament a l'element de diccionari/matriu.
+
+S'ha afegit una configuració per inhabilitar la pàgina web quan s'utilitza l'activador de sol·licitud de servidor HTTP.
+
+Altres correccions menors.
+
+-- Millores d'escena --
+
+S'ha afegit el component Divisor horitzontal.
+
+S'ha afegit suport per fer clic al valor del component lliscant de l'escena i introduir el número a través del diàleg.
+
+S'ha afegit suport per a l'entrada de contrasenya al component d'entrada de text de l'escena.
+
+S'ha afegit l'opció d'alineació dividida per als components de l'escena Switch i Checkbox.
+
+S'ha afegit l'opció d'establir cantonades arrodonides a les escenes quan s'utilitza l'opció de diàleg o superposició.
+
+El control lliscant d'escena ara admet la visualització de l'etiqueta de valor al principi i al final (o cap).
+
+El control lliscant d'escena ara admet valors de pas.
+
+El text de l'escena ara admet valors de text màgics per especificar la mida del text.
+
+El text de l'escena ara admet l'opció de format HTML.
+
+El text de l'escena ara admet un nombre màxim de línies i l'opció d'escala per ajustar-se.
+
+Tots els elements de l'escena ara admeten l'estat de visibilitat que es pot lligar a una variable booleana.
+
+El commutador d'escena ara admet el color del text separat, desactiva el color i activa el color.
+
+El botó d'escena ara admet la commutació d'una variable booleana.
+
+S'ha solucionat el problema en què l'escena no actualitzava les variables correctament quan s'executava des d'un bloc d'acció i no s'utilitzava l'opció bloquejar accions següents per defecte.

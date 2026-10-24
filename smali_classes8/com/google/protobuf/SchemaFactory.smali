@@ -1,0 +1,12 @@
+.class interface abstract Lcom/google/protobuf/SchemaFactory;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Lcom/google/protobuf/CheckReturnValue;
+.end annotation
+
+
+# virtual methods
+.method public abstract createSchema(Ljava/lang/Class;)Lcom/google/protobuf/Schema;
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:titleTextAppearance="@style/TitleToolbarText" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/templateListContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/bottom_shadow" />
+    <FrameLayout android:id="@id/loadingBlocker" android:background="@color/black_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:layout_width="240.0dip" android:layout_height="240.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-48.0dip" android:text="@string/initialising" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

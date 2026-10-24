@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:paddingTop="@dimen/margin_small" android:paddingBottom="48.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/variables_emptyView" android:paddingBottom="@dimen/margin_very_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/animation_view" android:layout_width="240.0dip" android:layout_height="240.0dip" android:layout_marginTop="-100.0dip" android:layout_marginBottom="-40.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/empty_list" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_custom_notification_channels" />
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/margin_small" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/addChannelFab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_plus_white_24dp" android:contentDescription="@string/add_category" android:layout_marginEnd="@dimen/margin_medium" app:backgroundTint="@color/categories_primary" />
+</FrameLayout>

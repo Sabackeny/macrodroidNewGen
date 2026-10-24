@@ -1,0 +1,70 @@
+Versiunea 5.54 (iunie 2025)
+=======================
+
+A fost adăugată acțiunea de cod Java.
+
+S-a actualizat acțiunea JavaScript pentru a accepta revenirea la toate tipurile de variabile - Utilizați mdOutput(value).
+
+S-a adăugat opțiunea de a afișa variabilele de matrice și dicționar în format JSON {vjson=}, {lvjson=} (pentru a le face mai ușor de utilizat în acțiunea JavaScript).
+
+S-a adăugat declanșatorul activității aplicației lansate/închise.
+
+S-a actualizat acțiunea Configurare dală rapidă pentru a accepta setarea unei dale într-o stare inactivă în care nu se poate interacționa cu ea.
+
+S-a actualizat acțiunea Solicitare HTTP pentru a adăuga suport pentru nume de fișiere dinamice/uri locale în corpul conținutului.
+
+A fost adăugată opțiunea "Aplicați focalizarea automată" pentru a face o fotografie.
+
+S-a adăugat textul magic "Creare GUID" pentru a crea un identificator unic global.
+
+A fost adăugată opțiunea "Vibrează la apăsare" la declanșatorul butonului flotant și la acțiunea de text plutitor.
+
+S-a adăugat posibilitatea de a șterge jurnalul de sistem pentru o macrocomandă individuală atunci când vizualizați jurnalul de sistem pentru acea macrocomandă (prin ecranul de editare a macrocomenzii).
+
+S-a adăugat text magic specific contextului pentru textul jurnalului atunci când se utilizează declanșatorul System Log Entry.
+
+S-a adăugat opțiunea de a utiliza valoarea variabilei pentru expirare în acțiunea Așteptați până când declanșați.
+
+Macrocomenzile și categoriile exportate vor conține acum toate variabilele globale asociate ca parte a exportului.
+
+S-a rezolvat problema în care configurarea declanșatorului de schimbare a stării Wi-Fi nu permitea selectarea SSID-ului decât dacă era instalată aplicația de asistență.
+
+S-a rezolvat problema în care glisorul scenei nu actualiza corect intervalul atunci când variabilele la care se face referire sunt actualizate.
+
+S-a adăugat suport pentru limba marathi la acțiunea Vorbește textul.
+
+S-a rezolvat problema în care Partajare locație la variabilă nu accepta salvarea în elementul dicționar/matrice.
+
+S-a adăugat o setare pentru a dezactiva pagina web atunci când se utilizează declanșatorul HTTP Server Request.
+
+Alte remedieri minore.
+
+-- Îmbunătățiri de scenă --
+
+S-a adăugat componenta Horizontal Divider.
+
+S-a adăugat suport pentru a face clic pe valoarea componentei Slider de scenă și a introduce numărul prin dialog.
+
+S-a adăugat suport pentru introducerea parolei în componenta de introducere a textului din scenă.
+
+S-a adăugat opțiunea de aliniere divizată pentru componentele comutatorului de scenă și casetei de selectare.
+
+A fost adăugată opțiunea de a seta colțuri rotunjite pe scene atunci când utilizați dialogul sau opțiunea de suprapunere.
+
+Scene Slider acceptă acum afișarea etichetei de valoare la început și la sfârșit (sau niciuna).
+
+Scene Slider acceptă acum valorile pașilor.
+
+Text scenă acceptă acum valori magice ale textului pentru specificarea dimensiunii textului.
+
+Scene Text acceptă acum opțiunea de formatare HTML.
+
+Text scenă acceptă acum un număr maxim de linii și scalare pentru a se potrivi opțiunii.
+
+Toate elementele de scenă acceptă acum starea de vizibilitate care poate fi legată de o variabilă booleană.
+
+Comutatorul de scenă acceptă acum culoarea separată a textului, dezactivarea culorii și activarea culorii.
+
+Butonul scenă acceptă acum comutarea unei variabile booleene.
+
+S-a rezolvat problema în care scena nu actualiza variabilele în mod corespunzător atunci când era executată dintr-un bloc de acțiune și nu folosea opțiunea de blocare a următoarelor acțiuni în mod implicit.

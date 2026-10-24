@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/constraint_ip_address" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_medium" />
+        <Button android:id="@id/magic_text_button" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/star_wildcards_supported" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

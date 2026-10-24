@@ -1,0 +1,1434 @@
+Version 5.53 (April 2025)
+============================
+
+Added Custom Scene action to allow the creation of simple customizable user interfaces.
+
+Added Hide Custom Scene action.
+
+Edit macro/action block screens now support menu option to add separators.
+
+Auto Backup feature now allows local backup storage location to be changed.
+
+Updated File Operation action to add option to specify folder patterns (when copying/moving/deleting folders)
+
+Updated Compare Values constraint to add option to compare arrays and dictionaries and added checks if contains key/value.
+
+Updated Macro Running constraint to support entering a macro name as text (including magic text support).
+
+Updated Enable/Disable Categories action to support new option to enable all macros within category (when enabling category).
+
+Updated Text Shared to MacroDroid to add new context specific magic text for the 'Subject' field that is set when sharing text.
+
+Updated Animation Overlay action to add option to force an image refresh (ignore cache).
+
+Minimum Android version supported is now Android 6 (Marshmallow).
+
+Fixed issue where attempting to run multiple simultaneous JavaScript actions with the Jetpack engine could fail.
+
+Fixed issue where swiping away MacroDroid via the app switcher could kill macros waiting in a Wait Until Trigger action.
+
+Fixed issue where Summarise Macros action would not add local variables when selecting the all variable option.
+
+Added option to Sunset/Sunrise trigger to use (or not use) alarm to ensure accurate trigger time.
+
+Added option to Disable MacroDroid action to enable it to always disable MacroDroid (regardless of password protection settings).
+
+Version 5.52 (March 2025)
+============================
+
+Added NFC Enabled state trigger.
+
+Modified HotSpot On/Off action so it no longer needs the helper file on Android 14+.
+
+Added menu option to enable/disable logging for each individual trigger, action and constraint.
+
+Geofence configuration screen falls back to Open Street Maps on devices that don't have Google services.
+
+Modified Notification Interaction action so it can work again on Android 14+ devices.
+
+Updated Macro Enabled/Disabled constraint to add support for specifying macro name in text (including magic text support).
+
+Updated Get Text from View Id action to add option to save on screen state to a boolean variable.
+
+Added support for tinting custom widget icons.
+
+Removed Add Macro Wizard tile.
+
+Added Last Opened Action Block tile.
+
+Added option to summarise macros action to add all variables used by the macro (local + global).
+
+Added option to set the maximum number of lines for a variable in the MacroDroid drawer.
+
+Added paste menu options when editing the list of conditions in an IF clause action.
+
+Added option to force screen refresh to Read Screen Contents, Get Text By View Id and Check Text on Screen actions.
+
+Fixed issue where {cell_connection_type} magic text would not reflect the latest cell connection type when it changes.
+
+Fixed issue where Set Variable copy array/dictionary would not present all sub-array/dictionaries.
+
+Fixed issue where MacroDroid Icon Long press trigger would not work correctly with the Trigger Fired constraint.
+
+Tweaked UI Interaction accessibility service to fix problems where old screen content could be returned after the screen has updated.
+
+Tweaked Screen On/Off constraint to try and fixes cases where it reports screen on when it's off (such as when connected to Android Auto).
+
+Version 5.51 (February 2025)
+============================
+
+Added OverlayBar action.
+
+Added option to HTTP Request action to prettify JSON responses to make them more easily human readable.
+
+Updated Wifi State constraint to add support for manual SSID entry.
+
+Updated Floating Text action to support single line scrolling text option (Marquee).
+
+Tweaked the menu when selecting a trigger, action or constraint to improve clarity and ordering.
+
+Fixed issue where emails sent via Gmail did not support non ASCII characters when adding user log or system log attachments.
+
+Added support for pass through variables in Tasker plugins, to enable improved support for plugins such as AutoResponder for WhatsApp.
+
+Updated Log Event action to allow channel name to be selected from a String variable.
+
+Updated Floating Button Trigger to add an option to force a fixed location (prevent the button being dragged around on the screen).
+
+Enabled support for exporting an action block from an action block (previously only available on macro edit screen).
+
+Added support for enabling/disabling MacroDroid via an explicit intent (e.g. adb shell am broadcast -a com.arlosoft.macrodroid.ENABLE -n com.arlosoft.macrodroid/.app.EnableMacroDroidReceiver)
+
+Improved Edit Macro/ActionBlock screens search to highlight items that use variable names that match the searched for text.
+
+Improved Edit Macro/ActionBlock screens search so that the keyboard will auto appear/hide when clicking the search button.
+
+Fixed issue where Action Group action could cause incorrect execution when used within nested IF statements.
+
+Fixed issue where enabling a Floating Button could update the location of other floating buttons.
+
+Version 5.50 (January 2025)
+============================
+
+Added Wifi SSID Scan action.
+
+Added USB Device Connection constraint.
+
+Added Summarise Macros/Action Blocks action.
+
+Added Action Group action to enable easier grouping, moving, copying and enabling/disabling of related actions.
+
+Added support for undo functionality when re-ordering items in Edit Macro and Edit Action Block screens.
+
+Added support for sharing backup files from the cloud backup so each backup file can be easily accessed without restoring from it.
+
+Improved macro/action block selection dropdowns so they are searchable in cases where a large number of options are available.
+
+Updated Floating Text action to support an optional shadow (to make text more prominent when using a transparent background)
+
+Updated SMS Sent trigger to add option to specify number directly.
+
+Updated Animation Overlay action to support the use of variables to define the x, y, width and height values of the animation.
+
+Updated Display Notification action to support magic text entry for id field.
+
+Added missing MacroDroid settings into the backup file for easier restoring.
+
+Added copy button when editing an array/dictionary variable entry to get the magic text for the full array/dictionary path.
+
+Fixed rare issue where Floating Buttons could get stuck on in some cases.
+
+Fixed issue where floating text could flash when regularly updating existing floating text.
+
+Other minor fixes.
+
+Version 5.49 (December 2024)
+============================
+
+Added Wear OS Complication Action.
+
+Added Wear OS Complication Click trigger.
+
+Added Media Track Changed trigger.
+
+Updated Animation Overlay action to support local Gif files.
+
+Updated Export Macros action to support outputting to String variable.
+
+Added option in settings to disable crash logging and analytics data.
+
+Added Select Phone Number option to Clear Call Log action (supports magic text and regex).
+
+Long pressing on the MacroDroid on/off quick tile will now launch MacroDroid.
+
+Added option to Wait Until Trigger to return a boolean variable indicating if a timeout happened or not.
+
+Made implementation changes to the way macros are stored internally to improve performance with large numbers of macros.
+
+Improved Get Contacts action so it will correctly populate multiple custom phone entries with the correct custom names.
+
+Added "Test actions" and "Test macro" option to Macro Invocation Method constraint.
+
+Added ability to show sub-dictionary entries in dictionary variable view by long pressing on the value field.
+
+Added support to show dictionary entry contents in variable screen (long press on value to toggle on/off).
+
+Modified the way {cell_connection_type} magic text is obtained to try and improve network type identification accuracy.
+
+Updated Send Intent action to added magic text support to Action, Package and Class fields.
+
+Fixed issue where the Cancel Macro Actions action would not cause a Macro Finished Trigger to fire.
+
+Fixed issue where padding on small floating buttons would be incorrect.
+
+Fixed issue with Open Call Log action not working on some devices.
+
+Fixed issue where Compare Values constraint would fail to compare booleans correctly in some languages.
+
+Fixed issue where Set Button Bar Image action would not update button number reference when a button is moved left or right in the button bar.
+
+Fixed edge case issue where multiple triggers in a Wait Until Trigger action fire around the same time and caused incorrect Macro execution.
+
+Fixed issue where Write to File action could mix up order when writing to same file in quick succession.
+
+Version 5.48 (October 2024)
+============================
+
+Added Shizuku State constraint.
+
+Added options to Floating Text action to allow movement only on long press and prevent the text being moveable and an option to force full screen.
+
+Added option to Block Touches action to show blocked screen area (with custom colour).
+
+Macro list screen now shows an animated indicator when a macro is currently running.
+
+Added option to password protection to allow prompting when opening the app and/or when enabling/disabling MacroDroid.
+
+Added option Add Calendar Event action to notify in advance of the event that is added.
+
+Added option to Log Event action to add a macro link with the output.
+
+Geofence configuration screen now shows lat/lon values and current location dot (if location available).
+
+Export Log action now outputs millisecond timestamps in all cases.
+
+Added support for user icons with Quick Setting tiles.
+
+Added extra filter option for "Unused Variables" in Variables screen.
+
+Added "Delete all unused" menu option to Action Block List screen.
+
+Added small banner on the home screen to clearly show when MacroDroid is disabled.
+
+Added option to HTTP Server settings to allow/deny access to system/user log via HTTP server.
+
+Added option to MacroDroid Setting action to change the Shake Trigger sensitivity.
+
+Tweaked Edit Macro screen to prevent the search banner scrolling away.
+
+
+Version 5.47 (September 2024)
+============================
+
+Added support for Connectivity Helper app to make helper app installation easier for Android 14+.
+
+Removed FingerPrint and Volume Button Accessibility service and moved functionality into main MacroDroid accessibility service.
+
+Added Popup Message trigger.
+
+Added Accessibility Service State trigger.
+
+Added Accessibility Service State constraint.
+
+Added options to 'Add constraint above' and 'Paste constraint above' in Edit Macro and Edit ActionBlock screens.
+
+Added support for Header parameters to HTTP Server Request trigger response and HTTP Server Response action.
+
+Added support for using package name in App Enable/Disable action.
+
+Updated Floating Text action to add support for tapping on percent values to set more accurate percentages.
+
+Updated Launch App Activity action to include acitivities from apps that are not marked as launchable.
+
+Complete rewrite of magic text handling to solve performance issues when processing large blocks of text.
+
+Tweaked Dim Screen action to prevent flicker when changing dim level when dim is already applied.
+
+Fixed issue where Notification Constraint did not handle the exclude apps option correctly.
+
+HotSpot action now requires MacroDroid Helper app (V1.16) on Android 14+ due to forced changes by Google to update Android SDK.
+
+Other minor fixes and optimisations.
+
+Version 5.46 (July 2024)
+============================
+
+Added MacroDroid Icon Long Press Shortcut trigger.
+
+Added Shizuku support to the Shell Script action and added Shizuku support to existing root only features.
+
+Added simultaneous "Volume Down + Volume Up" options to Volume Button Trigger (Accessibility service only).
+
+Added dynamic file and local file URI support to the Set Wallpaper action.
+
+Updated Animation Overlay action to add Animated Gif support with Giphy search engine.
+
+Selection Dialog Action configuration now supports reordering of entries and prevent accidental back presses from losing all changes.
+
+Added magic text to display Variable Type.
+
+Added magic text for zone name, lat/long and location link when using the Geofence or Location trigger.
+
+Improved context sensitive magic text support for triggers used in the Wait Until Trigger action.
+
+Open MacroDroid Log action now supports opening the user log for a specific channel.
+
+Added search feature to Configure Favourites screen.
+
+Added 'Check in advance' option to the Calendar constraint.
+
+Added third party content from 'Steve Wright' in MacroDroid Videos section.
+
+Fixed issue where Macro Enabled trigger would fire when MacroDroid is swiped away from recent apps.
+
+Fixed issue where changing filter level in system log could cause erroneous/duplicate entries to appear.
+
+Fixed issue where custom notification channels would not be created when importing a backup with custom channels.
+
+Version 5.45 (June 2024)
+============================
+
+Added Photo Taken trigger (Android 7+).
+
+Added Get Installed Apps action.
+
+Added Get Contacts action.
+
+Added Edge Notification Light action.
+
+Added Launch App Activity action.
+
+Added support for favourite triggers, actions and constraints. Long press on the + button on the edit macro screen to display quick tiles for your favourite items.
+
+Updated Animation Overlay action to add support for running macros/action block when clicking on the animation.
+
+Updated HTTP Request action to support capturing returned header parameters into a dictionary variable.
+
+Updated Force Location Update action to allow it to block next action and save location data into a dictionary variable.
+
+Updated Display Notification action to support ids, so a new notification will overwrite an existing one with the same id.
+
+Updated Open File action to support loading from a local file uri (Can be obtained via List Files option in File Operation action).
+
+Added support for marking variables as secure, so the contents of the variables will not be exported when sharing/uploading a template.
+
+Added support for custom images in Display Notification action and MacroDroid persistent notification.
+
+Added new option to Block Screen Touches action to block status bar (requires accessibility service to be enabled).
+
+Added magic text option to display stopwatches with seconds value.
+
+Added magic text option to display the trigger that fired.
+
+Reworked action block edit screen to be much faster for very large action blocks and added support for sticky Actions header.
+
+Tweaks to App Launched Trigger to fix some issues around detecting MacroDroid launches/closes and Google app launches/closes.
+
+Tweaked Set Variable action so it allows multiline entry for String variables.
+
+Added Notification Channel magic text when using the Notification trigger (Android 8+).
+
+Fixed issue where Floating Text action would sometimes not get shown the first time the action is run (typically on slower/older devices).
+
+Fixed issue where Floating Text action would not export any associated action block when sharing or uploading to the template store.
+
+Fixed issue where dismissing a Bubble Notification could cause MacroDroid to be launched in the foreground.
+
+Fixed issue where Authenticate User action would work unreliably on some Android 14 devices.
+
+Fixed issue where floating button would not remember where it was previously moved to when being re-enabled.
+
+Version 5.44 (May 2024)
+============================
+
+Added HTTP Server trigger and HTTP Server Response action.
+
+Added Speaking Text constraint.
+
+Added Text Shared to MacroDroid trigger.
+
+Updated Floating Text action to support click handling and added option to hide when clicked.
+
+Updated User Log to support custom logging channels, logging levels and search functionality.
+
+Added List Files option to File Operation action.
+
+Added block actions until complete option to File Operation Action.
+
+Bluetooth action enable/disable now works on rooted devices without helper file.
+
+Added option to select from known keys in the System Setting trigger (with search).
+
+Tweaked System Setting action so you can search for a key within all system setting categories.
+
+Update send email action to support attaching multiple logs and support HTML format for logs.
+
+Improved System Log handling of action blocks to include links to action block and macro.
+
+Added search functionality to Macro Run action, Set Variable action, Variable trigger and Variable constraint (where 10+ items are available).
+
+Fixed issue where set variable with user prompt would not write to an array variable entry correctly.
+
+Fixed small bug in the System Setting Changed trigger that could result in a macro firing twice for a single setting update.
+
+Other minor fixes and improvements.
+
+Version 5.43 (April 2024)
+============================
+
+Added Get Text From View Id action (Android 11+).
+
+Selection Dialog now supports customizable button style for selectable elements.
+
+Added Overlay status bar option to Dim Screen action on Android 6+ (Requires accessibility service enabled).
+
+Tweaked Edit Macro screen to add sticky headers for large trigger, action and constraint blocks.
+
+Improved Notification Bar Button trigger handling in Edit Macro screen so it's easier to identify the button which is set.
+
+Edit macro screen now shows selected image for Floating Button trigger and other items where images are used.
+
+Optimised Screen Contents trigger so each screen read takes a little less time/processing.
+
+Added support for disabling entries in IF Condition action.
+
+Added 'Test constraint' menu option to check the current status of a constraint (true or false) on the edit macro screen.
+
+Added 'Test condition' menu option to check the current status of an IF statement on the edit macro screen.
+
+Added option to show/hide current MacroDroid mode in the standard MacroDroid notification (off by default for new installs only).
+
+Enable/Disable Category action now supports multiple categories.
+
+Moved Read ScreenShot Contents action to the MacroDroid UI Accessibility service.
+
+Fixed issue where Set Variable action configuration dialog would default to copy dictionary when define key manually is selected.
+
+Fixed issue where changing an action block name would not update reference in edit macro screen in some circumstances.
+
+Other minor fixes.
+
+Version 5.42 (March 2024)
+============================
+
+Added Animation Overlay action.
+
+Added Array Manipulation action.
+
+Added Check Pixel Colour action (Android 11+).
+
+Added Read Screenshot action (Android 11+).
+
+Added Check Text in Screenshot action (Android 11+).
+
+Added Display Density action (ADB Hack or root required).
+
+Updated Take ScreenShot action to add option to capture screenshot without any UI (Android 11+).
+
+Updated JavaScript action to include support for the Rhino engine.
+
+Floating Button trigger now supports setting text instead of an image.
+
+Font Scale action now supports a maximum of 250% (up from 150%).
+
+Added endless loop option (until break) to Repeat Actions action.
+
+Added Regex support to Call based triggers.
+
+Added support for Block Touches action to block only a part of the screen.
+
+Added country code magic text.
+
+Fixed issue where toggling a trigger between enabled/disabled could get into a broken state.
+
+Fixed issue where the Mucis playing trigger could not be edited once created.
+
+Fixed issue where Authenticate User action would not display a prompt on some Android 14 devices.
+
+Version 5.41 (February 2024)
+============================
+
+Added Show Volume Popup action.
+
+Added Delete Variable action.
+
+Selection Dialog Action now supports the ability to show dictionary keys as the selectable items and setting a default selection with timeout.
+
+System Setting Action and Constraint now allow searching for existing keys (and added search support in magic text dialog).
+
+Long pressing on a trigger, action or constraint on the edit macro screen will now go straight to configuration dialog (can be disabled in settings).
+
+HTTP Request action now supports basic import from and export to cURL requests.
+
+Floating Button trigger and action now support setting X,Y location with variable values.
+
+Floating Text action now supports setting X,Y location with variable values.
+
+Clear Notification action and Notification Interaction action now support using a Notification Trigger to identify the notification.
+
+Added support for converting local variables to global variables (Long press on the local variable to prompt).
+
+Added magic text for Sim id and Sim name for Incoming/Outgoing SMS triggers.
+
+Added magic text for call group(s) for call based triggers.
+
+Fixed issue where copy would not work on non English languages in the If Condition and Repeat While configuration dialog.
+
+Fixed issue where HTTP Request would not handle gzipped responses correctly and return garbled data.
+
+Fixed edge case issue where a Floating Button could invoke the wrong macro when pressed.
+
+Geofence minimum radius reduced to 20 meters.
+
+Other minor bug fixes and improvements.
+
+Version 5.40 (January 2024)
+============================
+
+Added Enable/Disable Trigger action.
+
+Added Clear MacroDroid Dialog action.
+
+Added search functionality to Action Block edit screen.
+
+Added support for sorting and copy/paste to If Condition and Repeat While configuration dialog.
+
+Calendar trigger now supports 1 minute update rates (use with caution due to battery drain).
+
+Added support for defining dictionary/array name manually in Iterate Array/Dictionary action.
+
+Added support for pressing back in the Selection Dialog to continue the macro.
+
+Added Quick Tile State constraint.
+
+Added support for subtitles on Quick Setting tiles (Android 10+ only).
+
+Optimized querying for installed apps - it now works much faster on devices with many apps installed.
+
+Tweaked Magic Text search to include variables at the top level when entering a search term.
+
+Fixed issue where having a loop before an iterate array/dictionary action could cause the iterator to not start at the beginning.
+
+Fixed issue where deleting an array/dictionary element while iterating could break the iteration.
+
+Fixed issue where changing language could restore previously deleted categories.
+
+Fixed issue where regular interval trigger would be unreliable if set to > 24 hours.
+
+Fixed issue where deleting all macros would also delete all action blocks.
+
+Version 5.39 (December 2023)
+===========================
+
+Added Share Text action.
+
+Added UI Click trigger.
+
+Added Display Bubble Notification action (Android 10+).
+
+Added Floating Button (Showing/Not Showing) constraint.
+
+Added Get Light Level action.
+
+Added Ambient Display State constraint.
+
+WebHook Trigger now supports parsing of the body text.
+
+Added support for Fast Forward and Rewind options on Media Button triggers.
+
+Selection Dialog action now supports returning selected key when using dictionaries.
+
+Fixed issue where local variables in inline view could be incorrectly displayed.
+
+Fixed issue where you could still reorder items in Edit Macro screen after disabling reordering.
+
+Added setting for Calendar trigger to update the calendar update rate.
+
+Added 'Language code' magic text to get current system language as a 2 character language code (ISO 639).
+
+Version 5.38 (November 2023)
+============================
+
+Edit Macro screen now supports search functionality.
+
+Added JavaScript action (Beta).
+
+Added Fold State trigger.
+
+Added Fold State constraint.
+
+Compare Values Constraint now supports expressions for integer and decimal values.
+
+Tweaked App Launched/Closed trigger and Foreground App name to work more reliably.
+
+Added support for including user icons when sharing macro/categories that reference them. (Not supported in templates at this time)
+
+Report a Bug feature now has basic macro name search and supports selecting action blocks.
+
+Fixed issue where Macro Running constraint did not work correctly when referencing "This Macro".
+
+Fixed issue where sharing macros/action blocks to nearby devices would not work in some situations.
+
+Added support for tinting icons on macro shortcuts.
+
+Tweaked Magic Text entry to separate global/local variable selection (to make it easier for users with large numbers of variables).
+
+Read Screen Contents action has new option to include view ids without textual content.
+
+Other small tweaks and fixes.
+
+
+
+Version 5.37 (October 2023)
+===========================
+
+Optimised the edit macro screen to make it much faster when working with very large macros.
+
+Added Macro Running/Not Running constraint.
+
+Added Macro Finished trigger.
+
+Added Power Button Long Press trigger (Android 13+ only) - Requires MacroDroid set to default assitant.
+
+Added support for timeouts to Wait Until Trigger action.
+
+Added support for screen overlays to Screen Context trigger, Read Screen Contents action and Check Text on Screen action.
+
+Added support for screen overlays to UI Interaction action when clicking text/view ids.
+
+Added support for magic text in Webhook trigger identifiers.
+
+Added application package magic text for App launched/closed trigger.
+
+Added support for drawing in the status bar area in Floating Text action.
+
+Added 'Press Enter' option in UI Interaction action (Android 11+ only).
+
+Updated Confirm Next and If Confirmed Then actions to support timeouts up to 20 minutes.
+
+Fixed issue where App launched trigger with 'all apps' option would not trigger when MacroDroid is launched/closed.
+
+Fixed issue where UI Interaction would not click correctly in some cases when using the identify in app option.
+
+Fixed issue where UI Interaction paste would always paste at the end of a text field regardless of the cursor position.
+
+Added com.wireguard.android.permission.CONTROL_TUNNELS permission to Manifest.
+
+Version 5.36 (September 2023)
+========================
+
+Added Translate text action.
+
+Added Remove text option to Text Manipulation action.
+
+Added support for HTML Formatting in Floating Text action.
+
+Webhook trigger now supports IP Address whitelisting.
+
+Added context specific magic text for caller IP address when using Webhook trigger.
+
+Added support for sharing via SMTP email to Take Screenshot action.
+
+Added option in settings to configure the number of home screen tiles per row.
+
+Added setting for Read Screen Content trigger to prevent it from reading the screen when MacroDroid is in the foreground.
+
+Added configurable maximum number of lines for text entries within the MacroDroid Drawer.
+
+Added option to user authenticate action to allow or prevent PIN/Swipe pattern.
+
+Fixed issue where JSON parse action would not work correctly when string comes from a dictionar/array with manually defined key/index.
+
+Due to mandatory Android target SDK changes, Bluetooth action now requires new MacroDroid helper app (v1.9) to function on Android 13+.
+
+Other minor fixes and improvements.
+
+Version 5.35 (July 2023)
+========================
+
+Added Authenticate User action.
+
+Added Notification Reply action (allows automated replies in WhatsApp/Telegram) for Android 7+.
+
+Export Macro and AutoBackup features now support encryption.
+
+Screen Content trigger now supports option to match view id.
+
+Confirm Next action and If Confirmed action now support auto cancel timeout.
+
+Added support for 8 more quick tiles (16 now available).
+
+Added 'Battery current now' magic text.
+
+Added undo functionality when deleting items in the edit macro/action block screen.
+
+Edit macro screen now supports move up/move down option where multiple child constraints are available on an item.
+
+Added magic text for SIM2 operator name (where applicable).
+
+Magic text entry dialog now supports searching.
+
+Added close drawer configure option to Macro items in MacroDroid drawer.
+
+Fixed issue where floating button pixel locations were slightly broken in the last release.
+
+Other minor fixes.
+
+
+Version 5.34 (May 2023)
+========================
+
+Added Check Text on Screen action.
+
+Display Notification and Set MacroDroid Icon actions now support text as icons.
+
+Send Email action now supports returning a boolean value to indicate if the email was sent successfully.
+
+Torch action now supports brightness level (Android 13+).
+
+Floating Button trigger (and Floating Button Configure action) now support percentage values for X,Y location.
+
+MacroDroid shortcut widget can now run action blocks as well as macros.
+
+Removed Spotify Action (Spotify will not allow MacroDroid to use their API).
+
+Fixed issue where calendar magic text fields would not work with calendar trigger.
+
+Fixed issue where Spotify action would not work for some Spotify premium users.
+
+Fixed issue where compare value did not allow value from iterator to be selected.
+
+Fixed issue where force location update action would not update location in some cases.
+
+Version 5.33 (May 2023)
+===========================
+
+Added Selection Dialog action.
+
+Added Block Touches action.
+
+Adding support for encrypted output when exporting macro set.
+
+Application Running constraint now supports specifying package name (can be specified with a variable).
+
+UI Interaction Click option can now wait to complete and return the result of the click.
+
+If Condition action now has an option to prevent logging when the condition check is false.
+
+System log has a new option to show/hide milliseconds.
+
+Added System time (ms) value to magic text.
+
+Added Bahasa Indonesian translation.
+
+Version 5.32 (April 2023)
+=========================
+
+Added Spotify action (Beta).
+
+Added Spotify Trigger.
+
+Added System Setting Change trigger.
+
+Added MacroDroid Drawer state constraint.
+
+SMS Trigger now supports subscription id selection for dual SIM devices.
+
+Open File action now supports dynamic file names.
+
+Added support for percentage values in UI Interaction gesture actions.
+
+Added magic text for Action block name.
+
+Updated categories in add actions screen.
+
+Fixed issue where connect/disconnect option in Android Wear trigger would no longer work.
+
+Fixed issue where importing a category could result in action blocks being deleted.
+
+Fixed issue where share nearby would not work on Android 13 devices.
+
+Other minor bug fixes and improvements.
+
+Version 5.31 (February 2023)
+=============================
+
+Added support for long press in Quick Settings Tile trigger.
+
+Updated Screen Content trigger to support an option for triggering when text is removed from screen.
+
+Updated mechanism used to force a different language in the app to hopefully improve the reliability.
+
+Fixed issue where references to more than two variables in magic text would not be replaced correctly.
+
+Fixed issue where it was impossible to select a dictionary key element within a child dictionary (in Set Variable action).
+
+Fixed issue where Set Variable action with user prompt would not enable ok button when setting a value within a dictionary element.
+
+Fixed issue where action blocks viewed from templates would not be cleared properly.
+
+Fixed issue where the Run Macro action could open the incorrect macro when clicking through to the linked macro.
+
+Added magic text for macro id.
+
+Other minor fixes.
+
+Version 5.30 (January 2023)
+============================
+
+Added System Log trigger.
+
+Added Application Installed constraint.
+
+Added Floating Text constraint.
+
+Added System Log Length setting into the MacroDroid settings screen.
+
+Added search feature into plugin screen.
+
+Added auto hide after delay option to Floating Text action.
+
+Added support for percentage values in UI Interaction click configuration.
+
+Added support for wildcards for click by view id in the UI Interaction action.
+
+Added support for setting flags in Send Intent action.
+
+Added support for searching in dictionary/array entries when a large number of keys are present.
+
+Added explicit 'This Macro' option in Enabled/Disable Macro action.
+
+Updated Android shortcut action to add 'Show All Apps' and 'Toggle Accessibility' options for Android 11+.
+
+Fixed issue where icons could not be updated on drawer items and magic text labels would not display for applications and shortcuts.
+
+Tweaked calendar trigger so it will match on calendar name if the underlying calendar id should ever change for any reason.
+
+Updated JSON parse action so boolean variables will be correctly saved as Boolean variable type (not Strings).
+
+Version 5.29 (November/December 2022)
+=====================================
+
+Added support for template store subscriptions on macro/users to get notified on updates (pro users only).
+
+Added JSON Output action.
+
+Added Set Digital Assistant action.
+
+Airplane mode action can now work with ADB hack (no requirement to make MacroDroid the default digital assistant).
+
+Activity Recognition trigger now supports less than comparison for detecting when an activity ends.
+
+Screen Content trigger now has an adjustable update rate.
+
+Added support to port a Webhook Trigger device id to a new device.
+
+Floating Text action now supports left, center and right alignment.
+
+Fixed issue where all day events on the calendar could trigger incorrectly due to daylight savings times.
+
+Fixed issue where trigger specific values (e.g. incoming call number) would not function after a wait before next trigger action.
+
+Fixed issue where decimal numbers in dialogs could be shown incorrectly as links.
+
+Fixed issue where action block would not run in some situations when the uncategorized category was disabled.
+
+Version 5.28 (October 2022)
+=============================
+
+Added Floating Text action.
+
+Added "Working Variables" to action blocks.
+
+Action Block action now supports option to block next actions until complete (enabled by default).
+
+Added Clear Dictionary/Array entry action to allow individual entries to be cleared or deleted.
+
+Added support for automated translations in real time in Template Store.
+
+Added support for satellite view in Geofence configure screen.
+
+Added magic text for Cell Tower Signal Strength.
+
+Improved search in action block list screen to also search for actions within blocks.
+
+Fixed issue where Text Manipulation split to array would not work with multiple character delimiter.
+
+Added new setting in trigger options to adjust the Power Button Toggle trigger's time to complete.
+
+Other minor fixes and improvements.
+
+Version 5.27.8 (September 2022)
+===============================
+
+Small bug fix release, to fix a number of minor issues.
+
+Version 5.27 (September 2022)
+=============================
+
+Added Accessibility Service action (ADB Hack required).
+
+Added functionality to keep accessibility services enabled to work around issues where some devices may disable them (ADB Hack required).
+
+Added System Setting constraint.
+
+Added total and available RAM values to magic text options.
+
+Added numerical indicators for pitch and speed values in text to speech action.
+
+Added workaround for Samsung launcher issue to prevent shortcuts losing their icon/label when switching dark mode on/off.
+
+Added magic text for SIM/carrier network name.
+
+Added magic text for cell connection type (e.g. 3G/4G/5G).
+
+Added magic text for MacroDroid is pro (returns true or false)
+
+Added support for 'This Macro' option to Macro Enabled/Disabled constraint.
+
+Added maintain spaces option to popup message action.
+
+Added support for renaming stopwatches.
+
+Added option to show last edited time in macro list screen (All values will initially be unknown until edited with this latest version).
+
+Set Variable action (using New Variable option) will now create the variable at run time and supports magic text for variable name.
+
+Wear OS companion app now enables scrolling through list with rotary control.
+
+Improvements and fixes around dictionary/array handling in Variable trigger and constraint.
+
+Fixed issue where set variable action could in some situations create a dictionary instead of an array.
+
+Fixed issue where local array/dictionary variable could not be renamed.
+
+Fixed issue where viewing a template with action blocks could add unwanted global variables.
+
+Fixed issue where deleting an entry from an action block dictionary/array would delete the dictionary/array.
+
+Version 5.26 (July 2022)
+========================
+
+Run Macro, Cancel Macro and Disable Macro actions now supports entering macro by name (supports magic text to allow referencing macro names from a variable).
+
+Additional settings such as sunset/sunrise location and weather location are now saved when exporting and via auto backup.
+
+MacroDroid Variable constraint now supports the define keys manually option for dictionary/array variables.
+
+Option Dialog now supports basic HTML formatting in main message text.
+
+Fixed issue where categories could not be added or removed from the category list screen.
+
+Fixed issue in incoming SMS/call triggers where the number comparison would not always work correctly when using magic text.
+
+Fixed issue where launching a MacroDroid shortcut would minimize MacroDroid if it's in the foreground.
+
+Fixed issue where action block could get duplicated when importing a macro that already references the same action block.
+
+Fixed issue where action blocks could get deleted when testing certain actions.
+
+Fixed issue where break from loop would not always work correctly with iterate dictionary/array action.
+
+Fixed issue where icon search didn't work correctly for icon packs.
+
+Fixed issue where Floating Button configure would not allow selection of triggers within a Wait Until Trigger action.
+
+Other minor fixes.
+
+Version 5.25.6 (July 2022)
+===============================
+
+Small bug fix update to previous v5.25 release. Fixes a number of minor issues found in the previous release.
+
+Version 5.25 (June 2022)
+========================
+
+Added Macro Enabled trigger.
+
+Added option to Floating Button Trigger to disable trigger (not whole macro) when removed via the bin icon.
+
+Added Floating Button configure action.
+
+Updated magic text to support curly brackets to reduce confusion with dictionary/array syntax. (Square brackets are still supported, {system_time} and [system_time] both work and default can be changed in the MacroDroid settings)
+
+Added better array/dictionary support to actions such as HTTP Request and File Read to allow direct writing to custom keys.
+
+Added "Split to array" option to Text Manipulation action.
+
+Tweaked Calendar trigger to work better with all day events in different timezones.
+
+When viewing a template macro a new menu item is available to "Add disabled".
+
+Voice input now supports setting directly into new dictionary keys/array indexes with magic text.
+
+Pop up message action now supports basic html such as <b>BOLD</b> and <i>ITALIC</i>
+
+Added Enable/Disable (including children) to edit macro screen make enabling large conditions and loops easier.
+
+Added option to enable/disable horizontal swipes to open MacroDroid Drawer.
+
+Added 'Overwrite' option to Write to File action.
+
+Added option to WhatsApp Send action to support both standard and business app.
+
+Added magic text for dictionary/array size.
+
+Fixed issue where using cut on an IF/Loop block would not work correctly.
+
+Fixed issue where option dialog continue option would not work correctly.
+
+Fixed issue where record microphone action would not write correct file extension.
+
+Fixed issue where a variable's value would not refresh if updated while the MacroDroid drawer is open.
+
+Fixed issue where editing a disabled macro could re-enable it.
+
+Fixed issue where display notification would not pass variables correctly in the Run when pressed option.
+
+Added option in setting to restore all help information cards that were previously dimissed.
+
+Version 5.24.3 (June 2022)
+==========================
+
+This update was required by Google to add a Recognizer Service when using MacroDroid as the default assistant.
+
+Version 5.24 (May 2022)
+==========================
+
+Added Read Screen Contents action.
+
+Added Screen Contents trigger.
+
+Added Read from File action.
+
+Added Category Enabled/Disabled constraint.
+
+Added Export Log action.
+
+Added option to manually enter view id in UI Interaction clicks.
+
+Added forground option to Set Volume action for devices that don't allow setting volume with MacroDroid in the background.
+
+Added option to Popup Message action to cancel previous popup (Useful for second countdowns for example)
+
+Added option to Message Dialog and Option Dialog actions to prevent back button closing dialog.
+
+Added support in WebHook trigger for setting dictionary/array variable entries.
+
+Report a bug feature now includes ability to add screenshots.
+
+Added support for renaming Shortcuts in the MacroDroid drawer.
+
+MacroDroid Drawer now supports options for opening via swipe up and/or swipe down gesture.
+
+Other minor fixes and tweaks.
+
+Version 5.23 (April 2022)
+==========================
+
+Added Dictionary and Array variable types (Pro users only).
+
+Added Iterate Dictionary/Array action that can be used to loop over all elements within a dictionary/array.
+
+Added JSON Parse action.
+
+Changed Set Quick Setting Tile State action to Configure Quick Tile action to allow additional setting of icon and label.
+
+Added gesture sequence option to UI Interaction action to enable complex gestures such as swipe lock patterns.
+
+Added option to UI Interaction configuration screen to toggle touch location overlay.
+
+Added ability to enable/disable individual buffers to Logcat trigger.
+
+Added IP Address constraint.
+
+Added Magic Text for WebHook base url.
+
+Added search functionality to Action Block list screen.
+
+Added option to export system log in HTML so it can output the same colour coding as shown in app.
+
+Added cut option to Edit Macro And Action Block screens to allow full cut, copy and paste functionality.
+
+Action Block "Test Actions" will now display a summary of the output variables when run.
+
+Fixed issue where Macro Invocation Method would not work correctly in all cases.
+
+Fixed issue with "not in event" condition not working correctly in Calendar constraint.
+
+Fixed issue where filename in HTTP Request action would not correctly process magic text values.
+
+Fixed issue where actions within an action block would not be cancelled when the parent macro is cancelled.
+
+Fixed issue where wallpaper could be incorrectly rotated on some devices.
+
+Other minor fixed and tweaks.
+
+Version 5.22.6 (February 2022)
+============================
+
+Fixed issue where MacroDroid videos would not work.
+
+Version 5.22 (February 2022)
+============================
+
+Added Http Request action.
+
+Added Invocation Method constraint to allow detection when a macro is invoked from non standard macro triggers.
+
+Added basic (English only) search functionality to icon picker.
+
+Added Action Block support to MacroDroid Drawer.
+
+Added support for biometrics and delay password prompt in password protection settings.
+
+Added magic text for MacroDroid version number.
+
+Added ignore case option to Variable trigger and constraint.
+
+Added support for passing boolean variable values into action block input parameters.
+
+Added Ignore (Cancel macro) option for option dialog to prevent running any futher actions if chosen.
+
+Added ability to filter variables by type on the global variables screen.
+
+Added exclude option to call/sms based triggers and added searchable contact names to selection dialog.
+
+Fixed issue where assembling tasker array values into single string would sometimes get order of elements wrong.
+
+Fixed issue where share to nearby device would not always work on Android 12 devices.
+
+Fixed issue where selecting a global variable for the Voice Output action could set the wrong variable.
+
+Fixed issue where bluetooth beacon trigger could end up triggering multiple times for a single event.
+
+Fixed issue where Geofence would not center on correct area when searching or zooming in/out.
+
+Fixed issue where Wifi SSID list could contain duplicate entries.
+
+Fixed issue where a very long string in a local variable could prevent the OK button being accessible.
+
+Fixed issue where Set MacroDroid icon would fail to update the icon in some scenarios.
+
+Fixed issue where all day events in calendar constraint would not work correctly in various timezones.
+
+Many other minor fixes and tweaks.
+
+Version 5.21
+============
+
+Small bug fix release.
+
+Tweaked action block input parameter handling so you can pass in an empty value and always use default input parm value.
+
+Added "Share as Image" option to Action Block edit screen.
+
+Fixed several small issues around action block editing.
+
+Fixed issue where free users could lose macros if they are at the 5 macro limit and they discard an edit to a macro or action block.
+
+Fixed issue with "Last Opened" tile on the home screen not working in some situations.
+
+Fixed issue with "Voice Input" action not causing a variable trigger to fire when writing to a variable.
+
+Fixed issue where pasting items in an action block would not always configure actions correctly.
+
+Version 5.20
+============
+
+Added action blocks, to allow grouping of commonly used actions which can be invoked from macros or other action blocks.
+
+Added support for sharing to nearby devices from macro edit and action block edit screen.
+
+Added "Set Button Bar Image" action to allow the updating of buttons with the MacroDroid notification button bar.
+
+Added Voice Input action to prompt for spoken text and then save it into a string variable.
+
+Added WhatsApp action (beta) to allow basic message sending to individual contacts only.
+
+Added ability to mark macros as favourite and easily filter between favourite/all macros.
+
+Added home screen tile to provide quick shortcut link to favourite macros.
+
+Added home screen tile for MacroDroid Videos which contains links to new official MacroDroid YouTube videos.
+
+Translations screen now shows how complete the translation for each language is.
+
+Various minor bug fixes and small improvements.
+
+Version 5.19.11
+===============
+
+Fixed issue where password prompt would not appear in some cases when using password protection to enter app.
+
+Fixed issue where share last photo would not work in all cases.
+
+Fixed issue where sleep trigger did not check constraints.
+
+Other minor bug fixes.
+
+Version 5.19.9
+==============
+
+Please note that this release is updated to target the Android 11 SDK which enforces tighter restrictions on file access than previous versions. A small number of macros may need updating to continue writing to files.
+
+** Please report any bugs or issues with this release via "Report a bug" in the troubleshooting section **
+
+Added Sleep Trigger (Android 10+).
+
+Added Clear Variables action.
+
+Added logcat option to support Clipboard Trigger for users of Android 10+ (Root/ADB hack).
+
+Added Clipboard Refresh action to get the contents of the clipboard into MacroDroid for Android 10+ users.
+
+Added support for up to three action buttons to the Display Notification action that can run other macros when pressed.
+
+Fixed issue where drawer would not display correctly on device with right to left layouts.
+
+Improved performance when multiple floating buttons are added/removed.
+
+Send UDP action now supports magic text for destination and port fields.
+
+Added quit on back press option for If Then Confirm action.
+
+Added 'Allow any certificate' option to HTTP Get.
+
+Added support for sending email via SMTP to the Share Location action.
+
+Added support for running shell script commands via helper file (Requires helper file 1.7)
+
+Added limited support for accessing tasker array values (Tasker plugin/action) by saving all values into comma or new line separated string.
+
+A correction to previous update: Many thanks to lamvankhoat1 for the thorough Vietnamese translation.
+
+Version 5.18
+============
+
+Minor bug fix release
+
+Added toggle to enable/disable HTML sending mode on Send Email (via SMTP).
+
+Fixed issue where icon could not be selected on Notification action.
+
+Fixed issue where Take ScreenShot action would send incorrect image on some devices.
+
+Fixed issue where If Confirmed action would not work correctly if invoked when screen is off.
+
+Fixed issue where some UI Interaction gesture values would not reating the correct value.
+
+Fixed issue where you could not edit data in the SMS Send action once it was configured.
+
+Other small fixes.W
+
+Version 5.17
+============
+
+Added Dark Theme Change trigger (Android 10+)
+
+Modified the macro description text in edit macro screen so it will scroll with macro content and expanded the number of characters allowed.
+
+Added support for variables in UI Interaction gesture action.
+
+Added support for password entry in Set Variable action - user prompt.
+
+Fixed issue where UI Interaction identify in app option was not working on some devices.
+
+Added Vietnamese language (Many thanks to lamvankhoat1 for completing this)
+
+Added ability to change text of application shortcuts in MacroDroid Drawer.
+
+Lots of other small fixes and tweaks.
+
+Version 5.16.2
+==============
+
+Fixed issue where app launched trigger and detecting foreground application would not work on some devices.
+
+Other small fixes.
+
+Version 5.16
+============
+
+Fixed issue where some macros could be missing from the template list.
+
+Lots of minor bug fixes.
+
+Version 5.15
+============
+
+Reinstated invert order option to system log.
+
+Added option to capture Logcat messages (and select an entry) to Logcat trigger.
+
+Added link to wiki in side menu (Wiki is English only).
+
+Added support for sub-text in notification trigger (and associated magic text).
+
+Fixed issue where floating buttons would not retain their previous position.
+
+Fixed issue where open system log would not work correctly.
+
+Fixed issue where attaching system log to send email action would not work correctly.
+
+Lots of other small fixes and tweaks.
+
+Version 5.14
+============
+
+Added Restore Hidden Notifications action (Android 11+), to allow persistent notifications that were previously hidden with the Clear Notifications action to be restored.
+
+Fixed issue where system log would not show links to macros.
+
+Other small fixes and improvements.
+
+Version 5.13
+============
+
+New System Log with search and filtering features.
+
+Added support for viewing the log for a single macro only from macro list and edit macro screen.
+
+Reinstated SMS Sent trigger. (MacroDroid is now allowed to use required permission)
+
+Reinstated 'monitor inbox' option on the SMS Received trigger. (MacroDroid is now allowed to use required permission)
+
+Play Sound action now supports setting of the audio channel for an individual action.
+
+Fixed issue where Wait Until Trigger action could incorrectly invoke else blocks that it shouldn't.
+
+Added magic text support to System Setting action.
+
+Quick Run Macro data is now included when exporting/importing macros.
+
+Call Missed and Call Active triggers now support direct number entry and group selection.
+
+Categories and macros in the macro list now support custom colours to allow any colour to be set.
+
+Fixed issue where some macros in the template store could not be imported.
+
+Version 5.12
+============
+
+Added Geofence (Location) constraint.
+
+Added Google Assistant trigger so you can easily determine if a macro was invoked by the assistant (and not some other trigger).
+
+Loops and condition actions with child actions can now be collapsed/expanded to make editing large macros easier.
+
+Version 5.11
+============
+
+Now includes support for running Macros via the Google assistant (English only currently). Please ensure both your device language and Google assistant language are configured to English to use this feature.
+
+Invoke macros by saying "Ok Google run 'macroname' in MacroDroid". Currently Google only support this functionality for US English. I will add support for other locales and languages when Google allow.
+
+Added custom notification channels for use with the display notification action.
+
+Added Break from Loop action.
+
+Added Continue Loop action.
+
+Further bug fixes and small improvements.
+
+Version 5.10
+============
+
+Bug fix release. Fixes several small issues and rare crashes.
+
+Improved handling around some missing permissions.
+
+Version 5.9
+===========
+
+Added cloud backup feature in auto backup screen (Pro users only).
+
+The MacroDroid forum has moved away from Tapatalk to a cleaner self hosted forum.
+
+Several minor bug fixes.
+
+Version 5.8
+===========
+
+Set Wifi action now requires a helper file on Android 10+ (Google restriction forced upon apps).
+
+Added Wait Until Trigger action to allow a running macro to pause until a specific trigger fires.
+
+Added option to lock categories with a password/pin.
+
+Added ability to add MacroDroid macros on the power button menu (Android 11 only)
+
+Added text color option to popup message action.
+
+Added wait until complete option for 'Macro Run' action.
+
+Added text color option and icon tint to Popup Message action.
+
+Speak Text action now allows language to be set on each individual action instance.
+
+Add Calendar Entry action now supports setting the time of the entry relative to a variable's value.
+
+Fixed issue with logcat_line magic text not working.
+
+Fixed issue where cancel macro actions would not cancel the Wait Until Trigger action.
+
+Fixed some logic issues where nested IF/ELSE commands would not behave as expected in some edge cases.
+
+Version 5.7
+===========
+
+Added Plugins list for discovering/sharing third party apps that are compatible with MacroDroid (Home screen tile).
+
+Added home screen tile for quick access to the last edited macro.
+
+Added home screen tile for quick running macros.
+
+Added Camera Enable/Disable action to allow the camera to be disabled for all applications on the device.
+
+Tweaked Control Media Action so that Simulate Audio Button option works better to control the last used media application.
+
+Day/Time trigger now allows setting a specific seconds value.
+
+Add Search feature to variables list screen.
+
+Version 5.6
+===========
+
+Airplane mode action can now be done on a non-rooted device on Android 7+ (by making MacroDroid the default assistant app).
+
+Launch Application action now supports a package name option (including magic text to support variables etc.).
+
+MacroDroid variable values can now be passed to Tasker plugins using Tasker formatting style (%varname).
+
+Notification button bar background/tint and SMTP settings are now saved when exporting macros.
+
+Added wind direction value to weather trigger (and weather specific magic text).
+
+Updated integer variables so they are now backed by a long type so they can hold values > 2,147,483,647.
+
+Other minor fixes and improvements.
+
+Version 5.5
+===========
+
+Added quick tile toggle to turn MacroDroid On/Off (Android 7+).
+
+Added option to hide macro details in macro list view.
+
+Fixed issue where VPN Trigger would not fire.
+
+Fixed issue where configuring notification bar button trigger would not show icons.
+
+Significant updates to some translations.
+
+Other minor fixes and UI tweaks.

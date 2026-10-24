@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/search_header_layout" android:background="@color/smsp_search_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/smsp_white_color" android:gravity="center" android:id="@id/tv_search_header" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_or_select_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="90.0">
+        <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" app:queryHint="@string/search" />
+        <LinearLayout android:id="@id/item_search_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/search_list_item" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:textColor="@color/smsp_dismiss_color" android:layout_gravity="end" android:id="@id/btn_dismiss" android:background="@color/smsp_transparent_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" />
+    </LinearLayout>
+</LinearLayout>

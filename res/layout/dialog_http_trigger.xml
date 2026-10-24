@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/identifier" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_medium" android:hint="@string/trigger_http_request_path" android:singleLine="true" android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/url" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/urlCopyButton" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_action_copy_white" android:scaleType="center" android:contentDescription="@string/copy_web_link" app:tint="?colorAccent" />
+            <ImageView android:id="@id/urlShareButton" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_share2_white_24dp" android:scaleType="center" android:contentDescription="@string/share_web_link" app:tint="?colorAccent" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/default_text_color" android:id="@id/urlLinkText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/ip_address_may_change_consider_static_ip" />
+        <CheckBox android:id="@id/sendResponseCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/trigger_http_request_send_response" android:layout_marginStart="-4.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/http_response_via_action_explanation" />
+        <LinearLayout android:orientation="vertical" android:id="@id/responseContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/responseTextEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_medium" android:hint="@string/trigger_http_request_response_text" android:singleLine="true" android:imeOptions="actionDone" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/responseMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <Button android:id="@id/headerParamsButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/http_request_header_params" android:textAllCaps="false" style="@style/ColoredButton" />
+            <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/trigger_http_request_response_code" />
+            <Spinner android:id="@id/responseCodeSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_medium" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_address_whitelist" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/editwhiteListButton" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_mode_edit_white_24dp" android:scaleType="center" android:contentDescription="@string/share_web_link" app:tint="?colorAccent" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/default_text_color" android:id="@id/whiteListEntriesText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/variable_multi_entry_no_entries" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webhook_payload_body_save_to_string_variable" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/bodyVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0" android:layout_marginStart="-4.0dip" android:layout_marginEnd="@dimen/margin_small" />
+            <Button android:id="@id/addStringVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="+" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color" android:id="@id/variableExplanationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/trigger_http_request_variables" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/trigger_web_hook_variable_dic_array_entry_passing" />
+        <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:id="@id/httpServerSettingsText" android:background="?selectableItemBackground" android:padding="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/http_server_settings" />
+        <include android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

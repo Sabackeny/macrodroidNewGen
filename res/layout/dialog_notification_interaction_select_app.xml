@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <RadioButton android:textSize="16.0sp" android:id="@id/use_notification_trigger_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_notification_trigger" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/define_manually_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/define_manually" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/define_manually_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <TextView android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/select_application" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color_full" android:layout_gravity="center_vertical" android:id="@id/applicationNameText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:text="@string/none" android:hint="@string/select_application" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/selectAppButton" android:layout_height="48.0dip" android:src="@drawable/ic_apps_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

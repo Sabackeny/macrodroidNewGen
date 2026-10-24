@@ -1,0 +1,70 @@
+Versie 5.54 (juni 2025)
+=======================
+
+Java Code actie toegevoegd.
+
+JavaScript-actie bijgewerkt ter ondersteuning van het terugkeren naar alle variabeletypen - Gebruik mdOutput(value).
+
+Optie toegevoegd om array- en woordenboekvariabelen uit te voeren in JSON-formaat {vjson=}, {lvjson=} (om ze gemakkelijker te gebruiken in JavaScript-actie).
+
+Trigger App-activiteit gestart/gesloten toegevoegd.
+
+Bijgewerkt Actie Snelle tegel configureren ter ondersteuning van het instellen van een tegel in een inactieve status waarmee geen interactie mogelijk is.
+
+Bijgewerkte HTTP-verzoekactie om ondersteuning toe te voegen voor dynamische bestandsnamen/lokale URI in de inhoud van de inhoud.
+
+Optie toegevoegd aan 'Autofocus toepassen' om de actie Foto maken te ondernemen.
+
+Magische tekst 'GUID maken' toegevoegd om een wereldwijd unieke ID te maken.
+
+De optie 'Trillen bij indrukken' toegevoegd aan de activering van de zwevende knop en de actie Zwevende tekst.
+
+Mogelijkheid toegevoegd om het systeemlogboek voor een afzonderlijke macro te wissen bij het bekijken van het systeemlogboek voor die macro (via het scherm macro bewerken).
+
+Contextspecifieke magische tekst toegevoegd voor logtekst bij gebruik van de trigger System Log Entry.
+
+Optie toegevoegd om de variabele waarde te gebruiken voor time-out in de actie Wachten tot trigger.
+
+Geëxporteerde macro's en categorieën bevatten nu alle bijbehorende globale variabelen als onderdeel van de export.
+
+Bij het configureren van de trigger voor Wifi-statuswijziging kon geen SSID-selectie worden toegestaan, tenzij de helper-app was geïnstalleerd. Dit probleem is nu opgelost.
+
+De scèneschuifregelaar werkte het bereik niet correct bij wanneer de variabelen waarnaar wordt verwezen, werden bijgewerkt. Dit probleem is nu opgelost.
+
+Ondersteuning toegevoegd voor Marathi-taal om tekstactie uit te spreken.
+
+Locatie delen naar variabele bood geen ondersteuning voor opslaan in woordenboek/matrixelement. Dit probleem is nu opgelost.
+
+Instelling toegevoegd om webpagina uit te schakelen bij gebruik van de HTTP Server Request-trigger.
+
+Andere kleine reparaties.
+
+-- Scène verbeteringen --
+
+Component Horizontale Verdeler toegevoegd.
+
+Ondersteuning toegevoegd voor het klikken op de waarde op de schuifregelaar van de scène en het invoeren van het nummer via het dialoogvenster.
+
+Ondersteuning toegevoegd voor het invoeren van wachtwoorden in de component Tekstinvoer van de scène.
+
+Optie voor gesplitste uitlijning toegevoegd voor componenten voor scènewisseling en selectievakjes.
+
+Optie toegevoegd om afgeronde hoeken in scènes in te stellen bij gebruik van een dialoogvenster of overlay-optie.
+
+De scèneschuifregelaar ondersteunt nu het weergeven van een waardelabel aan het begin en einde (of geen).
+
+De scèneschuifregelaar ondersteunt nu stapwaarden.
+
+Scènetekst ondersteunt nu magische tekstwaarden voor het opgeven van de tekstgrootte.
+
+Scènetekst ondersteunt nu de HTML-opmaakoptie.
+
+Scènetekst ondersteunt nu een maximum aantal regels en de optie Schaal om te passen.
+
+Alle scène-items ondersteunen nu de zichtbaarheidsstatus die kan worden gebonden aan een booleaanse variabele.
+
+Scèneschakelaar ondersteunt nu afzonderlijke tekstkleur, schakel kleur uit en schakel kleur in.
+
+De scèneknop ondersteunt nu het schakelen tussen een booleaanse variabele.
+
+De scène werkte variabelen niet correct bij wanneer deze werd uitgevoerd vanuit een actieblok en de standaardoptie Volgende acties blokkeren niet werd gebruikt. Dit probleem is nu opgelost.

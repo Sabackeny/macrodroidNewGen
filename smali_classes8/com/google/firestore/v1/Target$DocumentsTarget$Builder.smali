@@ -1,0 +1,197 @@
+.class public final Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+# interfaces
+.implements Lcom/google/firestore/v1/Target$DocumentsTargetOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firestore/v1/Target$DocumentsTarget;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/google/firestore/v1/Target$DocumentsTarget;",
+        "Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;",
+        ">;",
+        "Lcom/google/firestore/v1/Target$DocumentsTargetOrBuilder;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-static {}, Lcom/google/firestore/v1/Target$DocumentsTarget;->f0()Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/google/firestore/v1/Target$1;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public addAllDocuments(Ljava/lang/Iterable;)Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-static {v0, p1}, Lcom/google/firestore/v1/Target$DocumentsTarget;->i0(Lcom/google/firestore/v1/Target$DocumentsTarget;Ljava/lang/Iterable;)V
+
+    return-object p0
+.end method
+
+.method public addDocuments(Ljava/lang/String;)Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-static {v0, p1}, Lcom/google/firestore/v1/Target$DocumentsTarget;->h0(Lcom/google/firestore/v1/Target$DocumentsTarget;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public addDocumentsBytes(Lcom/google/protobuf/ByteString;)Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-static {v0, p1}, Lcom/google/firestore/v1/Target$DocumentsTarget;->k0(Lcom/google/firestore/v1/Target$DocumentsTarget;Lcom/google/protobuf/ByteString;)V
+
+    return-object p0
+.end method
+
+.method public clearDocuments()Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-static {v0}, Lcom/google/firestore/v1/Target$DocumentsTarget;->j0(Lcom/google/firestore/v1/Target$DocumentsTarget;)V
+
+    return-object p0
+.end method
+
+.method public getDocuments(I)Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-virtual {v0, p1}, Lcom/google/firestore/v1/Target$DocumentsTarget;->getDocuments(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getDocumentsBytes(I)Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-virtual {v0, p1}, Lcom/google/firestore/v1/Target$DocumentsTarget;->getDocumentsBytes(I)Lcom/google/protobuf/ByteString;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getDocumentsCount()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-virtual {v0}, Lcom/google/firestore/v1/Target$DocumentsTarget;->getDocumentsCount()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getDocumentsList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-virtual {v0}, Lcom/google/firestore/v1/Target$DocumentsTarget;->getDocumentsList()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public setDocuments(ILjava/lang/String;)Lcom/google/firestore/v1/Target$DocumentsTarget$Builder;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->f()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->b:Lcom/google/protobuf/GeneratedMessageLite;
+
+    check-cast v0, Lcom/google/firestore/v1/Target$DocumentsTarget;
+
+    invoke-static {v0, p1, p2}, Lcom/google/firestore/v1/Target$DocumentsTarget;->g0(Lcom/google/firestore/v1/Target$DocumentsTarget;ILjava/lang/String;)V
+
+    return-object p0
+.end method

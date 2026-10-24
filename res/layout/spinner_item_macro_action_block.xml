@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/runnable_item_selection_min_height" android:paddingVertical="@dimen/margin_tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/default_text_color" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/nameText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="1.0" style="?android:spinnerDropDownItemStyle" />
+    <TextView android:textSize="12.0sp" android:textColor="?colorAccent" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/typeText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="?android:spinnerDropDownItemStyle" />
+</LinearLayout>

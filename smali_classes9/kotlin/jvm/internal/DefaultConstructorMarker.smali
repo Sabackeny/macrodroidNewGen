@@ -1,0 +1,2 @@
+.class public final Lkotlin/jvm/internal/DefaultConstructorMarker;
+.super Ljava/lang/Object;

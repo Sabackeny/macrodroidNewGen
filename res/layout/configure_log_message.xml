@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_log_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_log_message" android:ems="10" android:singleLine="true" android:inputType="none" android:layout_marginEnd="@dimen/margin_medium" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:id="@id/configure_log_message_magic_text_button" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <CheckBox android:id="@id/addMacroLinkCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/log_option_add_macro_link" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/system_log_log_level" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <com.arlosoft.macrodroid.widget.NDSpinner android:entries="@array/log_levels" android:layout_gravity="center_vertical" android:id="@id/logLevelSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:entryValues="@array/log_levels_int" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/user_log_channel" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/userLogChannelSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/userLogChannelAddButton" android:text="+" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

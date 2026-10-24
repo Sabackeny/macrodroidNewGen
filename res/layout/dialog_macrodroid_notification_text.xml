@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <RadioButton android:textSize="18.0sp" android:id="@id/defaultRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/macrodroid_default" android:paddingStart="@dimen/margin_small" />
+        <RadioButton android:textSize="18.0sp" android:id="@id/customRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/custom_text" android:paddingStart="@dimen/margin_small" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/customLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title" android:maxLines="1" android:inputType="text">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/titleMagicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/bodyText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/notification_text" android:maxLines="1" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/bodyMagicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

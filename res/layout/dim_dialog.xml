@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <RadioButton android:id="@id/dim_dialog_on_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_dim_screen_on" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/dim_dialog_off_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_dim_screen_off" android:layout_weight="1.0" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/dim_dialog_values_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dim_screen_explanation" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/dim_dialog_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dim_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <SeekBar android:id="@id/dim_dialog_seek_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/dim_percent_text" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:id="@id/dim_dialog_overlay_status_bar_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:text="@string/dim_screen_option_overlay_status_bar" android:layout_marginHorizontal="10.0dip" />
+    <TextView android:id="@id/dim_dialog_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dim_screen_option_overlay_status_bar_accessiblity_needed" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

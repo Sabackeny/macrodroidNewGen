@@ -1,0 +1,70 @@
+Phiên bản 5.54 (Tháng Sáu 2025)
+=======================
+
+Đã thêm hành động Mã Java.
+
+Cập nhật thao tác JavaScript để hỗ trợ quay lại tất cả các loại biến - Sử dụng mdOutput(value).
+
+Đã thêm tùy chọn để xuất mảng và biến từ điển ở định dạng JSON {vjson=}, {lvjson=} (để làm cho chúng dễ sử dụng hơn trong hành động JavaScript).
+
+Đã thêm kích hoạt ứng dụng đã khởi chạy/đóng.
+
+Đã cập nhật hành động Định cấu hình ngăn xếp nhanh để hỗ trợ đặt ngăn xếp ở trạng thái không hoạt động mà không thể tương tác được.
+
+Đã cập nhật hành động Yêu cầu HTTP để thêm hỗ trợ cho tên tệp động/uri cục bộ trong nội dung.
+
+Đã thêm tùy chọn 'Áp dụng lấy nét tự động' để chụp ảnh hành động.
+
+Đã thêm văn bản ma thuật 'Tạo GUID' để tạo mã định danh duy nhất toàn cầu.
+
+Đã thêm tùy chọn 'Rung khi nhấn' vào kích hoạt nút nổi và hành động văn bản nổi.
+
+Đã thêm khả năng xóa nhật ký hệ thống cho một macro riêng lẻ khi xem Nhật ký hệ thống cho macro đó (thông qua màn hình chỉnh sửa macro).
+
+Đã thêm văn bản ma thuật theo ngữ cảnh cụ thể cho văn bản nhật ký khi sử dụng trình kích hoạt Mục nhập Nhật ký Hệ thống.
+
+Đã thêm tùy chọn để sử dụng giá trị biến cho thời gian chờ trong hành động Chờ cho đến khi kích hoạt.
+
+Macro và Danh mục được xuất bây giờ sẽ chứa bất kỳ biến toàn cầu nào được liên kết như một phần của quá trình xuất.
+
+Đã khắc phục sự cố trong đó cấu hình trình kích hoạt Thay đổi trạng thái Wifi không cho phép chọn SSID trừ khi ứng dụng trợ giúp đã được cài đặt.
+
+Đã khắc phục sự cố trong đó thanh trượt cảnh sẽ không cập nhật chính xác phạm vi khi các biến được tham chiếu được cập nhật.
+
+Đã thêm hỗ trợ cho ngôn ngữ Marathi cho hành động Đọc văn bản.
+
+Đã khắc phục sự cố trong đó Chia sẻ vị trí với biến không hỗ trợ lưu vào phần tử từ điển/mảng.
+
+Đã thêm cài đặt để tắt trang web khi sử dụng trình kích hoạt Yêu cầu máy chủ HTTP.
+
+Các sửa lỗi nhỏ khác.
+
+-- Cải tiến cảnh --
+
+Đã thêm thành phần Horizontal Divider.
+
+Đã thêm hỗ trợ nhấp vào giá trị trên thành phần Thanh trượt cảnh và nhập số qua hộp thoại.
+
+Đã thêm hỗ trợ nhập mật khẩu trong thành phần Nhập văn bản cảnh.
+
+Đã thêm tùy chọn căn chỉnh phân chia cho các thành phần Switch và Checkbox cảnh.
+
+Đã thêm tùy chọn để đặt các góc bo tròn trên Cảnh khi sử dụng tùy chọn hộp thoại hoặc lớp phủ.
+
+Thanh trượt cảnh hiện hỗ trợ hiển thị nhãn giá trị ở đầu và cuối (hoặc không có).
+
+Scene Slider hiện hỗ trợ các giá trị bước.
+
+Văn bản cảnh hiện hỗ trợ các giá trị văn bản ma thuật để chỉ định kích thước văn bản.
+
+Văn bản cảnh hiện hỗ trợ tùy chọn định dạng HTML.
+
+Văn bản cảnh hiện hỗ trợ số dòng tối đa và tùy chọn tỷ lệ để vừa vặn.
+
+Tất cả các mục cảnh hiện hỗ trợ trạng thái hiển thị có thể được liên kết với một biến boolean.
+
+Scene Switch hiện hỗ trợ màu văn bản riêng biệt, tắt màu và bật màu.
+
+Nút Cảnh hiện hỗ trợ chuyển đổi một biến boolean.
+
+Đã khắc phục sự cố trong đó cảnh sẽ không cập nhật các biến một cách chính xác khi chạy từ một khối hành động và không sử dụng tùy chọn chặn hành động tiếp theo theo mặc định.

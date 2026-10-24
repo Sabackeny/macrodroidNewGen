@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:layout_marginEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color" android:id="@id/infoText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <EditText android:id="@id/searchText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/search" android:drawablePadding="@dimen/margin_small" android:lineSpacingMultiplier="1.2" android:drawableStart="@drawable/ic_search_white" android:layout_marginHorizontal="@dimen/margin_medium" app:drawableTint="@color/default_text_color" />
+    <ListView android:scrollbarStyle="outsideInset" android:id="@id/listView" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    <TextView android:textColor="?colorAccent" android:id="@id/multiTriggerWarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/magic_text_multi_trigger_warning" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

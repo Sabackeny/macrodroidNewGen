@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_micro" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" app:cardCornerRadius="4.0dip" app:cardElevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mainContainer" android:background="@color/local_vars_primary" android:paddingTop="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingStart="6.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/variableName" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_small" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/variableValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dip" android:textColor="#88ffffff" android:gravity="center" android:layout_gravity="start" android:id="@id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="s" android:layout_marginStart="3.0dip" />
+</androidx.cardview.widget.CardView>

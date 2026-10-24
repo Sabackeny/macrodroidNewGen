@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_magnify_white_24dp" android:id="@id/menu_search" android:title="@string/search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always" />
+    <item android:id="@id/menu_delete_all" android:title="@string/delete_all" app:showAsAction="never" />
+    <item android:id="@id/menu_delete_all_unused" android:title="@string/delete_all_unused" app:showAsAction="never" />
+    <item android:id="@id/menu_import_from_nearby" android:title="@string/import_from_nearby_device" app:showAsAction="never" />
+    <item android:id="@id/menu_youtube_tutorial_submenu" android:title="@string/youtube_tutorials" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/menu_action_blocks_introduction" android:title="Action Block Introduction" />
+            <item android:id="@id/menu_action_blocks_parameters" android:title="Action Block Parameters" />
+        </menu>
+    </item>
+</menu>

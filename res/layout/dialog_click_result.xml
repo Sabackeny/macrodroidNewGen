@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="vertical" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <RadioButton android:id="@id/dont_wait_radio_button" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/ui_interaction_dont_wait_for_ui_click_result" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/block_until_complete_radio_button" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:checked="false" android:text="@string/ui_interaction_block_until_click_result" android:layout_weight="1.0" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/save_to_variable_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/save_to_variable" android:layout_marginStart="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/boolean_variable_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" />
+            <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/add_boolean_variable_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="+" android:layout_marginHorizontal="@dimen/margin_medium" style="@style/MagicTextButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

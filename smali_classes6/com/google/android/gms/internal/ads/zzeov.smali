@@ -1,0 +1,77 @@
+.class public final Lcom/google/android/gms/internal/ads/zzeov;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzher;
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/internal/ads/zzhfj;
+
+.field private final zzb:Lcom/google/android/gms/internal/ads/zzhfj;
+
+.field private final zzc:Lcom/google/android/gms/internal/ads/zzhfj;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzhfj;Lcom/google/android/gms/internal/ads/zzhfj;Lcom/google/android/gms/internal/ads/zzhfj;Lcom/google/android/gms/internal/ads/zzhfj;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzeov;->zza:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzeov;->zzb:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzeov;->zzc:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic zzb()Ljava/lang/Object;
+    .locals 8
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzeov;->zza:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzeln;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzeln;->zza()Lcom/google/android/gms/internal/ads/zzell;
+
+    move-result-object v2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzeov;->zzb:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzhfj;->zzb()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lcom/google/android/gms/common/util/Clock;
+
+    invoke-static {}, Lcom/google/android/gms/internal/ads/zzffh;->zzc()Lcom/google/android/gms/internal/ads/zzgcs;
+
+    move-result-object v6
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzeov;->zzc:Lcom/google/android/gms/internal/ads/zzhfj;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzhfj;->zzb()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lcom/google/android/gms/internal/ads/zzdrw;
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzeoj;
+
+    const-wide/32 v3, 0x7fffffff
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v7}, Lcom/google/android/gms/internal/ads/zzeoj;-><init>(Lcom/google/android/gms/internal/ads/zzetr;JLcom/google/android/gms/common/util/Clock;Ljava/util/concurrent/Executor;Lcom/google/android/gms/internal/ads/zzdrw;)V
+
+    return-object v0
+.end method

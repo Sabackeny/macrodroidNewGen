@@ -1,0 +1,10 @@
+.class public interface abstract Lcom/thoughtbot/expandablerecyclerview/listeners/GroupExpandCollapseListener;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract onGroupCollapsed(Lcom/thoughtbot/expandablerecyclerview/models/ExpandableGroup;)V
+.end method
+
+.method public abstract onGroupExpanded(Lcom/thoughtbot/expandablerecyclerview/models/ExpandableGroup;)V
+.end method

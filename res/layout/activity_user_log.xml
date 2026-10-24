@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:theme="@style/Toolbar.WhiteAccent" android:orientation="vertical" android:background="@color/system_log_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar.JavaScriptToolbar" android:id="@id/toolbar" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_marginStart="-16.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/backButton" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/material_ic_arrow_back_24px_svg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/white" />
+                <Spinner android:id="@id/channelSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:orientation="vertical" android:id="@id/filterPanel" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_medium">
+                <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_log_log_level" />
+                <Spinner android:textColor="@color/white" android:entries="@array/log_levels" android:id="@id/logLevelSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entryValues="@array/log_levels_int" android:layout_marginStart="@dimen/margin_small" app:drawableTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/infoCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" layout="@layout/info_card" />
+    <ViewFlipper android:id="@id/viewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recyclerView" android:padding="@dimen/margin_micro" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fastScrollEnabled="true" app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable" app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable" app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable" app:fastScrollVerticalTrackDrawable="@drawable/line_drawable" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/emptyView" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/animationView" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginBottom="-40.0dip" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/default_text_color" app:lottie_loop="true" app:lottie_rawRes="@raw/pencil_write" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="100.0dip" android:text="@string/no_events_logged" />
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

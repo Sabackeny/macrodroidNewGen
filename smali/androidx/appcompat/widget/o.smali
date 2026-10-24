@@ -1,0 +1,14 @@
+.class public abstract synthetic Landroidx/appcompat/widget/o;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/view/inspector/PropertyMapper;Ljava/lang/String;I)I
+    .locals 0
+
+    invoke-interface {p0, p1, p2}, Landroid/view/inspector/PropertyMapper;->mapGravity(Ljava/lang/String;I)I
+
+    move-result p0
+
+    return p0
+.end method

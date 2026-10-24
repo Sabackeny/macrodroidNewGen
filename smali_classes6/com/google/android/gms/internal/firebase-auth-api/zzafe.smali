@@ -1,0 +1,29 @@
+.class final Lcom/google/android/gms/internal/firebase-auth-api/zzafe;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field zza:Lcom/google/android/gms/internal/firebase-auth-api/zzaeg;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
+.field zzb:J
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/internal/firebase-auth-api/zzaeg;J)V
+    .locals 0
+    .param p1    # Lcom/google/android/gms/internal/firebase-auth-api/zzaeg;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzafe;->zza:Lcom/google/android/gms/internal/firebase-auth-api/zzaeg;
+
+    iput-wide p2, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzafe;->zzb:J
+
+    return-void
+.end method

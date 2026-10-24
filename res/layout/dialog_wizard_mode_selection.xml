@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingTop="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wizard_mode_option_info" android:paddingStart="14.0dip" android:paddingEnd="14.0dip" />
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/dialog_wizard_mode_wizard_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/use_wizard" style="?android:buttonBarButtonStyle" />
+        <Button android:id="@id/dialog_wizard_mode_empty_macro_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/use_empty_macro" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

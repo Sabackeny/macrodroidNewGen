@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin_tiny">
+                <EditText android:id="@id/applicationsText" android:background="@color/transparent" android:paddingTop="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:text="@string/all_applications" android:hint="@string/applications" android:maxLines="1" android:singleLine="true" android:editable="false" android:layout_weight="1.0" android:inputType="none">
+                    <requestFocus />
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton android:id="@id/selectAppsButton" android:layout_height="48.0dip" android:src="@drawable/ic_apps_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:textColor="@color/log_text_warning" android:id="@id/allAppsWarning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/screen_content_trigger_all_apps_warning" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <RadioButton android:id="@id/radio_button_on_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_screen_content_on_screen" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/radio_button_off_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_screen_content_off_screen" android:layout_weight="1.0" />
+        </RadioGroup>
+        <TextView android:textColor="@color/default_text_color_secondary" android:paddingTop="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_content_match_option" android:layout_marginStart="@dimen/margin_medium" />
+        <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <RadioButton android:id="@id/radio_button_match_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ui_interaction_by_text_context" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/radio_button_match_view_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ui_interaction_view_id" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/textToMatchLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_tiny">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/textToMatch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/text_to_match" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/star_wildcards_supported" android:layout_marginStart="16.0dip" />
+        <CheckBox android:id="@id/enableRegexCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching" android:layout_marginStart="12.0dip" />
+        <CheckBox android:id="@id/ignoreCaseCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/text_compare_ignore_case" android:layout_marginStart="12.0dip" />
+        <CheckBox android:id="@id/include_overlays_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/screen_content_include_overlays" android:layout_marginStart="12.0dip" />
+        <TextView android:textColor="@color/trigger_accent" android:id="@id/updateRateLink" android:background="?selectableItemBackground" android:paddingTop="@dimen/margin_small_medium" android:paddingBottom="@dimen/margin_small_medium" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_screen_update_rate" android:layout_marginStart="@dimen/margin_medium" android:paddingVertical="@dimen/margin_small_medium" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

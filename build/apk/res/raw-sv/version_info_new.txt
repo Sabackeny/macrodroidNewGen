@@ -1,0 +1,70 @@
+Version 5.54 (juni 2025)
+=======================
+
+Åtgärden Java Code har lagts till.
+
+JavaScript-åtgärden har uppdaterats för att stödja återgång till alla variabeltyper – Använd mdOutput(value).
+
+Lade till alternativ för att mata ut matris- och ordboksvariabler i JSON-format {vjson=}, {lvjson=} (för att göra dem enklare att använda i JavaScript-åtgärd).
+
+Lade till utlösaren Startad/Stängd för appaktivitet.
+
+Åtgärden Konfigurera snabbpanel har uppdaterats för att stödja inställningen av en panel i ett inaktivt tillstånd där den inte kan interageras med.
+
+HTTP-begärandeåtgärden har uppdaterats för att lägga till stöd för dynamiska filnamn/lokal URI i innehållstexten.
+
+Lade till alternativet "Använd autofokus" för att ta bildåtgärd.
+
+Magisk text "Skapa GUID" har lagts till för att skapa en globalt unik identifierare.
+
+Lade till alternativet "Vibrera vid tryck" till utlösaren för flytande knapp och åtgärden flytande text.
+
+Lade till möjlighet att rensa systemloggen för ett enskilt makro när du visar systemloggen för det makrot (via skärmen för att redigera makro).
+
+Kontextspecifik magisk text har lagts till för loggtext när du använder utlösaren för systemlogginmatning.
+
+Lade till ett alternativ för att använda variabelvärde för timeout i Vänta tills utlösaråtgärden.
+
+Exporterade makron och kategorier kommer nu att innehålla alla associerade globala variabler som en del av exporten.
+
+Åtgärdade ett problem där konfiguration av utlösare för ändring av wifi-tillstånd inte tillät val av SSID om inte hjälpappen var installerad.
+
+Ett problem har åtgärdats där scenreglaget inte uppdaterade intervallet korrekt när refererade variabler uppdaterades.
+
+Stöd har lagts till för marathi-språket för åtgärden Läs upp text.
+
+Ett problem har åtgärdats där Share Location to variable inte hade stöd för att spara i ordliste-/matriselementet.
+
+En inställning har lagts till för att inaktivera webbsidan när du använder utlösaren för HTTP-serverbegäran.
+
+Andra mindre korrigeringar.
+
+-- Scenförbättringar --
+
+Komponenten Horisontell avdelare har lagts till.
+
+Stöd har lagts till för att klicka på värde på scenskjutreglagekomponenten och ange nummer via dialogrutan.
+
+Stöd har lagts till för lösenordsinmatning i scentextinmatningskomponenten.
+
+Lade till alternativ för delad justering för scenomkopplare och kryssrutekomponenter.
+
+Lade till alternativ för att ställa in rundade hörn på scener när du använder dialog- eller överlagringsalternativ.
+
+Scenreglaget har nu stöd för att visa värdeetiketter vid start och slut (eller ingen).
+
+Scenreglaget har nu stöd för stegvärden.
+
+Scentext har nu stöd för magiska textvärden för att ange textstorleken.
+
+Scentext har nu stöd för HTML-formateringsalternativ.
+
+Scentext har nu stöd för ett maximalt antal rader och alternativet skala för att passa.
+
+Alla scenobjekt har nu stöd för synlighetstillstånd som kan bindas till en boolesk variabel.
+
+Scene Switch har nu stöd för separat textfärg, stäng av färg och slå på färg.
+
+Scenknappen har nu stöd för att växla en boolesk variabel.
+
+Ett problem har åtgärdats där scenen inte uppdaterade variabler korrekt när den kördes från ett åtgärdsblock och inte använde alternativet blockera nästa åtgärder som standard.

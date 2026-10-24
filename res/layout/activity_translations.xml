@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@id/toolbar" android:background="@color/primary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:titleTextAppearance="@style/TitleToolbarText" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="@dimen/margin_medium" android:src="@drawable/world" />
+                <TextView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_margin="@dimen/margin_small" android:text="@string/translation_info" android:maxLines="6" android:lineSpacingMultiplier="1.1" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <Button android:id="@id/requestTranslationAccessButton" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/request_translation_access" android:textAllCaps="false" android:layout_marginHorizontal="@dimen/margin_medium" android:paddingVertical="4.0dip" app:autoSizeMaxTextSize="16.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+            <TextView android:id="@id/requestTranslationText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="Please send an email to support@macrodroid.com requesting access to the translation service. Please state clearly the language you would like to translate for." android:maxLines="6" android:lineSpacingMultiplier="1.1" android:layout_marginHorizontal="@dimen/margin_medium" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+            <FrameLayout android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/languageEntries" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

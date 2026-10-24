@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny" android:layout_marginVertical="@dimen/margin_tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_animation" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="@dimen/margin_medium" app:lottie_autoPlay="true" app:lottie_loop="true" />
+    <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/animation_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="16.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/logo_image" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="27.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/giphy_logo" android:layout_marginHorizontal="16.0dip" />
+</LinearLayout>

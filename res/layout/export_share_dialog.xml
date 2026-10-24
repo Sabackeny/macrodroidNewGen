@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/encrypt_output_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/export_macro_encrypt_file" android:layout_marginHorizontal="@dimen/margin_medium" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/password_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/passwordEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_password" android:maxLines="1" android:password="true" android:inputType="textNoSuggestions" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout_password" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@id/exportdialog_filename" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/filename" android:ems="10" android:singleLine="true" android:inputType="textNoSuggestions">
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/default_text_color" android:layout_gravity="bottom" android:id="@id/fileExtension" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_tiny" android:text=".mdr" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

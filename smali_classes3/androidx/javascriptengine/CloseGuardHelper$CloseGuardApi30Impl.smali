@@ -1,0 +1,76 @@
+.class final Landroidx/javascriptengine/CloseGuardHelper$CloseGuardApi30Impl;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroidx/javascriptengine/CloseGuardHelper$CloseGuardImpl;
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1e
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/javascriptengine/CloseGuardHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "CloseGuardApi30Impl"
+.end annotation
+
+
+# instance fields
+.field private final mPlatformImpl:Landroid/util/CloseGuard;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Landroid/util/CloseGuard;
+
+    invoke-direct {v0}, Landroid/util/CloseGuard;-><init>()V
+
+    iput-object v0, p0, Landroidx/javascriptengine/CloseGuardHelper$CloseGuardApi30Impl;->mPlatformImpl:Landroid/util/CloseGuard;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/javascriptengine/CloseGuardHelper$CloseGuardApi30Impl;->mPlatformImpl:Landroid/util/CloseGuard;
+
+    invoke-virtual {v0}, Landroid/util/CloseGuard;->close()V
+
+    return-void
+.end method
+
+.method public open(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    iget-object v0, p0, Landroidx/javascriptengine/CloseGuardHelper$CloseGuardApi30Impl;->mPlatformImpl:Landroid/util/CloseGuard;
+
+    invoke-virtual {v0, p1}, Landroid/util/CloseGuard;->open(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public warnIfOpen()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/javascriptengine/CloseGuardHelper$CloseGuardApi30Impl;->mPlatformImpl:Landroid/util/CloseGuard;
+
+    invoke-virtual {v0}, Landroid/util/CloseGuard;->warnIfOpen()V
+
+    return-void
+.end method

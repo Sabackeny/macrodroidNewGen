@@ -1,0 +1,151 @@
+.class public Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1e
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt$Builder;
+    }
+.end annotation
+
+
+# instance fields
+.field private final mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Landroidx/biometric/BiometricPrompt$PromptInfo;)V
+    .locals 0
+    .param p1    # Landroidx/biometric/BiometricPrompt$PromptInfo;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getDescription()Ljava/lang/CharSequence;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    invoke-virtual {v0}, Landroidx/biometric/BiometricPrompt$PromptInfo;->getDescription()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getSubtitle()Ljava/lang/CharSequence;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    invoke-virtual {v0}, Landroidx/biometric/BiometricPrompt$PromptInfo;->getSubtitle()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getTitle()Ljava/lang/CharSequence;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    invoke-virtual {v0}, Landroidx/biometric/BiometricPrompt$PromptInfo;->getTitle()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public isConfirmationRequired()Z
+    .locals 1
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    invoke-virtual {v0}, Landroidx/biometric/BiometricPrompt$PromptInfo;->isConfirmationRequired()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public startAuthentication(Landroidx/biometric/auth/AuthPromptHost;Landroidx/biometric/BiometricPrompt$CryptoObject;Landroidx/biometric/auth/AuthPromptCallback;)Landroidx/biometric/auth/AuthPrompt;
+    .locals 2
+    .param p1    # Landroidx/biometric/auth/AuthPromptHost;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/biometric/BiometricPrompt$CryptoObject;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/biometric/auth/AuthPromptCallback;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v0, p2, v1, p3}, Landroidx/biometric/auth/AuthPromptUtils;->startAuthentication(Landroidx/biometric/auth/AuthPromptHost;Landroidx/biometric/BiometricPrompt$PromptInfo;Landroidx/biometric/BiometricPrompt$CryptoObject;Ljava/util/concurrent/Executor;Landroidx/biometric/auth/AuthPromptCallback;)Landroidx/biometric/auth/AuthPrompt;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public startAuthentication(Landroidx/biometric/auth/AuthPromptHost;Landroidx/biometric/BiometricPrompt$CryptoObject;Ljava/util/concurrent/Executor;Landroidx/biometric/auth/AuthPromptCallback;)Landroidx/biometric/auth/AuthPrompt;
+    .locals 1
+    .param p1    # Landroidx/biometric/auth/AuthPromptHost;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/biometric/BiometricPrompt$CryptoObject;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/concurrent/Executor;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/biometric/auth/AuthPromptCallback;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Landroidx/biometric/auth/Class3BiometricOrCredentialAuthPrompt;->mPromptInfo:Landroidx/biometric/BiometricPrompt$PromptInfo;
+
+    invoke-static {p1, v0, p2, p3, p4}, Landroidx/biometric/auth/AuthPromptUtils;->startAuthentication(Landroidx/biometric/auth/AuthPromptHost;Landroidx/biometric/BiometricPrompt$PromptInfo;Landroidx/biometric/BiometricPrompt$CryptoObject;Ljava/util/concurrent/Executor;Landroidx/biometric/auth/AuthPromptCallback;)Landroidx/biometric/auth/AuthPrompt;
+
+    move-result-object p1
+
+    return-object p1
+.end method

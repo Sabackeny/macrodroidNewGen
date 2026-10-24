@@ -1,0 +1,14 @@
+.class public abstract synthetic Landroidx/compose/ui/graphics/j0;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/graphics/LightingColorFilter;)I
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/graphics/LightingColorFilter;->getColorAdd()I
+
+    move-result p0
+
+    return p0
+.end method

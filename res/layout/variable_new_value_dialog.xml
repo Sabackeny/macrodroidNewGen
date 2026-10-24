@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/arrayIndexEntryLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+                <EditText android:id="@id/arrayIndex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:hint="@string/variable_array_index" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup android:orientation="vertical" android:id="@id/variable_new_value_dialog_radio_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/false_label" android:layout_weight="1.0" android:paddingStart="@dimen/margin_small" />
+                <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/true_label" android:layout_weight="1.0" android:paddingStart="@dimen/margin_small" />
+                <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_invert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/invert" android:layout_weight="1.0" android:paddingStart="@dimen/margin_small" />
+                <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_boolean_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/user_prompt" android:layout_weight="1.0" android:paddingStart="@dimen/margin_small" />
+                <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_boolean_other_boolean_variable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/action_share_location_option_variable" android:paddingStart="@dimen/margin_small" />
+                <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/boolean_variable_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minWidth="130.0dip" />
+            </RadioGroup>
+            <RelativeLayout android:id="@id/variable_new_value_dialog_int_option_radio_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="vertical" android:id="@id/variable_new_value_dialog_int_option_radiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_setValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/value" />
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/variable_new_value_dialog_integer_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_value" android:maxLines="1" android:inputType="numberDecimal|numberSigned" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_increment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:checked="true" android:text="@string/current_value_plus_1" android:layout_marginEnd="12.0dip" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_decrement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/current_value_minus_1" android:layout_marginEnd="12.0dip" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_random" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/random" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/variable_new_value_dialog_random_value_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/variable_new_value_dialog_integer_random_min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:hint="@string/minimum_short" android:maxLines="1" android:inputType="numberDecimal" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/number_range_to" android:maxLines="1" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/variable_new_value_dialog_integer_random_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:hint="@string/maximum_short" android:maxLines="1" android:inputType="numberDecimal" />
+                    </LinearLayout>
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/user_prompt" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/variable_new_value_dialog_radio_button_expression" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/expression" />
+                </RadioGroup>
+                <RadioButton android:textSize="18.0sp" android:id="@id/radio_button_dummy_placeholder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignBottom="@id/variable_new_value_dialog_int_option_radiogroup" android:layout_toEndOf="@id/variable_new_value_dialog_int_option_radiogroup" />
+                <LinearLayout android:enabled="false" android:orientation="horizontal" android:id="@id/variable_new_value_dialog_expression_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_below="@id/variable_new_value_dialog_int_option_radiogroup">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/variable_new_value_dialog_expression_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_value" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionDone" />
+                    <Button android:id="@id/variable_new_value_expression_magic_button" style="@style/MagicTextButton" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/expression_functions_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/variable_new_value_dialog_expression_layout">
+                    <TextView android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/supported_functions" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/variable_new_value_dialog_string_option_container" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/variable_new_value_dialog_string_radio_button_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/value" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/variable_new_value_dialog_string_radio_button_user_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_prompt" android:layout_weight="1.0" />
+                </RadioGroup>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/variable_new_value_dialog_string_edittext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_value" android:layout_weight="1.0" android:inputType="textMultiLine">
+                        <requestFocus />
+                    </androidx.appcompat.widget.AppCompatEditText>
+                    <Button android:id="@id/variable_new_value_string_magic_button" style="@style/MagicTextButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

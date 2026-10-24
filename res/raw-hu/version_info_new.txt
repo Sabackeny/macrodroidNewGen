@@ -1,0 +1,70 @@
+5.54-es verzió (2025. június)
+=======================
+
+Java Code művelet hozzáadva.
+
+Frissített JavaScript-művelet az összes változótípushoz való visszatérés támogatásához – Használja az mdOutput(value) parancsot.
+
+Hozzáadta a tömb- és szótárváltozók kimenetét JSON formátumban {vjson=}, {lvjson=} (hogy könnyebben használhatók legyenek a JavaScript műveletben).
+
+Hozzáadta az alkalmazástevékenység elindított/bezárt eseményindítóját.
+
+Frissítettük a Gyorscsempe konfigurálása műveletet, hogy támogassa a csempe inaktív állapotba állítását, ahol nem lehet vele interakcióba lépni.
+
+Frissítettük a HTTP-kérés műveletet, amely támogatja a dinamikus fájlneveket/helyi URI-t a tartalom törzsében.
+
+Hozzáadott lehetőség az "Autofókusz alkalmazása" lehetőséghez a Kép művelet végrehajtásához.
+
+Hozzáadta a "GUID létrehozása" varázsszöveget egy globálisan egyedi azonosító létrehozásához.
+
+Hozzáadta a "Rezgés megnyomáskor" opciót a lebegő gomb triggerhez és a lebegő szöveg művelethez.
+
+Hozzáadta az egyes makrók rendszernaplójának törlésének lehetőségét az adott makró rendszernaplójának megtekintésekor (a makró szerkesztése képernyőn keresztül).
+
+Környezetspecifikus varázsszöveg hozzáadva a naplószöveghez a rendszernapló-bejegyzés eseményindító használatakor.
+
+Hozzáadott lehetőség a változó érték használatára az időtúllépéshez a Várakozás az eseményindítóig műveletben.
+
+Az exportált makrók és kategóriák mostantól tartalmazzák a kapcsolódó globális változókat az exportálás részeként.
+
+Kijavítottuk azt a hibát, amely miatt a Wifi-állapotváltozás eseményindító konfigurálása nem engedélyezte az SSID kiválasztását, kivéve, ha a segítő alkalmazás telepítve volt.
+
+Kijavítottuk azt a hibát, amely miatt a jelenetcsúszka nem frissítette megfelelően a tartományt a hivatkozott változók frissítésekor.
+
+A marathi nyelv támogatása hozzáadva a Szöveg kimondása művelethez.
+
+Kijavítottuk azt a hibát, amely miatt a Share Location to variable nem támogatta a szótárba/tömbelembe való mentést.
+
+Hozzáadott beállítás a weboldal letiltásához a HTTP-kiszolgáló kérése eseményindító használatakor.
+
+Egyéb kisebb javítások.
+
+-- Jelenetfejlesztések --
+
+Hozzáadott Vízszintes elválasztó összetevő.
+
+Hozzáadott támogatás a jelenet csúszka összetevőjére való kattintáshoz és a szám megadásához a párbeszédablakon keresztül.
+
+A jelszóbevitel támogatása hozzáadva a jelenet szövegbeviteli összetevőjében.
+
+Osztott igazítási lehetőség hozzáadva a jelenet kapcsoló és jelölőnégyzet összetevőihez.
+
+Hozzáadott lehetőség a lekerekített sarkok beállítására a jeleneteken párbeszédpanel vagy átfedés opció használatakor.
+
+A jelenetcsúszka mostantól támogatja az értékcímke megjelenítését az elején és a végén (vagy egyiket sem).
+
+A Scene Slider mostantól támogatja a lépésértékeket.
+
+A Jelenetszöveg mostantól támogatja a mágikus szöveges értékeket a szövegméret megadásához.
+
+A jelenetszöveg mostantól támogatja a HTML formázási lehetőséget.
+
+A jelenetszöveg mostantól támogatja a sorok maximális számát és az illeszkedéshez való méretezést.
+
+Mostantól minden jelenetelem támogatja a láthatósági állapotot, amely logikai változóhoz köthető.
+
+A Scene Switch mostantól támogatja a külön szövegszínt, a szín kikapcsolását és a szín bekapcsolását.
+
+A Scene Button mostantól támogatja a logikai változók váltását.
+
+Kijavítottuk azt a hibát, amely miatt a jelenet nem frissítette megfelelően a változókat, amikor egy műveletblokkból futott, és alapértelmezés szerint nem használta a következő műveletek blokkolása beállítást.

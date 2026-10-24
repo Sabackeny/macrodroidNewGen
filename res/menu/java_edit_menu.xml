@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_more_horiz_white_24dp" android:id="@id/magic_text_button" android:title="@string/magic_text_title" android:checkable="true" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_play_white_24dp" android:id="@id/test_button" android:title="@string/test" android:checkable="true" app:showAsAction="always" />
+    <item android:id="@id/show_line_numbers" android:title="@string/javascript_editor_option_show_line_numbers" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/word_wrap" android:title="@string/javascript_editor_option_wrap_lines" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/toggle_variables" android:title="@string/hide_variables" app:showAsAction="never" />
+    <item android:id="@id/menu_local_variables_display_mode" android:title="@string/examples_title" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/menu_java_example_vibrate_device" android:title="@string/java_example_vibrate_device" app:showAsAction="never" />
+            <item android:id="@id/menu_java_example_toast_message" android:title="@string/java_example_display_toast_message" app:showAsAction="never" />
+            <item android:id="@id/menu_java_example_get_screen_resolution" android:title="@string/java_example_get_screen_resolution" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:id="@id/help" android:title="@string/help" app:showAsAction="never" />
+</menu>

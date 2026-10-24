@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/entriesContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_weight="1.0" />
+    <Button android:textColor="@color/default_text_color_inverse" android:id="@id/addEntryButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="+" android:layout_marginHorizontal="@dimen/margin_medium" app:backgroundTint="@color/actions_accent" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

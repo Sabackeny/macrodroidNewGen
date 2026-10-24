@@ -1,0 +1,1398 @@
+Wersja 5.53 (kwiecień 2025)
+============================
+
+Dodano akcję Scena niestandardowa, aby umożliwić tworzenie prostych, konfigurowalnych interfejsów użytkownika.
+
+Dodano akcję Ukryj scenę niestandardową.
+
+Ekrany edycji makr/bloków akcji obsługują teraz opcję menu umożliwiającą dodawanie separatorów.
+
+Funkcja Automatyczna kopia zapasowa umożliwia teraz zmianę lokalnej lokalizacji przechowywania kopii zapasowych.
+
+Zaktualizowano akcję Operacja na pliku, aby dodać opcję określania wzorców folderów (podczas kopiowania/przenoszenia/usuwania folderów)
+
+Zaktualizowano ograniczenie Porównaj wartości, aby dodać opcję porównywania tablic i słowników oraz dodano sprawdzanie, czy zawiera klucz/wartość.
+
+Zaktualizowano ograniczenie Uruchamianie makra, aby obsługiwało wprowadzanie nazwy makra jako tekstu (w tym obsługę magicznego tekstu).
+
+Zaktualizowano akcję Włącz/Wyłącz kategorie, aby obsługiwała nową opcję włączania wszystkich makr w kategorii (po włączeniu kategorii).
+
+Zaktualizowano tekst udostępniony w MacroDroid, aby dodać nowy magiczny tekst specyficzny dla kontekstu dla pola "Temat", które jest ustawiane podczas udostępniania tekstu.
+
+Zaktualizowano akcję Nakładka animacji, dodając opcję wymuszającą odświeżenie obrazu (ignoruj pamięć podręczną).
+
+Minimalna obsługiwana wersja systemu Android to teraz Android 6 (Marshmallow).
+
+Naprawiono problem polegający na tym, że próba uruchomienia wielu jednoczesnych akcji JavaScript za pomocą silnika Jetpack mogła zakończyć się niepowodzeniem.
+
+Naprawiono błąd, który powodował, że przesunięcie MacroDroid za pomocą przełącznika aplikacji mogło zabić makra oczekujące na akcję Poczekaj, aż wyzwalacz.
+
+Rozwiązano problem polegający na tym, że akcja Sumuj makra nie powodowała dodania zmiennych lokalnych po wybraniu opcji wszystkich zmiennych.
+
+Dodano opcję do wyzwalacza Zachód słońca/Wschód słońca, aby użyć (lub nie używać) alarmu, aby zapewnić dokładny czas wyzwalania.
+
+Dodano opcję Wyłącz akcję MacroDroid, aby umożliwić jej ciągłe wyłączanie MacroDroid (niezależnie od ustawień ochrony hasłem).
+
+Wersja 5.52 (marzec 2025)
+============================
+
+Dodano wyzwalacz stanu Włączone NFC.
+
+Zmodyfikowano akcję włączania/wyłączania HotSpot, aby nie potrzebowała już pliku pomocniczego w systemie Android 14+.
+
+Dodano opcję menu umożliwiającą włączanie/wyłączanie rejestrowania dla każdego pojedynczego wyzwalacza, akcji i ograniczenia.
+
+Ekran konfiguracji geofencingu powraca do opcji Otwórz mapy ulic na urządzeniach, które nie mają usług Google.
+
+Zmodyfikowano akcję Interakcja z powiadomieniami, aby mogła ponownie działać na urządzeniach z Androidem 14+.
+
+Zaktualizowano ograniczenie Makro włączone/wyłączone, aby dodać obsługę określania nazwy makra w tekście (w tym obsługę magicznego tekstu).
+
+Zaktualizowano akcję Pobierz tekst z identyfikatora widoku, aby dodać opcję zapisywania stanu na ekranie do zmiennej logicznej.
+
+Dodano obsługę przyciemniania niestandardowych ikon widżetów.
+
+Usunięto kafelek Kreatora dodawania makra.
+
+Dodano kafelek Ostatnio otwarty obszar Action Block.
+
+Dodano opcję podsumowania akcji makr w celu dodania wszystkich zmiennych używanych przez makro (lokalne + globalne).
+
+Dodano opcję ustawiania maksymalnej liczby linii dla zmiennej w szufladzie MacroDroid.
+
+Dodano opcje menu wklejania podczas edycji listy warunków w akcji klauzuli IF.
+
+Dodano opcję wymuszania odświeżania ekranu w celu odczytania zawartości ekranu, pobrania tekstu według identyfikatora widoku i sprawdzenia tekstu na ekranie.
+
+Rozwiązano problem polegający na tym, że magiczny tekst {cell_connection_type} nie odzwierciedlał najnowszego typu połączenia komórkowego po jego zmianie.
+
+Rozwiązano problem polegający na tym, że funkcja Ustaw zmienną kopiuj tablicę/słownik nie prezentowała wszystkich podtablic/słowników.
+
+Naprawiono błąd, który powodował, że długie naciśnięcie spustu ikony MacroDroid nie działało poprawnie z ograniczeniem wyzwolenia spustu.
+
+Ulepszono usługę ułatwień dostępu interakcji z interfejsem użytkownika, aby rozwiązać problemy, w wyniku których stara zawartość ekranu mogła zostać zwrócona po zaktualizowaniu ekranu.
+
+Poprawiono ograniczenie włączania/wyłączania ekranu, aby spróbować naprawić przypadki, w których zgłasza on włączenie ekranu, gdy jest wyłączony (na przykład po połączeniu z Android Auto).
+
+Wersja 5.50 (styczeń 2025)
+============================
+
+Dodano akcję Skanowanie SSID Wi-Fi.
+
+Dodano ograniczenie Połączenie urządzenia USB.
+
+Dodano akcję Sumuj makra/Bloki akcji.
+
+Dodano akcję grupy akcji, aby umożliwić łatwiejsze grupowanie, przenoszenie, kopiowanie oraz włączanie/wyłączanie powiązanych akcji.
+
+Dodano obsługę funkcji cofania podczas zmiany kolejności elementów na ekranach Edytuj makro i Edytuj skrót do działania.
+
+Dodano obsługę udostępniania plików kopii zapasowych z kopii zapasowej w chmurze, dzięki czemu każdy plik kopii zapasowej może być łatwo dostępny bez przywracania z niego.
+
+Ulepszono listy rozwijane wyboru makr/bloków akcji, dzięki czemu można je przeszukiwać w przypadkach, gdy dostępna jest duża liczba opcji.
+
+Zaktualizowano akcję Pływający tekst, aby obsługiwała opcjonalny cień (aby tekst był bardziej widoczny podczas korzystania z przezroczystego tła)
+
+Zaktualizowano wyzwalacz Wysłano SMS, dodając opcję bezpośredniego określania numeru.
+
+Zaktualizowano akcję Nakładka animacji, aby obsługiwała użycie zmiennych do definiowania wartości x, y, szerokości i wysokości animacji.
+
+Zaktualizowano akcję Wyświetl powiadomienie, aby obsługiwała wprowadzanie magicznego tekstu dla pola identyfikatora.
+
+Dodano brakujące ustawienia MacroDroid do pliku kopii zapasowej w celu łatwiejszego przywrócenia.
+
+Dodano przycisk kopiowania podczas edycji wpisu zmiennej tablicy/słownika, aby uzyskać magiczny tekst dla pełnej ścieżki tablicy/słownika.
+
+Naprawiono rzadki błąd, który powodował, że unoszące się w powietrzu przyciski mogły się zacinać w niektórych przypadkach.
+
+Naprawiono błąd, w wyniku którego tekst przestawny mógł migać podczas regularnego aktualizowania istniejącego tekstu pływającego.
+
+Inne drobne poprawki.
+
+Wersja 5.49 (grudzień 2024)
+============================
+
+Dodano akcję komplikacji Wear OS.
+
+Dodano wyzwalacz kliknięcia komplikacji Wear OS.
+
+Dodano wyzwalacz Zmieniono ścieżkę multimediów.
+
+Zaktualizowano akcję Nakładka animacji, aby obsługiwała lokalne pliki GIF.
+
+Zaktualizowano akcję Eksportuj makra, aby obsługiwała wyprowadzanie danych wyjściowych do zmiennej Ciąg.
+
+Dodano opcję w ustawieniach, aby wyłączyć rejestrowanie awarii i dane analityczne.
+
+Dodano opcję Wybierz numer telefonu do akcji Wyczyść rejestr połączeń (obsługuje magiczny tekst i wyrażenie regularne).
+
+Długie naciśnięcie kafelka włączania/wyłączania MacroDroid spowoduje teraz uruchomienie MacroDroida.
+
+Dodano opcję Poczekaj, aż wyzwalacz zwróci zmienną logiczną wskazującą, czy nastąpiło przekroczenie limitu czasu, czy nie.
+
+Wprowadzono zmiany w implementacji sposobu wewnętrznego przechowywania makr w celu poprawy wydajności w przypadku dużej liczby makr.
+
+Ulepszono akcję Pobierz kontakty, aby poprawnie wypełniała wiele niestandardowych wpisów telefonicznych poprawnymi nazwami niestandardowymi.
+
+Dodano opcje "Testuj akcje" i "Testuj makro" do ograniczenia metody wywoływania makr.
+
+Dodano możliwość wyświetlania wpisów podsłownika w widoku zmiennych słownika poprzez długie naciśnięcie pola wartości.
+
+Dodano obsługę wyświetlania zawartości wpisu słownika na zmiennym ekranie (długie naciśnięcie wartości w celu włączenia/wyłączenia).
+
+Zmodyfikowano sposób uzyskiwania magicznego tekstu {cell_connection_type}, aby poprawić dokładność identyfikacji typu sieci.
+
+Zaktualizowano akcję Wyślij zamiar w celu dodania obsługi magicznego tekstu do pól Akcja, Pakiet i Klasa.
+
+Rozwiązano problem polegający na tym, że czynność Anuluj akcje makra nie powodowała wyzwolenia wyzwalacza Makro zakończone.
+
+Naprawiono błąd, w wyniku którego dopełnienie na małych ruchomych przyciskach było nieprawidłowe.
+
+Naprawiono problem polegający na tym, że akcja Otwórz rejestr połączeń nie działała na niektórych urządzeniach.
+
+Rozwiązano problem polegający na tym, że ograniczenie Porównaj wartości nie porównywało poprawnie wartości logicznych w niektórych językach.
+
+Naprawiono problem polegający na tym, że czynność Ustaw obraz paska przycisków nie aktualizowała odniesienia do numeru przycisku, gdy przycisk został przesunięty w lewo lub w prawo na pasku przycisków.
+
+Naprawiono skrajny błąd, w wyniku którego wiele wyzwalaczy w akcji Poczekaj, aż wyzwalacz uruchamiał się mniej więcej w tym samym czasie i powodowało nieprawidłowe wykonanie makra.
+
+Naprawiono problem polegający na tym, że akcja Zapisz do pliku mogła mieszać kolejność podczas zapisywania do tego samego pliku w krótkich odstępach czasu.
+
+Wersja 5.48 (październik 2024)
+============================
+
+Dodano ograniczenie stanu Shizuku.
+
+Dodano opcje do akcji Pływający tekst, aby umożliwić ruch tylko po długim naciśnięciu i zapobiec przesuwaniu tekstu, a także opcję wymuszenia pełnego ekranu.
+
+Dodano opcję do akcji Blokuj dotknięcia, aby pokazać zablokowany obszar ekranu (z niestandardowym kolorem).
+
+Ekran listy makr pokazuje teraz animowany wskaźnik, gdy makro jest aktualnie uruchomione.
+
+Dodano opcję ochrony hasłem, aby umożliwić monit podczas otwierania aplikacji i/lub włączania/wyłączania MacroDroid.
+
+Dodano opcję Dodaj akcję Wydarzenie w kalendarzu, aby powiadomić z wyprzedzeniem o dodanym wydarzeniu.
+
+Dodano opcję do akcji Rejestruj zdarzenie, aby dodać link makra z wyjściem.
+
+Ekran konfiguracji geofencingu pokazuje teraz wartości szerokości geograficznej/długości geograficznej i kropkę bieżącej lokalizacji (jeśli lokalizacja jest dostępna).
+
+Akcja Eksportuj dziennik wyświetla teraz milisekundowe znaczniki czasu we wszystkich przypadkach.
+
+Dodano obsługę ikon użytkownika z kafelkami szybkiego ustawiania.
+
+Dodano dodatkową opcję filtrowania dla "Nieużywanych zmiennych" na ekranie Zmiennych.
+
+Dodano opcję menu "Usuń wszystkie nieużywane" do ekranu Lista zablokowanych działań.
+
+Dodano mały baner na ekranie głównym, aby wyraźnie pokazać, kiedy MacroDroid jest wyłączony.
+
+Dodano opcję do ustawień serwera HTTP, aby zezwolić/odmówić dostępu do dziennika systemu/użytkownika za pośrednictwem serwera HTTP.
+
+Dodano opcję do akcji MacroDroid Setting, aby zmienić czułość spustu potrząśnięcia.
+
+Poprawiono ekran edycji makra, aby zapobiec przewijaniu banera wyszukiwania.
+
+
+
+Wersja 5.47 (sierpień 2024)
+============================
+
+Usunięto usługę ułatwień dostępu FingerPrint i Volume Button oraz przeniesiono jej funkcjonalność do głównej usługi ułatwień dostępu MacroDroid.
+
+Dodano wyzwalacz wyskakujących wiadomości.
+
+Dodano wyzwalacz Stan usługi ułatwień dostępu.
+
+Dodano ograniczenie stanu usługi ułatwień dostępu.
+
+Dodano opcje "Dodaj ograniczenie powyżej" i "Wklej ograniczenie powyżej" na ekranach Edytuj makro i Edytuj ActionBlock.
+
+Dodano obsługę parametrów nagłówka do odpowiedzi na wyzwalacz żądania serwera HTTP i akcji odpowiedzi serwera HTTP.
+
+Dodano obsługę używania nazwy pakietu w akcji Włączanie/Wyłączanie aplikacji.
+
+Zaktualizowano akcję Pływający tekst, aby dodać obsługę stukania w wartości procentowe w celu ustawienia dokładniejszych wartości procentowych.
+
+Zaktualizowano akcję Uruchom aktywność aplikacji, aby uwzględnić aktywność aplikacji, które nie są oznaczone jako możliwe do uruchomienia.
+
+Całkowicie przepisano obsługę magicznego tekstu, aby rozwiązać problemy z wydajnością podczas przetwarzania dużych bloków tekstu.
+
+Ulepszono akcję Przyciemnianie ekranu, aby zapobiec migotaniu podczas zmiany poziomu przyciemnienia, gdy przyciemnienie jest już zastosowane.
+
+Rozwiązano problem polegający na tym, że ograniczenie powiadomień nie obsługiwało poprawnie opcji wykluczania aplikacji.
+
+Akcja HotSpot wymaga teraz aplikacji MacroDroid Helper (V1.16) w systemie Android 14+ ze względu na wymuszone zmiany przez Google w celu aktualizacji Android SDK.
+
+Inne drobne poprawki i optymalizacje.
+
+Wersja 5.46 (lipiec 2024)
+============================
+
+Dodano ikonę MacroDroid Wyzwalacz skrótu długiego naciśnięcia.
+
+Dodano obsługę Shizuku do akcji Shell Script i dodano obsługę Shizuku do istniejących funkcji tylko root.
+
+Dodano jednoczesne opcje "Zmniejszanie głośności + zwiększanie głośności" do wyzwalacza przycisku głośności (tylko usługa ułatwień dostępu).
+
+Dodano obsługę identyfikatora URI pliku dynamicznego i lokalnego do akcji Ustaw tapetę.
+
+Zaktualizowano akcję Nakładka animacji, aby dodać obsługę animowanych GIF-ów z wyszukiwarką Giphy.
+
+Konfiguracja akcji okna dialogowego wyboru obsługuje teraz zmianę kolejności wpisów i zapobiega przypadkowemu naciśnięciu wstecz przed utratą wszystkich zmian.
+
+Dodano magiczny tekst do wyświetlania typu zmiennej.
+
+Dodano magiczny tekst dla nazwy strefy, szerokości geograficznej/długości i linku lokalizacji podczas korzystania z wyzwalacza Geofence lub Lokalizacja.
+
+Ulepszono obsługę kontekstowego magicznego tekstu dla wyzwalaczy używanych w akcji Poczekaj, aż wyzwalacz zaczeka.
+
+Akcja Otwórz dziennik makrodroidów obsługuje teraz otwieranie dziennika użytkownika dla określonego kanału.
+
+Dodano funkcję wyszukiwania do ekranu Konfiguruj ulubione.
+
+Dodano opcję "Sprawdź z wyprzedzeniem" do ograniczenia kalendarza.
+
+Dodano treści stron trzecich od "Steve'a Wrighta" w sekcji MacroDroid Videos.
+
+Naprawiono problem polegający na tym, że wyzwalacz Macro Enabled uruchamiał się, gdy MacroDroid został przesunięty z ostatnich aplikacji.
+
+Rozwiązano problem polegający na tym, że zmiana poziomu filtra w dzienniku systemowym mogła powodować pojawianie się błędnych/zduplikowanych wpisów.
+
+Rozwiązano problem polegający na tym, że niestandardowe kanały powiadomień nie były tworzone podczas importowania kopii zapasowej z kanałami niestandardowymi.
+
+Wersja 5.45 (czerwiec 2024)
+============================
+
+Dodano wyzwalacz Zrobione zdjęcie (Android 7+).
+
+Dodano akcję Pobierz zainstalowane aplikacje.
+
+Dodano akcję Pobierz kontakty.
+
+Dodano akcję Edge Notification Light.
+
+Dodano akcję Uruchom aktywność aplikacji.
+
+Dodano obsługę ulubionych wyzwalaczy, akcji i ograniczeń. Naciśnij i przytrzymaj przycisk + na ekranie edycji makra, aby wyświetlić szybkie kafelki dla ulubionych elementów.
+
+Zaktualizowano akcję Nakładka animacji, aby dodać obsługę uruchamiania makr/bloku akcji po kliknięciu animacji.
+
+Zaktualizowano akcję żądania HTTP w celu obsługi przechwytywania zwróconych parametrów nagłówka do zmiennej słownikowej.
+
+Zaktualizowano akcję Wymuś aktualizację lokalizacji, aby umożliwić blokowanie następnej akcji i zapisywanie danych lokalizacji w zmiennej słownikowej.
+
+Zaktualizowano akcję Wyświetl powiadomienie, aby obsługiwała identyfikatory, więc nowe powiadomienie zastąpi istniejące powiadomienie o tym samym identyfikatorze.
+
+Zaktualizowano akcję Otwórz plik, aby obsługiwała ładowanie z lokalnego identyfikatora URI pliku (można uzyskać za pomocą opcji Wyświetl listę plików w akcji Operacja na pliku).
+
+Dodano obsługę oznaczania zmiennych jako bezpiecznych, dzięki czemu zawartość zmiennych nie zostanie wyeksportowana podczas udostępniania/przesyłania szablonu.
+
+Dodano obsługę niestandardowych obrazów w akcji Wyświetl powiadomienie i trwałym powiadomieniu MacroDroid.
+
+Dodano nową opcję do akcji Blokuj dotknięcia ekranu, aby zablokować pasek stanu (wymaga włączenia usługi ułatwień dostępu).
+
+Dodano opcję magicznego tekstu do wyświetlania stoperów z wartością sekund (gg:mm).
+
+Dodano opcję magicznego tekstu, aby wyświetlić wyzwalacz, który został uruchomiony.
+
+Przerobiono ekran edycji bloków akcji, aby był znacznie szybszy w przypadku bardzo dużych bloków akcji i dodano obsługę przyklejonych nagłówków akcji.
+
+Poprawki wyzwalacza uruchamianego przez aplikację w celu rozwiązania niektórych problemów związanych z wykrywaniem uruchamiania/zamykania MacroDroid oraz uruchamiania/zamykania aplikacji Google.
+
+Poprawiono akcję Ustaw zmienną, aby umożliwiała wprowadzanie wielu wierszy dla zmiennych String.
+
+Dodano magiczny tekst kanału powiadomień podczas korzystania z wyzwalacza powiadomień (Android 8+).
+
+Naprawiono problem polegający na tym, że ruchoma czynność tekstowa czasami nie była wyświetlana przy pierwszym uruchomieniu (zwykle na wolniejszych/starszych urządzeniach).
+
+Rozwiązano problem polegający na tym, że ruchoma akcja tekstowa nie eksportowała żadnego powiązanego bloku akcji podczas udostępniania lub przesyłania do magazynu szablonów.
+
+Naprawiono błąd, który powodował, że odrzucenie powiadomienia o dymku mogło spowodować uruchomienie MacroDroida na pierwszym planie.
+
+Naprawiono problem polegający na tym, że akcja Uwierzytelnij użytkownika działała niezawodnie na niektórych urządzeniach z Androidem 14.
+
+Naprawiono błąd, który powodował, że pływający przycisk nie zapamiętywał miejsca, do którego został wcześniej przeniesiony po ponownym włączeniu.
+
+Wersja 5.44 (maj 2024)
+============================
+
+Dodano wyzwalacz serwera HTTP i akcję Odpowiedź serwera HTTP.
+
+Dodano ograniczenie Tekst mówiony.
+
+Dodano tekst udostępniony do wyzwalacza MacroDroid.
+
+Zaktualizowano akcję Pływający tekst, aby obsługiwała obsługę kliknięć i dodano opcję ukrywania po kliknięciu.
+
+Zaktualizowano dziennik użytkownika w celu obsługi niestandardowych kanałów rejestrowania, poziomów rejestrowania i funkcji wyszukiwania.
+
+Dodano opcję Wyświetl listę plików do akcji Operacja na pliku.
+
+Dodano opcję blokowania akcji do czasu zakończenia do akcji operacji na pliku.
+
+Włączanie/wyłączanie akcji Bluetooth działa teraz na zrootowanych urządzeniach bez pliku pomocniczego.
+
+Dodano opcję wyboru spośród znanych kluczy w wyzwalaczu Ustawienia systemu (z wyszukiwaniem).
+
+Ulepszono akcję Ustawienia systemu, dzięki czemu można wyszukiwać klucz we wszystkich kategoriach ustawień systemowych.
+
+Zaktualizuj akcję wysyłania wiadomości e-mail, aby obsługiwała dołączanie wielu dzienników i obsługiwała format HTML dla dzienników.
+
+Ulepszono obsługę bloków akcji w dzienniku systemowym w celu uwzględnienia łączy do bloku akcji i makra.
+
+Dodano funkcję wyszukiwania do akcji Uruchom makro, akcji Ustaw zmienną, wyzwalacza zmiennej i ograniczenia zmiennej (gdzie dostępnych jest 10+ elementów).
+
+Rozwiązano problem polegający na tym, że ustawiona zmienna z monitem użytkownika nie zapisywała poprawnie wpisu zmiennej tablicowej.
+
+Naprawiono drobny błąd w wyzwalaczu Zmiana ustawień systemowych, który mógł powodować dwukrotne uruchomienie makra w przypadku jednej aktualizacji ustawienia.
+
+Inne drobne poprawki i ulepszenia.
+
+Wersja 5.43 (kwiecień 2024)
+============================
+
+Dodano akcję Pobierz tekst z identyfikatora widoku (Android 11+).
+
+Okno dialogowe wyboru obsługuje teraz konfigurowalny styl przycisków dla elementów, które można wybrać.
+
+Dodano opcję Nakładka paska stanu do akcji Przyciemnij ekran w systemie Android 6+ (wymaga włączonej usługi ułatwień dostępu).
+
+Poprawiono ekran Edytuj makro, aby dodać przyklejone nagłówki dla dużych bloków wyzwalaczy, akcji i ograniczeń.
+
+Ulepszono obsługę wyzwalacza przycisku paska powiadomień na ekranie Edytuj makro, dzięki czemu łatwiej jest zidentyfikować ustawiony przycisk.
+
+Ekran Edytuj makro pokazuje teraz wybrany obraz dla wyzwalacza pływającego przycisku i inne elementy, w których używane są obrazy.
+
+Zoptymalizowana zawartość ekranu uruchamia się, dzięki czemu każdy odczyt ekranu zajmuje trochę mniej czasu/przetwarzania.
+
+Dodano obsługę wyłączania wpisów w akcji Warunek JEŻELI.
+
+Dodano opcję menu "Testuj ograniczenie", aby sprawdzić bieżący stan ograniczenia (prawda lub fałsz) na ekranie edycji makra.
+
+Dodano opcję menu "Warunek testowy", aby sprawdzić bieżący stan instrukcji IF na ekranie edycji makra.
+
+Dodano opcję pokazywania/ukrywania bieżącego trybu MacroDroid w standardowym powiadomieniu MacroDroid (domyślnie wyłączone tylko dla nowych instalacji).
+
+Akcja Włącz/Wyłącz kategorię obsługuje teraz wiele kategorii.
+
+Przeniesiono akcję Odczyt zawartości zrzutu ekranu do usługi ułatwień dostępu interfejsu użytkownika MacroDroid.
+
+Rozwiązano problem polegający na tym, że okno dialogowe konfiguracji akcji Ustaw zmienną domyślnie kopiowało słownik po wybraniu opcji Zdefiniuj klucz ręcznie.
+
+Rozwiązano problem polegający na tym, że zmiana nazwy skrótu do operacji nie aktualizowała odniesienia na ekranie edycji makra w niektórych okolicznościach.
+
+Inne drobne poprawki.
+
+Wersja 5.42 (marzec 2024)
+============================
+
+Dodano akcję Nakładka animacji.
+
+Dodano akcję Manipulacja szykiem.
+
+Dodano akcję Sprawdź kolor pikseli (Android 11+).
+
+Dodano akcję Czytaj zrzut ekranu (Android 11+).
+
+Dodano akcję Sprawdź tekst na zrzucie ekranu (Android 11+).
+
+Dodano akcję Display Density (wymagany ADB Hack lub root).
+
+Zaktualizowano akcję Take ScreenShot, aby dodać opcję przechwytywania zrzutu ekranu bez żadnego interfejsu użytkownika (Android 11+).
+
+Zaktualizowano akcję JavaScript, aby uwzględnić obsługę silnika Rhino.
+
+Wyzwalacz ruchomego przycisku obsługuje teraz ustawianie tekstu zamiast obrazu.
+
+Akcja Skala czcionki obsługuje teraz maksymalnie 250% (poprzednio 150%).
+
+Dodano opcję nieskończonej pętli (aż do przerwy) do akcji Powtarzanie czynności.
+
+Dodano obsługę wyrażeń regularnych do wyzwalaczy opartych na wywołaniach.
+
+Dodano obsługę akcji Blokuj dotknięcia, aby zablokować tylko część ekranu.
+
+Dodano magiczny tekst kodu kraju.
+
+Naprawiono problem polegający na tym, że przełączanie wyzwalacza między włączonym/wyłączonym mogło przejść w stan przerwania.
+
+Naprawiono błąd, który powodował, że po utworzeniu wyzwalacza odtwarzania Mucis nie można było edytować.
+
+Rozwiązano problem polegający na tym, że akcja Uwierzytelnij użytkownika nie wyświetlała monitu na niektórych urządzeniach z systemem Android 14.
+
+Wersja 5.41 (luty 2024)
+============================
+
+Dodano akcję Pokaż wyskakujące okienko głośności.
+
+Dodano akcję Usuń zmienną.
+
+Akcja okna dialogowego wyboru obsługuje teraz możliwość wyświetlania kluczy słownika jako elementów możliwych do wybrania oraz ustawienia domyślnego wyboru z limitem czasu.
+
+Akcja ustawień systemowych i ograniczenie umożliwiają teraz wyszukiwanie istniejących kluczy (i dodano obsługę wyszukiwania w magicznym oknie dialogowym tekstu).
+
+Długie naciśnięcie spustu, akcji lub ograniczenia na ekranie edycji makra spowoduje teraz przejście bezpośrednio do okna konfiguracji (można je wyłączyć w ustawieniach).
+
+Dodano magiczny tekst dla identyfikatora Sima i imienia Sima dla wyzwalaczy przychodzących/wychodzących SMS-ów.
+
+Dodano magiczny tekst dla grup połączeń dla wyzwalaczy opartych na połączeniach.
+
+Akcja żądania HTTP obsługuje teraz podstawowe importowanie i eksportowanie do żądań cURL.
+
+Wyzwalacz i akcja pływającego przycisku obsługują teraz ustawianie lokalizacji X,Y ze zmiennymi wartościami.
+
+Akcja Pływający tekst obsługuje teraz ustawianie położenia X,Y ze zmiennymi wartościami.
+
+Akcja Wyczyść powiadomienie i Akcja Interakcja z powiadomieniem obsługują teraz użycie wyzwalacza powiadomienia w celu zidentyfikowania powiadomienia.
+
+Dodano obsługę konwersji zmiennych lokalnych na zmienne globalne (naciśnij i przytrzymaj zmienną lokalną, aby zapytać).
+
+Rozwiązano problem polegający na tym, że kopiowanie nie działało w językach innych niż angielski w oknie dialogowym konfiguracji Warunek Jeśli i Powtórz podczas.
+
+Rozwiązano problem polegający na tym, że żądanie HTTP nie obsługiwało poprawnie spakowanych odpowiedzi i zwracało zniekształcone dane.
+
+Rozwiązano problem z przypadkiem krawędziowym, w którym pływający przycisk mógł wywołać niewłaściwe makro po naciśnięciu.
+
+Minimalny promień geofencingu zmniejszony do 20 metrów.
+
+Inne drobne poprawki błędów i ulepszenia.
+
+
+Wersja 5.40 (styczeń 2024)
+============================
+
+Dodano akcję Włącz/Wyłącz wyzwalacz.
+
+Dodano akcję Wyczyść okno dialogowe makrodroidów.
+
+Dodano funkcję wyszukiwania do ekranu edycji skrótów akcji.
+
+Dodano obsługę sortowania i kopiowania/wklejania do okna dialogowego konfiguracji Warunek Jeśli i Powtarzaj podczas.
+
+Wyzwalacz kalendarza obsługuje teraz 1-minutowe częstotliwości aktualizacji (używaj ostrożnie ze względu na rozładowanie baterii).
+
+Dodano obsługę ręcznego definiowania nazwy słownika/tablicy w akcji Iteruj tablicę/słownik.
+
+Dodano obsługę naciśnięcia Wstecz w oknie dialogowym wyboru w celu kontynuowania makra.
+
+Dodano ograniczenie stanu szybkiego kafelka.
+
+Dodano obsługę napisów na kafelkach szybkich ustawień (tylko Android 10).
+
+Zoptymalizowano wykonywanie zapytań dotyczących zainstalowanych aplikacji — teraz działa znacznie szybciej na urządzeniach z zainstalowanymi wieloma aplikacjami.
+
+Poprawiono wyszukiwanie magicznego tekstu, aby uwzględniało zmienne na najwyższym poziomie podczas wpisywania wyszukiwanego terminu.
+
+Rozwiązano problem polegający na tym, że posiadanie pętli przed akcją iteracji tablicy/słownika mogło spowodować, że iterator nie zostanie uruchomiony na początku.
+
+Rozwiązano problem polegający na tym, że usunięcie elementu tablicy/słownika podczas iteracji mogło przerwać iterację.
+
+Rozwiązano problem polegający na tym, że zmiana języka mogła przywrócić wcześniej usunięte kategorie.
+
+Rozwiązano problem polegający na tym, że wyzwalacz regularnego interwału był zawodny, jeśli ustawiono go na > 24 godziny.
+
+
+Wersja 5.39 (grudzień 2023)
+===========================
+
+Dodano akcję Udostępnij tekst.
+
+Dodano wyzwalacz kliknięcia interfejsu użytkownika.
+
+Dodano akcję Wyświetl powiadomienie o dymku (Android 10+).
+
+Dodano ograniczenie Pływający przycisk (pokazywany/niewyświetlany).
+
+Dodano akcję Pobierz poziom światła.
+
+Dodano ograniczenie stanu wyświetlania otoczenia.
+
+Wyzwalacz elementu webhook obsługuje teraz analizowanie tekstu podstawowego.
+
+Dodano obsługę opcji szybkiego przewijania do przodu i do tyłu w wyzwalaczach przycisków multimediów.
+
+Akcja Okno dialogowe wyboru obsługuje teraz zwracanie wybranego klucza podczas korzystania ze słowników.
+
+Rozwiązano problem polegający na tym, że zmienne lokalne w widoku wbudowanym mogły być niepoprawnie wyświetlane.
+
+Naprawiono problem polegający na tym, że nadal można było zmienić kolejność elementów na ekranie Edytuj makro po wyłączeniu zmiany kolejności.
+
+Dodano ustawienie wyzwalacza Kalendarz w celu zaktualizowania szybkości aktualizacji kalendarza.
+
+Dodano magiczny tekst "Kod języka", aby uzyskać bieżący język systemu jako 2-znakowy kod języka (ISO 639).
+
+Wersja 5.38 (listopad 2023)
+============================
+
+Ekran Edytuj makro obsługuje teraz funkcję wyszukiwania.
+
+Dodano akcję JavaScript (Beta).
+
+Dodano wyzwalacz stanu składania.
+
+Dodano ograniczenie stanu składania.
+
+Ograniczenie porównania wartości obsługuje teraz wyrażenia dla wartości całkowitych i dziesiętnych.
+
+Poprawiono wyzwalacz uruchamiania/zamykania aplikacji i nazwę aplikacji na pierwszym planie, aby działały bardziej niezawodnie.
+
+Dodano obsługę dołączania ikon użytkownika podczas udostępniania makr/kategorii, które się do nich odwołują. (Obecnie nie jest obsługiwana w szablonach)
+
+Funkcja Zgłoś błąd ma teraz podstawowe wyszukiwanie nazw makr i obsługuje wybieranie bloków akcji.
+
+Rozwiązano problem polegający na tym, że ograniczenie Uruchomienie makra nie działało poprawnie podczas odwoływania się do "Tego makra".
+
+Rozwiązano problem polegający na tym, że udostępnianie makr/bloków akcji pobliskim urządzeniom nie działało w niektórych sytuacjach.
+
+Dodano obsługę przyciemniania ikon w skrótach makr.
+
+Poprawiono wpis Magic Text, aby oddzielić wybór zmiennych globalnych/lokalnych (aby ułatwić użytkownikom z dużą liczbą zmiennych).
+
+Akcja Czytaj zawartość ekranu ma nową opcję dołączania identyfikatorów widoków bez zawartości tekstowej.
+
+Inne drobne poprawki i poprawki.
+
+
+
+Wersja 5.37 (październik 2023 r.)
+===========================
+
+Zoptymalizowano ekran edycji makra, aby był znacznie szybszy podczas pracy z bardzo dużymi makrami.
+
+Dodano ograniczenie Makro Uruchomione/Nie uruchomione.
+
+Dodano wyzwalacz Macro Finish.
+
+Dodano przycisk zasilania Długi przycisk wyzwalania (tylko Android 13+) - Wymaga ustawienia MacroDroid na domyślnego asystenta.
+
+Dodano obsługę limitów czasu akcji Czekaj na wyzwolenie.
+
+Dodano obsługę nakładek ekranowych do wyzwalacza kontekstu ekranu, akcji Odczytaj zawartość ekranu i Sprawdź tekst na ekranie.
+
+Dodano obsługę nakładek ekranu do akcji interakcji z interfejsem użytkownika podczas klikania identyfikatorów tekstu/widoku.
+
+Dodano obsługę magicznego tekstu w identyfikatorach wyzwalaczy elementu Webhook.
+
+Dodano magiczny tekst pakietu aplikacji dla uruchomionego/zamkniętego wyzwalacza aplikacji.
+
+Dodano obsługę rysowania w obszarze paska stanu w akcji Tekst przestawny.
+
+Dodano opcję "Naciśnij Enter" w akcji interakcji z interfejsem użytkownika (tylko Android 11+).
+
+Zaktualizowano akcje Potwierdź następny i IF potwierdzono, a następnie obsługujące limity czasu do 20 minut.
+
+Naprawiono problem polegający na tym, że wyzwalacz uruchamiania aplikacji z opcją "wszystkie aplikacje" nie uruchamiał się po uruchomieniu / zamknięciu MacroDroid.
+
+Rozwiązano problem polegający na tym, że interakcja z interfejsem użytkownika nie klikała poprawnie w niektórych przypadkach podczas korzystania z opcji identyfikacji w aplikacji.
+
+Rozwiązano problem polegający na tym, że funkcja wklejania interakcji z interfejsem użytkownika zawsze była wklejana na końcu pola tekstowego, niezależnie od pozycji kursora.
+
+Dodano com.wireguard.android.permission.CONTROL_TUNNELS uprawnienia do manifestu.
+
+Wersja 5.36 (wrzesień 2023 r.)
+========================
+
+Dodano akcję Tłumacz tekst.
+
+Dodano opcję Usuń tekst do akcji Manipulacja tekstem.
+
+Dodano obsługę formatowania HTML w akcji Tekst przestawny.
+
+Wyzwalacz elementu webhook obsługuje teraz białą listę adresów IP.
+
+Dodano specyficzny dla kontekstu magiczny tekst dla adresu IP wywołującego podczas korzystania z wyzwalacza Webhook.
+
+Dodano obsługę udostępniania za pośrednictwem poczty e-mail SMTP w celu wykonania zrzutu ekranu.
+
+Dodano opcję w ustawieniach, aby skonfigurować liczbę kafelków ekranu głównego w wierszu.
+
+Dodano ustawienie wyzwalacza odczytu zawartości ekranu, aby uniemożliwić odczyt ekranu, gdy MacroDroid znajduje się na pierwszym planie.
+
+Dodano konfigurowalną maksymalną liczbę linii dla wpisów tekstowych w szufladzie MacroDroid.
+
+Dodano opcję uwierzytelniania użytkownika, aby zezwolić lub zapobiec wzorowi PIN/Swipe.
+
+Rozwiązano problem polegający na tym, że akcja analizy JSON nie działała poprawnie, gdy ciąg pochodzi ze słownika/tablicy z ręcznie zdefiniowanym kluczem/indeksem.
+
+Ze względu na obowiązkowe zmiany docelowego zestawu SDK systemu Android, działanie Bluetooth wymaga teraz nowej aplikacji pomocniczej MacroDroid (v1.9) do działania w systemie Android 13+.
+
+Inne drobne poprawki i ulepszenia.
+
+Wersja 5.35 (lipiec 2023 r.)
+========================
+
+Dodano akcję Uwierzytelnij użytkownika.
+
+Dodano akcję odpowiedzi na powiadomienie (umożliwia automatyczne odpowiedzi w WhatsApp / Telegram) dla Androida 7+.
+
+Eksportuj makro i Autobackup obsługują teraz szyfrowanie plików.
+
+Wyzwalacz zawartości ekranu obsługuje teraz opcję dopasowania identyfikatora widoku.
+
+Potwierdź następną akcję i Jeśli potwierdzono teraz obsługują limit czasu automatycznego anulowania.
+
+Dodano obsługę 8 dodatkowych szybkich kafelków (16 jest już dostępnych).
+
+Dodano magiczny tekst "Prąd baterii teraz".
+
+Dodano funkcję cofania podczas usuwania elementów na ekranie edycji makra/bloku akcji.
+
+Ekran Edytuj makro obsługuje teraz opcję przenieś w górę/w dół, gdy na elemencie dostępnych jest wiele wiązań podrzędnych.
+
+Dodano magiczny tekst dla nazwy operatora SIM2 (jeśli dotyczy).
+
+Magiczne okno dialogowe wprowadzania tekstu obsługuje teraz wyszukiwanie.
+
+Dodano opcję konfiguracji zamykania szuflady do elementów makr w szufladzie MacroDroid.
+
+Usunięto problem polegający na tym, że lokalizacje pikseli z ruchomymi przyciskami były nieznacznie uszkodzone w ostatniej wersji.
+
+Inne drobne poprawki.
+
+
+Wersja 5.34 (maj 2023 r.)
+========================
+
+Dodano akcję Sprawdź tekst na ekranie.
+
+Wyświetl powiadomienie i ustaw akcje MacroDroid Icon obsługują teraz tekst jako ikony.
+
+Akcja Wyślij wiadomość e-mail obsługuje teraz zwracanie wartości logicznej w celu wskazania, czy wiadomość e-mail została wysłana pomyślnie.
+
+Akcja latarki obsługuje teraz poziom jasności (Android 13+).
+
+Wyzwalacz Przycisk przestawny (i akcja konfiguracji przycisku przestawnego) obsługują teraz wartości procentowe dla lokalizacji X,Y.
+
+Widżet skrótu MacroDroid może teraz uruchamiać bloki akcji, a także makra.
+
+Rozwiązano problem polegający na tym, że magiczne pola tekstowe kalendarza nie działały z wyzwalaczem kalendarza.
+
+Naprawiono problem, który powodował, że działanie Spotify nie działało u niektórych użytkowników Spotify premium.
+
+Naprawiono problem polegający na tym, że wartość porównania nie pozwalała na wybranie wartości z iteratora.
+
+Rozwiązano problem polegający na tym, że w niektórych przypadkach akcja wymuszania aktualizacji lokalizacji nie powodowała aktualizacji lokalizacji.
+
+Wersja 5.33 (maj 2023 r.)
+===========================
+
+Dodano akcję Okno dialogowe wyboru.
+
+Dodano akcję Block Touches.
+
+Dodanie obsługi zaszyfrowanych danych wyjściowych podczas eksportowania zestawu makr.
+
+Ograniczenie Uruchamianie aplikacji obsługuje teraz określanie nazwy pakietu (można je określić za pomocą zmiennej).
+
+Opcja kliknięcia interakcji interfejsu użytkownika może teraz poczekać na zakończenie i zwrócić wynik kliknięcia.
+
+Akcja warunku IF ma teraz opcję zapobiegania rejestrowaniu, gdy sprawdzanie warunków jest fałszywe.
+
+Dziennik systemu ma nową opcję pokazywania/ukrywania milisekund.
+
+Dodano wartość Czas systemowy (ms) do magicznego tekstu.
+
+Dodano tłumaczenie na język indonezyjski Bahasa.
+
+Wersja 5.32 (kwiecień 2023 r.)
+=========================
+
+Dodano akcję Spotify (Beta).
+
+Dodano wyzwalacz Spotify.
+
+Dodano wyzwalacz zmiany ustawień systemowych.
+
+Dodano ograniczenie stanu szuflady MacroDrod.
+
+SMS Trigger obsługuje teraz wybór identyfikatora subskrypcji dla urządzeń z dwiema kartami SIM.
+
+Akcja Otwórz plik obsługuje teraz dynamiczne nazwy plików.
+
+Dodano obsługę wartości procentowych w akcjach gestów interakcji interfejsu użytkownika.
+
+Dodano magiczny tekst dla nazwy bloku akcji.
+
+Zaktualizowano kategorie na ekranie dodawania akcji.
+
+Rozwiązano problem polegający na tym, że opcja łączenia/rozłączania w wyzwalaczu Android Wear przestawała działać.
+
+Rozwiązano problem polegający na tym, że importowanie kategorii mogło skutkować usunięciem blokad akcji.
+
+Rozwiązano problem polegający na tym, że udostępnianie w pobliżu nie działało na urządzeniach z Androidem 13.
+
+Inne drobne poprawki błędów i ulepszenia.
+
+Wersja 5.31 (luty 2023)
+=============================
+
+Dodano obsługę długiego naciśnięcia w wyzwalaczu kafelka Szybkie ustawienia.
+
+Zaktualizowano wyzwalacz zawartości ekranu, aby obsługiwał opcję wyzwalania po usunięciu tekstu z ekranu.
+
+Zaktualizowano mechanizm używany do wymuszania innego języka w aplikacji, aby poprawić niezawodność.
+
+Naprawiono błąd, w wyniku którego odniesienia do więcej niż dwóch zmiennych w magicznym tekście nie były poprawnie zastępowane.
+
+Rozwiązano problem polegający na tym, że nie można było wybrać kluczowego elementu słownika w słowniku podrzędnym (w akcji Ustaw zmienną).
+
+Rozwiązano problem polegający na tym, że akcja Ustaw zmienną za pomocą monitu użytkownika nie włączała przycisku OK podczas ustawiania wartości w elemencie słownika.
+
+Rozwiązano problem polegający na tym, że bloki akcji wyświetlane z szablonów nie były prawidłowo usuwane.
+
+Rozwiązano problem polegający na tym, że akcja Uruchom makro mogła otworzyć nieprawidłowe makro po kliknięciu połączonego makra.
+
+Dodano magiczny tekst dla identyfikatora makra.
+
+Inne drobne poprawki.
+
+Wersja 5.30 (styczeń 2023 r.)
+============================
+
+Dodano wyzwalacz dziennika systemu.
+
+Dodano ograniczenie Zainstalowana aplikacja.
+
+Dodano ograniczenie Tekst przestawny.
+
+Dodano ustawienie Długość dziennika systemu do ekranu ustawień MacroDroid.
+
+Dodano funkcję wyszukiwania do ekranu wtyczki.
+
+Dodano opcję automatycznego ukrywania po opóźnieniu do akcji Floating Text.
+
+Dodano obsługę wartości procentowych w konfiguracji kliknięć interakcji z interfejsem użytkownika.
+
+Dodano obsługę symboli wieloznacznych dla kliknięcia przez identyfikator widoku w akcji interakcji z interfejsem użytkownika.
+
+Dodano obsługę ustawiania flag w akcji Wyślij zamiar.
+
+Dodano obsługę wyszukiwania w wpisach słownika/tablicy, gdy obecna jest duża liczba kluczy.
+
+Dodano jawną opcję "To makro" w akcji Włączone/Wyłącz makro.
+
+Zaktualizowano działanie skrótu na Androida, aby dodać opcje "Pokaż wszystkie aplikacje" i "Przełącz dostępność" dla Androida 11+.
+
+Rozwiązano problem polegający na tym, że ikony nie mogły być aktualizowane na elementach szuflady, a magiczne etykiety tekstowe nie były wyświetlane dla aplikacji i skrótów.
+
+Zmodyfikowano wyzwalacz kalendarza, aby pasował do nazwy kalendarza, jeśli podstawowy identyfikator kalendarza powinien się zmienić z jakiegokolwiek powodu.
+
+Zaktualizowano akcję analizy JSON, dzięki czemu zmienne logiczne będą poprawnie zapisywane jako typ zmiennej logicznej (nie ciągi znaków).
+
+Wersja 5.29 (listopad/grudzień 2022 r.)
+=====================================
+
+Dodano obsługę subskrypcji magazynu szablonów dla makr/użytkowników, aby otrzymywać powiadomienia o aktualizacjach (tylko użytkownicy wersji Pro).
+
+Dodano akcję JSON Output.
+
+Dodano akcję Set Digital Assistant.
+
+Działanie w trybie samolotowym może teraz działać z hackiem ADB (nie ma wymogu, aby MacroDroid był domyślnym asystentem cyfrowym).
+
+Wyzwalacz rozpoznawania aktywności obsługuje teraz mniej niż porównanie w wykrywaniu zakończenia aktywności.
+
+Wyzwalacz zawartości ekranu ma teraz regulowaną częstotliwość aktualizacji.
+
+Dodano obsługę przenoszenia identyfikatora urządzenia wyzwalacza Webhook na nowe urządzenie.
+
+Akcja Tekst przestawny obsługuje teraz wyrównanie do lewej, do środka i do prawej.
+
+Naprawiono problem polegający na tym, że wydarzenia całodzienne w kalendarzu mogły być uruchamiane niepoprawnie z powodu czasu letniego.
+
+Rozwiązano problem polegający na tym, że wartości wyzwalające określone (np. numer połączenia przychodzącego) nie działały po oczekiwaniu przed następną akcją wyzwalającą.
+
+Rozwiązano problem polegający na tym, że liczby dziesiętne w oknach dialogowych mogły być wyświetlane niepoprawnie jako łącza.
+
+Rozwiązano problem polegający na tym, że blok akcji nie działał w niektórych sytuacjach, gdy kategoria bez kategorii była wyłączona.
+
+Wersja 5.28 (październik 2022 r.)
+=============================
+
+Dodano operację Tekst przestawny.
+
+Dodano "Zmienne robocze" do bloków akcji.
+
+Akcja bloku akcji obsługuje teraz opcję blokowania kolejnych akcji do momentu ich ukończenia (domyślnie włączona).
+
+Dodano akcję Wyczyść słownik/Tablicę, aby umożliwić czyszczenie lub usuwanie poszczególnych wpisów.
+
+Dodano obsługę automatycznych tłumaczeń w czasie rzeczywistym w Template Store.
+
+Dodano obsługę widoku satelitarnego na ekranie konfiguracji Geofence.
+
+Dodano magiczny tekst dla siły sygnału wieży komórkowej.
+
+Ulepszono wyszukiwanie na ekranie listy bloków akcji, aby również wyszukiwać akcje w blokach.
+
+Rozwiązano problem polegający na tym, że manipulacja tekstem podzielona na tablicę nie działała z ogranicznikiem wielu znaków.
+
+Dodano nowe ustawienie w opcjach wyzwalania, aby dostosować czas wyzwalacza przycisku zasilania.
+
+Inne drobne poprawki i ulepszenia.
+
+Wersja 5.27.8 (wrzesień 2022 r.)
+===============================
+
+Małe wydanie poprawki błędów, aby naprawić wiele drobnych problemów.
+
+Wersja 5.27 (wrzesień 2022 r.)
+=============================
+
+Dodano akcję Usługi ułatwień dostępu (wymagane ADB Hack).
+
+Dodano funkcjonalność umożliwiającą korzystanie z usług ułatwień dostępu w celu obejścia problemów, w których niektóre urządzenia mogą je wyłączyć (wymagany jest ADB Hack).
+
+Dodano ograniczenie ustawień systemowych.
+
+Dodano całkowite i dostępne wartości pamięci RAM do magicznych opcji tekstowych.
+
+Dodano wskaźniki numeryczne dla wartości wysokości i prędkości w akcji zamiany tekstu na mowę.
+
+Dodano obejście problemu z programem uruchamiającym Samsung, aby zapobiec utracie przez skróty ikony / etykiety podczas włączania / wyłączania trybu ciemnego.
+
+Dodano magiczny tekst dla nazwy sieci SIM /operatora.
+
+Dodano magiczny tekst dla typu połączenia komórkowego (np. 3G / 4G / 5G).
+
+Dodano magiczny tekst dla MacroDroid jest pro (zwraca true lub false)
+
+Dodano obsługę opcji "To makro" do ograniczenia Makro włączone/wyłączone.
+
+Dodano opcję zachowaj spacje do wyskakującej akcji wiadomości.
+
+Dodano obsługę zmiany nazw stoperów.
+
+Dodano opcję wyświetlania ostatnio edytowanego czasu na ekranie listy makr (Wszystkie wartości będą początkowo nieznane, dopóki nie zostaną edytowane w najnowszej wersji).
+
+Ustaw akcję zmiennej (za pomocą opcji Nowa zmienna) utworzy teraz zmienną w czasie wykonywania i obsługuje magiczny tekst dla nazwy zmiennej.
+
+Aplikacja towarzysząca Wear OS umożliwia teraz przewijanie listy za pomocą sterowania obrotowego.
+
+Ulepszenia i poprawki dotyczące obsługi słownika/tablicy w zmiennym wyzwalaczu i ograniczeniu.
+
+Rozwiązano problem polegający na tym, że w niektórych sytuacjach funkcja set variable action mogła w niektórych sytuacjach tworzyć słownik zamiast tablicy.
+
+Rozwiązano problem polegający na tym, że nie można było zmienić nazwy lokalnej zmiennej tablicowej/słownikowej.
+
+Rozwiązano problem polegający na tym, że wyświetlanie szablonu z blokami akcji mogło powodować dodawanie niechcianych zmiennych globalnych.
+
+Usunięto problem polegający na tym, że usunięcie wpisu ze słownika/tablicy bloku akcji powodowało usunięcie słownika/tablicy.
+
+Wersja 5.26 (lipiec 2022 r.)
+========================
+
+Operacje Uruchom makro, Anuluj makro i Wyłącz makro obsługują teraz wprowadzanie makr według nazwy (obsługuje magiczny tekst, aby umożliwić odwoływanie się do nazw makr ze zmiennej).
+
+Dodatkowe ustawienia, takie jak lokalizacja zachodu / wschodu słońca i lokalizacja pogody, są teraz zapisywane podczas eksportowania i automatycznego tworzenia kopii zapasowych.
+
+Ograniczenie zmiennej MacroDroid obsługuje teraz opcję ręcznego definiowania kluczy dla zmiennych słownikowych/tablicowych.
+
+Okno dialogowe opcji obsługuje teraz podstawowe formatowanie HTML w tekście głównej wiadomości.
+
+Rozwiązano problem polegający na tym, że nie można było dodawać lub usuwać kategorii z ekranu listy kategorii.
+
+Naprawiono problem w wyzwalaczach przychodzących WIADOMOŚCI SMS / połączeń, w których porównanie liczb nie zawsze działało poprawnie podczas korzystania z magicznego tekstu.
+
+Naprawiono problem polegający na tym, że uruchomienie skrótu MacroDroid minimalizowało MacroDroid, jeśli znajduje się na pierwszym planie.
+
+Rozwiązano problem polegający na tym, że blok akcji mógł zostać zduplikowany podczas importowania makra, które już odwołuje się do tego samego bloku akcji.
+
+Usunięto problem, który powodował, że bloki akcji mogły zostać usunięte podczas testowania niektórych akcji.
+
+Rozwiązano problem polegający na tym, że przerwa od pętli nie zawsze działała poprawnie z iteracją słownika/tablicy.
+
+Usunięto problem polegający na tym, że wyszukiwanie ikon nie działało poprawnie w przypadku pakietów ikon.
+
+Rozwiązano problem polegający na tym, że konfiguracja przycisku pływającego nie pozwalała na wybór wyzwalaczy w akcji Poczekaj do wyzwalacza.
+
+Inne drobne poprawki.
+
+Wersja 5.25.6 (lipiec 2022 r.)
+===============================
+
+Mała aktualizacja naprawy błędów do poprzedniego wydania v5.25. Naprawiono szereg drobnych problemów występujących w poprzedniej wersji.
+
+Wersja 5.25 (czerwiec 2022 r.)
+========================
+
+Dodano wyzwalacz z włączoną funkcją makr.
+
+Dodano opcję Floating Button Trigger, aby wyłączyć wyzwalacz (nie całe makro) po usunięciu za pomocą ikony kosza.
+
+Dodano pływający przycisk konfiguruj akcję.
+
+Zaktualizowano magiczny tekst do obsługi nawiasów klamrowych, aby zmniejszyć zamieszanie ze składnią słownika/tablicy. (Nawiasy kwadratowe są nadal obsługiwane, {system_time} i [system_time] zarówno robocze, jak i domyślne można zmienić w ustawieniach MacroDroid)
+
+Dodano lepszą obsługę tablic/słowników do akcji, takich jak żądanie HTTP i odczyt pliku, aby umożliwić bezpośredni zapis do kluczy niestandardowych.
+
+Dodano opcję "Podziel na tablicę" do akcji Manipulacja tekstem.
+
+Ulepszony wyzwalacz kalendarza, aby lepiej współpracował z wydarzeniami całodziennymi w różnych strefach czasowych.
+
+Podczas przeglądania makra szablonu dostępna jest nowa pozycja menu "Dodaj wyłączone".
+
+Wprowadzanie głosowe obsługuje teraz ustawianie bezpośrednio w nowych słownika / indeksach tablicowych z magicznym tekstem.
+
+Akcja wyskakującego komunikatu obsługuje teraz podstawowy html, taki jak <b>BOLD</b> i <i>ITALIC</i>
+
+Dodano Enable/Disable (w tym dzieci) do edycji ekranu makr, co ułatwia włączanie dużych warunków i pętli.
+
+Dodano opcję włączania / wyłączania przesunięć poziomych w celu otwarcia szuflady MacroDroid.
+
+Dodano opcję "Zastąp" do akcji Zapis do pliku.
+
+Dodano opcję WhatsApp Wyślij akcję, aby obsługiwać zarówno aplikację standardową, jak i biznesową.
+
+Dodano magiczny tekst dla rozmiaru słownika/tablicy.
+
+Rozwiązano problem polegający na tym, że użycie cięcia bloku IF/Loop nie działało poprawnie.
+
+Rozwiązano problem polegający na tym, że opcja kontynuowania w oknie dialogowym opcji nie działała poprawnie.
+
+Rozwiązano problem polegający na tym, że akcja nagrywania mikrofonu nie zapisywała poprawnego rozszerzenia pliku.
+
+Rozwiązano problem polegający na tym, że wartość zmiennej nie była odświeżana po zaktualizowaniu, gdy szuflada MacroDroid była otwarta.
+
+Usunięto problem polegający na tym, że edycja wyłączonego makra mogła je ponownie włączyć.
+
+Rozwiązano problem polegający na tym, że powiadomienie o wyświetleniu nie przekazywało poprawnie zmiennych w opcji Uruchom po naciśnięciu.
+
+Dodano opcję w ustawieniu, aby przywrócić wszystkie karty informacyjne pomocy, które były wcześniej dimissed.
+
+Wersja 5.24.3 (czerwiec 2022 r.)
+==========================
+
+Ta aktualizacja była wymagana przez Google do dodania usługi rozpoznawania podczas korzystania z MacroDroid jako domyślnego asystenta.
+
+Wersja 5.24 (maj 2022 r.)
+==========================
+
+Dodano akcję Odczyt zawartości ekranu.
+
+Dodano wyzwalacz zawartości ekranu.
+
+Dodano akcję Odczyt z pliku.
+
+Dodano ograniczenie Kategoria włączona/Wyłączona.
+
+Dodano akcję Dziennik eksportu.
+
+Dodano opcję ręcznego wprowadzania identyfikatora widoku w kliknięciach interakcji interfejsu użytkownika.
+
+Dodano opcję forground do ustaw akcję Volume dla urządzeń, które nie zezwalają na ustawianie głośności z MacroDroid w tle.
+
+Dodano opcję akcji Wyskakująca wiadomość, aby anulować poprzednie wyskakujące okienko (przydatne na przykład w przypadku drugiego odliczania)
+
+Dodano opcję do akcji Okno dialogowe wiadomości i Okno dialogowe opcji, aby zapobiec zamykaniu okna dialogowego przycisku Wstecz.
+
+Dodano obsługę wyzwalacza WebHook do ustawiania wpisów zmiennych słownika/tablicy.
+
+Funkcja zgłaszania błędów zawiera teraz możliwość dodawania zrzutów ekranu.
+
+Dodano obsługę zmiany nazw skrótów w szufladzie MacroDroid.
+
+MacroDroid Drawer obsługuje teraz opcje otwierania za pomocą gestu przesuwania palcem w górę i / lub przesuwania w dół.
+
+Inne drobne poprawki i poprawki.
+
+Wersja 5.23 (kwiecień 2022 r.)
+==========================
+
+Dodano typy zmiennych Dictionary i Array (tylko użytkownicy Pro).
+
+Dodano operację Iteruj słownik/tablicę, której można używać do zapętlania wszystkich elementów w słowniku/tablicy.
+
+Dodano akcję analizy JSON.
+
+Zmieniono akcję Ustaw stan szybkiego ustawienia kafelka na Konfiguruj akcję Szybki kafelek, aby umożliwić dodatkowe ustawienie ikony i etykiety.
+
+Dodano opcję sekwencji gestów do akcji Interakcja interfejsu użytkownika, aby umożliwić wykonywanie złożonych gestów, takich jak wzorce blokady przesuwania.
+
+Dodano opcję do ekranu konfiguracji interakcji interfejsu użytkownika, aby przełączać dotykową nakładkę lokalizacji.
+
+Dodano możliwość włączania/wyłączania poszczególnych do wyzwalacza Logcat.
+
+Dodano ograniczenie adresu IP.
+
+Dodano magiczny tekst dla podstawowego adresu URL elementu WebHook.
+
+Dodano funkcję wyszukiwania do ekranu listy bloków akcji.
+
+Dodano opcję eksportu logowania systemowego w HTML, aby mógł wyprowadzić to samo kodowanie kolorów, co pokazane w aplikacji.
+
+Dodano opcję cięcia do ekranów Edytuj makro i blok akcji, aby umożliwić pełną funkcjonalność wycinania, kopiowania i wklejania.
+
+Blok akcji "Akcje testowe" wyświetli teraz podsumowanie zmiennych wyjściowych po uruchomieniu.
+
+Usunięto problem polegający na tym, że metoda wywoływania makr nie działała poprawnie we wszystkich przypadkach.
+
+Rozwiązano problem z nieprawidłowym działaniem warunku "nie w zdarzeniu" w ograniczeniu Kalendarza.
+
+Rozwiązano problem polegający na tym, że nazwa pliku w akcji Żądanie HTTP nie przetwarzała poprawnie magicznych wartości tekstowych.
+
+Rozwiązano problem polegający na tym, że akcje w bloku akcji nie były anulowane po anulowaniu makra nadrzędnego.
+
+Rozwiązano problem polegający na tym, że tapeta mogła być nieprawidłowo obracana na niektórych urządzeniach.
+
+Inne drobne poprawki i poprawki.
+
+Wersja 5.22.6 (luty 2022 r.)
+============================
+
+Naprawiono problem, który powodował, że filmy MacroDroid nie działały.
+
+Wersja 5.22 (luty 2022 r.)
+============================
+
+Dodano akcję Żądanie http.
+
+Dodano ograniczenie Metoda wywoływania, aby umożliwić wykrywanie, gdy makro jest wywoływane z niestandardowych wyzwalaczy makr.
+
+Dodano podstawową (tylko w języku angielskim) funkcję wyszukiwania do selektora ikon.
+
+Dodano obsługę bloku akcji do szuflady MacroDroid.
+
+Dodano obsługę biometrii i monit o opóźnienie hasła w ustawieniach ochrony hasłem.
+
+Dodano magiczny tekst dla numeru wersji MacroDroid.
+
+Dodano opcję ignorowania wielkości liter do wyzwalacza i ograniczenia zmiennej.
+
+Dodano obsługę przekazywania wartości zmiennych logicznych do parametrów wejściowych bloku akcji.
+
+Dodano opcję Ignoruj (Anuluj makro) dla okna dialogowego opcji, aby zapobiec uruchamianiu dalszych akcji, jeśli zostanie wybrana.
+
+Dodano możliwość filtrowania zmiennych według typu na ekranie zmiennych globalnych.
+
+Dodano opcję wykluczenia wyzwalaczy opartych na połączeniach / sms-ach i dodano przeszukiwalne nazwy kontaktów do okna dialogowego wyboru.
+
+Rozwiązano problem polegający na tym, że składanie wartości tablic tasker w pojedynczy ciąg czasami powodowało, że kolejność elementów była nieprawidłowa.
+
+Rozwiązano problem polegający na tym, że udostępnianie na pobliskim urządzeniu nie zawsze działało na urządzeniach z Androidem 12.
+
+Usunięto problem polegający na tym, że wybranie zmiennej globalnej dla akcji Wyjście głosu mogło spowodować ustawienie niewłaściwej zmiennej.
+
+Rozwiązano problem polegający na tym, że wyzwalacz sygnału nawigacyjnego Bluetooth mógł kończyć się wielokrotnym wyzwalaniem dla jednego zdarzenia.
+
+Usunięto problem polegający na tym, że Geofence nie wyśrodkowywało się na prawidłowym obszarze podczas wyszukiwania lub powiększania/pomniejszania.
+
+Rozwiązano problem polegający na tym, że lista SSID Wi-Fi mogła zawierać zduplikowane wpisy.
+
+Usunięto problem polegający na tym, że bardzo długi ciąg w zmiennej lokalnej mógł uniemożliwiać dostęp do przycisku OK.
+
+Rozwiązano problem polegający na tym, że w niektórych scenariuszach ikona Ustaw MacroDroid nie aktualizowała ikony.
+
+Usunięto problem polegający na tym, że wydarzenia całodniowe w ograniczeniu kalendarza nie działały poprawnie w różnych strefach czasowych.
+
+Wiele innych drobnych poprawek i poprawek.
+
+Wersja 5.21
+============
+
+Małe wydanie poprawki błędów.
+
+Poprawiono obsługę parametrów wejściowych bloku akcji, dzięki czemu można przekazać pustą wartość i zawsze używać domyślnej wejściowej wartości parm.
+
+Dodano opcję "Udostępnij jako obraz" do ekranu edycji bloku akcji.
+
+Naprawiono kilka drobnych problemów związanych z edycją bloku akcji.
+
+Naprawiono problem polegający na tym, że użytkownicy bezpłatni mogli utracić makra, jeśli są na granicy makr 5 i odrzucają edycję makra lub bloku akcji.
+
+Naprawiono problem z kafelkiem "Ostatnio otwarte" na ekranie głównym, który nie działał w niektórych sytuacjach.
+
+Naprawiono problem z akcją "Wprowadzanie głosowe", która nie powodowała uruchamiania wyzwalacza zmiennej podczas zapisu do zmiennej.
+
+Rozwiązano problem polegający na tym, że wklejanie elementów w bloku akcji nie zawsze powodowało poprawne konfigurowanie akcji.
+
+Wersja 5.20
+============
+
+Dodano bloki akcji, aby umożliwić grupowanie często używanych akcji, które można wywołać z makr lub innych bloków akcji.
+
+Dodano obsługę udostępniania pobliskim urządzeniom z ekranu edycji makr i bloku akcji.
+
+Dodano akcję "Ustaw obraz paska przycisków", aby umożliwić aktualizację przycisków za pomocą paska przycisków powiadomień MacroDroid.
+
+Dodano akcję wprowadzania głosowego, aby monitować o tekst mówiony, a następnie zapisać go w zmiennej ciągu.
+
+Dodano akcję WhatsApp (beta), aby umożliwić wysyłanie podstawowych wiadomości tylko do poszczególnych kontaktów.
+
+Dodano możliwość oznaczania makr jako ulubionych i łatwego filtrowania między ulubionymi /wszystkimi makrami.
+
+Dodano kafelek ekranu głównego, aby zapewnić szybki link skrótu do ulubionych makr.
+
+Dodano kafelek ekranu głównego dla macroDroid Videos, który zawiera linki do nowych oficjalnych filmów MacroDroid na YouTube.
+
+Ekran Tłumaczenia pokazuje teraz, jak kompletne jest tłumaczenie dla każdego języka.
+
+Różne drobne poprawki błędów i drobne ulepszenia.
+
+Wersja 5.19.11
+===============
+
+Rozwiązano problem polegający na tym, że monit o hasło nie pojawiał się w niektórych przypadkach podczas korzystania z ochrony hasłem w celu wejścia do aplikacji.
+
+Usunięto problem polegający na tym, że udostępnianie ostatniego zdjęcia nie działało we wszystkich przypadkach.
+
+Usunięto problem polegający na tym, że wyzwalacz uśpienia nie sprawdzał ograniczeń.
+
+Inne drobne poprawki błędów.
+
+Wersja 5.19.9
+==============
+
+Pamiętaj, że ta wersja została zaktualizowana, aby była przeznaczona na zestaw SDK androida 11, który wymusza surowsze ograniczenia dostępu do plików niż poprzednie wersje. Niewielka liczba makr może wymagać aktualizacji, aby kontynuować zapis w plikach.
+
+** Zgłoś wszelkie błędy lub problemy z tym wydaniem za pomocą "Zgłoś błąd" w sekcji rozwiązywania problemów **
+
+Dodano wyzwalacz uśpienia (Android 10+).
+
+Dodano akcję Wyczyść zmienne.
+
+Dodano opcję logcat do obsługi Clipboard Trigger dla użytkowników Androida 10 + (Hack Root / ADB).
+
+Dodano akcję Odśwież schowek, aby uzyskać zawartość schowka do MacroDroid dla użytkowników Androida 10 +.
+
+Dodano obsługę maksymalnie trzech przycisków akcji do akcji Wyświetl powiadomienie, które mogą uruchamiać inne makra po naciśnięciu.
+
+Rozwiązano problem polegający na tym, że szuflada nie wyświetlała się poprawnie na urządzeniu z układami od prawej do lewej.
+
+Zwiększona wydajność po dodaniu/usunięciu wielu pływających przycisków.
+
+Akcja Wyślij UDP obsługuje teraz magiczny tekst dla pól miejsca docelowego i portu.
+
+Dodano opcję zamykania z tyłu naciśnięcia dla akcji Jeśli, a następnie potwierdź.
+
+Dodano opcję "Zezwalaj na dowolny certyfikat" do HTTP Get.
+
+Dodano obsługę wysyłania wiadomości e-mail przez SMTP do akcji Udostępnij lokalizację.
+
+Dodano obsługę uruchamiania poleceń skryptu powłoki za pomocą pliku pomocniczego (wymaga pliku pomocniczego 1.7)
+
+Dodano ograniczoną obsługę dostępu do wartości tablicy tasker (wtyczka/akcja Tasker) poprzez zapisanie wszystkich wartości w przecinku lub nowym ciągu oddzielonym wierszem.
+
+Korekta poprzedniej aktualizacji: Wielkie dzięki dla lamvankhoat1 za dokładne tłumaczenie wietnamskie.
+
+Wersja 5.18
+============
+
+Drobne poprawki błędów
+
+Dodano przełącznik umożliwiający włączenie/wyłączenie trybu wysyłania HTML w trybie Wyślij wiadomość e-mail (przez SMTP).
+
+Rozwiązano problem polegający na tym, że nie można było wybrać ikony w akcji powiadomienia.
+
+Usunięto problem polegający na tym, że akcja Wykonaj zrzut ekranu wysyłała nieprawidłowy obraz na niektórych urządzeniach.
+
+Usunięto problem polegający na tym, że akcja Jeśli potwierdzono nie działała poprawnie, jeśli została wywołana, gdy ekran jest wyłączony.
+
+Rozwiązano problem polegający na tym, że niektóre wartości gestów interakcji interfejsu użytkownika nie zmieniały poprawnej wartości.
+
+Rozwiązano problem polegający na tym, że nie można było edytować danych w akcji Wyślij SMS po jej skonfigurowaniu.
+
+Inne drobne poprawki. W
+
+Wersja 5.17
+============
+
+Dodano wyzwalacz zmiany ciemnego motywu (Android 10+)
+
+Zmodyfikowano tekst opisu makra na ekranie edycji makra, aby przewijał się z zawartością makr i zwiększał dozwoloną liczbę znaków.
+
+Dodano obsługę zmiennych w akcji gestu interakcji interfejsu użytkownika.
+
+Dodano obsługę wprowadzania hasła w akcji Ustaw zmienną - monit użytkownika.
+
+Rozwiązano problem polegający na tym, że opcja identyfikacji interakcji interfejsu użytkownika w aplikacji nie działała na niektórych urządzeniach.
+
+Dodano język wietnamski (Wielkie dzięki dla lamvankhoat1 za ukończenie tego)
+
+Dodano możliwość zmiany tekstu skrótów aplikacji w szufladzie MacroDroid.
+
+Wiele innych drobnych poprawek i poprawek.
+
+Wersja 5.16.2
+==============
+
+Naprawiono problem polegający na tym, że wyzwalacz uruchamiania aplikacji i wykrywanie aplikacji na pierwszym planie nie działały na niektórych urządzeniach.
+
+Inne drobne poprawki.
+
+Wersja 5.16
+============
+
+Usunięto problem polegający na tym, że na liście szablonów mogło brakować niektórych makr.
+
+Wiele drobnych poprawek błędów.
+
+Wersja 5.15
+============
+
+Przywrócono opcję odwrócenia kolejności do dziennika systemowego.
+
+Dodano opcję przechwytywania komunikatów Logcat (i wybierania wpisu) do wyzwalacza Logcat.
+
+Dodano link do wiki w menu bocznym (Wiki jest tylko w języku angielskim).
+
+Dodano obsługę podtekstu w wyzwalaczu powiadomień (i powiązanym magicznym tekście).
+
+Usunięto problem polegający na tym, że pływające przyciski nie zachowywały swojej poprzedniej pozycji.
+
+Rozwiązano problem polegający na tym, że otwarty dziennik systemowy nie działał poprawnie.
+
+Rozwiązano problem polegający na tym, że dołączanie dziennika systemowego do akcji wysyłania wiadomości e-mail nie działało poprawnie.
+
+Wiele innych drobnych poprawek i poprawek.
+
+Wersja 5.14
+============
+
+Dodano akcję Przywróć ukryte powiadomienia (Android 11+), aby umożliwić przywrócenie trwałych powiadomień, które wcześniej były ukryte za pomocą akcji Wyczyść powiadomienia.
+
+Rozwiązano problem polegający na tym, że dziennik systemowy nie pokazywał łączy do makr.
+
+Inne drobne poprawki i ulepszenia.
+
+Wersja 5.13
+============
+
+Nowy dziennik systemu z funkcjami wyszukiwania i filtrowania.
+
+Dodano obsługę wyświetlania dziennika dla pojedynczego makra tylko z listy makr i ekranu edycji makr.
+
+Przywrócono wyzwalacz Wysyłania SMS-ów. (MacroDroid może teraz używać wymaganych uprawnień)
+
+Przywrócono opcję "monitoruj skrzynkę odbiorczą" w wyzwalaczu Odebrane wiadomości SMS. (MacroDroid może teraz używać wymaganych uprawnień)
+
+Akcja Odtwórz dźwięk obsługuje teraz ustawienie kanału audio dla pojedynczej akcji.
+
+Usunięto problem polegający na tym, że akcja Wait Until Trigger mogła niepoprawnie wywoływać inne bloki, których nie powinna.
+
+Dodano obsługę magicznego tekstu do akcji Ustawienia systemu.
+
+Szybkie uruchamianie danych makr jest teraz uwzględniane podczas eksportowania/importowania makr.
+
+Wyzwalacze Nieodebrane połączenie i Aktywne połączenie obsługują teraz bezpośrednie wprowadzanie numerów i wybór grupy.
+
+Kategorie i makra na liście makr obsługują teraz kolory niestandardowe, aby umożliwić ustawienie dowolnego koloru.
+
+Rozwiązano problem polegający na tym, że nie można było zaimportować niektórych makr z magazynu szablonów.
+
+Wersja 5.12
+============
+
+Dodano ograniczenie Geofence (Lokalizacja).
+
+Dodano wyzwalacz Asystenta Google, dzięki czemu można łatwo określić, czy makro zostało wywołane przez asystenta (a nie przez inny wyzwalacz).
+
+Pętle i akcje warunkowe z akcjami podrzędnymi można teraz zwijać/rozszerzać, aby ułatwić edycję dużych makr.
+
+Wersja 5.11
+============
+
+Teraz obejmuje obsługę uruchamiania makr za pośrednictwem Asystenta Google (obecnie tylko w języku angielskim). Upewnij się, że zarówno język urządzenia, jak i język asystenta Google są skonfigurowane do korzystania z tej funkcji w języku angielskim.
+
+Wywołaj makra, mówiąc "OK Google run 'macroname' in MacroDroid". Obecnie Google obsługuje tę funkcję tylko w języku angielskim (USA). Dodam obsługę innych ustawień regionalnych i języków, gdy Google na to pozwoli.
+
+Dodano niestandardowe kanały powiadomień do użycia z akcją wyświetlania powiadomień.
+
+Dodano akcję Przerwa od pętli.
+
+Dodano akcję Kontynuuj pętlę.
+
+Dalsze poprawki błędów i drobne ulepszenia.
+
+Wersja 5.10
+============
+
+Wydanie poprawki błędu. Naprawiono kilka drobnych problemów i rzadkich awarii.
+
+Ulepszona obsługa niektórych brakujących uprawnień.
+
+Wersja 5.9
+===========
+
+Dodano funkcję tworzenia kopii zapasowych w chmurze na ekranie automatycznej kopii zapasowej (tylko użytkownicy Pro).
+
+Forum MacroDroid przeniosło się z Tapatalk na czystsze forum hostowane samodzielnie.
+
+Kilka drobnych poprawek błędów.
+
+Wersja 5.8
+===========
+
+Ustaw akcję Wi-Fi wymaga teraz pliku pomocniczego na Androidzie 10+ (ograniczenie Google wymuszone na aplikacjach).
+
+Dodano akcję Poczekaj do wyzwalacza, aby umożliwić wstrzymanie uruchomionego makra do momentu uruchomienia określonego wyzwalacza.
+
+Dodano opcję blokowania kategorii hasłem/pinem.
+
+Dodano możliwość dodawania makr MacroDroid w menu przycisku zasilania (tylko Android 11)
+
+Dodano opcję koloru tekstu do wyskakującej akcji wiadomości.
+
+Dodano opcję oczekiwania na ukończenie akcji "Makro Uruchom".
+
+Dodano opcję koloru tekstu i odcień ikony do akcji Wyskakująca wiadomość.
+
+Akcja Wyprzed tekst umożliwia teraz ustawienie języka dla każdego wystąpienia akcji.
+
+Akcja Dodaj wpis kalendarza obsługuje teraz ustawianie czasu wpisu względem wartości zmiennej.
+
+Naprawiono problem z logcat_line niedziałającym tekstem magicznym.
+
+Rozwiązano problem polegający na tym, że anulowanie akcji makr nie powodowało anulowania akcji Poczekaj do wyzwolenia.
+
+Usunięto niektóre problemy logiczne, w których zagnieżdżone polecenia IF/ELSE nie zachowywały się zgodnie z oczekiwaniami w niektórych przypadkach brzegowych.
+
+Wersja 5.7
+===========
+
+Dodano listę wtyczek do wykrywania / udostępniania aplikacji innych firm, które są kompatybilne z MacroDroid (kafelek ekranu głównego).
+
+Dodano kafelek ekranu głównego umożliwiający szybki dostęp do ostatnio edytowanego makra.
+
+Dodano kafelek ekranu głównego dla szybko uruchamianych makr.
+
+Dodano akcję Włączanie/Wyłączanie kamery, aby umożliwić wyłączenie aparatu dla wszystkich aplikacji na urządzeniu.
+
+Zmodyfikowano sterowanie akcją multimediów, dzięki czemu opcja Symuluj przycisk audio działa lepiej, aby kontrolować ostatnio używaną aplikację multimedialną.
+
+Wyzwalacz dzień/godzina umożliwia teraz ustawienie określonej wartości sekundowej.
+
+Dodaj funkcję wyszukiwania do ekranu listy zmiennych.
+
+Wersja 5.6
+===========
+
+Działanie w trybie samolotowym można teraz wykonać na niezrootowanym urządzeniu na Androidzie 7 + (czyniąc MacroDroid domyślną aplikacją asystenta).
+
+Akcja Uruchom aplikację obsługuje teraz opcję nazwy pakietu (w tym magiczny tekst do obsługi zmiennych itp.).
+
+Wartości zmiennych MacroDroid można teraz przekazywać do wtyczek Tasker za pomocą stylu formatowania Tasker (%varname).
+
+Ustawienia tła/odcienia paska powiadomień i SMTP są teraz zapisywane podczas eksportowania makr.
+
+Dodano wartość kierunku wiatru do wyzwalacza pogodowego (i magicznego tekstu specyficznego dla pogody).
+
+Zaktualizowano zmienne całkowite, dzięki czemu są teraz obsługiwane przez długi typ, dzięki czemu mogą przechowywać wartości > 2 147 483 647.
+
+Inne drobne poprawki i ulepszenia.
+
+Wersja 5.5
+===========
+
+Dodano szybkie przełączanie kafelków, aby włączyć / wyłączyć MacroDroid (Android 7+).
+
+Dodano opcję ukrywania szczegółów makr w widoku listy makr.
+
+Naprawiono problem polegający na tym, że wyzwalacz VPN nie uruchamiał się.
+
+Rozwiązano problem polegający na tym, że konfigurowanie wyzwalacza przycisku paska powiadomień nie pokazywało ikon.
+
+Znaczące aktualizacje niektórych tłumaczeń.
+
+Inne drobne poprawki i poprawki interfejsu użytkownika.

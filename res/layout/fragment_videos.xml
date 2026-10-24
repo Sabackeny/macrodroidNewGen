@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.arlosoft.macrodroid.uicomponent.ExpandableLayout android:id="@id/infoBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="1000" app:el_expanded="false" app:el_parallax="0.5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/remediesHeader">
+            <FrameLayout android:id="@id/infoBarBg" android:background="@color/default_text_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/default_text_color_inverse" android:gravity="bottom" android:id="@id/infoText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/video_content_third_party_warning" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/proximanova_regular" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="40.0dip" android:layout_marginVertical="@dimen/margin_small" />
+                <ImageView android:layout_gravity="end|center|top" android:id="@id/infoBarDismissButton" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="@dimen/home_info_dismiss_button_size" android:layout_height="@dimen/home_info_dismiss_button_size" app:srcCompat="@drawable/material_ic_clear_24px_svg" app:tint="@color/default_text_color_inverse" />
+            </FrameLayout>
+        </com.arlosoft.macrodroid.uicomponent.ExpandableLayout>
+        <FrameLayout android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/errorView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/margin_large" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="160.0dip" android:layout_height="160.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/cloud_disconnection" />
+                <TextView android:textSize="18.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/could_not_connect" />
+                <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/retry" app:backgroundTint="@color/videos_primary" />
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/videoEntries" android:paddingLeft="@dimen/margin_tiny" android:paddingTop="@dimen/margin_small" android:paddingRight="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_small" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_tiny" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

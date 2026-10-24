@@ -1,0 +1,70 @@
+Version 5.54 (Juni 2025)
+=======================
+
+Java-Code-Aktion hinzugefügt.
+
+Die JavaScript-Aktion wurde aktualisiert, um die Rückkehr zu allen Variablentypen zu unterstützen - Verwenden Sie mdOutput(value).
+
+Option zur Ausgabe von Array- und Wörterbuchvariablen im JSON-Format {vjson=}, {lvjson=} hinzugefügt (um die Verwendung in JavaScript-Aktionen zu erleichtern).
+
+Der Auslöser "App-Aktivität gestartet/geschlossen" wurde hinzugefügt.
+
+Die Aktion "Schnellkachel konfigurieren" wurde aktualisiert, um das Festlegen einer Kachel in einen inaktiven Zustand zu unterstützen, in dem keine Interaktion mit ihr möglich ist.
+
+Die HTTP-Anforderungsaktion wurde aktualisiert, um Unterstützung für dynamische Dateinamen/lokalen URI im Inhaltstext hinzuzufügen.
+
+Die Option "Autofokus anwenden" wurde zur Aktion "Bild aufnehmen" hinzugefügt.
+
+Der magische Text "GUID erstellen" wurde hinzugefügt, um eine global eindeutige Kennung zu erstellen.
+
+Die Option "Beim Drücken vibrieren" wurde zum Auslöser der schwebenden Taste und zur Aktion "Schwebender Text" hinzugefügt.
+
+Es wurde die Möglichkeit hinzugefügt, das Systemprotokoll für ein einzelnes Makro zu löschen, wenn das Systemprotokoll für dieses Makro angezeigt wird (über den Bildschirm "Makro bearbeiten").
+
+Kontextspezifischer magischer Text für Protokolltext hinzugefügt, wenn der Auslöser für den Systemprotokolleintrag verwendet wird.
+
+Option hinzugefügt, um den Variablenwert für die Zeitüberschreitung in der Aktion "Warten bis zum Auslöser" zu verwenden.
+
+Exportierte Makros und Kategorien enthalten jetzt alle zugehörigen globalen Variablen als Teil des Exports.
+
+Es wurde ein Problem behoben, bei dem die Konfiguration des Triggers für die WLAN-Statusänderung die SSID-Auswahl nicht zuließ, es sei denn, die Hilfs-App wurde installiert.
+
+Es wurde ein Problem behoben, bei dem der Szenenschieberegler den Bereich nicht korrekt aktualisierte, wenn referenzierte Variablen aktualisiert wurden.
+
+Unterstützung für die Aktion "Marathi-Sprache sprechen" wurde hinzugefügt.
+
+Es wurde ein Problem behoben, bei dem die Variable "Speicherort freigeben" das Speichern in einem Wörterbuch-/Array-Element nicht unterstützte.
+
+Es wurde eine Einstellung hinzugefügt, um die Webseite bei Verwendung des HTTP-Serveranforderungstriggers zu deaktivieren.
+
+Weitere kleinere Korrekturen.
+
+-- Szenenverbesserungen --
+
+Die Komponente "Horizontale Trennlinie" wurde hinzugefügt.
+
+Unterstützung für das Klicken auf den Wert in der Slider-Komponente der Szene und die Eingabe der Nummer über den Dialog hinzugefügt.
+
+Unterstützung für die Kennworteingabe in der Texteingabekomponente der Szene wurde hinzugefügt.
+
+Es wurde eine Option für die geteilte Ausrichtung für Szenenwechsel- und Kontrollkästchen-Komponenten hinzugefügt.
+
+Es wurde eine Option hinzugefügt, um abgerundete Ecken in Szenen festzulegen, wenn die Dialog- oder Überlagerungsoption verwendet wird.
+
+Der Szenenschieberegler unterstützt jetzt die Anzeige von Wertbeschriftungen am Anfang und Ende (oder keine).
+
+Der Szenenschieberegler unterstützt jetzt Schrittwerte.
+
+Szenentext unterstützt jetzt magische Textwerte zum Festlegen der Textgröße.
+
+Szenentext unterstützt jetzt die HTML-Formatierungsoption.
+
+Szenentext unterstützt jetzt die Option "Maximale Anzahl von Linien" und "Skalieren an Anpassung".
+
+Alle Szenenelemente unterstützen jetzt den Sichtbarkeitsstatus, der an eine boolesche Variable gebunden werden kann.
+
+Scene Switch unterstützt jetzt die separate Textfarbe, das Ausschalten der Farbe und das Einschalten der Farbe.
+
+Die Szenenschaltfläche unterstützt jetzt das Umschalten einer booleschen Variablen.
+
+Es wurde ein Problem behoben, bei dem die Szene Variablen nicht korrekt aktualisierte, wenn sie von einem Aktionsblock aus ausgeführt wurde und die Option "Nächste Aktionen blockieren" nicht standardmäßig verwendet wurde.

@@ -1,0 +1,124 @@
+.class public interface abstract Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroidx/compose/ui/layout/MeasureScope;
+
+
+# annotations
+.annotation build Landroidx/compose/foundation/ExperimentalFoundationApi;
+.end annotation
+
+.annotation build Landroidx/compose/runtime/Stable;
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0000\u0008w\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H&\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0016\u0010\u000b\u001a\u00020\u000c*\u00020\rH\u0017\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u0019\u0010\u000b\u001a\u00020\u000c*\u00020\u0010H\u0017\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0011\u0010\u0012J\u0019\u0010\u000b\u001a\u00020\u000c*\u00020\u0006H\u0017\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0011\u0010\u0013J\u0016\u0010\u0014\u001a\u00020\u0015*\u00020\u0016H\u0017\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u0016\u0010\u0019\u001a\u00020\u0016*\u00020\u0015H\u0017\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\u0018J\u0016\u0010\u001b\u001a\u00020\r*\u00020\u000cH\u0017\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u0019\u0010\u001b\u001a\u00020\r*\u00020\u0010H\u0017\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001e\u0010\u001dJ\u0019\u0010\u001b\u001a\u00020\r*\u00020\u0006H\u0017\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001e\u0010\u001f\u0082\u0001\u0001 \u00f8\u0001\u0002\u0082\u0002\u0011\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\n\u0004\u0008!0\u0001\u00a8\u0006!\u00c0\u0006\u0001"
+    }
+    d2 = {
+        "Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;",
+        "Landroidx/compose/ui/layout/MeasureScope;",
+        "measure",
+        "",
+        "Landroidx/compose/ui/layout/Placeable;",
+        "index",
+        "",
+        "constraints",
+        "Landroidx/compose/ui/unit/Constraints;",
+        "measure-0kLqBqw",
+        "(IJ)Ljava/util/List;",
+        "toDp",
+        "Landroidx/compose/ui/unit/Dp;",
+        "Landroidx/compose/ui/unit/TextUnit;",
+        "toDp-GaN1DYA",
+        "(J)F",
+        "",
+        "toDp-u2uoSUM",
+        "(F)F",
+        "(I)F",
+        "toDpSize",
+        "Landroidx/compose/ui/unit/DpSize;",
+        "Landroidx/compose/ui/geometry/Size;",
+        "toDpSize-k-rfVVM",
+        "(J)J",
+        "toSize",
+        "toSize-XkaWNTQ",
+        "toSp",
+        "toSp-0xMU5do",
+        "(F)J",
+        "toSp-kPz2Gy4",
+        "(I)J",
+        "Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScopeImpl;",
+        "foundation_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nLazyLayoutMeasureScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutMeasureScope.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope\n+ 2 InlineClassHelper.kt\nandroidx/compose/foundation/internal/InlineClassHelperKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 Size.kt\nandroidx/compose/ui/geometry/SizeKt\n+ 5 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n+ 6 Size.kt\nandroidx/compose/ui/geometry/Size\n+ 7 InlineClassHelper.jvm.kt\nandroidx/compose/ui/util/InlineClassHelper_jvmKt\n*L\n1#1,147:1\n50#2,5:148\n123#3:153\n123#3:154\n363#3:155\n33#4:156\n148#4:160\n53#5,3:157\n60#5:162\n70#5:165\n57#6:161\n61#6:164\n22#7:163\n*S KotlinDebug\n*F\n+ 1 LazyLayoutMeasureScope.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope\n*L\n70#1:148,5\n74#1:153\n76#1:154\n86#1:155\n87#1:156\n94#1:160\n87#1:157,3\n95#1:162\n95#1:165\n95#1:161\n95#1:164\n95#1:163\n*E\n"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract measure-0kLqBqw(IJ)Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(IJ)",
+            "Ljava/util/List<",
+            "Landroidx/compose/ui/layout/Placeable;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end method
+
+.method public abstract toDp-GaN1DYA(J)F
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toDp-u2uoSUM(F)F
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toDp-u2uoSUM(I)F
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toDpSize-k-rfVVM(J)J
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toSize-XkaWNTQ(J)J
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toSp-0xMU5do(F)J
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toSp-kPz2Gy4(F)J
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract toSp-kPz2Gy4(I)J
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method

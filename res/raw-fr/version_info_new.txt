@@ -1,0 +1,70 @@
+Version 5.54 (juin 2025)
+=======================
+
+Ajout de l’action Java Code.
+
+Mise à jour de l’action JavaScript pour prendre en charge le retour à tous les types de variables - Utilisez mdOutput(value).
+
+Ajout d’une option pour afficher les variables de tableau et de dictionnaire au format JSON {vjson=}, {lvjson=} (pour les rendre plus faciles à utiliser dans l’action JavaScript).
+
+Ajout du déclencheur Activité de l’application lancée/fermée.
+
+Mise à jour de l’action Configurer la vignette rapide pour prendre en charge la définition d’une vignette dans un état inactif avec lequel il n’est pas possible d’interagir.
+
+Mise à jour de l’action de requête HTTP pour ajouter la prise en charge des noms de fichiers dynamiques/URI locaux dans le corps du contenu.
+
+Ajout de l’option « Appliquer la mise au point automatique » pour prendre une photo.
+
+Ajout du texte magique « Créer un GUID » pour créer un identifiant unique au monde.
+
+Ajout de l’option « Vibrer lors de la presse » à la gâchette du bouton flottant et à l’action de texte flottant.
+
+Ajout de la possibilité d’effacer le journal système d’une macro individuelle lors de l’affichage du journal système de cette macro (via l’écran d’édition de macro).
+
+Ajout d’un texte magique spécifique au contexte pour le texte du journal lors de l’utilisation du déclencheur d’entrée du journal système.
+
+Ajout d’une option pour utiliser la valeur de la variable pour le délai d’expiration dans l’action Attendre jusqu’au déclenchement.
+
+Les macros et les catégories exportées contiendront désormais toutes les variables globales associées dans le cadre de l’exportation.
+
+Correction d’un problème où la configuration du déclencheur de changement d’état Wifi ne permettait pas la sélection du SSID à moins que l’application d’assistance ne soit installée.
+
+Correction d’un problème à cause duquel le curseur de scène ne mettait pas correctement à jour la plage lorsque les variables référencées étaient mises à jour.
+
+Ajout de la prise en charge de l’action Parler le texte en marathi.
+
+Correction d’un problème où le partage de l’emplacement vers la variable ne prenait pas en charge l’enregistrement dans un élément de dictionnaire/tableau.
+
+Ajout d’un paramètre pour désactiver la page Web lors de l’utilisation du déclencheur de requête de serveur HTTP.
+
+Autres corrections mineures.
+
+-- Améliorations de la scène --
+
+Ajout du composant Horizontal Divider.
+
+Ajout de la prise en charge du clic sur la valeur sur le composant Slider de la scène et de la saisie du numéro via la boîte de dialogue.
+
+Ajout de la prise en charge de la saisie de mot de passe dans le composant de saisie de texte de scène.
+
+Ajout de l’option d’alignement fractionné pour les composants de commutation de scène et de case à cocher.
+
+Ajout d’une option pour définir des coins arrondis sur les scènes lors de l’utilisation de la boîte de dialogue ou de l’option de superposition.
+
+Scene Slider prend désormais en charge l’affichage de l’étiquette de valeur au début et à la fin (ou aucune).
+
+Scene Slider prend désormais en charge les valeurs de pas.
+
+Le texte de la scène prend désormais en charge les valeurs de texte magiques pour spécifier la taille du texte.
+
+Scene Text prend désormais en charge l’option de formatage HTML.
+
+Le texte de la scène prend désormais en charge un nombre maximum de lignes et l’option d’échelle pour s’adapter.
+
+Tous les éléments de scène prennent désormais en charge l’état de visibilité qui peut être lié à une variable booléenne.
+
+Scene Switch prend désormais en charge la couleur du texte séparée, la désactivation de la couleur et l’activation de la couleur.
+
+Le bouton de scène prend désormais en charge l’activation d’une variable booléenne.
+
+Correction d’un problème à cause duquel la scène ne mettait pas à jour correctement les variables lorsqu’elle était exécutée à partir d’un bloc d’action et n’utilisait pas l’option de blocage des actions suivantes par défaut.

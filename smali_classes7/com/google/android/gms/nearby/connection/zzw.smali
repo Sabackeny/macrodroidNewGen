@@ -1,0 +1,2 @@
+.class public final synthetic Lcom/google/android/gms/nearby/connection/zzw;
+.super Ljava/lang/Object;

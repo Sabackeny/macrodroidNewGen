@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="internalOnly" package="com.arlosoft.macrodroid" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <permission android:name="com.arlosoft.macrodroid.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <permission android:name="com.arlosoft.macrodroid.permission.ASSISTANT" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.DUMP"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_GLOBAL_SETTINGS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_oppo.permission.OPPO_COMPONENT_SAFE"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.huawei.permission.external_app_settings.USE_COMPONENT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.termux.permission.RUN_COMMAND"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.samsung.accessibility.permission.ACCESSIBILITY_SHORTCUT_USE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.wireguard.android.permission.CONTROL_TUNNELS"/>
+    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.heartrate" android:required="false"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.huawei.permission.USE_FACERECOGNITION"/>
+    <uses-permission android:name="android.permission.USE_FACERECOGNITION"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.hihonor.permission.USE_FACERECOGNITION"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_oppo.permission.USE_FACE"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.samsung.android.camera.iris.permission.USE_IRIS"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.samsung.android.bio.face.permission.USE_FACE"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"/>
+    <uses-permission android:name="android.permission.USE_IRIS"/>
+    <uses-permission android:name="android.permission.USE_FACE_AUTHENTICATION"/>
+    <uses-permission android:name="android.permission.USE_FACE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_com.soter.permission.ACCESS_SOTER_KEYSTORE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="com.arlosoft.macrodroid.com.twofortyfouram.locale.sdk.host.permission.internal" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.arlosoft.macrodroid.com.twofortyfouram.locale.sdk.host.permission.internal"/>
+    <permission android:name="com.arlosoft.macrodroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.arlosoft.macrodroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.arlosoft.macrodroid_moe.shizuku.manager.permission.API_V23"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:localeConfig="@xml/_generated_res_locale_config" android:name="com.arlosoft.macrodroid.app.MacroDroidApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/Theme.App">
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true"/>
+        </service>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr,ocr_japanese,ocr_korean"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDU4fIr2GnhelGsvqYf0QVwEhKe_bulo20"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_inapp_messaging_auto_data_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="firebase_crash_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDU4fIr2GnhelGsvqYf0QVwEhKe_bulo20"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.intro.IntroActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.LauncherActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Splash"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="macrodroid"/>
+                <data android:host="macroList"/>
+                <data android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowEmbedded="true" android:documentLaunchMode="always" android:exported="false" android:name="com.arlosoft.macrodroid.bubble.BubbleActivity" android:resizeableActivity="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.transparentdialog.TransparentDialogActivity" android:noHistory="true" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.TransparentDialog"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.PasswordPromptActivity" android:noHistory="true" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.TransparentDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.advert.MacroDroidProAdvertActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.advert.MacroDroidProAdvertActivity2" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.ShortcutDispatchActivity" android:noHistory="true" android:screenOrientation="behind" android:taskAffinity=".shortcut_launch" android:theme="@style/Theme.App.Dialog">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.ShortcutDispatch"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.ShortcutDispatch"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="macrodroid/macro"/>
+            </intent-filter>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.quicksettings.QuickSettingsLongPressActivity" android:noHistory="true" android:screenOrientation="behind" android:taskAffinity=".shortcut_launch" android:theme="@style/Theme.App.Dialog">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.googleassistant.GoogleAssistantDispatchActivity" android:noHistory="true" android:screenOrientation="behind" android:taskAffinity=".googleassistactions" android:theme="@style/Theme.App.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="googleassistactions" android:scheme="macrodroid"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.HtmlEditActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Variables" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.HeaderParamsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Action" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.HtmlPreviewActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Variables" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.JavaScriptEditActivity" android:theme="@style/Theme.App.NoActionBar.Variables" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.JavaEditActivity" android:theme="@style/Theme.App.NoActionBar.Variables" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.variables.MacroDroidVariablesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Variables"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.stopwatch.StopWatchesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.StopWatches"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.troubleshooting.TroubleShootingActivity" android:parentActivityName="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="true" android:label="@string/stopclub_menu_entry" android:name="com.arlosoft.macrodroid.extras.stopclub.StopClubActivity" android:parentActivityName="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="macrodroidlink.com" android:pathPrefix="/stopclub" android:scheme="http"/>
+                <data android:host="macrodroidlink.com" android:pathPrefix="/stopclub" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.HelpActivity" android:screenOrientation="behind" android:theme="@style/Theme.App"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.TimerTriggerConfigureActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.triggers.activities.DayOfWeekConfigureActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.triggers.activities.DayOfMonthConfigureActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.homescreen.favourites.FavouritesDialogActivity" android:screenOrientation="behind" android:theme="@style/Theme.TileDialog"/>
+        <activity android:exported="true" android:label="" android:name="com.arlosoft.macrodroid.homescreen.quickrun.QuickRunMacroDialogActivity" android:screenOrientation="behind" android:theme="@style/Theme.TileDialog"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.sms.SMSActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Action"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.common.AndroidExplorer" android:screenOrientation="behind"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.comments.TemplateCommentsActivity" android:screenOrientation="behind" android:taskAffinity="com.arlosoft.macrodroid.templates" android:theme="@style/Theme.App.NoActionBar.Comments" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.reportmacro.ReportMacroActivity" android:screenOrientation="behind" android:taskAffinity="com.arlosoft.macrodroid.templates" android:theme="@style/Theme.App.NoActionBar.Template" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.user.UserActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Template"/>
+        <activity android:exported="false" android:label="@string/tile_videos_title" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.videos.VideosActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Videos"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.search.TemplateSearchActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Template">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.macrodroid.com" android:pathPrefix="/macrostore" android:scheme="http"/>
+                <data android:host="www.macrodroid.com" android:pathPrefix="/macrostore" android:scheme="https"/>
+                <data android:host="macrodroid.com" android:pathPrefix="/macrostore" android:scheme="http"/>
+                <data android:host="macrodroid.com" android:pathPrefix="/macrostore" android:scheme="https"/>
+                <data android:host="www.macrodroidlink.com" android:pathPrefix="/macrostore" android:scheme="http"/>
+                <data android:host="www.macrodroidlink.com" android:pathPrefix="/macrostore" android:scheme="https"/>
+                <data android:host="macrodroidlink.com" android:pathPrefix="/macrostore" android:scheme="http"/>
+                <data android:host="macrodroidlink.com" android:pathPrefix="/macrostore" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.profile.ProfileActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Template" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.subscription.MySubscriptionsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Template" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.templatestore.ui.upload.TemplateUploadActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Template"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.homescreen.quickrun.QuickRunAddMacrosActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.QuickRunMacro"/>
+        <activity android:exported="false" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.ExportImportActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.ExportImport"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.settings.PreferencesActivity" android:screenOrientation="behind" android:theme="@style/PreferencesTheme"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.httprequest.HttpRequestConfigActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Action" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="true" android:label="@string/macrodroid" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.filehandler.FileHandlerProxy" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Splash" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/octet-stream" android:pathPattern=".*.mdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/octet-stream" android:pathPattern=".*.emdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/mdr" android:pathPattern=".*.mdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/mdr" android:pathPattern=".*.emdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*..*..*..*..*.mdr"/>
+                <data android:pathPattern=".*..*..*..*.mdr"/>
+                <data android:pathPattern=".*..*..*.mdr"/>
+                <data android:pathPattern=".*..*.mdr"/>
+                <data android:pathPattern=".*.mdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*..*..*..*..*.emdr"/>
+                <data android:pathPattern=".*..*..*..*.emdr"/>
+                <data android:pathPattern=".*..*..*.emdr"/>
+                <data android:pathPattern=".*..*.emdr"/>
+                <data android:pathPattern=".*.emdr"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/octet-stream" android:pathPattern=".*.ablock"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/mdr" android:pathPattern=".*.ablock"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*..*..*..*..*.ablock"/>
+                <data android:pathPattern=".*..*..*..*.ablock"/>
+                <data android:pathPattern=".*..*..*.ablock"/>
+                <data android:pathPattern=".*..*.ablock"/>
+                <data android:pathPattern=".*.ablock"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/octet-stream" android:pathPattern=".*.category"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="text/plain" android:pathPattern=".*.category"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*..*..*..*..*.category"/>
+                <data android:pathPattern=".*..*..*..*.category"/>
+                <data android:pathPattern=".*..*..*.category"/>
+                <data android:pathPattern=".*..*.category"/>
+                <data android:pathPattern=".*.category"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="application/octet-stream" android:pathPattern=".*.macro"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="text/plain" android:pathPattern=".*.macro"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*.macro"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*..*..*..*..*.macro"/>
+                <data android:pathPattern=".*..*..*..*.macro"/>
+                <data android:pathPattern=".*..*..*.macro"/>
+                <data android:pathPattern=".*..*.macro"/>
+                <data android:pathPattern=".*.macro"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*.macro"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*.macro"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.editscreen.EditMacroActivity" android:parentActivityName="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="www.macrodroid.com" android:pathPrefix="/macro" android:scheme="macrodroid"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.editscreen.favourites.ConfigureFavouritesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="true" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.actionblock.edit.ActionBlockEditActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Action" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="www.macrodroid.com" android:pathPrefix="/actionblock" android:scheme="macrodroid"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.actionblock.list.ActionBlockListActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Action" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.selectableitemlist.AddTriggerActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Trigger"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.selectableitemlist.AddActionActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Action"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.selectableitemlist.AddConstraintActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Constraint"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.selectableitemlist.AddConditionActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Condition"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.settings.EditCategoriesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Categories"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.settings.EditNotificationChannelsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Categories"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.settings.EditModesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.ModesConfig"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.accessibility.KeepAccessibilityServicesRunningActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.ModesConfig"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.plugins.PluginsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Plugins"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.plugins.comments.PluginCommentsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.Comments.Plugins" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.outputservices.TwitterWebViewActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.RegularIntervalTriggerConfigureActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.SelectNotificationButtonActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.LocationChooserActivity" android:screenOrientation="behind" android:theme="@style/Theme.App"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.LocationChooserOSMActivity" android:screenOrientation="behind" android:theme="@style/Theme.App"/>
+        <activity android:exported="true" android:label="@string/scan_compatible_nfc_tag" android:name="com.arlosoft.macrodroid.triggers.activities.ScanTagActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:exported="false" android:hardwareAccelerated="@bool/hardware_accelerate_upgrade" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.upgrade.UpgradeActivity2" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.translations.TranslationsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.DonateActivity" android:parentActivityName="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.PauseActionActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Action"/>
+        <activity android:exported="false" android:label="@string/system_log" android:name="com.arlosoft.macrodroid.logging.systemlog.SystemLogActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.SystemLogs"/>
+        <activity android:exported="false" android:label="@string/user_log" android:name="com.arlosoft.macrodroid.logging.userlog.UserLogActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.SystemLogs"/>
+        <activity android:exported="false" android:label="@string/system_log_filter_enabled_macros" android:name="com.arlosoft.macrodroid.logging.systemlog.macrofilter.MacroLogFilterActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.SystemLogs"/>
+        <activity android:exported="false" android:label="@string/system_log_filter_enabled_variables" android:name="com.arlosoft.macrodroid.logging.systemlog.variablefilter.VariableLogFilterActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.SystemLogs"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.email.EmailOauthConfigureActivity" android:screenOrientation="behind"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.upgrade.UpgradeSupportActivity2" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Invert.Upgrade" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.WidgetConfigureActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.triggers.activities.selecticon.IconSelectActivity" android:screenOrientation="behind" android:theme="@style/Theme.App" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.action.activities.TakePictureActivity" android:screenOrientation="sensor" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.action.activities.OcrPictureActivity" android:screenOrientation="sensor" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.TorchActivity" android:screenOrientation="behind" android:taskAffinity="com.arlosoft.macrodroid.torch" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.activities.CalibrateTouchDeviceActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.action.email.EmailActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Action" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.scene.display.SceneDesignerActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.scene.display.SceneDisplayActivity" android:screenOrientation="behind" android:taskAffinity=".action.activities.Dummy" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.scene.display.SceneDialogActivity" android:screenOrientation="behind" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog.NoTitle" android:windowSoftInputMode="adjustPan"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.action.activities.UpdateBrightnessActivity" android:screenOrientation="behind" android:taskAffinity=".action.activities.Dummy" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.action.activities.SetVolumeActivity" android:screenOrientation="behind" android:taskAffinity=".action.activities.Dummy" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.action.activities.AcceptCallActivity" android:taskAffinity=".action.activities.Dummy" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:exported="false" android:label="@string/trigger_logcat" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.triggers.activities.LogcatConfigActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Trigger"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="true" android:label="" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.triggers.activities.NFCTriggeredActivity" android:noHistory="true" android:screenOrientation="behind" android:theme="@style/Theme.TransparentGeneral">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="www.macrodroid.com" android:scheme="http"/>
+                <data android:host="tag" android:scheme="macrodroid"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.ForumActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Forum"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.WikiActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Forum"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.privacy.PrivacyActivity" android:parentActivityName="com.arlosoft.macrodroid.settings.PreferencesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Settings"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.action.activities.ConfigureNotificationsStateActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Action"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:name="com.arlosoft.macrodroid.SelectModeActivity" android:noHistory="true" android:screenOrientation="behind" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:name="com.arlosoft.macrodroid.SelectForceRunMacroActivity" android:noHistory="true" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.action.activities.MessageDialogActivity" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.triggers.activities.NotificationButtonNotAssignedActivity" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.action.activities.VariableValuePrompt" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog" android:windowSoftInputMode="adjustResize"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.arlosoft.macrodroid.action.activities.ConfirmDialogActivity" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.action.activities.IfThenConfirmDialogActivity" android:screenOrientation="behind" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.action.activities.OptionDialogActivity" android:noHistory="true" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.action.activities.SelectionDialogActivity" android:noHistory="true" android:showOnLockScreen="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App.Dialog.NoTitle"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="com.arlosoft.macrodroid.ConfigureNotificationBarActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog.Settings"/>
+        <activity android:exported="false" android:label="@string/cell_tower_groups" android:name="com.arlosoft.macrodroid.celltowers.CellTowerListActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.CellTowers"/>
+        <activity android:exported="false" android:label="@string/add_days" android:launchMode="singleTop" android:name="com.arlosoft.macrodroid.freeversion.AddDaysActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/geofences" android:name="com.arlosoft.macrodroid.geofences.GeofenceListActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Geofence"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.geofences.ui.ConfigureZoneActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Geofence" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.geofences.ui.ConfigureZoneOSMActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Geofence" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="net.oneclickaway.opensource.placeautomcomplete.ui.SearchPlaceActivity2" android:screenOrientation="behind" android:theme="@style/PlacesSearchTheme"/>
+        <activity android:exported="false" android:label="@string/cell_tower_group" android:launchMode="singleTask" android:name="com.arlosoft.macrodroid.celltowers.CellTowerGroupActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.CellTowers"/>
+        <activity android:exported="false" android:label="@string/recent_towers" android:name="com.arlosoft.macrodroid.celltowers.RecentCellTowersActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.CellTowers"/>
+        <activity android:exported="false" android:label="@string/ignored_towers" android:name="com.arlosoft.macrodroid.celltowers.IgnoredCellTowersActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.CellTowers"/>
+        <activity android:exported="false" android:label="@string/macrodroid_requires_permission" android:name="com.arlosoft.macrodroid.permissions.PermissionRequestActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Settings"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.confirmation.validation.ConfirmActionActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/macrodroid_requires_permission" android:name="com.arlosoft.macrodroid.permissions.MacroImportPermissionsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Settings"/>
+        <activity android:exported="false" android:label="@string/quick_settings_tiles" android:name="com.arlosoft.macrodroid.quicksettings.QuickSettingsActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.QuickSettingsConfig" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/macrodroid_drawer_options" android:name="com.arlosoft.macrodroid.settings.drawer.DrawerPreferencesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Drawer"/>
+        <activity android:exported="false" android:label="@string/trigger_logcat" android:name="com.arlosoft.macrodroid.logcat.LogcatMessageSelectActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Trigger"/>
+        <activity android:exported="false" android:label="@string/notification_bar_options" android:name="com.arlosoft.macrodroid.settings.notificationbar.NotificationBarPreferencesActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NotificationBar"/>
+        <activity android:exported="false" android:name="com.arlosoft.macrodroid.bugreporting.ReportBugActivity" android:screenOrientation="behind" android:theme="@style/Theme.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/auto_backup" android:name="com.arlosoft.macrodroid.autobackup.ui.AutoBackupActivity" android:parentActivityName="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.NoActionBar.AutoBackup" android:windowSoftInputMode="adjustResize"/>
+        <activity android:allowTaskReparenting="true" android:alwaysRetainTaskState="false" android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:enabled="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.DummyActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.dummyactivity" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:allowTaskReparenting="true" android:alwaysRetainTaskState="false" android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:enabled="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.SetKeyboardPieActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.setkeyboard" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:allowTaskReparenting="true" android:alwaysRetainTaskState="false" android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.VoiceInputActivity" android:noHistory="true" android:showOnLockScreen="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.voiceinput" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:label="" android:name="com.arlosoft.macrodroid.drawer.ui.DrawerOptionsActivity" android:taskAffinity="com.arlosoft.macrodroid.drawer" android:theme="@style/Theme.App.Transparent"/>
+        <activity android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.drawer.ui.DrawerUpdateVariableActivity" android:noHistory="true" android:taskAffinity="com.arlosoft.macrodroid.drawer" android:theme="@style/Theme.App.Transparent"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:name="com.arlosoft.macrodroid.action.activities.ScreenOnActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.AuthenticateUserActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.clipboard.ClipboardReadActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.clipboard" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.PopUpActionActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.utils.CategoryPasswordPromptActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.App"/>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.DisableMacroDroidPasswordPromptActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.popup" android:theme="@style/Theme.TransparentGeneral"/>
+        <activity android:allowTaskReparenting="true" android:alwaysRetainTaskState="false" android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.triggers.activities.MediaButtonLongPressActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.medialongpress" android:theme="@style/Theme.TransparentGeneral">
+            <intent-filter>
+                <action android:name="android.speech.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VOICE_COMMAND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:name="com.arlosoft.macrodroid.utils.AccessibilityInfoActivity" android:noHistory="true" android:stateNotNeeded="true" android:taskAffinity="com.arlosoft.macrodroid.screenon" android:theme="@style/Theme.App" android:title="@string/accessibility_services"/>
+        <activity android:alwaysRetainTaskState="false" android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.triggers.activities.ShareTextTriggerActivity" android:noHistory="true" android:stateNotNeeded="true" android:theme="@style/Theme.TransparentGeneral">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.SMSSentDetectService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.SMSReceivedDetectService" android:stopWithTask="false"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.arlosoft.macrodroid.MacroDroidService" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="MacroDroid is a comprehensive device automation app that can automate a wide range of user configured tasks on a device. In order to listen for triggers and keep long running tasks alive in the background it is essential that MacroDroid can run reliably as a foreground service. Because MacroDroid has a very wide range of features it doesn't fit into any single category of foreground services but instead it encompasses the full spectrum of features that an app may use based on whatever the user configures."/>
+        </service>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.LocationTriggerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetPressedService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.swipe.SwipeTriggerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.sms.SMSOutputService2" android:permission="android.permission.BIND_JOB_SERVICE" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.UploadPhotoService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.UploadLocationService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.UploadMessageService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.SendEmailService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.NFCTriggeredService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.celltowers.CellTowerBackgroundScanService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.PhoneStateMonitorService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.DetectMusicService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.QueryUiService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.QueryUiScreenshotService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.RunningApplicationServiceV22" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.CheckCalendarService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.FileOperationService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.FileOperationV21Service" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.WifiHotspotService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.ReplayTouchesService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.uiinteraction.ReplayUiInteractionsService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.WeatherService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.celltowers.CellTowerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.DetectedActivitiesService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.AndroidWearService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.dim.DimOverlayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.BlockTouchesService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.IncomingCallCheckerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.OutgoingCallCheckerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.CallEndedCheckerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.CallActiveCheckerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.IncomingSMSCheckerService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.LocalePluginCheckerService" android:parentActivityName=".homescreen.NewHomeScreenActivity" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.FloatingButtonService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.FloatingTextService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.scene.display.SceneOverlayDisplayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.AnimationOverlayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.EdgeLightOverlayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.action.services.TransparentOverlayDialogService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.ViewIdOverlayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.logcat.LogcatButtonService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.drawer.DrawerOverlayHandleService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.drawer.DrawerOverlayService" android:stopWithTask="false"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.triggers.services.CallStateOffHookService" android:stopWithTask="false"/>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/active_icon_new" android:label="@string/macrodroid_quick_tile_enable_disable_label" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidOnOffTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_1" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService1" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_2" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService2" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_3" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService3" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_4" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService4" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_5" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService5" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_6" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService6" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_7" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService7" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_8" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService8" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_9" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService9" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_10" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService10" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_11" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService11" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_12" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService12" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_13" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService13" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_14" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService14" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_15" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService15" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="true" android:icon="@drawable/ic_settings_applications_white_24dp" android:label="@string/macrodroid_tile_16" android:name="com.arlosoft.macrodroid.triggers.services.quicksettings.MacroDroidTileService16" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="@bool/is_jelly_bean" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="MacroDroid" android:name="com.arlosoft.macrodroid.triggers.services.MacroDroidAccessibilityServiceJellyBean" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice"/>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ui_accessibility_icon" android:label="@string/md_ui_interaction" android:name="com.arlosoft.macrodroid.action.services.UIInteractionAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/uiinteractionaccessibilityservice"/>
+        </service>
+        <service android:exported="true" android:name="com.arlosoft.macrodroid.triggers.services.DataLayerListenerService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.CAPABILITY_CHANGED"/>
+                <data android:host="*" android:scheme="wear"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED"/>
+                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
+                <data android:host="*" android:pathPrefix="/macrodroid" android:scheme="wear"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="@bool/is_not_oreo" android:exported="true" android:name="com.arlosoft.macrodroid.triggers.services.NotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="@bool/is_oreo" android:exported="true" android:name="com.arlosoft.macrodroid.triggers.services.NotificationServiceOreo" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.arlosoft.macrodroid.voiceservice.MacroDroidVoiceService" android:permission="android.permission.BIND_VOICE_INTERACTION">
+            <meta-data android:name="android.voice_interaction" android:resource="@xml/assist_metadata"/>
+            <intent-filter>
+                <action android:name="android.service.voice.VoiceInteractionService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.arlosoft.macrodroid.voiceservice.MacroDroidVoiceSessionService" android:permission="android.permission.BIND_VOICE_INTERACTION"/>
+        <service android:enabled="@bool/is_android_q" android:exported="true" android:label="@string/macrodroid" android:name="com.arlosoft.macrodroid.powermenu.PowerMenuService" android:permission="android.permission.BIND_CONTROLS">
+            <intent-filter>
+                <action android:name="android.service.controls.ControlsProviderService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="RecognitionServiceTrampoline" android:name="com.arlosoft.macrodroid.voiceservice.RecognitionServiceTrampoline">
+            <intent-filter>
+                <action android:name="android.speech.RecognitionService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.arlosoft.macrodroid.triggers.jobs.PhotoJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="true" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.MacroDroidWidgetConfigureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:clearTaskOnLaunch="true" android:exported="false" android:finishOnTaskLaunch="true" android:label="" android:name="com.arlosoft.macrodroid.action.activities.PendingIntentActivity" android:noHistory="true" android:taskAffinity=".action.activities.Dummy" android:theme="@style/Theme.TransparentGeneral"/>
+        <receiver android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/trigger_widget_pressed_custom" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderCustom">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/customwidgetproviderinfo"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/green_wb" android:label="@string/trigger_widget_pressed_green" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderGreen">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetproviderinfo"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/blue_wb" android:label="@string/trigger_widget_pressed_blue" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderBlue">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetproviderinfo"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/red_wb" android:label="@string/trigger_widget_pressed_red" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderRed">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetproviderinfo"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/yellow_wb" android:label="@string/trigger_widget_pressed_yellow" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderYellow">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetproviderinfo"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_bar" android:label="MacroDroid_Bar" android:name="com.arlosoft.macrodroid.triggers.receivers.widget.WidgetProviderBar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetproviderbarinfo"/>
+        </receiver>
+        <activity android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/shortcut_name" android:name="com.arlosoft.macrodroid.ShortcutActivity" android:screenOrientation="behind" android:theme="@style/Theme.App.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.StartupReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.variables.SetVariableReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.SET_VARIABLE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.PackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.receivers.UiInteractionNotificationPressReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.action.receivers.UI_NOTIFICATION_PRESS_RECEIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.AlarmReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.SunsetSunriseReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.DayTriggerReceiver"/>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.macro.ContinuePausedActionsHandler"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.IntervalAlarmReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.freeversion.FreeDaysAlarmReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.StopWatchTriggerReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.RequestLocationReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.RequestWeatherReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.receivers.StopRecordingAudioReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.receivers.WaitUntilTriggerTimeoutReceiver"/>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.action.receivers.AndroidWearActionReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.ANDROID_WEAR_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.receivers.KeepAwakeActionFinishedHandler"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.MediaButtonTriggerReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.NotificationBarButtonReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.CheckCellCoverageReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.CheckCalendarReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.InitiateWifScanReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.sms.SMSRetryReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.action.sms.SMSResultReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.InvokeMacroReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.twitter.TwitterFailNotificationClickReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.celltowers.CellTowerStopScanningReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.PriorityModeReceiver"/>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.celltowers.CellTowerBGScanReceiver"/>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.triggers.receivers.ShortcutTriggerReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.SHORTCUT_TRIGGER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.arlosoft.macrodroid.triggers.receivers.IncomingSMSTriggerReceiver"/>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.action.receivers.LocaleTaskerSettingCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.SETTING_COMPLETE"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.arlosoft.macrodroid.triggers.receivers.SleepReceiver"/>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.helper.receiver.HelperResultsReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.helper.RESULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:description="@string/device_admin_decription" android:exported="true" android:label="@string/macrodroid_device_administration" android:name="com.arlosoft.macrodroid.triggers.receivers.MacroDroidDeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.logging.helper.HelperLogMessageBroadcaseReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.helper.LOG_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.connectivityhelper.LOG_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.v21systemsettinghelper.LOG_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.arlosoft.macrodroid.app.EnableMacroDroidReceiver">
+            <intent-filter>
+                <action android:name="com.arlosoft.macrodroid.ENABLE"/>
+                <action android:name="com.arlosoft.macrodroid.DISABLE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.geofences.GeofenceTransitionService"/>
+        <provider android:authorities="com.arlosoft.macrodroid.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.arlosoft.macrodroid.shizuku" android:enabled="true" android:exported="true" android:multiprocess="false" android:name="rikka.shizuku.ShizukuProvider" android:permission="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <service android:exported="false" android:name="com.arlosoft.macrodroid.cloudmessaging.MacroDroidFirebaseMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <uses-library android:name="android.test.base" android:required="false"/>
+        <uses-library android:name="android.test.mock" android:required="false"/>
+        <provider android:authorities="com.arlosoft.macrodroid.androidx-startup" android:directBootAware="true" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="splitties.init.AppCtxInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.KickoffActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="@string/fui_title_recover_password_activity" android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_default" android:name="com.firebase.ui.auth.ui.email.EmailActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_with_phone_number" android:name="com.firebase.ui.auth.ui.phone.PhoneActivity" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_idp_prompt" android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity" android:theme="@style/FirebaseUI.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_default" android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_default_toolbar_title" android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbYOUR_APP_ID"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.arlosoft.macrodroid.authuiinitprovider" android:exported="false" android:initOrder="90" android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"/>
+        <uses-library android:name="soterkeystore" android:required="false"/>
+        <receiver android:enabled="true" android:exported="true" android:name="dev.skomlach.biometric.compat.utils.DeviceUnlockedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.arlosoft.macrodroid.appinitprovider" android:exported="false" android:name="dev.skomlach.biometric.compat.BiometricInitProvider"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleInstance" android:name="com.araujo.jordan.excuseme.view.InvisibleActivity" android:theme="@style/ExcuseMe.Theme.Transparent"/>
+        <activity android:exported="false" android:name="crashguard.android.library.CrashGuardActivity"/>
+        <service android:enabled="@bool/enable_work_alarm_service_default" android:exported="false" android:name="crashguard.android.library.SystemAlarmService"/>
+        <service android:enabled="@bool/enable_work_service_default" android:exported="false" android:name="crashguard.android.library.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="crashguard.android.library.SchedulerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="crashguard.android.library.PowerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="crashguard.android.library.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.arlosoft.macrodroid.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:exported="true" android:name="com.google.android.gms.nearby.exposurenotification.WakeUpService" android:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.functions.ktx.FirebaseFunctionsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.functions.FirebaseFunctionsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.arlosoft.macrodroid.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:name="splitties.permissions.internal.PermissionRequestFallbackActivity" android:theme="@style/SplittiesPermissionsFallbackActivityTransparentTheme"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.arlosoft.macrodroid.plumber-installer" android:enabled="@bool/leak_canary_plumber_auto_install" android:exported="false" android:name="leakcanary.internal.PlumberInstaller"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="moe.shizuku.client.V3_SUPPORT" android:value="true"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="rx_activity_result2.HolderActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+    </application>
+</manifest>

@@ -1,0 +1,70 @@
+Verze 5.54 (červen 2025)
+=======================
+
+Přidána akce Java kódu.
+
+Aktualizována akce JavaScriptu pro podporu návratu ke všem typům proměnných – Použijte mdOutput(value).
+
+Přidána možnost výstupu proměnných pole a slovníku ve formátu JSON {vjson=}, {lvjson=} (pro snazší použití v akci JavaScript).
+
+Přidán spouštěč spuštěné/zavřené aktivity aplikace.
+
+Aktualizována akce Konfigurovat rychlou dlaždici pro podporu nastavení dlaždice do neaktivního stavu, kdy s ní nelze pracovat.
+
+Byla aktualizována akce požadavku HTTP pro přidání podpory pro dynamické názvy souborů / místní identifikátor URI v těle obsahu.
+
+Přidána možnost "Použít automatické ostření" pro akci Pořídit snímek.
+
+Byl přidán kouzelný text "Vytvořit identifikátor GUID" pro vytvoření globálně jedinečného identifikátoru.
+
+Přidána možnost "Vibrace při stisknutí" pro spoušť plovoucího tlačítka a akci s plovoucím textem.
+
+Přidána možnost vymazat systémový protokol pro jednotlivé makro při prohlížení systémového protokolu pro toto makro (prostřednictvím obrazovky upravit makro).
+
+Byl přidán kontextově specifický magický text pro text protokolu při použití spouštěče položky systémového protokolu.
+
+Přidána možnost použít proměnnou hodnotu pro časový limit v akci Wait Until Trigger.
+
+Exportovaná makra a kategorie budou nyní obsahovat všechny přiřazené globální proměnné jako součást exportu.
+
+Byl opraven problém, kdy konfigurace spouštěče změny stavu Wifi neumožnila výběr SSID, pokud nebyla nainstalována pomocná aplikace.
+
+Byl opraven problém, kdy posuvník scény neaktualizoval správně rozsah při aktualizaci odkazovaných proměnných.
+
+Byla přidána podpora pro akci Číst text v maráthštině.
+
+Byl opraven problém, kdy možnost Sdílet umístění s proměnnou nepodporovala ukládání do elementu dictionary/array.
+
+Bylo přidáno nastavení pro zakázání webové stránky při použití triggeru požadavku serveru HTTP.
+
+Další drobné opravy.
+
+-- Vylepšení scény --
+
+Přidána komponenta Horizontální dělič.
+
+Přidána podpora pro kliknutí na hodnotu na komponentu Posuvník scény a zadání čísla pomocí dialogu.
+
+Byla přidána podpora pro zadávání hesla v komponentě Zadávání textu scény.
+
+Přidána možnost rozděleného zarovnání pro komponenty Přepínání scén a Zaškrtávací políčko.
+
+Přidána možnost nastavení zaoblených rohů na scénách při použití dialogového okna nebo možnosti překrytí.
+
+Posuvník scény nyní podporuje zobrazení popisku hodnoty na začátku a na konci (nebo žádného).
+
+Posuvník scény nyní podporuje hodnoty kroků.
+
+Text scény nyní podporuje hodnoty kouzelného textu pro určení velikosti textu.
+
+Text scény nyní podporuje možnost formátování HTML.
+
+Text scény nyní podporuje maximální počet řádků a možnost přizpůsobit se stránce přizpůsobení.
+
+Všechny položky scény nyní podporují stav viditelnosti, který lze svázat s booleovskou proměnnou.
+
+Scene Switch nyní podporuje samostatnou barvu textu, vypnutí barev a zapnutí barev.
+
+Tlačítko Scéna nyní podporuje přepínání logické proměnné.
+
+Byl opraven problém, kdy scéna neaktualizovala proměnné správně, když byla spuštěna z bloku akcí a ve výchozím nastavení nepoužila možnost blokovat další akce.

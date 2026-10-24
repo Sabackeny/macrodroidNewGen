@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <CheckBox android:id="@id/checkbox_include_without_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/read_screen_contents_include_view_ids_without_text" />
+        <CheckBox android:id="@id/checkbox_include_overlays" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/screen_content_include_overlays" />
+        <CheckBox android:id="@id/checkbox_force_screen_refresh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/force_screen_refresh" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/default_text_color_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/force_screen_refresh_explanation" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

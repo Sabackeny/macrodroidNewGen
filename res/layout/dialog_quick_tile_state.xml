@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:text="@string/quick_tile_toggle_state" />
+    <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <RadioButton android:textSize="18.0sp" android:id="@id/toggleStateOnRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" />
+        <RadioButton android:textSize="18.0sp" android:id="@id/toggleStateOffRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/off" />
+    </RadioGroup>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon_container" layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

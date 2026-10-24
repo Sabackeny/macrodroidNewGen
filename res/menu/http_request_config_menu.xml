@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_import_white_24dp" android:id="@id/menu_import_from_curl" android:title="@string/http_request_import_from_curl_string" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_export_white_24dp" android:id="@id/menu_export_to_curl" android:title="@string/http_request_export_to_curl_string" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/material_ic_check_24px_svg" android:id="@id/menu_save" android:title="@string/save" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/auto_brightness_checkbox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/auto_brightness" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/value_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="18.0sp" android:id="@id/lessThanRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/less_than" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/greaterThanRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:checked="true" android:text="@string/greater_than" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="18.0sp" android:id="@id/equalsRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:checked="false" android:text="=" android:layout_weight="1.0" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/batteryPercentLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1.0" />
+                <SeekBar android:id="@id/batteryLevelSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0" />
+            </LinearLayout>
+            <CheckBox android:id="@id/use_android_pie_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/brightness_use_alternative_android_pie_mode" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+            <TextView android:id="@id/use_android_pie_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/android_pie_brightness_explanation" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+        <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

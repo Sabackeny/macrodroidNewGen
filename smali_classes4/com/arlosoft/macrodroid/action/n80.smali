@@ -1,0 +1,51 @@
+.class public final synthetic Lcom/arlosoft/macrodroid/action/n80;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Landroid/app/Activity;
+
+.field public final synthetic b:Lcom/arlosoft/macrodroid/action/UIInteractionAction;
+
+.field public final synthetic c:Lcom/arlosoft/macrodroid/magictext/MagicTextListener;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/app/Activity;Lcom/arlosoft/macrodroid/action/UIInteractionAction;Lcom/arlosoft/macrodroid/magictext/MagicTextListener;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/arlosoft/macrodroid/action/n80;->a:Landroid/app/Activity;
+
+    iput-object p2, p0, Lcom/arlosoft/macrodroid/action/n80;->b:Lcom/arlosoft/macrodroid/action/UIInteractionAction;
+
+    iput-object p3, p0, Lcom/arlosoft/macrodroid/action/n80;->c:Lcom/arlosoft/macrodroid/magictext/MagicTextListener;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 4
+
+    const/4 v3, 0x6
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/action/n80;->a:Landroid/app/Activity;
+
+    const/4 v3, 0x6
+
+    iget-object v1, p0, Lcom/arlosoft/macrodroid/action/n80;->b:Lcom/arlosoft/macrodroid/action/UIInteractionAction;
+
+    iget-object v2, p0, Lcom/arlosoft/macrodroid/action/n80;->c:Lcom/arlosoft/macrodroid/magictext/MagicTextListener;
+
+    invoke-static {v0, v1, v2, p1}, Lcom/arlosoft/macrodroid/action/UIInteractionAction;->O0(Landroid/app/Activity;Lcom/arlosoft/macrodroid/action/UIInteractionAction;Lcom/arlosoft/macrodroid/magictext/MagicTextListener;Landroid/view/View;)V
+
+    const/4 v3, 0x3
+
+    return-void
+.end method

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="8.0dip">
+            <RadioButton android:id="@id/standardRadioButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/whatsapp_app_standard" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/businessRadioButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/whatsapp_app_business" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+                <androidx.appcompat.widget.AppCompatEditText android:layout_gravity="center_vertical" android:id="@id/phoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_number_here" android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_gravity="center_vertical" android:id="@id/magicTextButtonNumber" style="@style/MagicTextButton" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/selectContactButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_account_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/whats_app_phone_number_info" android:layout_marginStart="2.0dip" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/prePopulateCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/send_sms_pre_populate" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/delayBeforeSendLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+            <androidx.appcompat.widget.AppCompatEditText android:layout_gravity="center_vertical" android:id="@id/delayBeforeSendMs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/whatsapp_action_delay_before_send_button_press" android:singleLine="true" android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textSize="12.0sp" android:id="@id/delayBeforeSendDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/whatsapp_action_delay_before_send_button_press_description" android:layout_marginHorizontal="2.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:gravity="top" android:id="@id/messageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_message_here" android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/magicTextButtonMessage" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/exitAfterSendCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/whats_app_exit_after_sending" />
+        <TextView android:textSize="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" android:text="@string/action_whats_app_help" android:layout_marginHorizontal="2.0dip" />
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

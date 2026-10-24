@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/margin_small" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/default_text_color" android:id="@id/dialog_parent_condition_detail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" />
+            <include layout="@layout/include_conditions_layout" />
+        </LinearLayout>
+    </ScrollView>
+    <CheckBox android:id="@id/dont_log_if_false_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/if_condition_dont_log_when_condition_is_false" android:layout_marginStart="@dimen/margin_small" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

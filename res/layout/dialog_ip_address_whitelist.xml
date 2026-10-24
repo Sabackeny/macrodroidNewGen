@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/default_text_color_full" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ip_address_whitelist" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium" />
+        <ImageView android:id="@id/addIpAddressButton" android:background="?android:selectableItemBackgroundBorderless" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_plus_white_24dp" app:tint="@color/default_text_color" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/emptyStateContainer" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium_large" android:paddingRight="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_medium" android:paddingVertical="@dimen/margin_medium_large">
+        <TextView android:textSize="18.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/variable_multi_entry_no_entries" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideInset" android:id="@id/recyclerView" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_weight="1.0" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

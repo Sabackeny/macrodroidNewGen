@@ -1,0 +1,70 @@
+Wersja 5.54 (czerwiec 2025)
+=======================
+
+Dodano akcję Java Code.
+
+Zaktualizowano akcję JavaScript w celu obsługi powrotu do wszystkich typów zmiennych — użyj mdOutput(value).
+
+Dodano opcję wyprowadzania zmiennych tablicowych i słownikowych w formacie JSON {vjson=}, {lvjson=} (aby ułatwić ich użycie w akcji JavaScript).
+
+Dodano wyzwalacz Aktywność aplikacji uruchomiona/zamknięta.
+
+Zaktualizowano akcję Konfiguruj szybki kafelek, aby obsługiwała ustawianie kafelka w stanie nieaktywnym, w którym nie można z nim wchodzić w interakcje.
+
+Zaktualizowano akcję żądania HTTP, aby dodać obsługę dynamicznych nazw plików/lokalnego identyfikatora URI w treści treści.
+
+Dodano opcję "Zastosuj autofokus" w celu wykonania akcji Zrób zdjęcie.
+
+Dodano magiczny tekst "Utwórz identyfikator GUID", aby utworzyć unikatowy identyfikator globalny.
+
+Dodano opcję "Wibracja po naciśnięciu" do wyzwalacza Pływający przycisk i akcji Pływający tekst.
+
+Dodano możliwość wyczyszczenia dziennika systemowego dla pojedynczego makra podczas przeglądania dziennika systemowego dla tego makra (za pomocą ekranu edycji makra).
+
+Dodano magiczny tekst specyficzny dla kontekstu dla tekstu dziennika podczas korzystania z wyzwalacza Wpis dziennika systemowego.
+
+Dodano opcję użycia wartości zmiennej do limitu czasu w akcji Wait Until Trigger.
+
+Wyeksportowane makra i kategorie będą teraz zawierać wszystkie powiązane zmienne globalne w ramach eksportu.
+
+Naprawiono problem polegający na tym, że skonfigurowanie wyzwalacza zmiany stanu Wi-Fi nie pozwalało na wybór identyfikatora SSID, chyba że zainstalowano aplikację pomocniczą.
+
+Naprawiono problem polegający na tym, że suwak sceny nie aktualizował poprawnie zakresu po zaktualizowaniu zmiennych, do których się odwołuje.
+
+Dodano obsługę języka marathi w akcji Mów tekst.
+
+Rozwiązano problem polegający na tym, że opcja Udostępnij lokalizację zmiennej nie obsługiwała zapisywania w elemencie słownika/tablicy.
+
+Dodano ustawienie umożliwiające wyłączenie strony internetowej podczas korzystania z wyzwalacza żądania serwera HTTP.
+
+Inne drobne poprawki.
+
+-- Ulepszenia scen --
+
+Dodano komponent Horizontal Divider.
+
+Dodano obsługę klikania wartości w komponencie suwaka sceny i wprowadzania numeru za pomocą okna dialogowego.
+
+Dodano obsługę wprowadzania hasła w komponencie scene Text Entry.
+
+Dodano opcję podziału wyrównania dla komponentów przełącznika sceny i pola wyboru.
+
+Dodano opcję ustawiania zaokrąglonych rogów w scenach podczas korzystania z opcji okna dialogowego lub nakładki.
+
+Suwak sceny obsługuje teraz wyświetlanie etykiety wartości na początku i na końcu (lub żadnej).
+
+Suwak sceny obsługuje teraz wartości krokowe.
+
+Tekst sceny obsługuje teraz magiczne wartości tekstowe służące do określania rozmiaru tekstu.
+
+Tekst sceny obsługuje teraz opcję formatowania HTML.
+
+Tekst sceny obsługuje teraz maksymalną liczbę linii i opcję skaluj, aby dopasować.
+
+Wszystkie elementy sceny obsługują teraz stan widoczności, który może być powiązany ze zmienną logiczną.
+
+Przełącznik sceny obsługuje teraz oddzielny kolor tekstu, wyłącz kolor i włącz kolor.
+
+Przycisk sceny obsługuje teraz przełączanie zmiennej logicznej.
+
+Naprawiono problem polegający na tym, że scena nie aktualizowała zmiennych poprawnie, gdy była uruchamiana z bloku akcji i nie używała domyślnie opcji blokuj następne działania.

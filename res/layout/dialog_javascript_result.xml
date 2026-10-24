@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="@dimen/margin_medium">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/variables_accent" android:id="@id/result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/javascript_result_title_string_output" />
+            <TextView android:id="@id/javascript_result" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/variables_accent" android:id="@id/console_output_title" android:paddingTop="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/javascript_console_output" />
+            <TextView android:id="@id/javascript_console" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="end" android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

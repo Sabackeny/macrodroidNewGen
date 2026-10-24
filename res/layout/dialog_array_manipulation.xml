@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/array_manipulation_input_array" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@id/inputArraySpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/select_option" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <com.arlosoft.macrodroid.widget.NDSpinner android:entries="@array/array_manipulation_options" android:layout_gravity="center_vertical" android:id="@id/manipulationOptionSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/margin_medium" android:layout_marginVertical="@dimen/margin_small" />
+        <LinearLayout android:orientation="vertical" android:id="@id/stringFilterOptions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <RadioGroup android:layout_gravity="center_horizontal" android:id="@id/radGroup1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="16.0sp" android:id="@id/matchesRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:checked="false" android:text="@string/matches" android:layout_weight="1.0" />
+                <RadioButton android:textSize="16.0sp" android:id="@id/containsRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:checked="false" android:text="@string/contains" android:layout_weight="1.0" />
+                <RadioButton android:textSize="16.0sp" android:id="@id/excludesRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:checked="false" android:text="@string/excludes" android:layout_weight="1.0" />
+            </RadioGroup>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/stringFilterText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_text_to_match" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+                <Button android:layout_gravity="bottom" android:id="@id/stringFilterMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <TextView android:id="@id/wildcards_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wildcards_supported" />
+            <CheckBox android:id="@id/enableRegexCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching" />
+            <CheckBox android:id="@id/ignoreCaseCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:checked="false" android:text="@string/text_compare_ignore_case" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/numericalFilterOptions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/numericalFilterExpressionText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/expression" android:singleLine="true" android:layout_weight="1.0">
+                        <requestFocus />
+                    </androidx.appcompat.widget.AppCompatEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:layout_gravity="bottom" android:id="@id/numericalFilterMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <TextView android:textColor="@color/actions_accent" android:gravity="center_vertical" android:id="@id/click_for_help" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/click_for_help_information" android:drawablePadding="@dimen/margin_small" app:drawableStartCompat="@drawable/ic_help_circle_white_24dp" app:drawableTint="@color/actions_accent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/subArrayOptionsLayout" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_medium">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/subArrayStartIndex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:hint="@string/array_manipulation_subarray_start_index" android:maxLines="1" android:inputType="numberSigned" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/startIndexMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/subArrayEndIndex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:hint="@string/array_manipulation_subarray_end_index" android:maxLines="1" android:inputType="numberSigned" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/endIndexMagicTextButton" style="@style/MagicTextButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/array_manipulation_output_array" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/outputArrayVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/addArrayVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/youtubeVideoLinkButton" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:backgroundTint="@color/white_tiny_transparent" android:layout_marginVertical="@dimen/margin_small" style="@style/RoundedButton.White"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/youtubeIcon" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/not_icon_youtube" app:tint="@color/variables_primary" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/variables_primary" android:layout_gravity="center_vertical" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Youtube Video" android:layout_marginStart="@dimen/margin_small" />
+</LinearLayout>

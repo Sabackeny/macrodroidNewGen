@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/default_text_color" android:id="@id/export_dialog_export_path" android:padding="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_a_bug_stopclub_warning" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/default_text_color_inverse" android:id="@id/stopclub_pro_button" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/stopclub_menu_entry" android:textAllCaps="false" android:backgroundTint="@color/default_text_color" android:layout_marginHorizontal="@dimen/margin_medium" app:cornerRadius="12.0dip" style="@style/Widget.MaterialComponents.Button" />
+    <LinearLayout android:gravity="end" android:id="@id/button_bar" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_medium">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:buttonBarButtonStyle" />
+        <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/report_a_bug" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

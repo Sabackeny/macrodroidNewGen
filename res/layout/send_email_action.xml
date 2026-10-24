@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textColor="@color/white" android:id="@id/configure_smtp_server" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/configure_smtp_server" />
+            <LinearLayout android:orientation="vertical" android:id="@id/wait_to_complete_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/wait_to_complete_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/block_actions_until_complete" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/save_email_sent_success_in_boolean_variable" android:layout_marginStart="@dimen/margin_small" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/booleanVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/default_text_color_inverse" android:layout_gravity="center_vertical" android:id="@id/addVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <CheckBox android:id="@id/html_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="HTML" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/fromEmailAddressLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@id/fromAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/send_email_from_email_address" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@id/toAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_email_address" android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_subject" android:inputType="textEmailSubject" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_message_here" android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/material_ic_check_24px_svg" android:tint="@color/actions_primary" android:layout_marginEnd="@dimen/margin_medium" android:backgroundTint="@color/white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

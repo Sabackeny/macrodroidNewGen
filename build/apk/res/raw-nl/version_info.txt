@@ -1,0 +1,1398 @@
+Versie 5.53 (april 2025)
+============================
+
+Aangepaste scène-actie toegevoegd om het mogelijk te maken om eenvoudige, aanpasbare gebruikersinterfaces te maken.
+
+Actie Aangepaste scène verbergen toegevoegd.
+
+Macro-/actieblokschermen bewerken ondersteunen nu de menuoptie om scheidingstekens toe te voegen.
+
+Met de functie Auto Backup kan nu de lokale back-upopslaglocatie worden gewijzigd.
+
+Bijgewerkte actie Bestandsbewerking om optie toe te voegen om mappatronen op te geven (bij het kopiëren/verplaatsen/verwijderen van mappen)
+
+Bijgewerkte beperking voor het vergelijken van waarden om een optie toe te voegen om matrices en woordenboeken te vergelijken en controles toegevoegd als deze sleutel/waarde bevat.
+
+De beperking Macro Uitvoeren is bijgewerkt ter ondersteuning van het invoeren van een macronaam als tekst (inclusief ondersteuning voor magische tekst).
+
+De actie Categorieën in-/uitschakelen is bijgewerkt ter ondersteuning van de nieuwe optie om alle macro's binnen de categorie in te schakelen (bij het inschakelen van de categorie).
+
+Tekst gedeeld met MacroDroid bijgewerkt om nieuwe contextspecifieke magische tekst toe te voegen voor het veld 'Onderwerp' dat is ingesteld bij het delen van tekst.
+
+Bijgewerkte animatie-overlay-actie om een optie toe te voegen om een afbeelding te forceren (cache negeren).
+
+De minimale Android-versie die wordt ondersteund, is nu Android 6 (Marshmallow).
+
+Pogingen om meerdere gelijktijdige JavaScript-acties uit te voeren met de Jetpack-engine konden mislukken. Dit probleem is nu opgelost.
+
+Als je MacroDroid wegveegde via de app-switcher, kon je macro's doden die wachtten in een Wait Until Trigger-actie.
+
+De actie Macro's samenvatten werd niet toegevoegd
+
+Optie toegevoegd aan de Sunset/Sunrise-trigger om het alarm te gebruiken (of niet te gebruiken) om een nauwkeurige triggertijd te garanderen.
+
+Optie toegevoegd om de MacroDroid-actie uit te schakelen om MacroDroid altijd uit te schakelen (ongeacht de instellingen voor wachtwoordbeveiliging).
+
+Versie 5.52 (maart 2025)
+============================
+
+Statustrigger met NFC toegevoegd.
+
+Aangepaste HotSpot Aan/Uit-actie zodat het hulpbestand niet langer nodig is op Android 14+.
+
+Menu-optie toegevoegd om logboekregistratie in of uit te schakelen voor elke afzonderlijke trigger, actie en beperking.
+
+Het configuratiescherm van Geofence valt terug op Open Street Maps op apparaten die geen Google-services hebben.
+
+Aangepaste actie Meldingsinteractie zodat deze weer kan werken op Android 14+-apparaten.
+
+De beperking Macro ingeschakeld/uitgeschakeld is bijgewerkt om ondersteuning toe te voegen voor het opgeven van de macronaam in tekst (inclusief ondersteuning voor magische tekst).
+
+Bijgewerkte actie Tekst ophalen uit weergave-id om optie toe te voegen om op te slaan op schermstatus naar een booleaanse variabele.
+
+Ondersteuning toegevoegd voor het kleuren van aangepaste widgetpictogrammen.
+
+De tegel Macro Wizard Macro toevoegen verwijderd.
+
+De tegel Laatst geopende actieblok is toegevoegd.
+
+Optie toegevoegd om macro's samen te vatten actie om alle variabelen toe te voegen die door de macro worden gebruikt (lokaal + globaal).
+
+Optie toegevoegd om het maximale aantal regels voor een variabele in de MacroDroid-lade in te stellen.
+
+Menu-opties voor plakken toegevoegd bij het bewerken van de lijst met voorwaarden in een ALS-clausuleactie.
+
+Optie toegevoegd om schermvernieuwing te forceren om scherminhoud te lezen, Tekst ophalen op weergave-ID en Tekst op scherm controleren acties.
+
+Probleem opgelost waarbij {cell_connection_type} magische tekst niet het meest recente type celverbinding weerspiegelde wanneer dit werd gewijzigd.
+
+Probleem opgelost waarbij Set Variable copy array/dictionary niet alle sub-array/woordenboeken presenteerde.
+
+Probleem opgelost waarbij het pictogram van MacroDroid Lang indrukken van de trekker niet correct werkte met de beperking Trigger Fired.
+
+Aangepaste toegankelijkheidsservice voor UI-interactie om problemen op te lossen waarbij oude scherminhoud kon worden geretourneerd nadat het scherm was bijgewerkt.
+
+Aangepaste scherm aan/uit-beperking om te proberen gevallen op te lossen waarin het scherm aan staat wanneer het is uitgeschakeld (zoals wanneer het is verbonden met Android Auto).
+
+Versie 5.50 (januari 2025)
+============================
+
+Wifi SSID Scan actie toegevoegd.
+
+Beperking voor USB-apparaatverbinding toegevoegd.
+
+Actie Macro's samenvatten/Actieblokken toegevoegd.
+
+Er is een actie voor een actiegroep toegevoegd om het groeperen, verplaatsen, kopiëren en in- en uitschakelen van gerelateerde acties te vergemakkelijken.
+
+Ondersteuning toegevoegd voor de functie Ongedaan maken bij het opnieuw ordenen van items in de schermen Macro bewerken en Actieblokkering bewerken.
+
+Ondersteuning toegevoegd voor het delen van back-upbestanden vanuit de cloudback-up, zodat elk back-upbestand gemakkelijk toegankelijk is zonder het te herstellen.
+
+Verbeterde vervolgkeuzemenu's voor het selecteren van macro-/actieblokken, zodat ze doorzoekbaar zijn in gevallen waarin een groot aantal opties beschikbaar is.
+
+De actie Zwevende tekst is bijgewerkt om een optionele schaduw te ondersteunen (om tekst prominenter te maken bij gebruik van een transparante achtergrond)
+
+Bijgewerkte trigger voor verzonden sms om optie toe te voegen om het nummer rechtstreeks op te geven.
+
+De actie Animatie-overlay is bijgewerkt ter ondersteuning van het gebruik van variabelen om de x-, y-, breedte- en hoogtewaarden van de animatie te definiëren.
+
+Bijgewerkte actie voor weergavemeldingen ter ondersteuning van magische tekstinvoer voor id-veld.
+
+Ontbrekende MacroDroid-instellingen toegevoegd aan het back-upbestand voor eenvoudiger herstellen.
+
+Kopieerknop toegevoegd bij het bewerken van een array/dictionary-variabele-item om de magische tekst voor het volledige array-/woordenboekpad op te halen.
+
+Er is een zeldzaam probleem opgelost waarbij zwevende knoppen in sommige gevallen vast konden komen te zitten.
+
+Er is een probleem opgelost waarbij zwevende tekst kon knipperen bij het regelmatig bijwerken van bestaande zwevende tekst.
+
+Andere kleine reparaties.
+
+Versie 5.49 (december 2024)
+============================
+
+Actie voor complicatie van Wear OS toegevoegd.
+
+Wear OS-complicatie toegevoegd: klik op trigger.
+
+Mediaspoor Gewijzigde trigger toegevoegd.
+
+Bijgewerkte actie voor animatie-overlay ter ondersteuning van lokale Gif-bestanden.
+
+De actie Macro's exporteren is bijgewerkt ter ondersteuning van uitvoer naar tekenreeksvariabele.
+
+Optie toegevoegd in instellingen om crashregistratie en analysegegevens uit te schakelen.
+
+De optie Telefoonnummer selecteren is toegevoegd om de actie Oproeplogboek te wissen (ondersteunt magische tekst en regex).
+
+Door lang op de aan/uit-sneltegel van MacroDroid te drukken, wordt nu MacroDroid gestart.
+
+Optie toegevoegd om te wachten tot trigger om een booleaanse variabele te retourneren die aangeeft of er een time-out is opgetreden of niet.
+
+Implementatiewijzigingen aangebracht in de manier waarop macro's intern worden opgeslagen om de prestaties met grote aantallen macro's te verbeteren.
+
+Verbeterde actie Contacten ophalen, zodat meerdere aangepaste telefoonvermeldingen correct worden ingevuld met de juiste aangepaste namen.
+
+De optie "Testacties" en "Macro testen" is toegevoegd aan de beperking van de macro-aanroepmethode.
+
+Mogelijkheid toegevoegd om subwoordenboekvermeldingen weer te geven in de weergave van woordenboekvariabelen door lang op het waardeveld te drukken.
+
+Ondersteuning toegevoegd om de inhoud van woordenboekinvoer op variabel scherm weer te geven (druk lang op de waarde om aan / uit te zetten).
+
+De manier waarop {cell_connection_type} magische tekst wordt verkregen, is gewijzigd om de nauwkeurigheid van de identificatie van netwerktypen te verbeteren.
+
+De actie Intentie verzenden is bijgewerkt en er is ondersteuning voor magische tekst toegevoegd aan de velden Actie, Pakket en Klasse.
+
+Er is een probleem opgelost waarbij de actie Macro-acties annuleren er niet voor zorgde dat een Macro Voltooide trigger afging.
+
+Er is een probleem opgelost waarbij de opvulling op kleine zwevende knoppen onjuist was.
+
+Probleem opgelost waarbij de actie Open Call Log niet werkte op sommige apparaten.
+
+Er is een probleem opgelost waarbij de beperking voor het vergelijken van waarden in sommige talen booleans niet correct vergeleek.
+
+Probleem opgelost waarbij de actie Afbeelding van de knoppenbalk instellen de referentie van het knopnummer niet bijwerkte wanneer een knop naar links of rechts werd bewogen in de knoppenbalk.
+
+Er is een randprobleem opgelost waarbij meerdere triggers in een Wait Until Trigger-actie rond dezelfde tijd werden geactiveerd en een onjuiste uitvoering van macro's veroorzaakten.
+
+Er is een probleem opgelost waarbij de actie Schrijven naar bestand de volgorde kon verwarren bij het snel achter elkaar schrijven naar hetzelfde bestand.
+
+Versie 5.48 (oktober 2024)
+============================
+
+Shizuku State-beperking toegevoegd.
+
+Er zijn opties toegevoegd aan de actie Zwevende tekst om beweging alleen mogelijk te maken bij lang indrukken en te voorkomen dat de tekst kan worden verplaatst, en een optie om volledig scherm te forceren.
+
+Optie toegevoegd aan de actie Aanrakingen blokkeren om geblokkeerd schermgebied weer te geven (met aangepaste kleur).
+
+Het scherm met de macrolijst toont nu een geanimeerde indicator wanneer een macro momenteel wordt uitgevoerd.
+
+Optie toegevoegd aan wachtwoordbeveiliging om vragen mogelijk te maken bij het openen van de app en/of bij het in-/uitschakelen van MacroDroid.
+
+Optie Actie Agenda-afspraak toevoegen toegevoegd om vooraf op de hoogte te stellen van de gebeurtenis die is toegevoegd.
+
+Optie toegevoegd om de actie Gebeurtenis te registreren om een macrolink toe te voegen aan de uitvoer.
+
+Het Geofence-configuratiescherm toont nu lat/lon-waarden en de huidige locatiestip (indien locatie beschikbaar).
+
+De actie Logboek exporteren voert nu in alle gevallen tijdstempels van milliseconden uit.
+
+Ondersteuning toegevoegd voor gebruikerspictogrammen met tegels voor snelle instellingen.
+
+Extra filteroptie toegevoegd voor "Ongebruikte variabelen" in het scherm Variabelen.
+
+De menuoptie "Alle ongebruikte verwijderen" is toegevoegd aan het scherm Actieblokkeerlijst.
+
+Kleine banner toegevoegd op het startscherm om duidelijk te laten zien wanneer MacroDroid is uitgeschakeld.
+
+Optie toegevoegd aan HTTP Server-instellingen om toegang tot systeem-/gebruikerslogboek via HTTP-server toe te staan/te weigeren.
+
+Optie toegevoegd aan de actie MacroDroid-instelling om de gevoeligheid van de Shake Trigger te wijzigen.
+
+Aangepast macroscherm bewerken om te voorkomen dat de zoekbanner wegscrolt.
+
+
+
+Versie 5.47 (augustus 2024)
+============================
+
+De toegankelijkheidsservice voor vingerafdrukken en volumeknoppen is verwijderd en de functionaliteit is verplaatst naar de belangrijkste toegankelijkheidsservice van MacroDroid.
+
+Trigger voor pop-upberichten toegevoegd.
+
+Trigger voor de status van de toegankelijkheidsservice toegevoegd.
+
+Er is een beperking voor de status van de toegankelijkheidsservice toegevoegd.
+
+Opties toegevoegd voor 'Beperking boven toevoegen' en 'Beperking boven plakken' in de schermen Macro bewerken en ActionBlock bewerken.
+
+Ondersteuning toegevoegd voor headerparameters aan de triggerreactie op de HTTP-serveraanvraag en de actie HTTP Server Response.
+
+Ondersteuning toegevoegd voor het gebruik van de pakketnaam in de actie App inschakelen/uitschakelen.
+
+De actie Zwevende tekst is bijgewerkt om ondersteuning toe te voegen voor het tikken op procentuele waarden om nauwkeurigere percentages in te stellen.
+
+De actie App-activiteit starten is bijgewerkt om activiteiten op te nemen van apps die niet zijn gemarkeerd als startbaar.
+
+Volledige herschrijving van magische tekstverwerking om prestatieproblemen op te lossen bij het verwerken van grote tekstblokken.
+
+De actie Dim Screen is aangepast om flikkering te voorkomen bij het wijzigen van het dimniveau wanneer dim al is toegepast.
+
+Er is een probleem opgelost waarbij Meldingsbeperking de optie voor het uitsluiten van apps niet correct verwerkte.
+
+HotSpot-actie vereist nu de MacroDroid Helper-app (V1.16) op Android 14+ vanwege geforceerde wijzigingen door Google om Android SDK bij te werken.
+
+Andere kleine fixes en optimalisaties.
+
+Versie 5.46 (juli 2024)
+============================
+
+MacroDroid-pictogram toegevoegd Druk lang op de snelkoppelingstrigger.
+
+Shizuku-ondersteuning toegevoegd aan de Shell Script-actie en Shizuku-ondersteuning toegevoegd aan bestaande root-functies.
+
+Gelijktijdige opties voor "Volume omlaag + Volume omhoog" toegevoegd aan de activering van de volumeknop (alleen toegankelijkheidsservice).
+
+Ondersteuning voor dynamische bestanden en lokale bestands-URI's toegevoegd aan de actie Achtergrond instellen.
+
+Animatie-overlay-actie bijgewerkt om ondersteuning voor geanimeerde gif toe te voegen met de Giphy-zoekmachine.
+
+De configuratie van de selectiedialoogactie ondersteunt nu het herschikken van items en voorkomt dat alle wijzigingen verloren gaan als u per ongeluk terugdrukt.
+
+Magische tekst toegevoegd om variabel type weer te geven.
+
+Magische tekst toegevoegd voor zonenaam, lat/long en locatielink bij gebruik van de Geofence- of Location-trigger.
+
+Verbeterde ondersteuning voor contextgevoelige magische tekst voor triggers die worden gebruikt in de actie Wacht tot trigger.
+
+De actie MacroDroid-logboek openen ondersteunt nu het openen van het gebruikerslogboek voor een specifiek kanaal.
+
+Zoekfunctie toegevoegd aan het scherm Favorieten configureren.
+
+De optie 'Vooraf inchecken' is toegevoegd aan de beperking Agenda.
+
+Inhoud van derden van 'Steve Wright' toegevoegd in de sectie MacroDroid-video's.
+
+Er is een probleem opgelost waarbij de trigger Macro ingeschakeld werd geactiveerd wanneer MacroDroid werd weggeveegd van recente apps.
+
+Er is een probleem opgelost waarbij het wijzigen van het filterniveau in het systeemlogboek ertoe kon leiden dat er foutieve/dubbele vermeldingen werden weergegeven.
+
+Er is een probleem opgelost waarbij aangepaste meldingskanalen niet werden gemaakt bij het importeren van een back-up met aangepaste kanalen.
+
+Versie 5.45 (juni 2024)
+============================
+
+Trigger Foto genomen toegevoegd (Android 7+).
+
+Actie Geïnstalleerde apps ophalen toegevoegd.
+
+Actie Contactpersonen ophalen toegevoegd.
+
+Actie Edge Notification Light toegevoegd.
+
+De actie App-activiteit starten is toegevoegd.
+
+Ondersteuning toegevoegd voor favoriete triggers, acties en beperkingen. Druk lang op de +-knop op het macroscherm bewerken om snelle tegels voor uw favoriete items weer te geven.
+
+De actie Animatie-overlay is bijgewerkt om ondersteuning toe te voegen voor het uitvoeren van macro's/actieblokken wanneer u op de animatie klikt.
+
+De actie HTTP-aanvraag is bijgewerkt ter ondersteuning van het vastleggen van geretourneerde headerparameters in een woordenboekvariabele.
+
+De actie Locatie forceren is bijgewerkt om de volgende actie te blokkeren en locatiegegevens op te slaan in een woordenboekvariabele.
+
+De actie Melding weergeven is bijgewerkt om id's te ondersteunen, zodat een nieuwe melding een bestaande melding met dezelfde id overschrijft.
+
+De actie Bestand openen is bijgewerkt om het laden van een lokale bestands-uri te ondersteunen (kan worden verkregen via de optie Bestanden weergeven in de actie Bestandsbewerking).
+
+Ondersteuning toegevoegd voor het markeren van variabelen als veilig, zodat de inhoud van de variabelen niet wordt geëxporteerd bij het delen/uploaden van een sjabloon.
+
+Ondersteuning toegevoegd voor aangepaste afbeeldingen in de actie Melding weergeven en Permanente melding van MacroDroid.
+
+Er is een nieuwe optie toegevoegd aan de actie Schermaanrakingen blokkeren om de statusbalk te blokkeren (toegankelijkheidsservice moet zijn ingeschakeld).
+
+Magische tekstoptie toegevoegd om stopwatches weer te geven met een secondewaarde (uu:mm).
+
+Magische tekstoptie toegevoegd om de trigger weer te geven die is afgevuurd.
+
+Het bewerkingsscherm voor actieblokken is aangepast om veel sneller te zijn voor zeer grote actieblokken en ondersteuning voor de koptekst van plakkerige acties is toegevoegd.
+
+Tweaks aan App Launched Trigger om enkele problemen op te lossen rond het detecteren van MacroDroid start/sluit en Google-app start/sluit.
+
+De actie Variabele instellen is aangepast, zodat het invoer van meerdere regels voor tekenreeksvariabelen mogelijk maakt.
+
+Magische tekst van het meldingskanaal toegevoegd bij gebruik van de meldingstrigger (Android 8+).
+
+Er is een probleem opgelost waarbij de actie Zwevende tekst soms niet werd weergegeven wanneer de actie voor het eerst werd uitgevoerd (meestal op langzamere/oudere apparaten).
+
+Er is een probleem opgelost waarbij de actie Zwevende tekst geen bijbehorend actieblok exporteerde bij het delen of uploaden naar het sjabloonarchief.
+
+Er is een probleem opgelost waarbij het negeren van een bubbelmelding ertoe kon leiden dat MacroDroid op de voorgrond werd gestart.
+
+Er is een probleem opgelost waarbij de actie Gebruiker verifiëren onbetrouwbaar werkte op sommige Android 14-apparaten.
+
+Er is een probleem opgelost waarbij de zwevende knop niet onthield waar deze eerder naartoe was verplaatst wanneer deze opnieuw werd ingeschakeld.
+
+Versie 5.44 (mei 2024)
+============================
+
+HTTP Server-trigger en HTTP Server-responsactie toegevoegd.
+
+Beperking voor sprekende tekst toegevoegd.
+
+Tekst gedeeld toegevoegd aan MacroDroid-trigger.
+
+De actie Zwevende tekst is bijgewerkt om klikverwerking te ondersteunen en er is een optie toegevoegd om te verbergen wanneer erop wordt geklikt.
+
+Gebruikerslogboek bijgewerkt ter ondersteuning van aangepaste logboekkanalen, logboekniveaus en zoekfunctionaliteit.
+
+De optie Lijstbestanden is toegevoegd aan de actie Bestandsbewerking.
+
+Blokacties toegevoegd tot het voltooien van de optie voor bestandsbewerking.
+
+Bluetooth-actie in-/uitschakelen werkt nu op geroote apparaten zonder helperbestand.
+
+Optie toegevoegd om te kiezen uit bekende toetsen in de trigger Systeeminstelling (met zoeken).
+
+Aangepaste actie voor systeeminstellingen, zodat u naar een sleutel kunt zoeken in alle categorieën van systeeminstellingen.
+
+Werk de actie E-mail verzenden bij om het bijvoegen van meerdere logboeken te ondersteunen en de HTML-indeling voor logboeken te ondersteunen.
+
+Verbeterde verwerking van actieblokken in het systeemlogboek met koppelingen naar actieblokken en macro's.
+
+Zoekfunctionaliteit toegevoegd aan de actie Macro uitvoeren, Variabele actie instellen, Variabele trigger en Variabele beperking (waar 10+ items beschikbaar zijn).
+
+Er is een probleem opgelost waarbij de ingestelde variabele met de gebruikersprompt niet correct naar een matrixvariabele-item schreef.
+
+Er is een kleine bug opgelost in de trigger Systeeminstelling gewijzigd die ertoe kon leiden dat een macro twee keer werd afgevuurd voor een enkele instellingsupdate.
+
+Andere kleine fixes en verbeteringen.
+
+Versie 5.43 (april 2024)
+============================
+
+De actie Tekst ophalen van weergave-ID is toegevoegd (Android 11+).
+
+Het dialoogvenster Selectie ondersteunt nu aanpasbare knopstijl voor selecteerbare elementen.
+
+Overlay-statusbalkoptie toegevoegd aan de actie Scherm dimmen op Android 6+ (vereist dat toegankelijkheidsservice is ingeschakeld).
+
+Aangepast Edit Macro scherm om sticky headers toe te voegen voor grote trigger-, actie- en beperkingsblokken.
+
+Verbeterde verwerking van de triggers van de meldingsbalkknop in het scherm Macro bewerken, zodat het gemakkelijker is om de ingestelde knop te identificeren.
+
+Het scherm Macro bewerken toont nu de geselecteerde afbeelding voor de trigger van de zwevende knop en andere items waar afbeeldingen worden gebruikt.
+
+Geoptimaliseerde scherminhoud wordt geactiveerd, zodat elke schermlezing iets minder tijd/verwerking in beslag neemt.
+
+Er is ondersteuning toegevoegd voor het uitschakelen van vermeldingen in de actie IF-voorwaarde.
+
+Er is een menuoptie 'Beperking testen' toegevoegd om de huidige status van een beperking (waar of onwaar) te controleren op het macroscherm bewerken.
+
+Er is een menuoptie 'Testconditie' toegevoegd om de huidige status van een IF-instructie op het macroscherm bewerken te controleren.
+
+Optie toegevoegd om de huidige MacroDroid-modus te tonen/verbergen in de standaard MacroDroid-melding (standaard uitgeschakeld voor alleen nieuwe installaties).
+
+De actie Categorie in-/uitschakelen ondersteunt nu meerdere categorieën.
+
+De actie Inhoud van schermafbeelding lezen is verplaatst naar de toegankelijkheidsservice van de gebruikersinterface van MacroDroid.
+
+Er is een probleem opgelost waarbij het configuratiedialoogvenster Variabele instellen standaard de woordenlijst kopieerde wanneer de sleutel handmatig definiëren was geselecteerd.
+
+Er is een probleem opgelost waarbij het wijzigen van de naam van een actieblok in sommige omstandigheden de referentie in het macroscherm bewerken niet bijwerkte.
+
+Andere kleine reparaties.
+
+Versie 5.42 (maart 2024)
+============================
+
+Animatie-overlay-actie toegevoegd.
+
+De actie Matrixmanipulatie is toegevoegd.
+
+Actie Pixelkleur controleren toegevoegd (Android 11+).
+
+Actie Screenshot lezen toegevoegd (Android 11+).
+
+Tekst controleren in screenshot-actie toegevoegd (Android 11+).
+
+Actie Display Density toegevoegd (ADB Hack of root vereist).
+
+Bijgewerkte actie Screenshot maken om optie toe te voegen om screenshot te maken zonder gebruikersinterface (Android 11+).
+
+JavaScript-actie bijgewerkt met ondersteuning voor de Rhino-engine.
+
+De trigger Zwevende knop ondersteunt nu het instellen van tekst in plaats van een afbeelding.
+
+De actie 'Lettertypeschaal' ondersteunt nu maximaal 250% (was 150%).
+
+Eindeloze lusoptie toegevoegd (tot pauze) aan de actie Acties herhalen.
+
+Regex-ondersteuning toegevoegd aan triggers op basis van oproepen.
+
+Ondersteuning toegevoegd voor de actie Aanrakingen blokkeren om slechts een deel van het scherm te blokkeren.
+
+Magische tekst met landcode toegevoegd.
+
+Er is een probleem opgelost waarbij het schakelen tussen een trigger tussen ingeschakeld/uitgeschakeld in een verbroken toestand kon komen.
+
+Er is een probleem opgelost waarbij de Mucis-afspeeltrigger niet kon worden bewerkt nadat deze was gemaakt.
+
+Er is een probleem opgelost waarbij de actie Gebruiker verifiëren geen prompt weergaf op sommige Android 14-apparaten.
+
+Versie 5.41 (februari 2024)
+============================
+
+Pop-upactie Volume weergeven toegevoegd.
+
+Actie Variabele verwijderen toegevoegd.
+
+Actie in het selectiedialoogvenster ondersteunt nu de mogelijkheid om woordenboeksleutels weer te geven als de selecteerbare items en om een standaardselectie met time-out in te stellen.
+
+Met Actie en beperking voor systeeminstellingen is het nu mogelijk om naar bestaande sleutels te zoeken (en er is zoekondersteuning toegevoegd in het magische tekstdialoogvenster).
+
+Lang drukken op een trigger, actie of beperking op het macroscherm bewerken gaat nu rechtstreeks naar het configuratiedialoogvenster (kan worden uitgeschakeld in de instellingen).
+
+Magische tekst toegevoegd voor Sim-id en Sim-naam voor inkomende/uitgaande sms-triggers.
+
+Magische tekst toegevoegd voor gespreksgroep(en) voor op oproep gebaseerde triggers.
+
+De actie HTTP-verzoek ondersteunt nu basisimport van en export naar cURL-verzoeken.
+
+De trigger en actie van de zwevende knop ondersteunen nu het instellen van de X,Y-locatie met variabele waarden.
+
+De actie Zwevende tekst ondersteunt nu het instellen van de X,Y-locatie met variabele waarden.
+
+De actie Melding wissen en de actie Meldingsinteractie ondersteunen nu het gebruik van een meldingstrigger om de melding te identificeren.
+
+Ondersteuning toegevoegd voor het converteren van lokale variabelen naar globale variabelen (druk lang op de lokale variabele om te vragen).
+
+Probleem opgelost waarbij kopiëren niet werkte in niet-Engelse talen in het configuratiedialoogvenster If Condition en Repeat While.
+
+Er is een probleem opgelost waarbij HTTP-verzoeken gecomprimeerde antwoorden niet correct verwerkten en onleesbare gegevens retourneerden.
+
+Er is een probleem opgelost waarbij een zwevende knop de verkeerde macro kon oproepen wanneer deze werd ingedrukt.
+
+Geofence minimale straal teruggebracht tot 20 meter.
+
+Andere kleine bugfixes en verbeteringen.
+
+
+Versie 5.40 (januari 2024)
+============================
+
+Triggeractie in-/uitschakelen toegevoegd.
+
+Actie Dialoogvenster MacroDroid wissen toegevoegd.
+
+Zoekfunctionaliteit toegevoegd aan het bewerkingsscherm van het actieblok.
+
+Ondersteuning toegevoegd voor sorteren en kopiëren/plakken in het configuratiedialoogvenster If Condition en Repeat While.
+
+Agendatrigger ondersteunt nu updatesnelheden van 1 minuut (voorzichtig gebruiken vanwege het leeglopen van de batterij).
+
+Ondersteuning toegevoegd voor het handmatig definiëren van de naam van woordenboek/matrix in de actie Array/woordenlijst herhalen.
+
+Ondersteuning toegevoegd voor het terugdrukken in het selectiedialoogvenster om door te gaan met de macro.
+
+Beperking voor snelle tegelstatus toegevoegd.
+
+Ondersteuning toegevoegd voor ondertiteling op tegels met snelle instellingen (alleen Android 10).
+
+Geoptimaliseerde query's voor geïnstalleerde apps - het werkt nu veel sneller op apparaten waarop veel apps zijn geïnstalleerd.
+
+Zoeken in magische tekst aangepast om variabelen op het hoogste niveau op te nemen bij het invoeren van een zoekterm.
+
+Er is een probleem opgelost waarbij het hebben van een lus voor een iteratieve array/woordenboekactie ertoe kon leiden dat de iterator niet bij het begin startte.
+
+Er is een probleem opgelost waarbij het verwijderen van een array-/woordenboekelement tijdens het itereren de iteratie kon verbreken.
+
+Er is een probleem opgelost waarbij het wijzigen van de taal eerder verwijderde categorieën kon herstellen.
+
+Er is een probleem opgelost waarbij de normale intervaltrigger onbetrouwbaar was als deze was ingesteld op > 24 uur.
+
+
+Versie 5.39 (december 2023)
+===========================
+
+Actie Tekst delen toegevoegd.
+
+UI Click-trigger toegevoegd.
+
+Actie Display Bubble Notification toegevoegd (Android 10+).
+
+Beperking zwevende knop (weergeven/niet tonen) toegevoegd.
+
+De actie 'Haal lichtniveau op' is toegevoegd.
+
+Beperking van de status van het omgevingsscherm toegevoegd.
+
+WebHook Trigger ondersteunt nu het parseren van de hoofdtekst.
+
+Ondersteuning toegevoegd voor opties voor snel vooruit- en terugspoelen op triggers voor mediaknoppen.
+
+De actie Selectiedialoogvenster ondersteunt nu het retourneren van geselecteerde toetsen bij het gebruik van woordenboeken.
+
+Er is een probleem opgelost waarbij lokale variabelen in de inlineweergave onjuist konden worden weergegeven.
+
+Er is een probleem opgelost waarbij u de volgorde van items in het scherm Macro bewerken nog steeds kon wijzigen nadat u de volgorde had uitgeschakeld.
+
+Instelling toegevoegd voor Agenda-trigger om de updatesnelheid van de agenda bij te werken.
+
+'Taalcode' magische tekst toegevoegd om de huidige systeemtaal te krijgen als een taalcode van 2 tekens (ISO 639).
+
+Versie 5.38 (november 2023)
+============================
+
+Macroscherm bewerken ondersteunt nu zoekfunctionaliteit.
+
+JavaScript-actie toegevoegd (bèta).
+
+Trigger voor de vouwstatus toegevoegd.
+
+Beperking voor vouwstatus toegevoegd.
+
+Beperking Waarden vergelijken ondersteunt nu expressies voor gehele en decimale waarden.
+
+De trigger App Launched/Closed en de naam van de app op de voorgrond zijn aangepast om betrouwbaarder te werken.
+
+Ondersteuning toegevoegd voor het opnemen van gebruikerspictogrammen bij het delen van macro's/categorieën die ernaar verwijzen. (Op dit moment niet ondersteund in sjablonen)
+
+De functie Een bug melden heeft nu een eenvoudige functie voor het zoeken naar macronamen en ondersteunt het selecteren van actieblokken.
+
+Er is een probleem opgelost waarbij de beperking voor het uitvoeren van macro's niet correct werkte bij het verwijzen naar 'Deze macro'.
+
+Er is een probleem opgelost waarbij het delen van macro's/actieblokken met apparaten in de buurt in sommige situaties niet werkte.
+
+Ondersteuning toegevoegd voor het kleuren van pictogrammen op macrosnelkoppelingen.
+
+Magic Text-invoer aangepast om globale/lokale variabelen te scheiden (om het gemakkelijker te maken voor gebruikers met grote aantallen variabelen).
+
+De actie Scherminhoud lezen heeft een nieuwe optie om weergave-id's zonder tekstuele inhoud op te nemen.
+
+Andere kleine tweaks en fixes.
+
+
+
+Versie 5.37 (oktober 2023)
+===========================
+
+Geoptimaliseerd het macroscherm bewerken om het veel sneller te maken bij het werken met zeer grote macro's.
+
+Macro Running/Not Running beperking toegevoegd.
+
+Macro voltooid trigger toegevoegd.
+
+Toegevoegd aan / uit-knop Lang indrukken trigger (alleen Android 13+) - Vereist MacroDroid ingesteld op standaard assitant.
+
+Ondersteuning toegevoegd voor time-outs voor de actie Wachten tot triggeren.
+
+Ondersteuning toegevoegd voor schermoverlays aan de trigger Schermcontext, de actie Scherminhoud lezen en de actie Tekst op scherm controleren.
+
+Ondersteuning voor schermoverlays toegevoegd aan de actie UI-interactie bij het klikken op tekst-/weergave-id's.
+
+Ondersteuning toegevoegd voor magische tekst in Webhook trigger identifiers.
+
+Toegevoegd applicatiepakket magische tekst voor App gestart / gesloten trigger.
+
+Ondersteuning toegevoegd voor tekenen in het statusbalkgebied in de actie Zwevende tekst.
+
+De optie 'Druk op Enter' toegevoegd in de actie UI-interactie (alleen Android 11+).
+
+Bijgewerkt Volgende bevestigen en INDIEN bevestigd Dan acties ter ondersteuning van time-outs tot 20 minuten.
+
+Probleem opgelost waarbij app gestarte trigger met 'alle apps' optie niet zou triggeren wanneer MacroDroid wordt gestart / gesloten.
+
+Probleem opgelost waarbij UI-interactie in sommige gevallen niet correct klikte bij gebruik van de optie identificeren in app.
+
+Probleem opgelost waarbij ui-interactie altijd aan het einde van een tekstveld werd geplakt, ongeacht de cursorpositie.
+
+Toegevoegd com.wireguard.android.permission.CONTROL_TUNNELS toestemming voor Manifest.
+
+Versie 5.36 (september 2023)
+========================
+
+Tekstactie vertalen toegevoegd.
+
+De optie Tekst verwijderen toegevoegd aan de actie Tekstmanipulatie.
+
+Ondersteuning toegevoegd voor HTML-opmaak in de actie Zwevende tekst.
+
+Webhook trigger ondersteunt nu IP-adres whitelisting.
+
+Contextspecifieke magische tekst toegevoegd voor het IP-adres van de beller bij gebruik van de Webhook-trigger.
+
+Ondersteuning toegevoegd voor delen via SMTP-e-mail naar Take Screenshot-actie.
+
+Optie toegevoegd in instellingen om het aantal startschermtegels per rij te configureren.
+
+Instelling toegevoegd voor de trigger Scherminhoud lezen om te voorkomen dat het scherm wordt gelezen wanneer MacroDroid zich op de voorgrond bevindt.
+
+Configureerbaar maximum aantal regels toegevoegd voor tekstinvoer in de MacroDroid Drawer.
+
+Optie toegevoegd voor gebruikersverificatieactie om pincode/veegpatroon toe te staan of te voorkomen.
+
+Probleem opgelost waarbij de JSON-parse-actie niet correct werkte wanneer een tekenreeks afkomstig was van een woordenboek/array met handmatig gedefinieerde sleutel/index.
+
+Vanwege verplichte wijzigingen in de Android-doel-SDK vereist Bluetooth-actie nu een nieuwe MacroDroid-helper-app (v1.9) om te functioneren op Android 13+.
+
+Andere kleine oplossingen en verbeteringen.
+
+Versie 5.35 (juli 2023)
+========================
+
+Actie Gebruiker verifiëren toegevoegd.
+
+Meldingsantwoordactie toegevoegd (maakt geautomatiseerde antwoorden mogelijk in WhatsApp / Telegram) voor Android 7+.
+
+Macro exporteren en AutoBackup ondersteunen nu bestandsversleuteling.
+
+Screen Content trigger ondersteunt nu de optie om de weergave-id te matchen.
+
+Volgende actie bevestigen en Als bevestigd actie ondersteunen nu automatische annulering time-out.
+
+Ondersteuning toegevoegd voor nog 8 snelle tegels (16 nu beschikbaar).
+
+'Battery current now' magische tekst toegevoegd.
+
+Functionaliteit voor ongedaan maken toegevoegd bij het verwijderen van items in het scherm macro/actieblok bewerken.
+
+Het macroscherm bewerken ondersteunt nu de optie omhoog / omlaag verplaatsen waarbij meerdere onderliggende beperkingen beschikbaar zijn voor een item.
+
+Magische tekst toegevoegd voor de naam van de SIM2-operator (indien van toepassing).
+
+Magic tekstinvoerdialoogvenster ondersteunt nu zoeken.
+
+Optie voor het configureren van de lade voor sluiten toegevoegd aan macro-items in de MacroDroid-lade.
+
+Probleem opgelost waarbij de pixellocaties van zwevende knoppen enigszins waren verbroken in de laatste release.
+
+Andere kleine oplossingen.
+
+
+Versie 5.34 (mei 2023)
+========================
+
+Actie Tekst controleren op scherm toegevoegd.
+
+Display Notification en Set MacroDroid Icon acties ondersteunen nu tekst als pictogrammen.
+
+De actie E-mail verzenden ondersteunt nu het retourneren van een Booleaanse waarde om aan te geven of de e-mail met succes is verzonden.
+
+Fakkelactie ondersteunt nu het helderheidsniveau (Android 13+).
+
+De trigger voor zwevende knoppen (en de actie Zwevende knop Configureren) ondersteunen nu percentagewaarden voor de X,Y-locatie.
+
+MacroDroid snelkoppelingswidget kan nu zowel actieblokken als macro's uitvoeren.
+
+Probleem opgelost waarbij magische tekstvelden voor agenda's niet werkten met agendatrigger.
+
+Probleem opgelost waarbij Spotify-actie niet zou werken voor sommige Spotify premium-gebruikers.
+
+Probleem opgelost waarbij de vergelijkingswaarde niet toestond dat waarde van iterator werd geselecteerd.
+
+Probleem opgelost waarbij de actie voor het forceren van locatie-update in sommige gevallen de locatie niet bijwerkte.
+
+Versie 5.33 (mei 2023)
+===========================
+
+Actie selectiedialoogvenster toegevoegd.
+
+Block Touches actie toegevoegd.
+
+Ondersteuning toevoegen voor gecodeerde uitvoer bij het exporteren van macrosets.
+
+Application Running constraint ondersteunt nu het opgeven van de pakketnaam (kan worden opgegeven met een variabele).
+
+UI Interaction Click-optie kan nu wachten om te voltooien en het resultaat van de klik te retourneren.
+
+De actie IF Condition heeft nu een optie om logboekregistratie te voorkomen wanneer de conditiecontrole false is.
+
+Systeemlogboek heeft een nieuwe optie om milliseconden weer te geven/te verbergen.
+
+Systeemtijd (ms) waarde toegevoegd aan magische tekst.
+
+Bahasa Indonesische vertaling toegevoegd.
+
+Versie 5.32 (april 2023)
+=========================
+
+Spotify-actie (bèta) toegevoegd.
+
+Spotify Trigger toegevoegd.
+
+Systeeminstelling wijzigingstrigger toegevoegd.
+
+MacroDrod Drawer state constraint toegevoegd.
+
+SMS Trigger ondersteunt nu de selectie van abonnements-ID's voor dual SIM-apparaten.
+
+De actie Bestand openen ondersteunt nu dynamische bestandsnamen.
+
+Ondersteuning toegevoegd voor percentagewaarden in acties voor ui-interactiebewegingen.
+
+Magische tekst toegevoegd voor de naam van het actieblok.
+
+Bijgewerkte categorieën in het scherm Acties toevoegen.
+
+Probleem opgelost waarbij de optie verbinden / loskoppelen in Android Wear-trigger niet langer werkte.
+
+Probleem opgelost waarbij het importeren van een categorie ertoe kon leiden dat actieblokken werden verwijderd.
+
+Probleem opgelost waarbij delen in de buurt niet werkte op Android 13-apparaten.
+
+Andere kleine bugfixes en verbeteringen.
+
+Versie 5.31 (februari 2023)
+=============================
+
+Ondersteuning toegevoegd voor lang indrukken in Quick Settings Tile trigger.
+
+Geactiveerde scherminhoud ter ondersteuning van een optie voor activering wanneer tekst van het scherm wordt verwijderd.
+
+Bijgewerkt mechanisme dat wordt gebruikt om een andere taal in de app te forceren om hopelijk de betrouwbaarheid te verbeteren.
+
+Probleem opgelost waarbij verwijzingen naar meer dan twee variabelen in magische tekst niet correct werden vervangen.
+
+Probleem opgelost waarbij het onmogelijk was om een woordenboeksleutelelement in een onderliggend woordenboek te selecteren (in Actie Variabele instellen).
+
+Probleem opgelost waarbij de actie Variabele instellen met de gebruikersprompt de knop OK niet inschakelde bij het instellen van een waarde in een woordenboekelement.
+
+Probleem opgelost waarbij actieblokken die vanuit sjablonen werden bekeken, niet correct werden gewist.
+
+Probleem opgelost waarbij de actie Macro uitvoeren de onjuiste macro kon openen wanneer u doorklikte naar de gekoppelde macro.
+
+Magische tekst toegevoegd voor macro-id.
+
+Andere kleine oplossingen.
+
+Versie 5.30 (januari 2023)
+============================
+
+Systeemlogboektrigger toegevoegd.
+
+Toepassing geïnstalleerd beperking toegevoegd.
+
+Zwevende tekstbeperking toegevoegd.
+
+Instelling Systeemlogboeklengte toegevoegd aan het macroDroid-instellingenscherm.
+
+Zoekfunctie toegevoegd aan het plug-inscherm.
+
+Optie automatisch verbergen na vertraging toegevoegd aan de actie Zwevende tekst.
+
+Ondersteuning toegevoegd voor percentagewaarden in ui-interactie klikconfiguratie.
+
+Ondersteuning toegevoegd voor jokertekens voor klik-id op weergave-id in de actie UI-interactie.
+
+Ondersteuning toegevoegd voor het instellen van vlaggen in de actie Intentie verzenden.
+
+Ondersteuning toegevoegd voor het zoeken in woordenboek/array-items wanneer een groot aantal sleutels aanwezig is.
+
+Expliciete optie 'Deze macro' toegevoegd in de actie Macro inschakelen/uitschakelen.
+
+Bijgewerkte Android-snelkoppelingsactie om de opties 'Alle apps weergeven' en 'Toegankelijkheid in-/uitschakelen' voor Android 11+ toe te voegen.
+
+Probleem opgelost waarbij pictogrammen niet konden worden bijgewerkt op lade-items en magische tekstlabels niet werden weergegeven voor toepassingen en snelkoppelingen.
+
+Aangepaste kalendertrigger zodat deze overeenkomt met de agendanaam als de onderliggende agenda-id ooit om welke reden dan ook zou moeten veranderen.
+
+Bijgewerkte JSON-parseringsactie, zodat Booleaanse variabelen correct worden opgeslagen als Booleaanse variabeletype (niet tekenreeksen).
+
+Versie 5.29 (november/december 2022)
+=====================================
+
+Ondersteuning toegevoegd voor template store-abonnementen op macro/gebruikers om meldingen te ontvangen over updates (alleen professionele gebruikers).
+
+JSON Output-actie toegevoegd.
+
+Actie Digitale assistent instellen toegevoegd.
+
+Vliegtuigmodus actie kan nu werken met ADB hack (geen vereiste om MacroDroid de standaard digitale assistent te maken).
+
+Activiteitsherkenningsactivering ondersteunt nu minder dan vergelijking voor het detecteren wanneer een activiteit eindigt.
+
+Screen Content trigger heeft nu een instelbare updatesnelheid.
+
+Ondersteuning toegevoegd voor het porten van een Webhook Trigger-apparaat-id naar een nieuw apparaat.
+
+De actie Zwevende tekst ondersteunt nu de uitlijning naar links, het midden en rechts.
+
+Probleem opgelost waarbij gebeurtenissen op de kalender van de hele dag onjuist konden worden geactiveerd vanwege zomertijd.
+
+Probleem opgelost waarbij triggerspecifieke waarden (bijv. inkomende oproepnummer) niet werkten na een wachttijd voor de volgende triggeractie.
+
+Probleem opgelost waarbij decimale getallen in dialoogvensters onjuist als koppelingen konden worden weergegeven.
+
+Probleem opgelost waarbij actieblok in sommige situaties niet werd uitgevoerd wanneer de categorie niet-gecategoriseerd was uitgeschakeld.
+
+Versie 5.28 (oktober 2022)
+=============================
+
+De actie Zwevende tekst is toegevoegd.
+
+"Werkvariabelen" toegevoegd aan actieblokken.
+
+Actie blokkeren actie ondersteunt nu de optie om volgende acties te blokkeren totdat deze zijn voltooid (standaard ingeschakeld).
+
+De invoeractie Clear Dictionary/Array toegevoegd om afzonderlijke vermeldingen te wissen of te verwijderen.
+
+Ondersteuning toegevoegd voor geautomatiseerde vertalingen in realtime in Template Store.
+
+Ondersteuning toegevoegd voor satellietweergave in geofence-configuratiescherm.
+
+Magische tekst toegevoegd voor Cell Tower Signal Strength.
+
+Verbeterd zoeken in actiebloklijstscherm om ook te zoeken naar acties binnen blokken.
+
+Probleem opgelost waarbij tekstmanipulatie gesplitst in array niet werkte met meerdere tekens scheidingsteken.
+
+Nieuwe instelling toegevoegd in triggeropties om de tijd van de aan / uit-knopschakelaar aan te passen om de tijd van de trigger te voltooien.
+
+Andere kleine fixes en verbeteringen.
+
+Versie 5.27.8 (september 2022)
+===============================
+
+Kleine bugfix release, om een aantal kleine problemen op te lossen.
+
+Versie 5.27 (september 2022)
+=============================
+
+Toegankelijkheidsservice-actie toegevoegd (ADB-hack vereist).
+
+Functionaliteit toegevoegd om toegankelijkheidsservices ingeschakeld te houden om problemen te omzeilen waarbij sommige apparaten ze kunnen uitschakelen (ADB Hack vereist).
+
+Beperking systeeminstellingen toegevoegd.
+
+Totale en beschikbare RAM-waarden toegevoegd aan magische tekstopties.
+
+Numerieke indicatoren toegevoegd voor toonhoogte- en snelheidswaarden in tekst-naar-spraakactie.
+
+Tijdelijke oplossing toegevoegd voor samsung launcher probleem om te voorkomen dat snelkoppelingen hun pictogram / label verliezen bij het in- en uitschakelen van de donkere modus.
+
+Magische tekst toegevoegd voor sim/provider netwerknaam.
+
+Magische tekst toegevoegd voor het type celverbinding (bijv. 3G / 4G / 5G).
+
+Toegevoegde magische tekst voor MacroDroid is pro (retourneert waar of onwaar)
+
+Ondersteuning toegevoegd voor de optie 'Deze macro' aan de beperking Macro ingeschakeld / uitgeschakeld.
+
+Optie voor het behouden van spaties toegevoegd aan de pop-upberichtactie.
+
+Ondersteuning toegevoegd voor het hernoemen van stopwatches.
+
+Optie toegevoegd om de laatst bewerkte tijd weer te geven in het macrolijstscherm (alle waarden zijn in eerste instantie onbekend totdat ze met deze nieuwste versie zijn bewerkt).
+
+De actie Variabele instellen (met de optie Nieuwe variabele) maakt de variabele nu tijdens uitvoering en ondersteunt magische tekst voor de naam van de variabele.
+
+Wear OS companion app maakt het nu mogelijk om door de lijst te scrollen met roterende bediening.
+
+Verbeteringen en oplossingen rond woordenboek/array-verwerking in Variabele trigger en beperking.
+
+Probleem opgelost waarbij ingestelde variabele actie in sommige situaties een woordenboek kon maken in plaats van een array.
+
+Probleem opgelost waarbij de naam van de variabele lokale array/woordenboek niet kon worden gewijzigd.
+
+Probleem opgelost waarbij het bekijken van een sjabloon met actieblokken ongewenste globale variabelen kon toevoegen.
+
+Probleem opgelost waarbij het verwijderen van een item uit een actieblokwoordenboek/array het woordenboek/de array zou verwijderen.
+
+Versie 5.26 (juli 2022)
+========================
+
+Macro uitvoeren, Macro annuleren en Macro uitschakelen acties ondersteunt nu het invoeren van macro op naam (ondersteunt magische tekst om het verwijzen naar macronamen van een variabele mogelijk te maken).
+
+Aanvullende instellingen zoals locatie bij zonsondergang/zonsopgang en weerlocatie worden nu opgeslagen bij het exporteren en via automatische back-up.
+
+MacroDroid Variable constraint ondersteunt nu de handmatige optie define keys voor dictionary/array variabelen.
+
+Option Dialog ondersteunt nu basis HTML-opmaak in hoofdberichttekst.
+
+Probleem opgelost waarbij categorieën niet konden worden toegevoegd aan of verwijderd uit het scherm met de categorielijst.
+
+Probleem opgelost in inkomende sms/oproeptriggers waarbij de nummervergelijking niet altijd correct werkte bij het gebruik van magische tekst.
+
+Probleem opgelost waarbij het starten van een MacroDroid-snelkoppeling MacroDroid zou minimaliseren als deze zich op de voorgrond bevindt.
+
+Probleem opgelost waarbij het actieblok kon worden gedupliceerd bij het importeren van een macro die al naar hetzelfde actieblok verwijst.
+
+Probleem opgelost waarbij actieblokken konden worden verwijderd bij het testen van bepaalde acties.
+
+Probleem opgelost waarbij onderbreking van lus niet altijd correct werkte met iteratiewoordenboek/ array-actie.
+
+Probleem opgelost waarbij het zoeken naar pictogrammen niet correct werkte voor pictogrampakketten.
+
+Probleem opgelost waarbij floating button configure de selectie van triggers binnen een wacht tot trigger actie niet toestond.
+
+Andere kleine oplossingen.
+
+Versie 5.25.6 (juli 2022)
+===============================
+
+Kleine bugfix-update naar de vorige versie van v5.25. Corrigeert een aantal kleine problemen in de vorige release.
+
+Versie 5.25 (juni 2022)
+========================
+
+Macro enabled trigger toegevoegd.
+
+Optie toegevoegd aan Floating Button Trigger om trigger uit te schakelen (niet hele macro) wanneer verwijderd via het bin-pictogram.
+
+Variabele knop configureeractie toegevoegd.
+
+Bijgewerkte magische tekst ter ondersteuning van accolades om verwarring met woordenboek/array syntaxis te verminderen. (Vierkante haken worden nog steeds ondersteund, {system_time} en [system_time] zowel werk als standaard kunnen worden gewijzigd in de MacroDroid-instellingen)
+
+Betere array/woordenboek ondersteuning toegevoegd aan acties zoals HTTP Request en File Read om direct schrijven naar aangepaste toetsen mogelijk te maken.
+
+De optie "Splitsen naar array" toegevoegd aan de actie Tekstmanipulatie.
+
+Aangepaste kalendertrigger om beter te werken met gebeurtenissen van de hele dag in verschillende tijdzones.
+
+Bij het bekijken van een sjabloonmacro is een nieuw menu-item beschikbaar voor "Toegevoegd uitgeschakeld".
+
+Spraakinvoer ondersteunt nu het rechtstreeks instellen in nieuwe woordenboektoetsen / array-indexen met magische tekst.
+
+Pop-up berichtactie ondersteunt nu basis html zoals <b>VET</b> en <i>ITALIC</i>
+
+Toegevoegd In-/uitschakelen (inclusief kinderen) om het macroscherm te bewerken, maakt het inschakelen van grote omstandigheden en lussen eenvoudiger.
+
+Optie toegevoegd om horizontale vegen in/ uit te schakelen om MacroDroid Drawer te openen.
+
+Optie 'Overschrijven' toegevoegd aan de actie Schrijven naar bestand.
+
+Optie toegevoegd aan WhatsApp Send-actie om zowel standaard als zakelijke app te ondersteunen.
+
+Magische tekst toegevoegd voor woordenboek/arraygrootte.
+
+Probleem opgelost waarbij het gebruik van cut op een IF/Loop-blok niet correct werkte.
+
+Probleem opgelost waarbij de optie dialoogvenster doorgaan niet correct werkte.
+
+Probleem opgelost waarbij de opnamemicrofoonactie niet de juiste bestandsextensie schreef.
+
+Probleem opgelost waarbij de waarde van een variabele niet werd vernieuwd als deze werd bijgewerkt terwijl de MacroDroid-lade is geopend.
+
+Probleem opgelost waarbij het bewerken van een uitgeschakelde macro deze opnieuw kon inschakelen.
+
+Probleem opgelost waarbij weergavemeldingen variabelen niet correct doorgaven in de optie Uitvoeren wanneer erop gedrukt.
+
+Optie toegevoegd in instelling om alle helpinformatiekaarten te herstellen die eerder zijn gedimd.
+
+Versie 5.24.3 (juni 2022)
+==========================
+
+Deze update was vereist door Google om een Recognizer-service toe te voegen wanneer MacroDroid als standaardassistent wordt gebruikt.
+
+Versie 5.24 (mei 2022)
+==========================
+
+Actie Scherminhoud lezen toegevoegd.
+
+Trigger scherminhoud toegevoegd.
+
+Actie Lezen uit bestand toegevoegd.
+
+Beperking categorie ingeschakeld/uitgeschakeld toegevoegd.
+
+Actie Exportlogboek toegevoegd.
+
+Optie toegevoegd om weergave-id handmatig in te voeren in UI Interactie klikken.
+
+Optie voorground toegevoegd aan Volume-actie instellen voor apparaten die het instellen van volume met MacroDroid op de achtergrond niet toestaan.
+
+Optie toegevoegd aan pop-upberichtactie om vorige pop-up te annuleren (handig voor tweede aftellen bijvoorbeeld)
+
+Optie toegevoegd aan berichtdialoogvenster en optiedialoogvensteracties om te voorkomen dat het dialoogvenster voor het sluiten van de terugknop wordt gesloten.
+
+Ondersteuning toegevoegd in WebHook trigger voor het instellen van woordenboek / array variabele vermeldingen.
+
+Meld een bugfunctie bevat nu de mogelijkheid om screenshots toe te voegen.
+
+Ondersteuning toegevoegd voor het hernoemen van sneltoetsen in de MacroDroid-lade.
+
+MacroDroid Drawer ondersteunt nu opties voor openen via een veeg omhoog en / of veeg omlaag.
+
+Andere kleine fixes en tweaks.
+
+Versie 5.23 (april 2022)
+==========================
+
+Woordenboek- en arrayvariabeletypen toegevoegd (alleen Pro-gebruikers).
+
+Iterate Dictionary/Array-actie toegevoegd die kan worden gebruikt om over alle elementen binnen een woordenboek/array te lopen.
+
+JSON Parse-actie toegevoegd.
+
+De actie Tegelstatus snelle instelling instellen gewijzigd in Snelle tegelactie configureren om extra instelling van pictogram en label toe te staan.
+
+Optie voor gebarenreeks toegevoegd aan UI-interactieactie om complexe bewegingen mogelijk te maken, zoals veegvergrendelingspatronen.
+
+Optie toegevoegd aan het configuratiescherm ui-interactie om de overlay van de aanraaklocatie in te schakelen.
+
+Mogelijkheid toegevoegd om individuele buffers in/ uit te schakelen naar Logcat trigger.
+
+Ip-adresbeperking toegevoegd.
+
+Magic Text toegevoegd voor WebHook base url.
+
+Zoekfunctionaliteit toegevoegd aan het lijstscherm van Action Block.
+
+Optie toegevoegd om systeemlogboek in HTML te exporteren, zodat het dezelfde kleurcodering kan uitvoeren als in de app.
+
+Cut-optie toegevoegd aan Macro- en actieblokschermen bewerken om volledige knip-, kopieer- en plakfunctionaliteit mogelijk te maken.
+
+Actieblok "Testacties" geeft nu een overzicht weer van de uitvoervariabelen wanneer deze worden uitgevoerd.
+
+Probleem opgelost waarbij de macro-aanroepmethode niet in alle gevallen correct werkte.
+
+Probleem opgelost met de voorwaarde 'niet in gebeurtenis' die niet correct werkte in Agendabeperking.
+
+Probleem opgelost waarbij bestandsnaam in http-aanvraagactie magische tekstwaarden niet correct verwerkte.
+
+Probleem opgelost waarbij acties binnen een actieblok niet werden geannuleerd wanneer de bovenliggende macro wordt geannuleerd.
+
+Probleem opgelost waarbij de achtergrond op sommige apparaten onjuist kon worden gedraaid.
+
+Andere kleine fixes en tweaks.
+
+Versie 5.22.6 (februari 2022)
+============================
+
+Probleem opgelost waarbij MacroDroid-video's niet werkten.
+
+Versie 5.22 (februari 2022)
+============================
+
+Http Request-actie toegevoegd.
+
+Beperking van aanroepmethode toegevoegd om detectie mogelijk te maken wanneer een macro wordt aangeroepen vanuit niet-standaard macrotriggers.
+
+Basiszoekfunctie (alleen in het Engels) toegevoegd aan de pictogramkiezer.
+
+Ondersteuning voor actieblokken toegevoegd aan MacroDroid Drawer.
+
+Ondersteuning toegevoegd voor biometrie en vertraging wachtwoord prompt in wachtwoordbeveiliging instellingen.
+
+Magische tekst toegevoegd voor MacroDroid versienummer.
+
+Optie voor negeren case toegevoegd aan variabele trigger en beperking.
+
+Ondersteuning toegevoegd voor het doorgeven van booleaanse variabelewaarden in invoerparameters voor actieblokken.
+
+Optie Negeren (macro annuleren) toegevoegd voor optiedialoogvenster om te voorkomen dat verdere acties worden uitgevoerd als u dit kiest.
+
+Mogelijkheid toegevoegd om variabelen te filteren op type op het scherm globale variabelen.
+
+Optie uitsluiten toegevoegd aan op oproepen / sms gebaseerde triggers en doorzoekbare contactnamen toegevoegd aan het selectiedialoogvenster.
+
+Probleem opgelost waarbij het samenvoegen van tasker-arraywaarden in één tekenreeks soms de volgorde van elementen verkeerd opleverde.
+
+Probleem opgelost waarbij delen met apparaat in de buurt niet altijd werkte op Android 12-apparaten.
+
+Probleem opgelost waarbij het selecteren van een globale variabele voor de actie Spraakuitvoer de verkeerde variabele kon instellen.
+
+Probleem opgelost waarbij de bluetooth-bakentrigger meerdere keren kon worden geactiveerd voor een enkele gebeurtenis.
+
+Probleem opgelost waarbij Geofence zich niet op het juiste gebied concentreerde bij het zoeken of in- en uitzoomen.
+
+Probleem opgelost waarbij de Wifi SSID-lijst dubbele vermeldingen kon bevatten.
+
+Probleem opgelost waarbij een zeer lange tekenreeks in een lokale variabele kon voorkomen dat de knop OK toegankelijk was.
+
+Probleem opgelost waarbij het pictogram MacroDroid instellen in sommige scenario's niet kon worden bijgewerkt.
+
+Probleem opgelost waarbij gebeurtenissen van de hele dag in agendabeperking niet correct werkten in verschillende tijdzones.
+
+Veel andere kleine fixes en tweaks.
+
+Versie 5.21
+============
+
+Kleine bug fix release.
+
+Aangepaste actie blokkeert invoerparameterafhandeling, zodat u een lege waarde kunt doorgeven en altijd de standaardinvoerparmwaarde kunt gebruiken.
+
+De optie "Delen als afbeelding" toegevoegd aan het bewerkingsscherm van Action Block.
+
+Verschillende kleine problemen rond het bewerken van actieblokken opgelost.
+
+Probleem opgelost waarbij gratis gebruikers macro's konden verliezen als ze de limiet van 5 macro's bereikten en ze een bewerking naar een macro of actieblok verwijderden.
+
+Probleem opgelost met de tegel "Laatst geopend" op het startscherm die in sommige situaties niet werkt.
+
+Probleem opgelost met de actie "Spraakinvoer" waardoor een variabeletrigger niet werd geactiveerd bij het schrijven naar een variabele.
+
+Probleem opgelost waarbij het plakken van items in een actieblok acties niet altijd correct configureerde.
+
+Versie 5.20
+============
+
+Actieblokken toegevoegd, om groepering van veelgebruikte acties mogelijk te maken die kunnen worden aangeroepen vanuit macro's of andere actieblokken.
+
+Ondersteuning toegevoegd voor het delen met apparaten in de buurt van het macrobewerkings- en actieblokbewerkingsscherm.
+
+De actie "Button Bar Image instellen" toegevoegd om het bijwerken van knoppen met de MacroDroid-meldingsknopbalk mogelijk te maken.
+
+Spraakinvoeractie toegevoegd om gesproken tekst te vragen en deze vervolgens op te slaan in een tekenreeksvariabele.
+
+WhatsApp-actie (bèta) toegevoegd om basisberichten alleen naar individuele contacten te verzenden.
+
+Mogelijkheid toegevoegd om macro's als favoriet te markeren en eenvoudig te filteren tussen favoriete /alle macro's.
+
+Tegel op het startscherm toegevoegd om een snelle snelkoppeling naar favoriete macro's te bieden.
+
+Toegevoegd startscherm tegel voor MacroDroid Video's die links bevat naar nieuwe officiële MacroDroid YouTube video's.
+
+Het vertaalscherm laat nu zien hoe compleet de vertaling voor elke taal is.
+
+Diverse kleine bugfixes en kleine verbeteringen.
+
+Versie 5.19.11
+===============
+
+Probleem opgelost waarbij de wachtwoordprompt in sommige gevallen niet werd weergegeven bij het gebruik van wachtwoordbeveiliging om de app te openen.
+
+Probleem opgelost waarbij het delen van de laatste foto niet in alle gevallen werkte.
+
+Probleem opgelost waarbij de slaaptrigger de beperkingen niet controleerde.
+
+Andere kleine bugfixes.
+
+Versie 5.19.9
+==============
+
+Houd er rekening mee dat deze release is bijgewerkt om zich te richten op de Android 11 SDK, die strengere beperkingen op bestandstoegang afdwingt dan eerdere versies. Een klein aantal macro's moet mogelijk worden bijgewerkt om naar bestanden te kunnen blijven schrijven.
+
+** Meld eventuele bugs of problemen met deze release via "Een bug melden" in de sectie probleemoplossing **
+
+Slaaptrigger toegevoegd (Android 10+).
+
+Actie Duidelijke variabelen toegevoegd.
+
+Logcat-optie toegevoegd om Clipboard Trigger te ondersteunen voor gebruikers van Android 10+ (Root / ADB-hack).
+
+Klembordvernieuwingsactie toegevoegd om de inhoud van het klembord in MacroDroid voor Android 10+ gebruikers te krijgen.
+
+Ondersteuning voor maximaal drie actieknoppen toegevoegd aan de actie Melding weergeven waarmee andere macro's kunnen worden uitgevoerd wanneer erop wordt gedrukt.
+
+Probleem opgelost waarbij de lade niet correct werd weergegeven op het apparaat met lay-outs van rechts naar links.
+
+Verbeterde prestaties wanneer meerdere zwevende knoppen worden toegevoegd/verwijderd.
+
+De actie UDP verzenden ondersteunt nu magische tekst voor doel- en poortvelden.
+
+Toegevoegd stop op terug druk op optie voor If Then Bevestig actie.
+
+De optie 'Sta elk certificaat toe' toegevoegd aan HTTP Get.
+
+Ondersteuning toegevoegd voor het verzenden van e-mail via SMTP naar de actie Locatie delen.
+
+Ondersteuning toegevoegd voor het uitvoeren van shell-scriptopdrachten via helperbestand (helperbestand 1.7 vereist)
+
+Beperkte ondersteuning toegevoegd voor toegang tot taskerarraywaarden (Tasker-plug-in/actie) door alle waarden op te slaan in komma's of nieuwe regelscheidingstekenreeksen.
+
+Een correctie op vorige update: Veel dank aan lamvankhoat1 voor de grondige Vietnamese vertaling.
+
+Versie 5.18
+============
+
+Kleine bugfix release
+
+Schakelaar toegevoegd om de HTML-verzendmodus in/ uit te schakelen bij E-mail verzenden (via SMTP).
+
+Probleem opgelost waarbij het pictogram niet kon worden geselecteerd bij de actie Melding.
+
+Probleem opgelost waarbij De actie ScreenShot uitvoeren op sommige apparaten een onjuiste afbeelding zou verzenden.
+
+Probleem opgelost waarbij de actie Indien bevestigd niet correct werkte als deze werd aangeroepen wanneer het scherm is uitgeschakeld.
+
+Probleem opgelost waarbij sommige gebarenwaarden voor UI-interactie niet de juiste waarde rehabiliteerden.
+
+Probleem opgelost waarbij u gegevens in de actie SMS Verzenden niet kon bewerken nadat deze was geconfigureerd.
+
+Andere kleine oplossingen. W
+
+Versie 5.17
+============
+
+Toegevoegd Dark Theme Change trigger (Android 10+)
+
+De macrobeschrijvingstekst in het macroscherm bewerken is gewijzigd, zodat deze met macro-inhoud scrolt en het aantal toegestane tekens wordt uitgebreid.
+
+Ondersteuning toegevoegd voor variabelen in ui-interactiebeweging.
+
+Ondersteuning toegevoegd voor wachtwoordinvoer in Actie Variabele instellen - gebruikersprompt.
+
+Probleem opgelost waarbij de optie UI Interaction identify in app niet werkte op sommige apparaten.
+
+Vietnamese taal toegevoegd (Veel dank aan lamvankhoat1 voor het voltooien van dit)
+
+Mogelijkheid toegevoegd om tekst van snelkoppelingen naar toepassingen in MacroDroid Drawer te wijzigen.
+
+Veel andere kleine fixes en tweaks.
+
+Versie 5.16.2
+==============
+
+Probleem opgelost waarbij de app werd geactiveerd en de voorgrondtoepassing werd gedetecteerd, op sommige apparaten niet werkte.
+
+Andere kleine oplossingen.
+
+Versie 5.16
+============
+
+Probleem opgelost waarbij sommige macro's ontbraken in de sjabloonlijst.
+
+Veel kleine bugfixes.
+
+Versie 5.15
+============
+
+Herstelde omgekeerde volgorde optie naar systeemlogboek.
+
+Optie toegevoegd om Logcat-berichten vast te leggen (en een item te selecteren) naar Logcat-trigger.
+
+Link naar wiki toegevoegd in zijmenu (Wiki is alleen in het Engels).
+
+Ondersteuning toegevoegd voor subtekst in meldingsactivering (en bijbehorende magische tekst).
+
+Probleem opgelost waarbij zwevende knoppen hun vorige positie niet behielden.
+
+Probleem opgelost waarbij het open systeemlogboek niet correct werkte.
+
+Probleem opgelost waarbij het bijvoegen van een systeemlogboek om e-mailactie te verzenden niet correct werkte.
+
+Veel andere kleine fixes en tweaks.
+
+Versie 5.14
+============
+
+De actie Verborgen meldingen herstellen (Android 11+) is toegevoegd om permanente meldingen die eerder verborgen waren met de actie Meldingen wissen, te herstellen.
+
+Probleem opgelost waarbij het systeemlogboek geen koppelingen naar macro's weergaf.
+
+Andere kleine oplossingen en verbeteringen.
+
+Versie 5.13
+============
+
+Nieuw systeemlogboek met zoek- en filterfuncties.
+
+Ondersteuning toegevoegd voor het weergeven van het logboek voor een enkele macro alleen vanuit de macrolijst en het bewerkingsgeheugenscherm.
+
+Herstelde SMS Verzonden trigger. (MacroDroid mag nu de vereiste toestemming gebruiken)
+
+Herstelde 'monitor inbox' optie op de SMS Ontvangen trigger. (MacroDroid mag nu de vereiste toestemming gebruiken)
+
+Play Sound-actie ondersteunt nu het instellen van het audiokanaal voor een individuele actie.
+
+Probleem opgelost waarbij de actie Wachten tot trigger ten onrechte andere blokken kon aanroepen die niet zouden moeten worden gebruikt.
+
+Ondersteuning voor magische tekst toegevoegd aan de actie Systeeminstellingen.
+
+Macrogegevens snel uitvoeren worden nu opgenomen bij het exporteren/importeren van macro's.
+
+Call Missed en Call Active triggers ondersteunen nu directe nummerinvoer en groepsselectie.
+
+Categorieën en macro's in de macrolijst ondersteunen nu aangepaste kleuren zodat elke kleur kan worden ingesteld.
+
+Probleem opgelost waarbij sommige macro's in het sjabloonarchief niet konden worden geïmporteerd.
+
+Versie 5.12
+============
+
+Geofence (locatie) beperking toegevoegd.
+
+Google Assistent-trigger toegevoegd, zodat je gemakkelijk kunt bepalen of een macro is aangeroepen door de assistent (en niet door een andere trigger).
+
+Lussen en conditieacties met onderliggende acties kunnen nu worden samengevouwen/uitgebreid om het bewerken van grote macro's eenvoudiger te maken.
+
+Versie 5.11
+============
+
+Bevat nu ondersteuning voor het uitvoeren van macro's via de Google assistent (momenteel alleen in het Engels). Zorg ervoor dat zowel de taal van uw apparaat als de taal van de Google Assistent zijn geconfigureerd voor Engels om deze functie te gebruiken.
+
+Roep macro's aan door te zeggen "Ok Google voert 'macronaam' uit in MacroDroid". Momenteel ondersteunt Google deze functionaliteit alleen voor Amerikaans Engels. Ik zal ondersteuning voor andere landinstellingen en talen toevoegen wanneer Google dit toestaat.
+
+Aangepaste meldingskanalen toegevoegd voor gebruik met de weergavemeldingsactie.
+
+Break from Loop-actie toegevoegd.
+
+Continue Loop-actie toegevoegd.
+
+Verdere bugfixes en kleine verbeteringen.
+
+Versie 5.10
+============
+
+Bugfix release. Lost verschillende kleine problemen en zeldzame crashes op.
+
+Verbeterde verwerking rond enkele ontbrekende machtigingen.
+
+Versie 5.9
+===========
+
+Cloudback-upfunctie toegevoegd in het automatische back-upscherm (alleen voor Pro-gebruikers).
+
+Het MacroDroid-forum is verhuisd van Tapatalk naar een schoner zelf gehost forum.
+
+Verschillende kleine bugfixes.
+
+Versie 5.8
+===========
+
+Wifi-actie instellen vereist nu een helperbestand op Android 10+ (Google-beperking opgelegd aan apps).
+
+De actie Wachten tot activeren toegevoegd om een actieve macro te laten pauzeren totdat een specifieke trigger wordt geactiveerd.
+
+Optie toegevoegd om categorieën te vergrendelen met een wachtwoord / pincode.
+
+Mogelijkheid toegevoegd om MacroDroid-macro's toe te voegen aan het aan / uit-knopmenu (alleen Android 11)
+
+Tekstkleuroptie toegevoegd aan pop-upberichtactie.
+
+Wacht tot de volledige optie voor de actie 'Macro uitvoeren' is toegevoegd.
+
+Tekstkleuroptie en pictogramtint toegevoegd aan de actie Pop-upbericht.
+
+Met de actie Tekst spreken kan nu taal worden ingesteld op elke afzonderlijke actie-instantie.
+
+De actie Agenda-item toevoegen ondersteunt nu het instellen van de tijd van het item ten opzichte van de waarde van een variabele.
+
+Probleem opgelost waarbij logcat_line magische tekst niet werkte.
+
+Probleem opgelost waarbij het annuleren van macroacties de actie Wachten tot trigger niet annuleerde.
+
+Er zijn enkele logische problemen opgelost waarbij geneste IF/ELSE-opdrachten zich in sommige randgevallen niet gedroegen zoals verwacht.
+
+Versie 5.7
+===========
+
+Lijst met plug-ins toegevoegd voor het ontdekken/delen van apps van derden die compatibel zijn met MacroDroid (tegel startscherm).
+
+Tegel voor startscherm toegevoegd voor snelle toegang tot de laatst bewerkte macro.
+
+Tegel voor het startscherm toegevoegd voor snel lopende macro's.
+
+Actie Camera in-/uitschakelen toegevoegd om de camera uit te schakelen voor alle toepassingen op het apparaat.
+
+Aangepaste control media action zodat de optie Simulate Audio Button beter werkt om de laatst gebruikte mediatoepassing te bedienen.
+
+Met de dag/tijd-trigger kunt u nu een specifieke secondenwaarde instellen.
+
+Voeg de zoekfunctie toe aan het lijstscherm met variabelen.
+
+Versie 5.6
+===========
+
+Actie in de vliegtuigmodus kan nu worden uitgevoerd op een niet-geroot apparaat op Android 7+ (door MacroDroid de standaard assistent-app te maken).
+
+De actie Toepassing starten ondersteunt nu een pakketnaamoptie (inclusief magische tekst om variabelen te ondersteunen, enz.).
+
+MacroDroid-variabelewaarden kunnen nu worden doorgegeven aan Tasker-plug-ins met behulp van de Taaker-opmaakstijl (%varname).
+
+Achtergrond-/tint- en SMTP-instellingen van de meldingsknopbalk worden nu opgeslagen bij het exporteren van macro's.
+
+Windrichtingswaarde toegevoegd aan weertrigger (en weerspecifieke magische tekst).
+
+Bijgewerkte integervariabelen, zodat ze nu worden ondersteund door een lang type, zodat ze waarden > 2.147.483.647 kunnen bevatten.
+
+Andere kleine fixes en verbeteringen.
+
+Versie 5.5
+===========
+
+Snelle tegelschakelaar toegevoegd om MacroDroid aan / uit te zetten (Android 7+).
+
+Optie toegevoegd om macrodetails te verbergen in de macrolijstweergave.
+
+Probleem opgelost waarbij VPN Trigger niet werd geactiveerd.
+
+Probleem opgelost waarbij het configureren van de trigger van de meldingsbalkknop geen pictogrammen weergaf.
+
+Belangrijke updates voor sommige vertalingen.
+
+Andere kleine fixes en UI tweaks.

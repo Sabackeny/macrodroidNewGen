@@ -1,0 +1,70 @@
+Version 5.54 (June 2025)
+=======================
+
+Added Java Code action.
+
+Updated JavaScript action to support returning to all variable types - Use mdOutput(value).
+
+Added option to output array and dictionary variables in JSON format {vjson=}, {lvjson=} (to make them easier to use in JavaScript action).
+
+Added App Activity Launched/Closed Trigger.
+
+Updated Configure Quick Tile action to support setting a tile into an inactive state where it cannot be interacted with.
+
+Updated HTTP Request action to add support for dynamic filenames/local uri in content body.
+
+Added option to 'Apply Auto Focus' to Take Picture action.
+
+Added 'Create GUID' magic text to create a globally unique identifier.
+
+Added 'Vibrate on Press' option to Floating Button trigger and Floating text action.
+
+Added ability to clear system log for an individual macro when viewing the System Log for that macro (via edit macro screen).
+
+Added context specific magic text for log text when using the System Log Entry trigger.
+
+Added option to use variable value for timeout in Wait Until Trigger action.
+
+Exported Macros and Categories will now contain any associated global variables as part of the export.
+
+Fixed issue where configuring Wifi State Change trigger would not allow SSID selection unless helper app was installed.
+
+Fixed issue where scene slider would not correctly update range when referenced variables are updated.
+
+Added support for Marathi language to Speak Text action.
+
+Fixed issue where Share Location to variable did not support saving into dictionary/array element.
+
+Added setting to disable web page when using the HTTP Server Request trigger.
+
+Other minor fixes.
+
+-- Scene Improvements --
+
+Added Horizontal Divider component.
+
+Added support for clicking value on scene Slider component and entering number via dialog.
+
+Added support for password entry in scene Text Entry component.
+
+Added split alignment option for scene Switch and Checkbox components.
+
+Added option to set rounded corners on Scenes when using dialog or overlay option.
+
+Scene Slider now supports displaying value label at start and end (or none).
+
+Scene Slider now supports step values.
+
+Scene Text now supports magic text values for specifying the text size.
+
+Scene Text now supports HTML formatting option.
+
+Scene Text now supports a maximum number of lines and scale to fit option.
+
+All scene items now support visibility state which can be bound to a boolean variable.
+
+Scene Switch now supports separate text colour, switch off colour and switch on colour.
+
+Scene Button now supports toggling a boolean variable.
+
+Fixed issue where scene would not update variables correcly when run from an action block and not using the block next actions by default option.

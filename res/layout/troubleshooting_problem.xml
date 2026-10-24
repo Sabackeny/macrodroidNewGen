@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/dontKeepAcitvitesWarning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/primary" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/problemTitle" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/white_slight_transparent" android:textColorLink="@color/yellow_200" android:id="@id/problemDescription" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+        <org.apmem.tools.layouts.FlowLayout android:gravity="start|center|top" android:id="@id/macroList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/configureButton2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+            <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@id/configureButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure" android:textAllCaps="false" style="?borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

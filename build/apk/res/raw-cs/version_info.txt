@@ -1,0 +1,1398 @@
+Verze 5.53 (duben 2025)
+============================
+
+Byla přidána akce Vlastní scéna, která umožňuje vytvářet jednoduchá přizpůsobitelná uživatelská rozhraní.
+
+Byla přidána akce Skrýt vlastní scénu.
+
+Obrazovky úprav makra/bloku akcí nyní podporují možnost nabídky pro přidání oddělovačů.
+
+Funkce automatického zálohování nyní umožňuje změnit umístění místního úložiště záloh.
+
+Byla aktualizována akce Operace se souborem, která přidala možnost specifikovat vzory složek (při kopírování/přesouvání/mazání složek)
+
+Aktualizováno omezení Porovnat hodnoty o možnost porovnání polí a slovníků a přidány kontroly, zda obsahuje klíč/hodnota.
+
+Byla aktualizována průběžná vazba makra tak, aby podporovala zadávání názvu makra jako textu (včetně podpory kouzelného textu).
+
+Byla aktualizována akce Povolit/Zakázat kategorie, aby podporovala novou možnost povolení všech maker v kategorii (při povolení kategorie).
+
+Aktualizován text sdílený s MacroDroidem pro přidání nového kontextově specifického kouzelného textu pro pole "Předmět", které je nastaveno při sdílení textu.
+
+Byla aktualizována akce Překrytí animace, která přidala možnost vynutit obnovení obrazu (ignorovat vyrovnávací paměť).
+
+Minimální podporovaná verze Androidu je nyní Android 6 (Marshmallow).
+
+Byl opraven problém, kdy mohl selhat pokus o spuštění více souběžných akcí JavaScript s modulem Jetpack.
+
+Byl opraven problém, kdy přejetí prstem pryč od MacroDroidu pomocí přepínače aplikací mohlo zabít makra čekající v akci Wait Until Trigger.
+
+Byl opraven problém, kdy akce Shrnout makra nepřidala místní proměnné při výběru možnosti proměnné vše.
+
+Přidána možnost spouštěče západu / východu slunce použít (nebo nepoužít) alarm k zajištění přesného času spuštění.
+
+Přidána možnost Zakázat akci MacroDroid, která umožňuje vždy zakázat MacroDroid (bez ohledu na nastavení ochrany heslem).
+
+Verze 5.52 (březen 2025)
+============================
+
+Přidán spouštěč stavu NFC povolen.
+
+Upravena akce HotSpot On/Off, takže již nepotřebuje pomocný soubor na Androidu 14+.
+
+Přidána možnost nabídky pro povolení/zakázání protokolování pro každý jednotlivý spouštěč, akci a omezení.
+
+Obrazovka konfigurace geografického ohraničení se vrátí do režimu Open Street Maps v zařízeních, která nemají služby Google.
+
+Upravena akce Interakce oznámení, aby mohla znovu fungovat na zařízeních se systémem Android 14+.
+
+Aktualizováno omezení Makro povoleno/zakázáno o přidání podpory pro určení názvu makra v textu (včetně podpory kouzelného textu).
+
+Byla aktualizována akce Získat text z ID zobrazení, aby byla do logické proměnné přidána možnost uložení stavu obrazovky.
+
+Byla přidána podpora pro tónování ikon vlastních widgetů.
+
+Byla odebrána dlaždice Přidat průvodce makra.
+
+Přidána dlaždice Naposledy otevřený blok akce.
+
+Přidána možnost shrnout akci makra pro přidání všech proměnných používaných makrem (místní + globální).
+
+Přidána možnost nastavit maximální počet řádků pro proměnnou v zásuvce MacroDroid.
+
+Byly přidány možnosti nabídky vložení při úpravách seznamu podmínek v akci klauzule IF.
+
+Přidána možnost vynutit obnovení obrazovky na akce Číst obsah obrazovky, Získat text podle ID zobrazení a Zkontrolovat text na obrazovce.
+
+Byl opraven problém, kdy kouzelný text {cell_connection_type} při změně neodrážel nejnovější typ připojení buňky.
+
+Byl opraven problém, kdy možnost Nastavit proměnnou kopírovala pole/slovník a nezobrazovala všechna dílčí pole/slovníky.
+
+Byl opraven problém, kdy spouštěč dlouhého stisknutí ikony makrodruidu nefungovalo správně s omezením Trigger Trigger.
+
+Vylepšená služba usnadnění přístupu k interakci uživatelského rozhraní pro opravu problémů, kdy by se po aktualizaci obrazovky mohl vrátit starý obsah obrazovky.
+
+Vylepšené omezení zapnutí / vypnutí obrazovky pro pokus o opravu případů, kdy hlásí zapnutí obrazovky, když je vypnutá (například při připojení k Android Auto).
+
+Verze 5.50 (leden 2025)
+============================
+
+Přidána akce skenování Wifi SSID.
+
+Bylo přidáno omezení připojení zařízení USB.
+
+Přidána akce Shrnutí maker / bloků akcí.
+
+Přidána akce skupiny akcí, která umožňuje snadnější seskupování, přesouvání, kopírování a povolování/zakázání souvisejících akcí.
+
+Byla přidána podpora funkce vrácení zpět při změně pořadí položek na obrazovkách Upravit makro a Upravit blok akcí.
+
+Byla přidána podpora pro sdílení záložních souborů z cloudové zálohy, takže ke každému záložnímu souboru lze snadno přistupovat bez nutnosti obnovy z něj.
+
+Vylepšené rozevírací nabídky pro výběr makra/bloku akcí, takže je lze prohledávat v případech, kdy je k dispozici velký počet možností.
+
+Byla aktualizována akce Plovoucí text, aby podporovala volitelné stínování (aby byl text výraznější při použití průhledného pozadí)
+
+Aktualizovaný spouštěč SMS Sent pro přidání možnosti přímého zadání čísla.
+
+Byla aktualizována akce Překrytí animace, která podporuje použití proměnných k definování hodnot x, y, šířky a výšky animace.
+
+Byla aktualizována akce Zobrazit oznámení, aby podporovala zadávání kouzelného textu do pole id.
+
+Do záložního souboru byla přidána chybějící nastavení MacroDroidu pro snadnější obnovení.
+
+Bylo přidáno tlačítko Kopírovat při úpravách položky proměnné pole/slovníku pro získání kouzelného textu pro úplnou cestu pole/slovníku.
+
+Byl opraven vzácný problém, kdy se v některých případech mohla zaseknout plovoucí tlačítka.
+
+Byl opraven problém, kdy mohl plovoucí text blikat při pravidelné aktualizaci existujícího plovoucího textu.
+
+Další drobné opravy.
+
+Verze 5.49 (prosinec 2024)
+============================
+
+Přidána akce komplikace Wear OS.
+
+Přidána spoušť kliknutí komplikace Wear OS.
+
+Přidán spouštěč Media Track Changed.
+
+Byla aktualizována akce Překrytí animace tak, aby podporovala místní soubory GIF.
+
+Byla aktualizována akce Exportovat makra tak, aby podporovala výstup do řetězcové proměnné.
+
+Do nastavení byla přidána možnost zakázat protokolování pádů a analytická data.
+
+Přidána možnost Vybrat telefonní číslo pro akci Vymazat protokol hovorů (podporuje kouzelný text a regulární výraz).
+
+Dlouhým stisknutím rychlé dlaždice zapnutí/vypnutí MacroDroid se nyní spustí MacroDroid.
+
+Přidána možnost Počkat do spouštěče, která vrátí booleovskou proměnnou indikující, zda došlo k vypršení časového limitu nebo ne.
+
+Byly provedeny implementační změny ve způsobu interního ukládání maker, aby se zlepšil výkon při práci s velkým počtem maker.
+
+Vylepšená akce Získat kontakty, aby správně vyplnila více vlastních telefonních položek správnými vlastními názvy.
+
+Přidána možnost "Testovat akce" a "Testovat makro" do omezení metody vyvolání makra.
+
+Přidána možnost zobrazit položky podslovníku v zobrazení proměnné slovníku dlouhým stisknutím pole hodnoty.
+
+Přidána podpora pro zobrazení obsahu položky slovníku na obrazovce proměnné (dlouhým stisknutím hodnoty zapnete/vypnete).
+
+Byl upraven způsob získávání magického textu {cell_connection_type}, aby se zlepšila přesnost identifikace typu sítě.
+
+Byla aktualizována akce Odeslat záměr, která přidala podporu kouzelného textu do polí Akce, Balíček a Třída.
+
+Byl opraven problém, kdy akce Zrušit akce makra nezpůsobila spuštění spouštěcí události Dokončeno makro.
+
+Byl opraven problém, kdy by odsazení na malých plovoucích tlačítkách bylo nesprávné.
+
+Opraven problém s nefunkční akcí Otevřít protokol hovorů na některých zařízeních.
+
+Byl opraven problém, kdy omezení Porovnat hodnoty v některých jazycích nedokázalo správně porovnat logické hodnoty.
+
+Byl opraven problém, kdy akce Nastavit obraz panelu tlačítek neaktualizovala odkaz na číslo tlačítka, když se tlačítko přesune na panelu tlačítek doleva nebo doprava.
+
+Byl opraven problém s hraničními případy, kdy se více spouštěčů v akci Počkejte do spouštěče aktivovalo přibližně ve stejnou dobu a způsobilo nesprávné provedení makra.
+
+Byl opraven problém, kdy akce Zapsat do souboru mohla zaměnit pořadí při zápisu do stejného souboru v rychlém sledu.
+
+Verze 5.48 (říjen 2024)
+============================
+
+Bylo přidáno omezení stavu Shizuku.
+
+Do akce Plovoucí text byly přidány možnosti, které umožňují pohyb pouze při dlouhém stisknutí a zabraňují přesouvání textu a umožňují vynutit zobrazení na celou obrazovku.
+
+Přidána možnost k akci Blokovat dotyky pro zobrazení blokované oblasti obrazovky (s vlastní barvou).
+
+Obrazovka seznamu maker nyní zobrazuje animovaný indikátor, když je makro právě spuštěno.
+
+Přidána možnost ochrany heslem, která umožňuje zobrazování výzev při otevření aplikace a/nebo při povolení/zakázání MacroDroidu.
+
+Přidána možnost Přidat akci Událost kalendáře, která vás předem upozorní na přidanou událost.
+
+Do akce Zaznamenat událost byla přidána možnost přidat odkaz na makro s výstupem.
+
+Obrazovka konfigurace geografického ohraničení nyní zobrazuje hodnoty zeměpisné šířky a délky a tečku aktuální polohy (pokud je poloha k dispozici).
+
+Akce Exportovat protokol nyní ve všech případech poskytuje milisekundová časová razítka.
+
+Byla přidána podpora uživatelských ikon s dlaždicemi Rychlého nastavení.
+
+Přidána další možnost filtru pro "Nepoužité proměnné" na obrazovce Proměnné.
+
+Přidána možnost nabídky "Smazat všechny nepoužívané" na obrazovku Seznam blokovaných akcí.
+
+Přidán malý banner na domovské obrazovce, který jasně ukazuje, kdy je MacroDroid deaktivován.
+
+Do nastavení HTTP serveru byla přidána možnost povolit/zakázat přístup k systémovému/uživatelskému logu přes HTTP server.
+
+Přidána možnost k akci nastavení MacroDroid pro změnu citlivosti Shake Trigger.
+
+Vylepšená obrazovka Upravit makro, aby se zabránilo posouvání vyhledávacího banneru.
+
+
+
+Verze 5.47 (srpen 2024)
+============================
+
+Odstraněna služba FingerPrint a Volume Button Accessibility a přesunuta funkce do hlavní služby MacroDroid Accessibility Service.
+
+Přidána spoušť vyskakovací zprávy.
+
+Byla přidána aktivační událost stavu služby usnadnění.
+
+Bylo přidáno omezení stavu služby usnadnění.
+
+Přidány možnosti "Přidat omezení nad" a "Vložit omezení nad" na obrazovkách Upravit makro a Upravit ActionBlock.
+
+Přidána podpora parametrů hlavičky do odpovědi triggeru požadavku serveru HTTP a akce odpověď serveru HTTP.
+
+Přidána podpora pro použití názvu balíčku v akci Povolit/Zakázat aplikaci.
+
+Aktualizovaná akce Plovoucí text, která přidává podporu pro klepnutí na procentuální hodnoty pro nastavení přesnějších procent.
+
+Byla aktualizována akce Spustit aktivitu aplikace tak, aby zahrnovala aktivity z aplikací, které nejsou označeny jako spustitelné.
+
+Kompletní přepsání magického zpracování textu, aby se vyřešily problémy s výkonem při zpracování velkých bloků textu.
+
+Vylepšená akce ztlumené obrazovky, aby se zabránilo blikání při změně úrovně ztlumení, když je již ztlumení.
+
+Opravili jsme problém, kdy omezení oznámení nezpracovalo správně možnost vyloučení aplikací.
+
+Akce HotSpot nyní vyžaduje aplikaci MacroDroid Helper (V1.16) na Androidu 14+ kvůli vynuceným změnám ze strany společnosti Google k aktualizaci Android SDK.
+
+Další drobné opravy a optimalizace.
+
+Verze 5.46 (červenec 2024)
+============================
+
+Přidána ikona MacroDroid Dlouhé stisknutí spouště zkratky.
+
+Přidána podpora Shizuku do akce Shell Script a přidána podpora Shizuku ke stávajícím funkcím pouze root.
+
+Přidány současné možnosti "Snížení hlasitosti + zvýšení hlasitosti" do spouště tlačítka hlasitosti (pouze služba zpřístupnění).
+
+Přidána podpora dynamického souboru a místního identifikátoru URI souboru do akce Nastavit tapetu.
+
+Aktualizovaná akce Překrytí animace pro přidání podpory animovaného GIFu s vyhledávačem Giphy.
+
+Konfigurace akce dialogového okna výběru nyní podporuje změnu pořadí položek a zabraňuje náhodnému zpětnému stisknutí ve ztrátě všech změn.
+
+Přidán kouzelný text pro zobrazení typu proměnné.
+
+Přidán magický text pro název zóny, zeměpisnou šířku / délku a odkaz na umístění při použití spouštěče Geofence nebo Location.
+
+Vylepšená podpora kontextově závislého kouzelného textu pro spouštěče používané v akci Počkat na spuštění.
+
+Akce Otevřít protokol MacroDroid nyní podporuje otevření protokolu uživatele pro konkrétní kanál.
+
+Přidána funkce vyhledávání na obrazovku Konfigurace oblíbených.
+
+Přidána možnost "Zkontrolovat předem" do omezení kalendáře.
+
+Přidán obsah třetích stran od 'Steve Wright' v sekci MacroDroid Videos.
+
+Opraven problém, kdy se spouštěč Macro Enabled spustil, když se MacroDroid přejel prstem od posledních aplikací.
+
+Opravili jsme problém, kdy změna úrovně filtru v systémovém protokolu mohla způsobit zobrazení chybných/duplicitních položek.
+
+Opravili jsme problém, kdy se při importu zálohy s vlastními kanály nevytvářely vlastní kanály oznámení.
+
+Verze 5.45 (červen 2024)
+============================
+
+Přidána spoušť Pořízení fotografie (Android 7+).
+
+Přidána akce Načíst nainstalované aplikace.
+
+Přidána akce Získat kontakty.
+
+Přidána akce Edge Notification Light.
+
+Přidána akce Spustit aktivitu aplikace.
+
+Přidána podpora pro oblíbené spouštěče, akce a omezení. Dlouhým stisknutím tlačítka + na obrazovce úprav makra zobrazíte rychlé dlaždice pro vaše oblíbené položky.
+
+Aktualizovaná akce Překrytí animace pro přidání podpory pro spouštění maker / bloku akcí při kliknutí na animaci.
+
+Aktualizovali jsme akci požadavku HTTP tak, aby podporovala zachytávání vrácených parametrů hlavičky do proměnné slovníku.
+
+Byla aktualizována akce Vynutit aktualizaci polohy, aby mohla blokovat další akci a ukládat údaje o poloze do proměnné slovníku.
+
+Byla aktualizována akce Zobrazit oznámení tak, aby podporovala ID, takže nové oznámení přepíše existující oznámení se stejným ID.
+
+Byla aktualizována akce Otevřít soubor tak, aby podporovala načítání z místního identifikátoru URI souboru (lze získat pomocí možnosti Seznam souborů v akci Operace se soubory).
+
+Přidána podpora pro označení proměnných jako bezpečných, takže obsah proměnných nebude exportován při sdílení/nahrávání šablony.
+
+Přidána podpora pro vlastní obrázky v akci Zobrazit oznámení a trvalé oznámení MacroDroid.
+
+Přidána nová možnost akce Blokovat dotyky obrazovky pro blokování stavového řádku (vyžaduje povolení služby usnadnění).
+
+Přidána možnost magického textu pro zobrazení stopek s hodnotou sekund (hh:mm).
+
+Přidána možnost magického textu pro zobrazení spouštěče, který se spustil.
+
+Přepracovaná obrazovka úprav akčních bloků, aby byla mnohem rychlejší pro velmi velké akční bloky, a přidána podpora pro přilnavou hlavičku akcí.
+
+Vylepšení spouštěče spuštěné aplikací, které opravují některé problémy týkající se spouštění/zavírání MacroDroid a spouštění/zavírání aplikací Google.
+
+Vylepšená akce Nastavit proměnnou tak, aby umožňovala víceřádkové zadávání pro řetězcové proměnné.
+
+Přidán magický text kanálu oznámení při použití spouštěče oznámení (Android 8+).
+
+Opravili jsme problém, kdy se akce Plovoucí text někdy nezobrazovala při prvním spuštění akce (obvykle na pomalejších/starších zařízeních).
+
+Opravili jsme problém, kdy akce Plovoucí text při sdílení nebo nahrávání do úložiště šablon neexportovala žádný přidružený blok akce.
+
+Opraven problém, kdy odmítnutí bublinového oznámení mohlo způsobit spuštění MacroDroidu v popředí.
+
+Opravili jsme problém, kdy akce Ověřit uživatele fungovala na některých zařízeních s Androidem 14 nespolehlivě.
+
+Opraven problém, kdy si plovoucí tlačítko při opětovném povolení nepamatovalo, kam bylo dříve přesunuto.
+
+Verze 5.44 (květen 2024)
+============================
+
+Byla přidána aktivační událost serveru HTTP a akce odpovědi serveru HTTP.
+
+Přidána vazba Mluvený text.
+
+Přidán text sdílený do spouštěče MacroDroid.
+
+Aktualizovaná akce Plovoucí text pro podporu zpracování kliknutí a přidána možnost skrýt při kliknutí.
+
+Aktualizovali jsme protokol uživatelů tak, aby podporoval vlastní kanály protokolování, úrovně protokolování a funkce vyhledávání.
+
+Přidána možnost Seznam souborů do akce Operace se souborem.
+
+Přidány blokové akce až do dokončení možnosti Akce operace se souborem.
+
+Povolení/zakázání akce Bluetooth nyní funguje na rootovaných zařízeních bez pomocného souboru.
+
+Přidána možnost výběru ze známých klíčů ve spouštěči Nastavení systému (s vyhledáváním).
+
+Vylepšená akce Nastavení systému, abyste mohli vyhledat klíč ve všech kategoriích nastavení systému.
+
+Aktualizujte akci odeslání e-mailu tak, aby podporovala připojení více protokolů a podporovala formát HTML pro protokoly.
+
+Vylepšená manipulace se systémovým protokolem bloků akcí, aby obsahovala odkazy na blok akcí a makra.
+
+Přidána funkce vyhledávání pro akci Spustit makra, akci Nastavit proměnnou, Spouštěč proměnné a Omezení proměnné (kde je k dispozici 10+ položek).
+
+Opraven problém, kdy nastavená proměnná s výzvou uživatele nezapisovala správně do položky proměnné pole.
+
+Opravili jsme malou chybu ve spouštěči Změna nastavení systému, která mohla vést k tomu, že se makro při jedné aktualizaci nastavení spustilo dvakrát.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.43 (duben 2024)
+============================
+
+Přidána akce Získat text ze zobrazení ID (Android 11+).
+
+Dialogové okno Výběr nyní podporuje přizpůsobitelný styl tlačítek pro prvky, které lze vybrat.
+
+Přidána možnost Překrytí stavového řádku do akce Ztlumit obrazovku v systému Android 6+ (vyžaduje povolenou službu usnadnění).
+
+Vylepšená obrazovka Upravit makro pro přidání lepivých záhlaví pro velké spouštěcí, akční a omezující bloky.
+
+Vylepšená manipulace se spouštěčem tlačítka oznamovací lišty na obrazovce Upravit makro, takže je snazší identifikovat tlačítko, které je nastaveno.
+
+Obrazovka Upravit makro nyní zobrazuje vybraný obrázek pro spoušť plovoucího tlačítka a další položky, kde se používají obrázky.
+
+Optimalizovaný obsah obrazovky se spouští, takže každé čtení obrazovky zabere o něco méně času a zpracování.
+
+Přidána podpora pro zakázání položek v akci IF Condition.
+
+Přidána možnost nabídky "Test omezení" pro kontrolu aktuálního stavu omezení (pravda nebo nepravda) na obrazovce úprav makra.
+
+Přidána možnost nabídky "Testovací podmínka" pro kontrolu aktuálního stavu příkazu IF na obrazovce úprav makra.
+
+Přidána možnost zobrazit/skrýt aktuální režim MacroDroid ve standardním oznámení MacroDroid (ve výchozím nastavení vypnuto pouze pro nové instalace).
+
+Akce Povolit/Zakázat kategorii nyní podporuje více kategorií.
+
+Přesunuto Číst obsah snímku obrazovky do služby přístupnosti uživatelského rozhraní MacroDroid.
+
+Opravili jsme problém, kdy konfigurační dialogové okno Nastavit proměnnou ve výchozím nastavení kopírovalo slovník, když je vybrána možnost Definovat klíč ručně.
+
+Byl opraven problém, kdy změna názvu bloku akcí za určitých okolností neaktualizovala referenci na obrazovce úprav makra.
+
+Další drobné opravy.
+
+Verze 5.42 (březen 2024)
+============================
+
+Přidána akce Překrytí animace.
+
+Přidána akce Manipulace s polem.
+
+Přidána akce Check Pixel Colour (Android 11+).
+
+Přidána akce Přečíst snímek obrazovky (Android 11+).
+
+Přidána akce Zkontrolovat text na snímku obrazovky (Android 11+).
+
+Přidána akce hustoty zobrazení (vyžadován ADB Hack nebo root).
+
+Aktualizována akce Take ScreenShot, která přidává možnost pořídit snímek obrazovky bez jakéhokoli uživatelského rozhraní (Android 11+).
+
+Byla aktualizována akce JavaScriptu, aby zahrnovala podporu pro jádro Rhino.
+
+Spouštěč plovoucího tlačítka nyní podporuje nastavení textu místo obrázku.
+
+Akce Měřítko písma nyní podporuje maximálně 250 % (dříve 150 %).
+
+Přidána možnost nekonečné smyčky (až do přerušení) do akce Opakovat akce.
+
+Přidána podpora regulárních výrazů do spouštěčů založených na volání.
+
+Přidána podpora pro akci Blokovat dotyky pro zablokování pouze části obrazovky.
+
+Přidán magický text kódu země.
+
+Opravili jsme problém, kdy se přepínání spouštěče mezi povoleným a zakázaným spouštěčem mohlo dostat do poškozeného stavu.
+
+Opraven problém, kdy spouštěč přehrávání Mucis nebylo možné po vytvoření upravit.
+
+Opraven problém, kdy se při akci Ověřit uživatele na některých zařízeních Android 14 nezobrazila výzva.
+
+Verze 5.41 (únor 2024)
+============================
+
+Přidána akce Zobrazit vyskakovací okno hlasitosti.
+
+Přidána akce Odstranit proměnnou.
+
+Akce dialogového okna výběru nyní podporuje možnost zobrazit klíče slovníku jako položky, které lze vybrat, a nastavit výchozí výběr s časovým limitem.
+
+Akce a omezení nastavení systému nyní umožňují vyhledávání existujících klíčů (a přidána podpora vyhledávání v dialogovém okně s kouzelným textem).
+
+Dlouhým stiskem spouštěče, akce nebo omezení na obrazovce úprav makra se nyní přejde přímo do konfiguračního dialogu (lze jej vypnout v nastavení).
+
+Přidán magický text pro ID SIM karty a jméno SIM pro spouštěče příchozích/odchozích SMS.
+
+Přidán kouzelný text pro skupiny hovorů pro spouštěče založené na hovorech.
+
+Akce požadavku HTTP teď podporuje základní import z a export do požadavků kudrlinkou.
+
+Spouštěč a akce plovoucího tlačítka teď podporují nastavení umístění X,Y s hodnotami proměnných.
+
+Akce Plovoucí text nyní podporuje nastavení umístění X,Y s hodnotami proměnných.
+
+Akce Vymazat oznámení a Interakce s oznámením teď podporují použití triggeru oznámení k identifikaci oznámení.
+
+Přidána podpora pro převod místních proměnných na globální proměnné (dlouhým stisknutím místní proměnné se zobrazí výzva).
+
+Opravili jsme problém, kdy kopírování nefungovalo v jiných než anglických jazycích v konfiguračním dialogovém okně Podmínka If a Opakovat zatím.
+
+Opravili jsme problém, kdy požadavek HTTP nezpracovával správně odpovědi gzip a vracel zkomolená data.
+
+Opraven problém s okrajovým případem, kdy plovoucí tlačítko mohlo při stisknutí vyvolat nesprávné makro.
+
+Minimální poloměr geofence snížen na 20 metrů.
+
+Další drobné opravy chyb a vylepšení.
+
+
+Verze 5.40 (leden 2024)
+============================
+
+Přidána akce Povolit/Zakázat spouštěč.
+
+Přidána akce Vymazat dialog MacroDroid.
+
+Přidána funkce vyhledávání na obrazovku úprav Action Block.
+
+Přidána podpora pro řazení a kopírování / vkládání do konfiguračního dialogu If Condition a Repeat while.
+
+Spouštěč kalendáře nyní podporuje rychlost aktualizace 1 minuta (používejte opatrně kvůli vybíjení baterie).
+
+Přidána podpora pro ruční definování názvu slovníku/pole v akci Iterovat pole/slovník.
+
+Přidána podpora pro stisknutí tlačítka zpět v dialogu výběru pro pokračování makra.
+
+Přidána vazba Stav rychlé dlaždice.
+
+Přidána podpora titulků na dlaždicích Rychlé nastavení (pouze Android 10).
+
+Optimalizované dotazování pro nainstalované aplikace – nyní funguje mnohem rychleji na zařízeních s mnoha nainstalovanými aplikacemi.
+
+Vylepšené vyhledávání Magic Text tak, aby zahrnovalo proměnné na nejvyšší úrovni při zadávání hledaného výrazu.
+
+Opravili jsme problém, kdy smyčka před akcí iteračního pole nebo slovníku mohla způsobit, že se iterátor nespustí na začátku.
+
+Opravili jsme problém, kdy odstranění prvku pole/slovníku během iterace mohlo iteraci přerušit.
+
+Opravili jsme problém, kdy změna jazyka mohla obnovit dříve odstraněné kategorie.
+
+Opravili jsme problém, kdy aktivace pravidelného intervalu byla nespolehlivá, pokud byla nastavená na > 24 hodin.
+
+
+Verze 5.39 (prosinec 2023)
+===========================
+
+Přidána akce Sdílet text.
+
+Přidán spouštěč kliknutí uživatelského rozhraní.
+
+Přidána akce Display Bubble Notification (Android 10+).
+
+Přidána vazba plovoucího tlačítka (zobrazování/nezobrazování).
+
+Přidána akce Získat úroveň světla.
+
+Přidána omezení stavu okolního zobrazení.
+
+Trigger WebHooku teď podporuje analýzu základního textu.
+
+Přidána podpora pro možnosti rychlého převíjení vpřed a vzad na spouštěčích tlačítka médií.
+
+Akce Dialogové okno výběru nyní podporuje vrácení vybraného klíče při použití slovníků.
+
+Opravili jsme problém, kdy se místní proměnné ve vloženém zobrazení mohly nesprávně zobrazovat.
+
+Opraven problém, kdy jste mohli stále měnit pořadí položek na obrazovce Upravit makro i po zakázání změny pořadí.
+
+Přidáno nastavení pro aktivační událost Kalendář pro aktualizaci rychlosti aktualizace kalendáře.
+
+Přidán magický text "Kód jazyka" pro získání aktuálního jazyka systému jako 2místného kódu jazyka (ISO 639).
+
+Verze 5.38 (listopad 2023)
+============================
+
+Obrazovka Upravit makro nyní podporuje funkci vyhledávání.
+
+Přidána akce JavaScriptu (Beta).
+
+Přidána spoušť Fold State.
+
+Přidána vazba stavu přeložení.
+
+Omezení porovnání hodnot nyní podporuje výrazy pro celočíselné a desítkové hodnoty.
+
+Vylepšená spouštěč spuštěná/zavřená aplikace a název aplikace v popředí, aby fungovaly spolehlivěji.
+
+Přidána podpora pro zahrnutí ikon uživatelů při sdílení maker nebo kategorií, které na ně odkazují. (V současné době není podporováno v šablonách)
+
+Funkce Nahlásit chybu nyní obsahuje základní vyhledávání názvů maker a podporuje výběr bloků akcí.
+
+Opravili jsme problém, kdy omezení spuštění makra nefungovalo správně při odkazování na "Toto makro".
+
+Opraven problém, kdy sdílení maker/bloků akcí s blízkými zařízeními v některých situacích nefungovalo.
+
+Přidána podpora pro tónování ikon na klávesových zkratkách maker.
+
+Upraveno zadávání Magic Text pro oddělení výběru globálních/lokálních proměnných (aby to bylo jednodušší pro uživatele s velkým počtem proměnných).
+
+Akce Číst obsah obrazovky má novou možnost zahrnout ID zobrazení bez textového obsahu.
+
+Další drobné úpravy a opravy.
+
+
+
+Verze 5.37 (říjen 2023)
+===========================
+
+Optimalizováno zobrazení úprav maker, aby bylo mnohem rychlejší při práci s velmi velkými makry.
+
+Přidáno omezení Makro běží/Neběží.
+
+Přidána aktivační událost Makro dokončeno.
+
+Přidáno tlačítko napájení Long Press trigger (pouze Android 13+) - Vyžaduje MacroDroid nastavený na výchozí asitant.
+
+Přidána podpora pro časové limity pro akci Wait Until Trigger.
+
+Přidána podpora překrytí obrazovky pro spoušť Kontext obrazovky, akci Číst obsah obrazovky a akci Kontrola textu na obrazovce.
+
+Přidána podpora pro překrytí obrazovky pro akci interakce uživatelského rozhraní při kliknutí na ID textu/zobrazení.
+
+Přidána podpora pro magický text v identifikátorech triggeru Webhooku.
+
+Přidán magický text balíčku aplikace pro spuštění/zavření triggeru aplikace.
+
+Přidána podpora pro kreslení v oblasti stavového řádku v akci Plovoucí text.
+
+Přidána možnost "Stiskněte Enter" v akci interakce s uživatelským rozhraním (pouze Android 11+).
+
+Aktualizované akce Potvrdit další a IF Potvrzeno pak pro podporu časových limitů až 20 minut.
+
+Opraven problém, kdy se spouštěč aplikace spouštěl s možností "všechny aplikace", který se nespustil při spuštění / zavření MacroDroidu.
+
+Vyřešení problému, kdy interakce uživatelského rozhraní v některých případech při použití možnosti identifikovat v aplikaci neklikala správně.
+
+Opraven problém, kdy se vložení interakce uživatelského rozhraní vždy vkládalo na konec textového pole bez ohledu na pozici kurzoru.
+
+Přidáno com.wireguard.android.permission.CONTROL_TUNNELS oprávnění k manifestu.
+
+Verze 5.36 (září 2023)
+========================
+
+Přidána akce Přeložit text.
+
+Přidána možnost Odebrat text do akce Manipulace s textem.
+
+Přidána podpora pro akci Formátování HTML v plovoucím textu.
+
+Spouštěč webhooku teď podporuje seznam povolených IP adres.
+
+Přidán kontextově specifický magický text pro IP adresu volajícího při použití triggeru Webhooku.
+
+Přidána podpora pro sdílení prostřednictvím e-mailu SMTP pro akci Take Screenshot.
+
+Přidána možnost v nastavení konfigurovat počet dlaždic domovské obrazovky na řádek.
+
+Přidáno nastavení pro spoušť čtení obsahu obrazovky, aby se zabránilo čtení obrazovky, když je MacroDroid v popředí.
+
+Přidán konfigurovatelný maximální počet řádků pro textové položky v zásuvce MacroDroid.
+
+Přidána možnost ověřit uživatele pro povolení nebo zabránění vzoru PIN / Swipe.
+
+Opraven problém, kdy akce analýzy JSON nefungovala správně, když řetězec pochází ze slovníku/pole s ručně definovaným klíčem/indexem.
+
+Kvůli povinným změnám cílové sady SDK pro Android teď akce Bluetooth vyžaduje novou pomocnou aplikaci MacroDroid (v1.9), aby fungovala v Androidu 13+.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.35 (červenec 2023)
+========================
+
+Přidána akce Ověřit uživatele.
+
+Přidána akce Odpověď na oznámení (umožňuje automatické odpovědi v aplikaci WhatsApp / Telegram) pro Android 7+.
+
+Funkce Export maker a automatické zálohování nyní podporují šifrování souborů.
+
+Spoušť obsahu obrazovky nyní podporuje možnost odpovídat ID zobrazení.
+
+Akce Potvrdit další a Akce Pokud je potvrzena nyní podporují časový limit automatického zrušení.
+
+Přidána podpora pro dalších 8 rychlých dlaždic (nyní je k dispozici 16).
+
+Přidán magický text "Proud baterie nyní".
+
+Přidána funkce vrácení zpět při odstraňování položek na obrazovce úprav makra / bloku akcí.
+
+Obrazovka Upravit makro nyní podporuje možnost přesunout nahoru/dolů, kde je u položky k dispozici více podřízených omezení.
+
+Přidán kouzelný text pro jméno operátora SIM2 (pokud je to možné).
+
+Dialogové okno pro zadávání kouzelného textu nyní podporuje vyhledávání.
+
+Přidána možnost konfigurace zavření zásuvky pro položky makra v zásuvce MacroDroid.
+
+Opraven problém, kdy byla v poslední verzi mírně poškozena plovoucí umístění pixelů tlačítek.
+
+Další drobné opravy.
+
+
+Verze 5.34 (květen 2023)
+========================
+
+Přidána akce Kontrola textu na obrazovce.
+
+Zobrazit oznámení a nastavit akce Ikona makrodroida nyní podporují text jako ikony.
+
+Akce Odeslat e-mail nyní podporuje vrácení logické hodnoty, která označuje, zda byl e-mail úspěšně odeslán.
+
+Akce svítilny nyní podporuje úroveň jasu (Android 13+).
+
+Aktivační událost plovoucího tlačítka (a akce Konfigurace plovoucího tlačítka) nyní podporují procentuální hodnoty pro umístění X,Y.
+
+Widget zkratky MacroDroid nyní může spouštět akční bloky i makra.
+
+Opraven problém, kdy kouzelná textová pole kalendáře nefungovala se spouštěčem kalendáře.
+
+Opraven problém, kdy akce Spotify nefungovala pro některé prémiové uživatele Spotify.
+
+Opraven problém, kdy hodnota porovnání neumožňovala vybrat hodnotu z iterátoru.
+
+Opraven problém, kdy akce vynucení aktualizace polohy v některých případech neaktualizovala polohu.
+
+Verze 5.33 (květen 2023)
+===========================
+
+Přidána akce dialogu výběru.
+
+Přidána akce Blokové dotyky.
+
+Přidání podpory pro šifrovaný výstup při exportu sady maker.
+
+Omezení spuštění aplikace nyní podporuje zadání názvu balíčku (lze zadat proměnnou).
+
+Možnost kliknutí na interakci uživatelského rozhraní nyní může počkat na dokončení a vrátit výsledek kliknutí.
+
+Akce IF Condition nyní obsahuje možnost zabránit protokolování, pokud je kontrola podmínky false.
+
+Systémový protokol má novou možnost zobrazit/skrýt milisekundy.
+
+Přidána hodnota systémového času (ms) do magického textu.
+
+Přidán překlad Bahasa do indonéštiny.
+
+Verze 5.32 (duben 2023)
+=========================
+
+Přidána akce Spotify (Beta).
+
+Přidán Spotify Trigger.
+
+Přidána spoušť změny nastavení systému.
+
+Přidáno omezení stavu zásuvky MacroDrod.
+
+Služba SMS Trigger nyní podporuje výběr ID předplatného pro zařízení se dvěma SIM kartami.
+
+Akce Otevřít soubor nyní podporuje dynamické názvy souborů.
+
+Přidána podpora procentuálních hodnot v akcích gest interakce uživatelského rozhraní.
+
+Přidán magický text pro název akčního bloku.
+
+Aktualizované kategorie na obrazovce Přidat akce.
+
+Opraven problém, kdy možnost připojení/odpojení ve spouštěči Android Wear přestala fungovat.
+
+Opraven problém, kdy import kategorie mohl vést k odstranění bloků akcí.
+
+Opraven problém, kdy sdílení v okolí nefungovalo na zařízeních se systémem Android 13.
+
+Další drobné opravy chyb a vylepšení.
+
+Verze 5.31 (únor 2023)
+=============================
+
+Přidána podpora dlouhého stisknutí v dlaždici Rychlé nastavení.
+
+Spoušť Aktualizovaný obsah obrazovky podporuje možnost spuštění při odebrání textu z obrazovky.
+
+Aktualizovaný mechanismus používaný k vynucení jiného jazyka v aplikaci, aby se snad zlepšila spolehlivost.
+
+Byl opraven problém, kdy odkazy na více než dvě proměnné v kouzelném textu nebyly správně nahrazeny.
+
+Opraven problém, kdy nebylo možné vybrat klíčový prvek slovníku v podřízeném slovníku (v akci Nastavit proměnnou).
+
+Opraven problém, kdy akce Nastavit proměnnou s uživatelskou výzvou nepovolila tlačítko ok při nastavování hodnoty v rámci prvku slovníku.
+
+Opraven problém, kdy bloky akcí zobrazené ze šablon nebyly správně vymazány.
+
+Vyřešení problému, kdy akce Spustit makro mohla otevřít nesprávné makro při kliknutí na propojené makro.
+
+Přidán magický text pro ID makra.
+
+Další drobné opravy.
+
+Verze 5.30 (leden 2023)
+============================
+
+Přidána aktivační událost systémového protokolu.
+
+Přidáno omezení Instalace aplikace.
+
+Přidáno omezení plovoucího textu.
+
+Přidáno nastavení Délka systémového protokolu na obrazovku nastavení MacroDroid.
+
+Přidána funkce vyhledávání do obrazovky pluginu.
+
+Přidána možnost automatického skrytí po zpoždění do akce plovoucího textu.
+
+Přidána podpora procentuálních hodnot v konfiguraci kliknutí na interakci uživatelského rozhraní.
+
+Přidána podpora zástupných znaků pro kliknutí podle ID zobrazení v akci Interakce uživatelského rozhraní.
+
+Přidána podpora pro nastavení příznaků v akci Odeslat záměr.
+
+Přidána podpora pro vyhledávání ve slovníku/polích, když je přítomen velký počet klíčů.
+
+Přidána explicitní možnost "Toto makro" v akci Povoleno/Zakázat makro.
+
+Byla aktualizována akce zkratek pro Android přidáním možností Zobrazit všechny aplikace a Přepnout přístupnost pro Android 11+.
+
+Opraven problém, kdy nebylo možné aktualizovat ikony na položkách zásuvky a magické textové popisky se nezobrazovaly pro aplikace a zkratky.
+
+Vylepšený spouštěč kalendáře tak, aby odpovídal názvu kalendáře, pokud by se podkladové ID kalendáře mělo z nějakého důvodu změnit.
+
+Byla aktualizována akce analýzy JSON, takže logické proměnné budou správně uloženy jako typ logické proměnné (ne řetězce).
+
+Verze 5.29 (listopad/prosinec 2022)
+=====================================
+
+Přidána podpora pro předplatné úložiště šablon na makra/uživatele, aby byli upozorněni na aktualizace (pouze profesionální uživatelé).
+
+Přidána akce výstupu JSON.
+
+Přidána akce Set Digital Assistant.
+
+Akce režimu Letadlo nyní může pracovat s hackem ADB (bez požadavku, aby se MacroDroid stal výchozím digitálním asistentem).
+
+Trigger rozpoznávání aktivity teď podporuje méně než porovnání pro zjištění, kdy aktivita skončí.
+
+Spoušť obsahu obrazovky má nyní nastavitelnou obnovovací frekvenci.
+
+Byla přidána podpora pro přenos ID zařízení triggeru Webhooku na nové zařízení.
+
+Akce plovoucího textu nyní podporuje zarovnání vlevo, na střed a vpravo.
+
+Byl opraven problém, kdy se celodenní události v kalendáři mohly nesprávně spouštět kvůli letnímu času.
+
+Byl opraven problém, kdy hodnoty specifické pro aktivační událost (např. číslo příchozího hovoru) nefungovaly po čekání před další aktivační akcí.
+
+Byl opraven problém, kdy se desetinná čísla v dialozích mohla nesprávně zobrazovat jako odkazy.
+
+Opraven problém, kdy se blok akce nespouštěl v některých situacích, když byla zakázána nezařazená kategorie.
+
+Verze 5.28 (říjen 2022)
+=============================
+
+Přidána akce Plovoucí text.
+
+Přidány "Pracovní proměnné" do akčních bloků.
+
+Akce Blok akce nyní podporuje možnost blokovat další akce až do dokončení (ve výchozím nastavení povoleno).
+
+Přidána akce Vymazat položku slovníku/pole, která umožňuje vymazání nebo odstranění jednotlivých položek.
+
+Přidána podpora automatizovaných překladů v reálném čase v Úložišti šablon.
+
+Přidána podpora satelitního zobrazení na obrazovce Geofence configure.
+
+Přidán magický text pro sílu signálu mobilní věže.
+
+Vylepšené vyhledávání na obrazovce seznamu bloků akcí pro vyhledávání akcí v rámci bloků.
+
+Opraven problém, kdy rozdělení textových manipulací na pole nefungovalo s více oddělovači znaků.
+
+Přidáno nové nastavení v možnostech spouštění pro úpravu času dokončení spouště Power Button Toggle.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.27.8 (září 2022)
+===============================
+
+Vydání opravy malých chyb, které opravují řadu drobných problémů.
+
+Verze 5.27 (září 2022)
+=============================
+
+Přidána akce Služba přístupnosti (je vyžadován ADB Hack).
+
+Přidána funkce, která udržuje služby usnadnění přístupu povolené pro řešení problémů, kde je některá zařízení mohou zakázat (vyžaduje ADB Hack).
+
+Přidáno omezení Nastavení systému.
+
+Přidány celkové a dostupné hodnoty paměti RAM do možností magického textu.
+
+Přidány číselné indikátory pro hodnoty výšky a rychlosti v akci převodu textu na řeč.
+
+Přidáno řešení problému se spouštěčem Samsung, aby se zabránilo ztrátě ikony / štítku zkratky při zapnutí / vypnutí tmavého režimu.
+
+Přidán magický text pro název sítě SIM / operátora.
+
+Přidán magický text pro typ připojení buňky (např. 3G/4G/5G).
+
+Přidán magický text pro MacroDroid je pro (vrátí hodnotu true nebo false)
+
+Přidána podpora pro možnost "Toto makro" pro omezení Macro Enabled/Disabled.
+
+Přidána možnost udržovat mezery pro akci vyskakovací zprávy.
+
+Přidána podpora pro přejmenování stopek.
+
+Přidána možnost zobrazit naposledy upravený čas na obrazovce seznamu maker (Všechny hodnoty budou zpočátku neznámé, dokud nebudou upraveny pomocí této nejnovější verze).
+
+Akce Nastavit proměnnou (pomocí možnosti Nová proměnná) nyní vytvoří proměnnou za běhu a podporuje magický text pro název proměnné.
+
+Doprovodná aplikace Wear OS nyní umožňuje procházení seznamu pomocí otočného ovládání.
+
+Vylepšení a opravy týkající se zpracování slovníku/pole v proměnné trigger a omezení.
+
+Opraven problém, kdy akce nastavené proměnné mohla v některých situacích vytvořit slovník místo pole.
+
+Opraven problém, kdy lokální proměnnou pole/slovníku nešlo přejmenovat.
+
+Opraven problém, kdy zobrazení šablony s bloky akcí mohlo přidat nežádoucí globální proměnné.
+
+Opraven problém, kdy odstranění položky ze slovníku/pole bloku akcí by odstranilo slovník/pole.
+
+Verze 5.26 (červenec 2022)
+========================
+
+Akce Spustit makro, Zrušit makro a Zakázat makro nyní podporují zadávání makra podle názvu (podporuje magický text, který umožňuje odkazovat na názvy maker z proměnné).
+
+Další nastavení, jako je poloha západu / východu slunce a poloha počasí, jsou nyní uložena při exportu a prostřednictvím automatického zálohování.
+
+Omezení MacroDroid Variable nyní podporuje možnost definovat klíče ručně pro proměnné slovníku/pole.
+
+Dialogové okno možností nyní podporuje základní formátování HTML v textu hlavní zprávy.
+
+Opraven problém, kdy kategorie nemohly být přidány nebo odebrány z obrazovky seznamu kategorií.
+
+Opraven problém v příchozích SMS/hovorech, kdy porovnání čísel nefungovalo vždy správně při použití magického textu.
+
+Opraven problém, kdy spuštění zástupce MacroDroid minimalizovalo MacroDroid, pokud je v popředí.
+
+Opraven problém, kdy se blok akce mohl duplikovat při importu makra, které již odkazuje na stejný blok akcí.
+
+Opraven problém, kdy se bloky akcí mohly při testování určitých akcí odstranit.
+
+Opraven problém, kdy přerušení ze smyčky nefungovalo vždy správně s iterací akce slovníku/pole.
+
+Opraven problém, kdy vyhledávání ikon nefungovalo správně u balíčků ikon.
+
+Opraven problém, kdy konfigurace plovoucího tlačítka neumožňovala výběr triggerů v rámci akce Wait Until Trigger.
+
+Další drobné opravy.
+
+Verze 5.25.6 (červenec 2022)
+===============================
+
+Malá oprava chyby aktualizace předchozí verze v5.25. Opravuje řadu drobných problémů nalezených v předchozí verzi.
+
+Verze 5.25 (červen 2022)
+========================
+
+Přidána aktivační událost Macro Enabled Trigger.
+
+Přidána možnost Floating Button Trigger pro zakázání spouště (ne celého makra) při odstranění pomocí ikony koše.
+
+Přidána akce konfigurace plovoucího tlačítka.
+
+Byl aktualizován magický text, aby podporoval složené závorky, aby se omezila záměna se syntaxí slovníku/pole. (Hranaté závorky jsou stále podporovány, {system_time} a [system_time] pracovní i výchozí lze změnit v nastavení MacroDroid)
+
+Přidána lepší podpora polí/slovníků pro akce, jako je požadavek HTTP a čtení souboru, aby bylo možné přímý zápis do vlastních klíčů.
+
+Přidána možnost "Rozdělit do pole" do akce Manipulace s textem.
+
+Vylepšená spoušť Kalendáře pro lepší práci s celodenními událostmi v různých časových pásmech.
+
+Při prohlížení makra šablony je k dispozici nová položka nabídky "Přidat zakázáno".
+
+Hlasový vstup nyní podporuje nastavení přímo do nových slovníkových kláves / indexů polí s magickým textem.
+
+Akce vyskakovacích zpráv nyní podporuje základní html, jako je <b>TUČNÉ</b> a <i>KURZÍVA</i>
+
+Přidáno Povolit/Zakázat (včetně podřízených) pro úpravu obrazovky makra, což usnadňuje povolení velkých podmínek a smyček.
+
+Přidána možnost povolit / zakázat vodorovné přejetí pro otevření zásuvky MacroDroid.
+
+Přidána možnost "Přepsat" pro akci Zapisovat do souboru.
+
+Přidána možnost akce WhatsApp Odeslat pro podporu standardní i obchodní aplikace.
+
+Přidán magický text pro velikost slovníku/pole.
+
+Opraven problém, kdy použití řezu na bloku IF/Loop nefungovalo správně.
+
+Opraven problém, kdy možnost pokračovat v dialogovém okně možnosti nefungovala správně.
+
+Opraven problém, kdy akce mikrofonu záznamu nezapisovala správnou příponu souboru.
+
+Opraven problém, kdy se hodnota proměnné neaktualizovala, pokud byla aktualizována, když je otevřená zásuvka MacroDroid.
+
+Opraven problém, kdy úpravy zakázaného makra mohly znovu povolit.
+
+Opraven problém, kdy oznámení o zobrazení nepředávalo správně proměnné v možnosti Spustit při stisknutí.
+
+Přidána možnost v nastavení obnovit všechny informační karty nápovědy, které byly dříve dimissed.
+
+Verze 5.24.3 (červen 2022)
+==========================
+
+Tuto aktualizaci vyžadovala společnost Google k přidání služby rozpoznávání při použití MacroDroid jako výchozího pomocníka.
+
+Verze 5.24 (květen 2022)
+==========================
+
+Přidána akce Číst obsah obrazovky.
+
+Přidána spoušť Obsahu obrazovky.
+
+Přidána akce Číst ze souboru.
+
+Přidáno omezení Kategorie povoleno/Zakázáno.
+
+Přidána akce Protokol exportu.
+
+Přidána možnost ručně zadat ID zobrazení v kliknutích interakce uživatelského rozhraní.
+
+Přidána možnost forground pro akci Nastavit hlasitost pro zařízení, která neumožňují nastavení hlasitosti s MacroDroidem na pozadí.
+
+Přidána možnost akce Vyskakovací zpráva pro zrušení předchozího vyskakovacího okna (užitečné například pro druhé odpočítávání)
+
+Přidána možnost do akcí Dialog zpráv a Dialogové okno možností, aby se zabránilo zavírání dialogového okna tlačítka Zpět.
+
+Přidána podpora v triggeru WebHook pro nastavení položek proměnných slovníku/pole.
+
+Funkce Nahlásit chybu nyní obsahuje možnost přidat snímky obrazovky.
+
+Přidána podpora pro přejmenování klávesových zkratek v zásuvce MacroDroid.
+
+Zásuvka MacroDroid nyní podporuje možnosti otevírání gestem přejetí nahoru a/nebo přejetím dolů.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.23 (duben 2022)
+==========================
+
+Přidány typy proměnných Dictionary a Array (pouze uživatelé Pro).
+
+Přidána akce Iterace slovníku/pole, kterou lze použít k opakování všech prvků ve slovníku/poli.
+
+Přidána akce JSON Parse.
+
+Změněna akce Nastavit stav dlaždice rychlého nastavení na Konfigurovat akci Rychlá dlaždice, aby bylo možné další nastavení ikony a popisku.
+
+Přidána možnost sekvence gest do akce Interakce uživatelského rozhraní, která umožňuje složitá gesta, jako jsou vzory zámku přejetím.
+
+Přidána možnost na konfigurační obrazovku Interakce uživatelského rozhraní pro přepnutí překrytí dotykového umístění.
+
+Přidána možnost povolit/zakázat jednotlivé vyrovnávací paměti do spouště Logcat.
+
+Přidáno omezení adresy IP.
+
+Přidán Magický text pro základní adresu URL WebHooku.
+
+Přidána funkce vyhledávání na obrazovku seznamu blokovaných akcí.
+
+Přidána možnost exportovat systémový protokol v HTML, aby mohl výstup stejného barevného kódování, jak je znázorněno v aplikaci.
+
+Přidána možnost vyjmout na obrazovky Upravit makro a akční blok, aby byla umožněna plná funkce vyjmutí, kopírování a vložení.
+
+Blok akce "Testovací akce" nyní při spuštění zobrazí souhrn výstupních proměnných.
+
+Opraven problém, kdy metoda vyvolání makra nefungovala správně ve všech případech.
+
+Opraven problém s podmínkou "ne v události", která nefungovala správně v omezení kalendáře.
+
+Opraven problém, kdy název souboru v akci POŽADAVEK HTTP nezpracovával správně hodnoty magického textu.
+
+Opraven problém, kdy akce v rámci bloku akcí nebyly zrušeny, když je zrušeno nadřazené makro.
+
+Opraven problém, kdy se na některých zařízeních mohla nesprávně otáčet tapeta.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.22.6 (únor 2022)
+============================
+
+Opraven problém, kdy videa MacroDroid nefungovala.
+
+Verze 5.22 (únor 2022)
+============================
+
+Přidána akce Http Request.
+
+Přidáno omezení metody vyvolání, které umožňuje detekci při vyvolání makra z nestandardních spouštěčů maker.
+
+Do výběru ikon byla přidána základní funkce vyhledávání (pouze v angličtině).
+
+Přidána podpora akčního bloku do zásuvky MacroDroid.
+
+Přidána podpora biometrie a zpoždění hesla v nastavení ochrany heslem.
+
+Přidán magický text pro číslo verze MacroDroid.
+
+Přidána možnost ignorovat velká a malá písmena do proměnné aktivační událost a omezení.
+
+Přidána podpora pro předávání booleovských proměnných hodnot do vstupních parametrů akčního bloku.
+
+Přidána možnost Ignorovat (zrušit makro) pro dialogové okno možností, aby se zabránilo spuštění dalších akcí, pokud je vybrána.
+
+Přidána možnost filtrovat proměnné podle typu na obrazovce globálních proměnných.
+
+Přidána možnost vyloučení pro spouštění založené na volání / sms a přidána prohledávatelná jména kontaktů do dialogu výběru.
+
+Opraven problém, kdy sestavování hodnot polí taskeru do jednoho řetězce někdy způsobilo špatné pořadí prvků.
+
+Opraven problém, kdy sdílení s blízkým zařízením nefungovalo vždy na zařízeních s Androidem 12.
+
+Opraven problém, kdy výběr globální proměnné pro akci Hlasový výstup mohl nastavit nesprávnou proměnnou.
+
+Opraven problém, kdy spouštěč bluetooth majáku mohl skončit spuštěním vícekrát pro jednu událost.
+
+Opraven problém, kdy se Geofence při vyhledávání nebo přiblížení/oddálení nezaměřoval na správnou oblast.
+
+Opraven problém, kdy seznam Wifi SSID mohl obsahovat duplicitní položky.
+
+Opraven problém, kdy velmi dlouhý řetězec v místní proměnné mohl bránit přístupu k tlačítku OK.
+
+Opraven problém, kdy se v některých scénářích nepodařilo ikonu Nastavit makrodroid ikonu aktualizovat.
+
+Opraven problém, kdy celodenní události v omezení kalendáře nefungovaly správně v různých časových pásmech.
+
+Mnoho dalších drobných oprav a vylepšení.
+
+Verze 5.21
+============
+
+Vydání malé opravy chyb.
+
+Vylepšené zpracování vstupních parametrů akčního bloku, takže můžete předat prázdnou hodnotu a vždy použít výchozí vstupní parmovou hodnotu.
+
+Přidána možnost "Sdílet jako obrázek" na editační obrazovku Akční blok.
+
+Opraveno několik malých problémů s úpravou akčních bloků.
+
+Opraven problém, kdy mohli uživatelé svobodných uživatelů ztratit makra, pokud jsou na limitu maker 5 a zahodili úpravu makra nebo bloku akcí.
+
+Opraven problém s dlaždicí "Naposledy otevřeno" na domovské obrazovce, která v některých situacích nefungovala.
+
+Opraven problém s akcí "Hlasový vstup", která nezpůsobovala spuštění spouště proměnné při zápisu do proměnné.
+
+Opraven problém, kdy vkládání položek do bloku akcí ne vždy správně konfigurovalo akce.
+
+Verze 5.20
+============
+
+Přidány bloky akcí, které umožňují seskupení běžně používaných akcí, které lze vyvolat z maker nebo jiných bloků akcí.
+
+Přidána podpora pro sdílení do blízkých zařízení z obrazovky úprav maker a bloků akcí.
+
+Přidána akce "Nastavit obrázek lišty tlačítek", která umožňuje aktualizaci tlačítek s oznamovací lištou tlačítka MacroDroid.
+
+Přidána akce Hlasového vstupu pro zobrazení výzvy k zadání mluveného textu a jeho uložení do proměnné řetězce.
+
+Přidána akce WhatsApp (beta), která umožňuje odesílání základních zpráv pouze jednotlivým kontaktům.
+
+Přidána možnost označit makra jako oblíbená a snadno filtrovat mezi oblíbenými /všemi makry.
+
+Přidána dlaždice domovské obrazovky, která poskytuje rychlý odkaz na oblíbené makra.
+
+Přidána dlaždice domovské obrazovky pro Videa MacroDroid, která obsahuje odkazy na nová oficiální videa MacroDroid YouTube.
+
+Obrazovka Překlady nyní ukazuje, jak kompletní je překlad pro jednotlivé jazyky.
+
+Různé drobné opravy chyb a drobná vylepšení.
+
+Verze 5.19.11
+===============
+
+Opraven problém, kdy se v některých případech při vstupu do aplikace pomocí ochrany heslem nezobrazovala výzva k zadání hesla.
+
+Opraven problém, kdy sdílení poslední fotky nefungovalo ve všech případech.
+
+Opraven problém, kdy aktivační událost spánku nekontrolovala omezení.
+
+Další drobné opravy chyb.
+
+Verze 5.19.9
+==============
+
+Upozorňujeme, že tato verze je aktualizována tak, aby cílila na sadu Android 11 SDK, která vynucuje přísnější omezení přístupu k souborům než předchozí verze. Malý počet maker může vyžadovat aktualizaci, aby bylo možné pokračovat v zápisu do souborů.
+
+** Nahlaste prosím všechny chyby nebo problémy s touto verzí prostřednictvím "Nahlásit chybu" v sekci řešení potíží **
+
+Přidána sleep trigger (Android 10+).
+
+Přidána akce Vymazat proměnné.
+
+Přidána možnost logcat pro podporu Clipboard Trigger pro uživatele Android 10 + (Root / ADB hack).
+
+Přidána akce Obnovení schránky pro získání obsahu schránky do MacroDroid pro uživatele Android 10 +.
+
+Přidána podpora až tří tlačítek akcí k akci Oznámení displeje, která mohou po stisknutí spustit další makra.
+
+Opraven problém, kdy se zásuvka nezobrazovala správně na zařízení s rozložením zprava doleva.
+
+Vylepšený výkon při přidání/odebrání více plovoucích tlačítek.
+
+Akce Odeslat UDP nyní podporuje magický text pro cílová a portová pole.
+
+Přidána možnost ukončit na zadní straně stiskněte pro akci Pokud pak potvrdit.
+
+Přidána možnost "Povolit libovolný certifikát" do HTTP Get.
+
+Přidána podpora pro odesílání e-mailů přes SMTP do akce Sdílet umístění.
+
+Přidána podpora pro spouštění příkazů skriptu prostředí prostřednictvím pomocného souboru (vyžaduje pomocný soubor 1.7)
+
+Přidána omezená podpora pro přístup k hodnotám pole tasker (Tasker plugin/action) uložením všech hodnot do čárky nebo nového řetězce odděleného řádky.
+
+Oprava předchozí aktualizace: Mnohokrát děkuji lamvankhoat1 za důkladný vietnamský překlad.
+
+Verze 5.18
+============
+
+Vydání drobné opravy chyb
+
+Přidán přepínač pro povolení/zakázání režimu odesílání HTML při odesílání e-mailů (přes SMTP).
+
+Opraven problém, kdy nebylo možné vybrat ikonu v akci Oznámení.
+
+Opraven problém, kdy akce Take ScreenShot na některých zařízeních odesílala nesprávný obrázek.
+
+Opraven problém, kdy akce If Confirmed nefungovala správně, pokud byla vyvolána, když je obrazovka vypnutá.
+
+Opraven problém, kdy některé hodnoty gest interakce uživatelského rozhraní nereagovaly správnou hodnotu.
+
+Opraven problém, kdy jste nemohli upravovat data v akci Odeslat SMS, jakmile byla nakonfigurována.
+
+Další drobné opravy. W
+
+Verze 5.17
+============
+
+Přidána spoušť dark theme change (Android 10+)
+
+Upravil text popisu makra na obrazovce úprav maker tak, aby se posouval s obsahem makra a rozšířil počet povolených znaků.
+
+Přidána podpora proměnných v akci gest interakce uživatelského rozhraní.
+
+Přidána podpora pro zadání hesla v akci Nastavit proměnnou - výzva uživatele.
+
+Opraven problém, kdy na některých zařízeních nefungovala možnost Interakce uživatelského rozhraní identifikovat v aplikaci.
+
+Přidán vietnamský jazyk (Mnohokrát děkuji lamvankhoat1 za dokončení tohoto)
+
+Přidána možnost měnit text zkratek aplikace v zásuvce MacroDroid.
+
+Spousta dalších malých oprav a vylepšení.
+
+Verze 5.16.2
+==============
+
+Opraven problém, kdy na některých zařízeních nefungovala spouštěná aplikace spouštěná aplikace a detekující aplikaci v popředí.
+
+Další drobné opravy.
+
+Verze 5.16
+============
+
+Opraven problém, kdy v seznamu šablon mohla chybět některá makra.
+
+Spousta drobných oprav chyb.
+
+Verze 5.15
+============
+
+Obnovená možnost invertovat objednávku do systémového protokolu.
+
+Přidána možnost zachytit zprávy Logcat (a vybrat položku) do spouštěče Logcat.
+
+Přidán odkaz na wiki v postranní nabídce (Wiki je pouze v angličtině).
+
+Přidána podpora podtextu v aktivační události oznámení (a souvisejícího magického textu).
+
+Opraven problém, kdy si plovoucí tlačítka nezachovala svou předchozí pozici.
+
+Opraven problém, kdy otevřený systémový protokol nefungoval správně.
+
+Opraven problém, kdy připojení systémového protokolu k odeslání e-mailové akce nefungovalo správně.
+
+Spousta dalších malých oprav a vylepšení.
+
+Verze 5.14
+============
+
+Byla přidána akce Obnovit skrytá oznámení (Android 11+), která umožňuje obnovení trvalých oznámení, která byla dříve skrytá pomocí akce Vymazat oznámení.
+
+Opraven problém, kdy systémový protokol nezobrazoval odkazy na makra.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.13
+============
+
+Nový systémový protokol s funkcemi vyhledávání a filtrování.
+
+Přidána podpora pro zobrazení protokolu pro jedno makro pouze ze seznamu maker a obrazovky upravit makro.
+
+Obnovená spoušť SMS Sent. (MacroDroid nyní může používat požadovaná oprávnění)
+
+Obnovená možnost "monitorovat doručenou poštu" na spouštěcím panelu Sms Received. (MacroDroid nyní může používat požadovaná oprávnění)
+
+Akce Přehrát zvuk nyní podporuje nastavení zvukového kanálu pro jednotlivou akci.
+
+Opraven problém, kdy akce Wait Until Trigger mohla nesprávně vyvolat jiné bloky, které by neměla.
+
+Přidána podpora magického textu do akce Nastavení systému.
+
+Data maker Quick Run jsou nyní zahrnuta při exportu/importu maker.
+
+Aktivační události Volání zmeškané a Aktivní volání nyní podporují přímé zadání čísla a výběr skupiny.
+
+Kategorie a makra v seznamu maker nyní podporují vlastní barvy, které umožňují nastavení libovolné barvy.
+
+Opraven problém, kdy některá makra v úložišti šablon nebylo možné importovat.
+
+Verze 5.12
+============
+
+Přidáno omezení Geofence (Location).
+
+Přidána spoušť Asistenta Google, takže můžete snadno zjistit, zda bylo makro vyvoláno asistentem (a ne nějakou jinou spoušť).
+
+Smyčky a akce podmínek s podřízenými akcemi lze nyní sbalit/rozbalit, aby se usnadnily úpravy velkých maker.
+
+Verze 5.11
+============
+
+Nyní obsahuje podporu pro spouštění maker prostřednictvím asistenta Google (v současné době pouze v angličtině). Ujistěte se, že jazyk vašeho zařízení i jazyk asistenta Google jsou nakonfigurovány na angličtinu, aby bylo možné tuto funkci používat.
+
+Vyvolejte makra vyslovením "Ok Google run 'macroname' in MacroDroid". V současné době Google podporuje tuto funkci pouze pro americkou angličtinu. Přidám podporu pro další národní prostředí a jazyky, když to Google dovolí.
+
+Přidány vlastní kanály oznámení pro použití s akcí oznámení zobrazení.
+
+Přidána akce Přestávka ze smyčky.
+
+Přidána akce Pokračovat ve smyčce.
+
+Další opravy chyb a drobná vylepšení.
+
+Verze 5.10
+============
+
+Vydání opravy chyby. Opravuje několik malých problémů a vzácných havárií.
+
+Vylepšené zpracování některých chybějících oprávnění.
+
+Verze 5.9
+===========
+
+Přidána funkce zálohování do cloudu na obrazovce automatického zálohování (pouze uživatelé Pro).
+
+Fórum MacroDroid se přesunulo z Tapatalku na čistší fórum s vlastním hostitelem.
+
+Několik drobných oprav chyb.
+
+Verze 5.8
+===========
+
+Nastavit akci Wifi nyní vyžaduje pomocný soubor v systému Android 10 + (omezení Google vynucené aplikacemi).
+
+Přidána akce Čekat na aktivační událost, která umožňuje pozastavit spuštěné makro, dokud se nespustí konkrétní aktivační událost.
+
+Přidána možnost uzamknout kategorie heslem/pinem.
+
+Přidána možnost přidat makra MacroDroid do nabídky tlačítka napájení (pouze Android 11)
+
+Přidána možnost barvy textu pro akci vyskakovací zprávy.
+
+Přidána možnost počkat na dokončení pro akci "Spuštění makra".
+
+Přidána možnost barvy textu a odstín ikony do akce vyskakovací zprávy.
+
+Akce Přečíst text nyní umožňuje nastavit jazyk pro každou jednotlivou instanci akce.
+
+Akce Přidat položku kalendáře nyní podporuje nastavení času zadání vzhledem k hodnotě proměnné.
+
+Opraven problém s tím, že logcat_line kouzelný text nefunguje.
+
+Opraven problém, kdy akce makra Zrušit nezrušily akci Čekat na aktivaci.
+
+Byly opraveny některé logické problémy, kdy se vnořené příkazy IF/ELSE v některých okrajových případech nechovaly podle očekávání.
+
+Verze 5.7
+===========
+
+Přidán seznam pluginů pro objevování/sdílení aplikací třetích stran, které jsou kompatibilní s MacroDroid (dlaždice Domovská obrazovka).
+
+Přidána dlaždice domovské obrazovky pro rychlý přístup k poslednímu upravenému makru.
+
+Přidána dlaždice domovské obrazovky pro rychle běžící makra.
+
+Přidána akce Povolit/Zakázat fotoaparát, která umožní deaktivaci fotoaparátu pro všechny aplikace v zařízení.
+
+Vylepšená akce ovládacího média tak, aby volba Simulovat tlačítko zvuku fungovala lépe pro ovládání poslední použité mediální aplikace.
+
+Spoušť Den/Čas nyní umožňuje nastavit hodnotu konkrétních sekund.
+
+Přidat funkci Vyhledávání na obrazovku seznamu proměnných.
+
+Verze 5.6
+===========
+
+Akci režimu v letadle lze nyní provést na zařízení bez kořenů v systému Android 7 + (tím, že se MacroDroid stane výchozí aplikací asistenta).
+
+Akce Spustit aplikaci nyní podporuje možnost názvu balíčku (včetně magického textu pro podporu proměnných atd.).
+
+Hodnoty proměnných MacroDroid lze nyní předávat pluginům Tasker pomocí stylu formátování Tasker (%varname).
+
+Nastavení pozadí/odstínu panelu tlačítek oznámení a SMTP se nyní při exportu maker ukládají.
+
+Přidána hodnota směru větru ke spoušti počasí (a magickému textu specifickému pro počasí).
+
+Byly aktualizovány celočíselné proměnné, takže jsou nyní podporovány dlouhým typem, aby mohly uchovávat hodnoty > 2 147 483 647.
+
+Další drobné opravy a vylepšení.
+
+Verze 5.5
+===========
+
+Přidán rychlý přepínač dlaždic pro zapnutí / vypnutí MacroDroid (Android 7 +).
+
+Přidána možnost skrýt podrobnosti o makru v zobrazení seznamu maker.
+
+Opraven problém, kdy se VPN Trigger nespouštěl.
+
+Opraven problém, kdy konfigurace spouště tlačítka oznamovacího pruhu nezobrazovala ikony.
+
+Významné aktualizace některých překladů.
+
+Další drobné opravy a vylepšení uživatelského rozhraní.

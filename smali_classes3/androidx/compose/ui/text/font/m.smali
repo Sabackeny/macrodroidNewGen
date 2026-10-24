@@ -1,0 +1,14 @@
+.class public abstract synthetic Landroidx/compose/ui/text/font/m;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/graphics/Paint;Ljava/lang/String;)Z
+    .locals 0
+
+    invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setFontVariationSettings(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method

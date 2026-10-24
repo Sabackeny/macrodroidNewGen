@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_tiny" android:text="@string/translate_text_quality_warning" android:layout_marginHorizontal="@dimen/margin_tiny" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/textToTranslate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/enter_text" android:maxLines="1" android:layout_weight="1.0" android:inputType="text">
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@id/magicTextButton" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/translate_source_language" />
+    <Spinner android:id="@id/sourceLanguageSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:minWidth="250.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/actions_accent" android:id="@id/downloadSourceModel" android:background="?selectableItemBackground" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_language_model" android:paddingHorizontal="4.0dip" android:paddingVertical="12.0dip" />
+    <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" android:text="@string/translate_output_language" />
+    <Spinner android:id="@id/outputLanguageSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:minWidth="250.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/actions_accent" android:id="@id/downloadOutputModel" android:background="?selectableItemBackground" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_language_model" android:paddingHorizontal="4.0dip" android:paddingVertical="12.0dip" />
+    <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium_large" android:text="@string/action_json_output_result_string_variable" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/stringVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/addStringVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton" />
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/testButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/test" style="@style/ColoredButton" />
+    <include android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

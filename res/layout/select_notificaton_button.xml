@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_button_bar" />
+    <TextView android:textStyle="bold" android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/collapse_on_press" android:layout_marginStart="@dimen/margin_small" />
+    <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+        <RadioButton android:id="@id/select_notification_button_collapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enabled" />
+        <RadioButton android:id="@id/select_notification_button_dont_collapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" android:layout_marginStart="@dimen/margin_medium" />
+    </RadioGroup>
+</LinearLayout>

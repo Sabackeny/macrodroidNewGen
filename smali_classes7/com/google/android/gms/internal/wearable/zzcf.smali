@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/google/android/gms/internal/wearable/zzcf;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Comparable;
+
+
+# virtual methods
+.method public abstract zza()I
+.end method
+
+.method public abstract zzb()Lcom/google/android/gms/internal/wearable/zzfa;
+.end method
+
+.method public abstract zzc()Lcom/google/android/gms/internal/wearable/zzfb;
+.end method
+
+.method public abstract zzd()Z
+.end method
+
+.method public abstract zze()Z
+.end method

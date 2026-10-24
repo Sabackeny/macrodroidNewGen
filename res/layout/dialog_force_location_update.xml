@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <RadioButton android:textSize="16.0sp" android:id="@id/dont_block_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dont_block_actions_until_complete" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/block_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/block_actions_until_complete" />
+        </RadioGroup>
+        <FrameLayout android:id="@id/block_options_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/http_request_timeout_seconds" android:layout_marginHorizontal="@dimen/margin_medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+                    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/valueText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/barLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_marginStart="10.0dip" />
+                        <SeekBar android:id="@id/seekBar" android:layout_width="0.0dip" android:layout_height="40.0dip" android:max="55" android:layout_weight="1.0" />
+                        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60" android:layout_marginEnd="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/save_location_obtained_state_in_boolean_variable" android:layout_marginHorizontal="@dimen/margin_medium" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+                    <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/booleanVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/default_text_color_inverse" android:id="@id/addBooleanVariableButton" android:duplicateParentState="true" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" app:backgroundTint="@color/actions_accent" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/click_blocker" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/save_location_details_in_dictionary_variable" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@id/dictionaryVariableSpinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:textColor="@color/default_text_color_inverse" android:id="@id/addDictionaryVariableButton" android:duplicateParentState="true" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" app:backgroundTint="@color/actions_accent" />
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.arlosoft.macrodroid.widget.CheckableLinearLayout android:orientation="horizontal" android:id="@id/checkable_layout" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/radio_button" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_small" />
+    <CheckedTextView android:textAppearance="?android:textAppearanceListItemSmall" android:textColor="?android:textColorAlertDialogListItem" android:gravity="center_vertical" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:layout_marginEnd="@dimen/margin_small" />
+</com.arlosoft.macrodroid.widget.CheckableLinearLayout>

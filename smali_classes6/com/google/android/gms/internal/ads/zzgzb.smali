@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/google/android/gms/internal/ads/zzgzb;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Cloneable;
+.implements Lcom/google/android/gms/internal/ads/zzgzd;
+
+
+# virtual methods
+.method public abstract zzbs()Lcom/google/android/gms/internal/ads/zzgzc;
+.end method

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:foreground="?android:selectableItemBackground" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/card_bg_2" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/item" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="@dimen/margin_tiny" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_micro" android:layout_marginEnd="@dimen/margin_small" android:layout_marginVertical="@dimen/margin_small" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_slight_transparent" android:id="@id/updateText" android:paddingLeft="@dimen/margin_small" android:paddingRight="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:paddingHorizontal="@dimen/margin_small" />
+        <FrameLayout android:textSize="12.0sp" android:id="@id/userContainer" android:background="@color/card_bg_1" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground" android:layout_weight="1.0" android:layout_marginStart="2.0dip">
+            <com.arlosoft.macrodroid.avatar.views.AvatarView android:layout_gravity="start|center" android:id="@id/avatarImage" android:layout_width="24.0dip" android:layout_height="24.0dip" app:av_border_color="@android:color/white" app:av_border_width="1.0dip" app:av_text_size_percentage="55" />
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="32.0dip">
+                <TextView android:textColor="@android:color/white" android:id="@id/userNameLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@font/helvetica" android:layout_marginEnd="@dimen/margin_small" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/timeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

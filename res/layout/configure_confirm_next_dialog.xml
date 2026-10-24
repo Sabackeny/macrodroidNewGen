@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="400.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_confirm_next_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:hint="@string/action_confirm_enter_title_label" android:maxLines="1" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/confirm_next_title_magic_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_confirm_next_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:minWidth="300.0dip" android:hint="@string/action_confirm_enter_message_label" android:maxLines="1" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/confirm_next_message_magic_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_confirm_next_positive_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:minWidth="300.0dip" android:hint="@string/action_confirm_enter_positive_button_label" android:maxLines="1" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/confirm_next_message_positive_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/configure_confirm_next_negative_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:minWidth="300.0dip" android:hint="@string/action_confirm_enter_negative_button_label" android:maxLines="1" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/confirm_next_message_negative_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <CheckBox android:id="@id/quitOnBackCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/if_confirmed_dialog_quit_macro_on_back_pressed" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <CheckBox android:id="@id/cancelAfterTimeoutCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/confirm_next_dialog_cancel_after_timeout" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/timeout_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" android:layout_marginStart="@dimen/margin_small" />
+                <TextView android:id="@id/seconds_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" />
+            </LinearLayout>
+            <SeekBar android:id="@id/timeout_seekbar" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="239" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" />
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

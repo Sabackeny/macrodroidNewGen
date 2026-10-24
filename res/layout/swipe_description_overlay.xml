@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/swipe_description_overlay_touch_area_top_left" android:background="@drawable/swipe_area" android:layout_width="12.0dip" android:layout_height="100.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <View android:id="@id/swipe_description_overlay_touch_area_top_right" android:background="@drawable/swipe_area" android:layout_width="12.0dip" android:layout_height="100.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/swipe_description_overlay_right_arrow" android:layout_width="150.0dip" android:layout_height="100.0dip" android:src="@drawable/arrow_right_red" android:layout_alignParentTop="true" android:layout_toEndOf="@id/swipe_description_overlay_touch_area_top_left" />
+    <ImageView android:id="@id/swipe_description_overlay_left_arrow" android:layout_width="150.0dip" android:layout_height="100.0dip" android:src="@drawable/arrow_left_red" android:layout_alignParentTop="true" android:layout_toStartOf="@id/swipe_description_overlay_touch_area_top_right" />
+    <ImageView android:id="@id/swipe_description_overlay_right_diagonal_arrow" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/arrow_right_diagonal_red" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/swipe_description_overlay_left_diagonal_arrow" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/arrow_left_diagonal_red" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/swipe_description_overlay_right_down_arrow" android:layout_width="80.0dip" android:layout_height="160.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/down_arrow_left" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/swipe_description_overlay_left_down_arrow" android:layout_width="80.0dip" android:layout_height="160.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/down_arrow_right" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

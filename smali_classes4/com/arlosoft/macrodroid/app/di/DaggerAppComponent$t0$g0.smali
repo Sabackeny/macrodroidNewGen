@@ -1,0 +1,212 @@
+.class final Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/arlosoft/macrodroid/app/di/AppFragmentModule_ContributesMacroListFragment$MacroListFragmentSubcomponent;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "g0"
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+
+# direct methods
+.method private constructor <init>(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$f0;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$f0;Ls/a;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;-><init>(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$f0;)V
+
+    return-void
+.end method
+
+.method private a()Lcom/arlosoft/macrodroid/categories/CategoriesHelper;
+    .locals 3
+
+    new-instance v0, Lcom/arlosoft/macrodroid/categories/CategoriesHelper;
+
+    iget-object v1, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    iget-object v1, v1, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->C:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;
+
+    const/4 v2, 0x7
+
+    invoke-static {v1}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;->l(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Lcom/arlosoft/macrodroid/categories/CategoriesHelper;-><init>(Landroid/content/Context;)V
+
+    return-object v0
+.end method
+
+.method private c(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;)Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;
+    .locals 2
+
+    const/4 v1, 0x0
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    const/4 v1, 0x2
+
+    iget-object v0, v0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->C:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;->o(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;)Ljavax/inject/Provider;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    check-cast v0, Lcom/arlosoft/macrodroid/remoteconfig/RemoteConfig;
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectRemoteConfig(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/remoteconfig/RemoteConfig;)V
+
+    const/4 v1, 0x6
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    const/4 v1, 0x6
+
+    iget-object v0, v0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->C:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;
+
+    const/4 v1, 0x4
+
+    invoke-static {v0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;->f(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;)Ljavax/inject/Provider;
+
+    move-result-object v0
+
+    const/4 v1, 0x7
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    check-cast v0, Lcom/arlosoft/macrodroid/confirmation/PremiumStatusHandler;
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectPremiumStatusHandler(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/confirmation/PremiumStatusHandler;)V
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    const/4 v1, 0x5
+
+    invoke-static {v0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->h(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;)Lcom/arlosoft/macrodroid/nearby/NearbyHelper;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectNearbyHelper(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/nearby/NearbyHelper;)V
+
+    const/4 v1, 0x1
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    const/4 v1, 0x6
+
+    iget-object v0, v0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->C:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;->h(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;)Ljavax/inject/Provider;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const/4 v1, 0x7
+
+    check-cast v0, Lcom/arlosoft/macrodroid/macro/ActionBlockStore;
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectActionBlockStore(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/macro/ActionBlockStore;)V
+
+    invoke-direct {p0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a()Lcom/arlosoft/macrodroid/categories/CategoriesHelper;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectCategoriesHelper(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/categories/CategoriesHelper;)V
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->a:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;
+
+    iget-object v0, v0, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0;->C:Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;
+
+    invoke-static {v0}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;->w(Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent;)Lcom/arlosoft/macrodroid/extras/ui/management/ExtrasManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v0}, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment_MembersInjector;->injectExtrasManager(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;Lcom/arlosoft/macrodroid/extras/ui/management/ExtrasManager;)V
+
+    return-object p1
+.end method
+
+
+# virtual methods
+.method public b(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;)V
+    .locals 1
+
+    const/4 v0, 0x6
+
+    invoke-direct {p0, p1}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->c(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;)Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;
+
+    const/4 v0, 0x2
+
+    return-void
+.end method
+
+.method public bridge synthetic inject(Ljava/lang/Object;)V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    check-cast p1, Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;
+
+    const/4 v0, 0x4
+
+    invoke-virtual {p0, p1}, Lcom/arlosoft/macrodroid/app/di/DaggerAppComponent$t0$g0;->b(Lcom/arlosoft/macrodroid/macrolist/MacroListFragment;)V
+
+    return-void
+.end method

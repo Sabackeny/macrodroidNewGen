@@ -1,0 +1,159 @@
+.class public final Lrx/internal/operators/SingleOperatorOnErrorResumeNext;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/Single$OnSubscribe;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lrx/Single$OnSubscribe<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lrx/Single;
+
+.field final b:Lrx/functions/Func1;
+
+
+# direct methods
+.method private constructor <init>(Lrx/Single;Lrx/functions/Func1;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
+
+    iput-object p1, p0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;->a:Lrx/Single;
+
+    iput-object p2, p0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;->b:Lrx/functions/Func1;
+
+    return-void
+
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string p2, "resumeFunctionInCaseOfError must not be null"
+
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string p2, "originalSingle must not be null"
+
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public static withFunction(Lrx/Single;Lrx/functions/Func1;)Lrx/internal/operators/SingleOperatorOnErrorResumeNext;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lrx/Single<",
+            "+TT;>;",
+            "Lrx/functions/Func1<",
+            "Ljava/lang/Throwable;",
+            "+",
+            "Lrx/Single<",
+            "+TT;>;>;)",
+            "Lrx/internal/operators/SingleOperatorOnErrorResumeNext<",
+            "TT;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;
+
+    invoke-direct {v0, p0, p1}, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;-><init>(Lrx/Single;Lrx/functions/Func1;)V
+
+    return-object v0
+.end method
+
+.method public static withOther(Lrx/Single;Lrx/Single;)Lrx/internal/operators/SingleOperatorOnErrorResumeNext;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lrx/Single<",
+            "+TT;>;",
+            "Lrx/Single<",
+            "+TT;>;)",
+            "Lrx/internal/operators/SingleOperatorOnErrorResumeNext<",
+            "TT;>;"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_0
+
+    new-instance v0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;
+
+    new-instance v1, Lrx/internal/operators/SingleOperatorOnErrorResumeNext$a;
+
+    invoke-direct {v1, p1}, Lrx/internal/operators/SingleOperatorOnErrorResumeNext$a;-><init>(Lrx/Single;)V
+
+    invoke-direct {v0, p0, v1}, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;-><init>(Lrx/Single;Lrx/functions/Func1;)V
+
+    return-object v0
+
+    :cond_0
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    const-string p1, "resumeSingleInCaseOfError must not be null"
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic call(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lrx/SingleSubscriber;
+
+    invoke-virtual {p0, p1}, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;->call(Lrx/SingleSubscriber;)V
+
+    return-void
+.end method
+
+.method public call(Lrx/SingleSubscriber;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrx/SingleSubscriber<",
+            "-TT;>;)V"
+        }
+    .end annotation
+
+    new-instance v0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext$b;
+
+    invoke-direct {v0, p0, p1}, Lrx/internal/operators/SingleOperatorOnErrorResumeNext$b;-><init>(Lrx/internal/operators/SingleOperatorOnErrorResumeNext;Lrx/SingleSubscriber;)V
+
+    invoke-virtual {p1, v0}, Lrx/SingleSubscriber;->add(Lrx/Subscription;)V
+
+    iget-object p1, p0, Lrx/internal/operators/SingleOperatorOnErrorResumeNext;->a:Lrx/Single;
+
+    invoke-virtual {p1, v0}, Lrx/Single;->subscribe(Lrx/SingleSubscriber;)Lrx/Subscription;
+
+    return-void
+.end method

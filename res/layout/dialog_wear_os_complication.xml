@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/wear_os_complication_id" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <Spinner android:id="@id/complication_id_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_field_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/complication_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/text" android:maxLines="1" android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/text_magic_text_button" style="@style/MagicTextButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/set_icon_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/set_icon_option" android:layout_marginHorizontal="@dimen/margin_medium" />
+            <TextView android:textColor="@color/actions_accent" android:id="@id/icon_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/icon" android:layout_marginHorizontal="@dimen/margin_medium" />
+            <ImageView android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/active_icon_new" android:layout_marginHorizontal="@dimen/margin_medium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/image" android:layout_marginHorizontal="@dimen/margin_medium" />
+            <ImageView android:id="@id/image" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:src="@drawable/active_icon_new" android:layout_marginHorizontal="@dimen/margin_medium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/range_values_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/min_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/minimum_short" android:maxLines="1" android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/min_value_magic_text_button" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/max_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/maximum_short" android:maxLines="1" android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/max_value_magic_text_button" style="@style/MagicTextButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@id/current_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/value" android:maxLines="1" android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/current_value_magic_text_button" style="@style/MagicTextButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/http_request_import_from_curl_warning" android:layout_marginHorizontal="@dimen/margin_medium" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="14.0sp" android:typeface="monospace" android:layout_gravity="center_vertical" android:id="@id/curl_command" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_text" android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons" />
+</LinearLayout>

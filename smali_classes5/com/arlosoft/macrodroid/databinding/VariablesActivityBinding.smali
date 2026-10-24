@@ -1,0 +1,369 @@
+.class public final Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroidx/viewbinding/ViewBinding;
+
+
+# instance fields
+.field private final a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+.field public final animationView:Lcom/airbnb/lottie/LottieAnimationView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final filterPanel:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final localVariableCheckbox:Landroid/widget/CheckBox;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final localVariableOptionLayout:Landroid/widget/FrameLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final rootContainer:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final toolbar:Landroidx/appcompat/widget/Toolbar;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final variableTypeSpinner:Landroid/widget/Spinner;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final variablesActivityList:Landroid/widget/ListView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final variablesEmptyView:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/airbnb/lottie/LottieAnimationView;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/widget/LinearLayout;Landroid/widget/CheckBox;Landroid/widget/FrameLayout;Landroid/widget/LinearLayout;Landroidx/appcompat/widget/Toolbar;Landroid/widget/Spinner;Landroid/widget/ListView;Landroid/widget/LinearLayout;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    iput-object p2, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->animationView:Lcom/airbnb/lottie/LottieAnimationView;
+
+    iput-object p3, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->fab:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    iput-object p4, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->filterPanel:Landroid/widget/LinearLayout;
+
+    iput-object p5, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->localVariableCheckbox:Landroid/widget/CheckBox;
+
+    iput-object p6, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->localVariableOptionLayout:Landroid/widget/FrameLayout;
+
+    iput-object p7, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->rootContainer:Landroid/widget/LinearLayout;
+
+    iput-object p8, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->toolbar:Landroidx/appcompat/widget/Toolbar;
+
+    iput-object p9, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->variableTypeSpinner:Landroid/widget/Spinner;
+
+    iput-object p10, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->variablesActivityList:Landroid/widget/ListView;
+
+    iput-object p11, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->variablesEmptyView:Landroid/widget/LinearLayout;
+
+    return-void
+.end method
+
+.method public static bind(Landroid/view/View;)Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+    .locals 14
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const v0, 0x7f0a00d3
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    move-object v4, v1
+
+    check-cast v4, Lcom/airbnb/lottie/LottieAnimationView;
+
+    if-eqz v4, :cond_0
+
+    const v0, 0x7f0a04b3
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    move-object v5, v1
+
+    check-cast v5, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+
+    if-eqz v5, :cond_0
+
+    const v0, 0x7f0a04dd
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v6, v1
+
+    move-object v6, v1
+
+    check-cast v6, Landroid/widget/LinearLayout;
+
+    if-eqz v6, :cond_0
+
+    const v0, 0x7f0a0677
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v7, v1
+
+    move-object v7, v1
+
+    check-cast v7, Landroid/widget/CheckBox;
+
+    if-eqz v7, :cond_0
+
+    const v0, 0x7f0a0678
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    move-object v8, v1
+
+    check-cast v8, Landroid/widget/FrameLayout;
+
+    if-eqz v8, :cond_0
+
+    const v0, 0x7f0a0958
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v9, v1
+
+    move-object v9, v1
+
+    check-cast v9, Landroid/widget/LinearLayout;
+
+    if-eqz v9, :cond_0
+
+    const v0, 0x7f0a0b79
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    move-object v10, v1
+
+    check-cast v10, Landroidx/appcompat/widget/Toolbar;
+
+    if-eqz v10, :cond_0
+
+    const v0, 0x7f0a0c37
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v11, v1
+
+    check-cast v11, Landroid/widget/Spinner;
+
+    if-eqz v11, :cond_0
+
+    const v0, 0x7f0a0c86
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v12, v1
+
+    check-cast v12, Landroid/widget/ListView;
+
+    if-eqz v12, :cond_0
+
+    const v0, 0x7f0a0c87
+
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v13, v1
+
+    move-object v13, v1
+
+    check-cast v13, Landroid/widget/LinearLayout;
+
+    if-eqz v13, :cond_0
+
+    new-instance v0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+
+    move-object v3, p0
+
+    move-object v3, p0
+
+    check-cast v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v13}, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/airbnb/lottie/LottieAnimationView;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/widget/LinearLayout;Landroid/widget/CheckBox;Landroid/widget/FrameLayout;Landroid/widget/LinearLayout;Landroidx/appcompat/widget/Toolbar;Landroid/widget/Spinner;Landroid/widget/ListView;Landroid/widget/LinearLayout;)V
+
+    return-object v0
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string v1, "qssIsnwDi diierv g iwtei  rehuM"
+
+    const-string v1, "Missing required view with ID: "
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+    .locals 3
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x5
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-static {p0, v0, v1}, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+
+    move-result-object p0
+
+    const/4 v2, 0x3
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+    .locals 3
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const v0, 0x7f0d032b
+
+    const/4 v1, 0x3
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    const/4 v2, 0x0
+
+    if-eqz p2, :cond_0
+
+    const/4 v2, 0x7
+
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    :cond_0
+    invoke-static {p0}, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->bind(Landroid/view/View;)Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;
+
+    move-result-object p0
+
+    const/4 v2, 0x3
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getRoot()Landroid/view/View;
+    .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    invoke-virtual {p0}, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->getRoot()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRoot()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    .locals 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/arlosoft/macrodroid/databinding/VariablesActivityBinding;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    const/4 v1, 0x7
+
+    return-object v0
+.end method

@@ -1,0 +1,2 @@
+.class public final synthetic Lcom/google/android/gms/internal/nearby/zzbx;
+.super Ljava/lang/Object;
